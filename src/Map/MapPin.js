@@ -1,16 +1,5 @@
 import React from "react";
-import {
-    Box,
-    Button,
-    Chip, Dialog,
-    DialogActions,
-    DialogContent,
-    DialogContentText,
-    DialogTitle, InputAdornment,
-    Modal,
-    Popover, TextField,
-    Typography
-} from "@mui/material";
+import {Button, Chip, Dialog, DialogActions, DialogContent, DialogTitle, Popover, TextField} from "@mui/material";
 
 const xdiff = 128070.0;
 const ydiff = 199108.0;
@@ -33,6 +22,27 @@ export class MapPin extends React.Component {
             anchor: null,
             infoOpened: false
         };
+    }
+
+    get content() {
+        const result = [];
+        const items = this.props.container.content.split(",");
+        items.forEach((element) => {
+            let consoleId;
+            let count;
+            [consoleId, count] = element.split(":")
+            if(consoleId === undefined || consoleId === "") {
+                return
+            }
+            if (count === undefined) {
+                count = "1"
+            }
+            result.push({
+                consoleId: consoleId.trim(),
+                count: count.trim()
+            })
+        })
+        return result
     }
 
     get calculatedX() {
@@ -86,52 +96,50 @@ export class MapPin extends React.Component {
                 <DialogContent style={{
                     display: "flex",
                     flexDirection: "column",
-                    gap: "5px",
+                    paddingTop: "5px",
+                    gap: "3px"
                 }}>
                     <div style={{
                         display: "flex",
                         flexDirection: "row",
-                        gap: "5px",
+                        gap: "3px"
                     }}>
-                        <Typography variant="button" display="flex" flexDirection="column" justifyContent="center"
-                                    component="div" marginRight="5px">
-                            Position
-                        </Typography>
                         <TextField
+                            label="x"
                             InputProps={{
-                                startAdornment: <InputAdornment position="start">x</InputAdornment>,
+                                readOnly: true,
                             }}
-                            variant="standard"
-                            value={this.props.container.position.x}
+                            size="small"
+                            defaultValue={this.props.container.position.x}
                         />
                         <TextField
+                            label="y"
                             InputProps={{
-                                startAdornment: <InputAdornment position="start">y</InputAdornment>,
+                                readOnly: true,
                             }}
-                            variant="standard"
-                            value={this.props.container.position.y}
+                            size="small"
+                            defaultValue={this.props.container.position.y}
                         />
                         <TextField
+                            label="z"
                             InputProps={{
-                                startAdornment: <InputAdornment position="start">z</InputAdornment>,
+                                readOnly: true,
                             }}
-                            variant="standard"
-                            value={this.props.container.position.z}
+                            size="small"
+                            defaultValue={this.props.container.position.z}
                         />
                     </div>
                     <div style={{
                         display: "flex",
                         flexDirection: "row",
-                        gap: "5px",
+                        flexWrap: "wrap",
+                        gap: "3px"
                     }}>
-                        <Typography variant="button" display="flex" flexDirection="column" justifyContent="center"
-                                    component="div" marginRight="5px">
-                            Content
-                        </Typography>
-                        <Typography variant="button" display="flex" flexDirection="column" justifyContent="center"
-                                    component="div">
-                            {this.props.container.content}
-                        </Typography>
+                        {this.content.map((row) => (
+                            <Chip label={row.consoleId} color="primary" icon={<Chip color="secondary" label={row.count} style={{
+                                "height": "70%"
+                            }}/>}/>
+                        ))}
                     </div>
                 </DialogContent>
                 <DialogActions>

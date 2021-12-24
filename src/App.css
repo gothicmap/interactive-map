@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: stretch;
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Navbar {
+  display: flex;
+  flex: 0 1 auto;
+  align-self: stretch;
+}
+
+.MapArea {
+  /*display: flex;*/
+  align-self: center;
+  width: 100%;
+  /*flex-direction: column;*/
+}
+
+.Map {
+  display: flex;
+  position: absolute;
+}
+
+.MapPin {
+  background-color: #77ff47;
+  border-radius: 50%;
+  z-index: auto;
+}
+
+.MapPin:hover {
+  background-color: #ff0000;
+  z-index: 1000;
 }

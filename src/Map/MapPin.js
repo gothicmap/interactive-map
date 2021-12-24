@@ -1,16 +1,37 @@
 import React from "react";
-import {Chip, Popover} from "@mui/material";
+import {
+    Box,
+    Button,
+    Chip, Dialog,
+    DialogActions,
+    DialogContent,
+    DialogContentText,
+    DialogTitle, InputAdornment,
+    Modal,
+    Popover, TextField,
+    Typography
+} from "@mui/material";
 
 const xdiff = 128070.0;
 const ydiff = 199108.0;
 const ydiv = 1600.0;
 const xdiv = 1599.99;
 
+const infoStyle = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    p: 4,
+};
+
 export class MapPin extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            anchor: null
+            anchor: null,
+            infoOpened: false
         };
     }
 
@@ -20,6 +41,19 @@ export class MapPin extends React.Component {
 
     get calculatedY() {
         return (this.props.container.position.z + ydiff) / ydiv
+    }
+
+    openModal = () => {
+        this.setState({
+            infoOpened: true,
+            anchor: null
+        })
+    }
+
+    closeModal = () => {
+        this.setState({
+            infoOpened: false
+        })
     }
 
     render() {
@@ -38,7 +72,72 @@ export class MapPin extends React.Component {
                     onMouseLeave={() => {
                         this.setState({anchor: null})
                     }}
+            // onClick={this.openModal}
         >
+            <div onClick={this.openModal} style={{
+                width: "100%",
+                height: "100%"
+            }}/>
+            <Dialog
+                open={this.state.infoOpened}
+                onClose={this.closeModal}
+            >
+                <DialogTitle>Container</DialogTitle>
+                <DialogContent style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "5px",
+                }}>
+                    <div style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        gap: "5px",
+                    }}>
+                        <Typography variant="button" display="flex" flexDirection="column" justifyContent="center"
+                                    component="div" marginRight="5px">
+                            Position
+                        </Typography>
+                        <TextField
+                            InputProps={{
+                                startAdornment: <InputAdornment position="start">x</InputAdornment>,
+                            }}
+                            variant="standard"
+                            value={this.props.container.position.x}
+                        />
+                        <TextField
+                            InputProps={{
+                                startAdornment: <InputAdornment position="start">y</InputAdornment>,
+                            }}
+                            variant="standard"
+                            value={this.props.container.position.y}
+                        />
+                        <TextField
+                            InputProps={{
+                                startAdornment: <InputAdornment position="start">z</InputAdornment>,
+                            }}
+                            variant="standard"
+                            value={this.props.container.position.z}
+                        />
+                    </div>
+                    <div style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        gap: "5px",
+                    }}>
+                        <Typography variant="button" display="flex" flexDirection="column" justifyContent="center"
+                                    component="div" marginRight="5px">
+                            Content
+                        </Typography>
+                        <Typography variant="button" display="flex" flexDirection="column" justifyContent="center"
+                                    component="div">
+                            {this.props.container.content}
+                        </Typography>
+                    </div>
+                </DialogContent>
+                <DialogActions>
+                    <Button onClick={this.closeModal} autoFocus>Close</Button>
+                </DialogActions>
+            </Dialog>
             <Popover
                 sx={{
                     pointerEvents: 'none',

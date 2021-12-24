@@ -31,7 +31,7 @@ export class MapPin extends React.Component {
             let consoleId;
             let count;
             [consoleId, count] = element.split(":")
-            if(consoleId === undefined || consoleId === "") {
+            if (consoleId === undefined || consoleId === "") {
                 return
             }
             if (count === undefined) {
@@ -136,9 +136,18 @@ export class MapPin extends React.Component {
                         gap: "3px"
                     }}>
                         {this.content.map((row) => (
-                            <Chip label={row.consoleId} color="primary" icon={<Chip color="secondary" label={row.count} style={{
-                                "height": "70%"
-                            }}/>}/>
+                            <Chip
+                                label={row.consoleId}
+                                color="primary"
+                                icon={
+                                    <Chip color="secondary"
+                                          label={row.count}
+                                          sx={{
+                                              height: (theme) => `calc(100% - ${theme.spacing(1)})`
+                                          }}
+                                    />
+                                }
+                            />
                         ))}
                     </div>
                 </DialogContent>

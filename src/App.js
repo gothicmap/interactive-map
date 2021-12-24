@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.css';
-import {Container, Nav, Navbar, OverlayTrigger, Tooltip} from 'react-bootstrap';
 import {TransformComponent, TransformWrapper} from "react-zoom-pan-pinch";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 import containers from './containers.json'
+import {AppBar, Button, Chip, IconButton, Popover, Toolbar, Typography} from "@mui/material";
+import MenuIcon from '@mui/icons-material/Menu';
 
 const mapImage = require('./archolos_map.png');
 
@@ -15,35 +14,65 @@ const ydiv = 1600.0;
 const xdiv = 1599.99;
 
 class MapPin extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            anchor: null
+        };
+    }
+
     get calculatedX() {
-        return (this.props.x + xdiff) / xdiv
+        return (this.props.container.position.x + xdiff) / xdiv
     }
 
     get calculatedY() {
-        return (this.props.y + ydiff) / ydiv
+        return (this.props.container.position.z + ydiff) / ydiv
     }
 
     render() {
-        return <OverlayTrigger
-            key={"auto"}
-            placement={"auto"}
-            overlay={
-                <Tooltip>
-                    {this.props.x} {this.props.y}
-                </Tooltip>
-            }
+        return <div className="MapPin"
+                    style={{
+                        width: `10px`,
+                        height: `10px`,
+                        position: 'absolute',
+                        top: `calc(${this.calculatedX}% - 5px)`,
+                        left: `calc(${this.calculatedY}% - 5px)`,
+                        transform: `scale(${this.props.pointScale}) translate3d( 0, 0, 0)`
+                    }}
+                    onMouseEnter={(event) => {
+                        this.setState({anchor: event.currentTarget})
+                    }}
+                    onMouseLeave={() => {
+                        this.setState({anchor: null})
+                    }}
         >
-            <div className="MapPin"
-                 style={{
-                     width: `10px`,
-                     height: `10px`,
-                     position: 'absolute',
-                     top: `calc(${this.calculatedX}% - 5px)`,
-                     left: `calc(${this.calculatedY}% - 5px)`,
-                     transform: `scale(${this.props.pointSize}) translate3d( 0, 0, 0)`
-                 }}
-            />
-        </OverlayTrigger>
+            <Popover
+                sx={{
+                    pointerEvents: 'none',
+                }}
+                open={this.state.anchor != null}
+                anchorEl={this.state.anchor}
+                anchorOrigin={{
+                    vertical: 'bottom',
+                    horizontal: 'left',
+                }}
+                transformOrigin={{
+                    vertical: 'top',
+                    horizontal: 'left',
+                }}
+                onClose={() => {
+                    this.setState({anchor: null})
+                }}
+                disableRestoreFocus
+            >
+                <div style={{
+                    margin: 3
+                }}>
+                    <Chip label="Container" color="primary" size="small"/>
+                    {this.props.container.locked && <Chip label="Locked" size="small" color="error"/>}
+                </div>
+            </Popover>
+        </div>
     }
 }
 
@@ -65,22 +94,45 @@ export default class App extends React.Component {
     render = () => (
         <div className="App">
             <div className="Navbar">
-                <Navbar bg="dark" variant="dark" style={{
-                    display: "flex",
-                    flexGrow: 1000
-                }}>
-                    <Container>
-                        <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-                        <Nav className="me-auto">
-                            <Nav.Link href="#home">Home</Nav.Link>
-                            <Nav.Link href="#features">Features</Nav.Link>
-                            <Nav.Link href="#pricing">Pricing</Nav.Link>
-                        </Nav>
-                    </Container>
-                </Navbar>
+                <AppBar position="static">
+                    <Toolbar>
+                        <IconButton
+                            size="large"
+                            edge="start"
+                            color="inherit"
+                            aria-label="menu"
+                            sx={{mr: 2}}
+                        >
+                            <MenuIcon/>
+                        </IconButton>
+                        <Typography variant="h6" component="div" sx={{flexGrow: 1}}>
+                            News
+                        </Typography>
+                        <Button color="inherit">Login</Button>
+                    </Toolbar>
+                </AppBar>
             </div>
-            <TransformWrapper minScale={1} initialScale={1} maxScale={3} centerOnInit={true} onInit={this.handleZoom}
-                              onZoomStop={this.handleZoom}>
+            <TransformWrapper minScale={1}
+                              initialScale={1}
+                              maxScale={3}
+                              centerOnInit={true}
+                              onInit={this.handleZoom}
+                              onZoomStop={this.handleZoom}
+                              alignmentAnimation={{
+                                  disabled: true
+                              }}
+                              zoomAnimation={{
+                                  disabled: true
+                              }}
+                              velocityAnimation={{
+                                  disabled: true
+                              }}
+                              centerZoomedOut={false}
+                              panning={{
+                                  velocityDisabled: true
+                              }}
+            >
+
                 <TransformComponent wrapperClass="MapArea" wrapperStyle={{
                     width: "100%",
                     height: "100%"
@@ -89,8 +141,7 @@ export default class App extends React.Component {
                     {
                         containers.map((container, i) => {
                             // Return the element. Also pass key
-                            return (<MapPin pointSize={this.state.scale} key={i} x={container.position.x}
-                                            y={container.position.z}/>)
+                            return (<MapPin pointScale={this.state.scale} key={i} container={container}/>)
                         })
                     }
                 </TransformComponent>

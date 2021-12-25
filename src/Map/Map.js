@@ -1,56 +1,50 @@
 import React from "react";
-import {TransformComponent, TransformWrapper} from "react-zoom-pan-pinch";
 import {MapPin} from "./MapPin";
-
 import mapImage from "../archolos_map.png";
 import containers from "../containers.json";
+import ScrollContainer from "react-indiana-drag-scroll";
 
 export class Map extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {scale: 1};
-    }
-
-    handleZoom = (evt) => {
-        this.setState((state, props) => {
-            return {scale: 1 / evt.state.scale};
-        });
-    }
-
     render() {
-        return <TransformWrapper minScale={1}
-                                 initialScale={1}
-                                 maxScale={3}
-                                 centerOnInit={true}
-                                 onInit={this.handleZoom}
-                                 onZoomStop={this.handleZoom}
-                                 alignmentAnimation={{
-                                     disabled: true
-                                 }}
-                                 zoomAnimation={{
-                                     disabled: true
-                                 }}
-                                 velocityAnimation={{
-                                     disabled: true
-                                 }}
-                                 centerZoomedOut={false}
-                                 panning={{
-                                     velocityDisabled: true
-                                 }}
-        >
-
-            <TransformComponent wrapperClass="MapArea" wrapperStyle={{
+        return <ScrollContainer
+            className="MapArea"
+            hideScrollbars={false}
+            style={{
                 width: "100%",
-                height: "100%"
+                height: "100%",
             }}>
-                <img src={mapImage}/>
-                {
-                    containers.map((container, i) => {
-                        // Return the element. Also pass key
-                        return (<MapPin pointScale={this.state.scale} key={i} container={container}/>)
-                    })
-                }
-            </TransformComponent>
-        </TransformWrapper>
+            <div className="MapHolder" style={{
+                width: "100%",
+                height: "100%",
+                display: "flex",
+                flexDirection: "row"
+            }}>
+                <div className="Map" style={{
+                    margin: "auto",
+                    alignSelf: "center",
+                    width: "1024px",
+                    height: "1024px",
+                    minWidth: "1024px",
+                    minHeight: "1024px",
+                    backgroundImage: `url(${mapImage})`,
+                    backgroundSize: "cover"
+                }}>
+                    <div className="PinOverlay" style={{
+                        position: "relative",
+                        width: "100%",
+                        height: "100%",
+                        top: 0,
+                        right: 0
+                    }}>
+                        {
+                            containers.map((container, i) => {
+                                // Return the element. Also pass key
+                                return (<MapPin pointScale={1} key={i} container={container}/>)
+                            })
+                        }
+                    </div>
+                </div>
+            </div>
+        </ScrollContainer>
     }
 }

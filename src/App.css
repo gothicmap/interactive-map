@@ -30,10 +30,10 @@ html, body {
   /*flex-direction: column;*/
 }
 
-.Map {
-  display: flex;
-  position: absolute;
-}
+/*.Map {*/
+/*  display: flex;*/
+/*  position: absolute;*/
+/*}*/
 
 .MapPin {
   background-color: #77ff47;

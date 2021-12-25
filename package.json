@@ -18,7 +18,8 @@
     "web-vitals": "^2.1.2",
     "react-copy-to-clipboard": "^5.0.4",
     "react-custom-scrollbars": "^4.2.1",
-    "react-indiana-drag-scroll": "^2.1.0"
+    "react-indiana-drag-scroll": "^2.1.0",
+    "mui-modal-provider": "^2.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

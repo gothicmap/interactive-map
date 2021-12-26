@@ -1,22 +1,11 @@
 import React from "react";
-import {
-    Box,
-    Button,
-    Chip,
-    Dialog,
-    DialogActions,
-    DialogContent,
-    DialogTitle,
-    IconButton,
-    TextField,
-    Tooltip
-} from "@mui/material";
-import {CopyToClipboard} from "react-copy-to-clipboard/lib/Component";
-import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+import {Box, Button, Chip, Dialog, DialogActions, DialogContent, DialogTitle, TextField} from "@mui/material";
 import {useModal} from "mui-modal-provider";
+import Outline from "../Misc/Outline";
+import {VectorInfo} from "../Misc/VectorInfo";
 
-const ContainerModalComponent = ({container, closeModal, ...props}) => {
-    // parse content
+
+const ParseContainerContent = (container) => {
     const content = [];
     const items = container.content.split(",");
     items.forEach((element) => {
@@ -35,88 +24,60 @@ const ContainerModalComponent = ({container, closeModal, ...props}) => {
         })
     })
 
-    return <Dialog {...props}>
-        <DialogTitle>Container</DialogTitle>
-        <DialogContent sx={{
+    return content
+}
+
+const KeyInfo = (props) => {
+    return <React.Fragment>
+        {props.container.locked && props.container.key && <Box sx={{
             display: "flex",
-            flexDirection: "column",
+            flexDirection: "row",
             gap: (theme) => theme.spacing(1),
-            overflow: "visible"
         }}>
+            <TextField
+                sx={{
+                    flexGrow: 1
+                }}
+                label="key"
+                InputProps={{
+                    readOnly: true,
+                }}
+                size="small"
+                defaultValue={props.container.key}
+            />
+        </Box>
+        }
+    </React.Fragment>
+}
+
+const LockCombinationInfo = (props) => {
+    return <React.Fragment>
+        {props.container.locked && props.container.combination && <Outline label="combination">
             <Box sx={{
                 display: "flex",
                 flexDirection: "row",
+                flexWrap: "wrap",
                 gap: (theme) => theme.spacing(1),
             }}>
-                <TextField
-                    label="x"
-                    InputProps={{
-                        readOnly: true,
-                    }}
-                    size="small"
-                    defaultValue={container.position.x}
-                />
-                <TextField
-                    label="y (height)"
-                    InputProps={{
-                        readOnly: true,
-                    }}
-                    size="small"
-                    defaultValue={container.position.y}
-                />
-                <TextField
-                    label="z"
-                    InputProps={{
-                        readOnly: true,
-                    }}
-                    size="small"
-                    defaultValue={container.position.z}
-                />
-                <CopyToClipboard
-                    text={`goto vob ${container.position.x} ${container.position.y} ${container.position.z}`}>
-                    <Tooltip title="Copy marvin goto command to clipboard">
-                        <IconButton color="primary" component="span">
-                            <ContentCopyIcon/>
-                        </IconButton>
-                    </Tooltip>
-                </CopyToClipboard>
+                {props.container.combination.split("").map((direction, idx) => (
+                    <Chip
+                        key={idx}
+                        label={direction}
+                        color="primary"
+                    />
+                ))}
             </Box>
-            {container.locked && container.key && <Box sx={{
-                display: "flex",
-                flexDirection: "row",
-                gap: (theme) => theme.spacing(1),
-            }}>
-                <TextField
-                    sx={{
-                        flexGrow: 1
-                    }}
-                    label="key"
-                    InputProps={{
-                        readOnly: true,
-                    }}
-                    size="small"
-                    defaultValue={container.key}
-                />
-            </Box>
-            }
-                        {container.locked && container.combination && <Box sx={{
-                display: "flex",
-                flexDirection: "row",
-                gap: (theme) => theme.spacing(1),
-            }}>
-                <TextField
-                    sx={{
-                        flexGrow: 1
-                    }}
-                    label="combination"
-                    InputProps={{
-                        readOnly: true,
-                    }}
-                    size="small"
-                    defaultValue={container.combination}
-                />
-            </Box>
-            }
+        </Outline>
+        }
+    </React.Fragment>
+}
+
+
+const ContainerContentInfo = (props) => {
+    const content = ParseContainerContent(props.container)
+
+    return <React.Fragment>
+        <Outline label="content">
             <Box sx={{
                 display: "flex",
                 flexDirection: "row",
@@ -139,6 +100,23 @@ const ContainerModalComponent = ({container, closeModal, ...props}) => {
                     />
                 ))}
             </Box>
+        </Outline>
+    </React.Fragment>
+}
+
+const ContainerModalComponent = ({container, closeModal, ...props}) => {
+    return <Dialog {...props}>
+        <DialogTitle>Container</DialogTitle>
+        <DialogContent sx={{
+            display: "flex",
+            flexDirection: "column",
+            gap: (theme) => theme.spacing(1),
+            overflow: "visible"
+        }}>
+            <VectorInfo vector={container.position}/>
+            <KeyInfo container={container}/>
+            <LockCombinationInfo container={container}/>
+            <ContainerContentInfo container={container}/>
         </DialogContent>
         <DialogActions>
             <Button onClick={closeModal} autoFocus>Close</Button>

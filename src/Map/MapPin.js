@@ -11,6 +11,16 @@ export function MapPin(props) {
     const calculatedX = (props.container.position.x + xdiff) / xdiv
     const calculatedY = (props.container.position.z + ydiff) / ydiv
     const showContainerModal = ShowContainerModal(props.container)
+    if (props.container.locked) {
+        var locketText = "Locked"
+        if (props.container.key) {
+            locketText = locketText + " : " + props.container.key
+        }
+        if (props.container.combination) {
+            locketText = locketText + " : " + props.container.combination
+        }
+    }
+
 
     return <Tooltip title={
         <Box sx={{
@@ -19,7 +29,7 @@ export function MapPin(props) {
             flexDirection: "row"
         }}>
             <Chip label="Container" color="primary" size="small"/>
-            {props.container.locked && <Chip label="Locked" size="small" color="error"/>}
+            {props.container.locked && <Chip label={locketText} size="small" color="error"/>}
         </Box>
     }>
         <div className="MapPin"

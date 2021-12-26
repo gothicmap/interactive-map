@@ -81,6 +81,42 @@ const ContainerModalComponent = ({container, closeModal, ...props}) => {
                     </Tooltip>
                 </CopyToClipboard>
             </Box>
+            {container.locked && container.key && <Box sx={{
+                display: "flex",
+                flexDirection: "row",
+                gap: (theme) => theme.spacing(1),
+            }}>
+                <TextField
+                    sx={{
+                        flexGrow: 1
+                    }}
+                    label="key"
+                    InputProps={{
+                        readOnly: true,
+                    }}
+                    size="small"
+                    defaultValue={container.key}
+                />
+            </Box>
+            }
+                        {container.locked && container.combination && <Box sx={{
+                display: "flex",
+                flexDirection: "row",
+                gap: (theme) => theme.spacing(1),
+            }}>
+                <TextField
+                    sx={{
+                        flexGrow: 1
+                    }}
+                    label="combination"
+                    InputProps={{
+                        readOnly: true,
+                    }}
+                    size="small"
+                    defaultValue={container.combination}
+                />
+            </Box>
+            }
             <Box sx={{
                 display: "flex",
                 flexDirection: "row",

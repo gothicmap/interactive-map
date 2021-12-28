@@ -3,6 +3,7 @@ import {MapPin} from "./MapPin";
 import mapImage from "../archolos_map.png";
 import containers from "../containers.json";
 import ScrollContainer from "react-indiana-drag-scroll";
+import MapSettings from "./MapSettings";
 
 export class Map extends React.Component {
     render() {
@@ -13,6 +14,15 @@ export class Map extends React.Component {
                 width: "100%",
                 height: "100%",
             }}>
+            <div className="ButtonsOverlay" style={{
+                position: "absolute",
+                width: "100%",
+                height: "100%",
+                display: "flex",
+
+            }}>
+               <MapSettings/>
+            </div>
             <div className="MapHolder" style={{
                 width: "100%",
                 height: "100%",

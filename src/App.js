@@ -4,10 +4,13 @@ import {AppBar, Button, IconButton, Toolbar, Typography} from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import {Map} from "./Map/Map";
 import {Offset} from "./Misc/Offset";
+import Box from "@mui/material/Box";
 
 export default class App extends React.Component {
     render = () => (
-        <div className="App">
+        <Box className="App" sx={{
+            height: "100%"
+        }}>
             <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }} className="Navbar">
                 <Toolbar>
                     <IconButton
@@ -27,6 +30,6 @@ export default class App extends React.Component {
             </AppBar>
             <Offset/>
             <Map/>
-        </div>
+        </Box>
     );
 }

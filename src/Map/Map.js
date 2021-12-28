@@ -10,9 +10,9 @@ import RemoveIcon from '@mui/icons-material/Remove';
 
 const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
 
-function MapButtonsOverlay(props) {
+function MapButtonsOverlay({enabled, onPinsEnabled, ...props}) {
     return <>
-        <MapSettings elevation={3} sx={{
+        <MapSettings enabled={enabled} setEnabled={onPinsEnabled} elevation={3} sx={{
             position: "absolute",
             left: (theme) => theme.spacing(2),
             top: (theme) => theme.spacing(2),
@@ -55,6 +55,7 @@ function MapButtonsOverlay(props) {
 
 export function Map(props) {
     const [scale, setScale] = useState(100);
+    const [pinsEnabled, setPinsEnabled] = useState(true)
     const setScaleClamped = (scale) => setScale(clamp(scale, 60, 260))
 
     return <Box className="Map" sx={{
@@ -89,7 +90,7 @@ export function Map(props) {
                     top: 0,
                     right: 0
                 }}>
-                    {
+                    { pinsEnabled &&
                         containers.map((container, i) => {
                             return (<MapPin pointScale={1} key={i} container={container}/>)
                         })
@@ -97,6 +98,6 @@ export function Map(props) {
                 </div>
             </div>
         </ScrollContainer>
-        <MapButtonsOverlay scale={scale} onScaleChange={setScaleClamped}/>
+        <MapButtonsOverlay enabled={pinsEnabled} onPinsEnabled={setPinsEnabled} scale={scale} onScaleChange={setScaleClamped}/>
     </Box>
 }

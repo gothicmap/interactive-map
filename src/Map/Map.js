@@ -1,37 +1,82 @@
-import React from "react";
+import React, {useState} from "react";
 import {MapPin} from "./MapPin";
 import mapImage from "../archolos_map.png";
 import containers from "../containers.json";
 import ScrollContainer from "react-indiana-drag-scroll";
 import MapSettings from "./MapSettings";
-import {Box, Button, IconButton} from "@mui/material";
-import SettingsIcon from "@mui/icons-material/Settings";
+import {Box, IconButton, Paper, Typography} from "@mui/material";
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
-import {Offset} from "../Misc/Offset";
+
+const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
+
+function MapButtonsOverlay(props) {
+    return <>
+        <MapSettings elevation={3} sx={{
+            position: "absolute",
+            left: (theme) => theme.spacing(2),
+            top: (theme) => theme.spacing(2),
+            height: "fit-content",
+            width: "fit-content",
+        }}/>
+        <Box className="ScaleControls" sx={{
+            display: "flex",
+            position: "absolute",
+            right: (theme) => theme.spacing(2),
+            top: (theme) => theme.spacing(2),
+            height: "fit-content",
+            width: "fit-content"
+        }}>
+            <Paper elevation={3} sx={{
+                display: "flex",
+                flexDirection: "row",
+                paddingLeft: (theme) => theme.spacing(1),
+                alignItems: "center"
+            }}>
+                <Typography textAlign="center">{props.scale}%</Typography>
+                <IconButton onClick={() => props.onScaleChange(props.scale - 20)} color="inherit" size="large"
+                            component="span"
+                            sx={{
+                                alignSelf: "end"
+                            }}>
+                    <RemoveIcon/>
+                </IconButton>
+                <IconButton onClick={() => props.onScaleChange(props.scale + 20)} color="inherit" size="large"
+                            component="span"
+                            sx={{
+                                alignSelf: "end"
+                            }}>
+                    <AddIcon/>
+                </IconButton>
+            </Paper>
+        </Box>
+    </>
+}
 
 export function Map(props) {
-    return <ScrollContainer
-        className="MapArea"
-        hideScrollbars={false}
-        style={{
-            width: "100%",
-            height: "100%",
-        }}>
+    const [scale, setScale] = useState(100);
+    const setScaleClamped = (scale) => setScale(clamp(scale, 60, 260))
 
-        <div className="MapHolder" style={{
-            width: "100%",
-            height: "100%",
-            display: "flex",
-            flexDirection: "row"
-        }}>
+    return <Box className="Map" sx={{
+        position: "relative",
+        display: "flex",
+        flexGrow: 1000,
+        overflow: "hidden"
+    }}>
+        <ScrollContainer
+            className="MapScroller"
+            hideScrollbars={false}
+            style={{
+                flexDirection: "row",
+                flexGrow: 1000,
+            }}>
             <div className="Map" style={{
                 margin: "auto",
                 alignSelf: "center",
-                width: "1024px",
-                height: "1024px",
-                minWidth: "1024px",
-                minHeight: "1024px",
+                width: `calc(1024px * ${scale / 100.0})`,
+                height: `calc(1024px * ${scale / 100.0})`,
+                minWidth: `calc(1024px * ${scale / 100.0})`,
+                minHeight: `calc(1024px * ${scale / 100.0})`,
                 backgroundImage: `url(${mapImage})`,
                 backgroundColor: "transparent",
                 backgroundSize: "cover"
@@ -51,46 +96,7 @@ export function Map(props) {
                     }
                 </div>
             </div>
-            {/*<Box className="ButtonsOverlay" style={{*/}
-            {/*    position: "absolute",*/}
-            {/*    width: "100%",*/}
-            {/*    height: "100%",*/}
-            {/*    display: "flex",*/}
-            {/*    flexDirection: "row",*/}
-            {/*    preventEvents: "none"*/}
-            {/*}}>*/}
-            {/*    <div className="ButtonsFirstRow" style={{*/}
-            {/*        flexDirection: "row",*/}
-            {/*        display: "flex",*/}
-            {/*        flexGrow: 1000500,*/}
-            {/*        pointerEvents: "none"*/}
-            {/*    }}>*/}
-            {/*        <MapSettings/>*/}
-            {/*        <div style={{*/}
-            {/*            flexGrow: 100500,*/}
-            {/*            display: "flex",*/}
-            {/*            pointerEvents: "none"*/}
-            {/*        }}>*/}
-            {/*            <Box sx={{*/}
-            {/*                display: "flex",*/}
-            {/*                flexDirection: "row",*/}
-            {/*                margin: "0 0 auto auto"*/}
-            {/*            }}>*/}
-            {/*                <IconButton color="inherit" size="large" component="span" sx={{*/}
-            {/*                    alignSelf: "end"*/}
-            {/*                }}>*/}
-            {/*                    <RemoveIcon/>*/}
-            {/*                </IconButton>*/}
-            {/*                <IconButton color="inherit" size="large" component="span" sx={{*/}
-            {/*                    alignSelf: "end"*/}
-            {/*                }}>*/}
-            {/*                    <AddIcon/>*/}
-            {/*                </IconButton>*/}
-            {/*            </Box>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*</Box>*/}
-        </div>
-
-    </ScrollContainer>
+        </ScrollContainer>
+        <MapButtonsOverlay scale={scale} onScaleChange={setScaleClamped}/>
+    </Box>
 }

@@ -1,19 +1,19 @@
 html, body {
   height: 100%;
   margin: 0;
-  overflow: hidden;
+  overflow: auto;
 }
 
 #root {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  /*align-items: stretch;*/
   height: 100%;
 }
 
 .App {
-  display: flex;
-  flex-flow: column nowrap;
+  /*display: flex;*/
+  /*flex-flow: column nowrap;*/
   /*height: 100%;*/
 }
 

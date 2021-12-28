@@ -9,7 +9,9 @@ import Box from "@mui/material/Box";
 export default class App extends React.Component {
     render = () => (
         <Box className="App" sx={{
-            height: "100%"
+            height: "100%",
+            display: "flex",
+            flexDirection: "column"
         }}>
             <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }} className="Navbar">
                 <Toolbar>

@@ -9,10 +9,10 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import SettingsIcon from '@mui/icons-material/Settings';
-import {IconButton} from "@mui/material";
+import {IconButton, Paper} from "@mui/material";
 import {Offset} from "../Misc/Offset";
 
-export default function MapSettings() {
+export default function MapSettings(props) {
     const [state, setState] = React.useState({
         left: false
     });
@@ -57,7 +57,7 @@ export default function MapSettings() {
     );
 
     return (
-        <div>
+        <Paper className="MapSettings" {...props}>
             <IconButton onClick={toggleDrawer("left", true)} color="inherit" size="large" component="span">
                 <SettingsIcon/>
             </IconButton>
@@ -70,6 +70,6 @@ export default function MapSettings() {
                 <Offset/>
                 {list("left")}
             </Drawer>
-        </div>
+        </Paper>
     )
 }

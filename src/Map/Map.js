@@ -8,13 +8,7 @@ import {Box, IconButton, Paper, Typography} from "@mui/material";
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import {useRecoilState, useRecoilValue} from "recoil";
-import {
-    containerCatChestsFamily,
-    containerCatCorpsesFamily, containerCatGravesFamily,
-    containerCatOtherFamily,
-    containersEnabledFamily,
-    scaleFamily
-} from "./Atoms"
+import {scaleFamily, usePinGroupsValues} from "./MapState"
 
 const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
 
@@ -63,13 +57,33 @@ function MapButtonsOverlay({...props}) {
     </>
 }
 
+
+function RenderContainersPins({mapId}) {
+    const containerStates = usePinGroupsValues(mapId, "containers")
+    const canRender = (category) => {
+        const isOther = !(category in containerStates.categories)
+        if (isOther) {
+            return containerStates.categories._other.state
+        } else {
+            return containerStates.categories[category].state
+        }
+    }
+
+    return <>
+        {containerStates.main.state &&
+            containers.map((container, i) => {
+                if (canRender(container.category)) {
+                    return (<MapPin pointScale={1} key={i} container={container}/>)
+                } else {
+                    return null
+                }
+            })
+        }
+    </>
+}
+
 export function Map(props) {
     const scale = useRecoilValue(scaleFamily(props.mapId));
-    const containersEnabled = useRecoilValue(containersEnabledFamily(props.mapId));
-    const contCatCorpses = useRecoilValue(containerCatCorpsesFamily(props.mapId));
-    const contCatChests = useRecoilValue(containerCatChestsFamily(props.mapId));
-    const contCatGraves = useRecoilValue(containerCatGravesFamily(props.mapId));
-    const contCatOther = useRecoilValue(containerCatOtherFamily(props.mapId));
 
     return <Box className="Map" sx={{
         position: "relative",
@@ -103,23 +117,7 @@ export function Map(props) {
                     top: 0,
                     right: 0
                 }}>
-                    { containersEnabled &&
-                        containers.map((container, i) => {
-                            if(container.category === "chest" && !contCatChests) {
-                                return null
-                            }
-                            if(container.category === "corpse" && !contCatCorpses) {
-                                return null
-                            }
-                            if(container.category === "grave" && !contCatGraves) {
-                                return null
-                            }
-                            if(container.category !== "corpse" && container.category !== "chest" && container.category !== "grave" && !contCatOther) {
-                                return null
-                            }
-                            return (<MapPin pointScale={1} key={i} container={container}/>)
-                        })
-                    }
+                    <RenderContainersPins mapId={props.mapId}/>
                 </div>
             </div>
         </ScrollContainer>

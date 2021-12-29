@@ -31,7 +31,7 @@ export default class App extends React.Component {
                 </Toolbar>
             </AppBar>
             <Offset/>
-            <Map/>
+            <Map mapId="main" />
         </Box>
     );
 }

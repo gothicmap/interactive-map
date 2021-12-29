@@ -6,8 +6,11 @@ import ListItem from '@mui/material/ListItem';
 import SettingsIcon from '@mui/icons-material/Settings';
 import {Checkbox, FormControlLabel, FormGroup, IconButton, Paper} from "@mui/material";
 import {Offset} from "../Misc/Offset";
+import {useRecoilState} from "recoil";
+import {containersEnabledFamily} from "./Atoms";
 
-export default function MapSettings({enabled, setEnabled, ...rest}) {
+export default function MapSettings({...rest}) {
+    const [containersEnabled, setContainersEnabled] = useRecoilState(containersEnabledFamily(rest.mapId));
     const [state, setState] = React.useState({
         left: false
     });
@@ -21,19 +24,16 @@ export default function MapSettings({enabled, setEnabled, ...rest}) {
     };
 
     const handleCheckboxChange = (evt) => {
-        setEnabled(evt.target.checked)
+        setContainersEnabled(evt.target.checked)
     }
     const list = () => (
         <Box
-            // sx={{width: 250}}
             role="presentation"
-            // onClick={toggleDrawer(anchor, false)}
-            // onKeyDown={toggleDrawer(anchor, false)}
         >
             <List>
                 <ListItem>
                     <FormGroup role="presentation">
-                        <FormControlLabel control={<Checkbox checked={enabled}
+                        <FormControlLabel control={<Checkbox checked={containersEnabled}
                                                              onChange={handleCheckboxChange}/>} label="Chests"/>
                         {/*<FormControlLabel control={<Checkbox defaultChecked/>} label="Weapons"/>*/}
                         {/*<FormControlLabel control={<Checkbox defaultChecked/>} label="Herbs"/>*/}

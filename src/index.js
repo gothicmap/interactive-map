@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {createTheme, ThemeProvider} from "@mui/material";
 import ModalProvider from 'mui-modal-provider';
+import {RecoilRoot} from "recoil";
 
 const darkTheme = createTheme({
     palette: {
@@ -14,12 +15,13 @@ const darkTheme = createTheme({
 
 ReactDOM.render(
     <React.StrictMode>
-        <ThemeProvider theme={darkTheme}>
-            <ModalProvider>
-                <App/>
-            </ModalProvider>
-
-        </ThemeProvider>
+        <RecoilRoot>
+            <ThemeProvider theme={darkTheme}>
+                <ModalProvider>
+                    <App/>
+                </ModalProvider>
+            </ThemeProvider>
+        </RecoilRoot>
     </React.StrictMode>,
     document.getElementById('root')
 );

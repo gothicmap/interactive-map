@@ -19,7 +19,8 @@
     "react-copy-to-clipboard": "^5.0.4",
     "react-custom-scrollbars": "^4.2.1",
     "react-indiana-drag-scroll": "^2.1.0",
-    "mui-modal-provider": "^2.0.0"
+    "mui-modal-provider": "^2.0.0",
+    "recoil": "^0.5.2"
   },
   "scripts": {
     "start": "react-scripts start",

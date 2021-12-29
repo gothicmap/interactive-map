@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import {MapPin} from "./MapPin";
 import mapImage from "../archolos_map.png";
 import containers from "../containers.json";
@@ -7,12 +7,16 @@ import MapSettings from "./MapSettings";
 import {Box, IconButton, Paper, Typography} from "@mui/material";
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
+import {useRecoilState, useRecoilValue} from "recoil";
+import {containersEnabledFamily, scaleFamily} from "./Atoms"
 
 const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
 
-function MapButtonsOverlay({enabled, onPinsEnabled, ...props}) {
+function MapButtonsOverlay({...props}) {
+    const [scale, setScale] = useRecoilState(scaleFamily(props.mapId));
+
     return <>
-        <MapSettings enabled={enabled} setEnabled={onPinsEnabled} elevation={3} sx={{
+        <MapSettings mapId={props.mapId} elevation={3} sx={{
             position: "absolute",
             left: (theme) => theme.spacing(2),
             top: (theme) => theme.spacing(2),
@@ -33,15 +37,15 @@ function MapButtonsOverlay({enabled, onPinsEnabled, ...props}) {
                 paddingLeft: (theme) => theme.spacing(1),
                 alignItems: "center"
             }}>
-                <Typography textAlign="center">{props.scale}%</Typography>
-                <IconButton onClick={() => props.onScaleChange(props.scale - 20)} color="inherit" size="large"
+                <Typography textAlign="center">{scale}%</Typography>
+                <IconButton onClick={() => setScale(clamp(scale - 20, 60, 260))} color="inherit" size="large"
                             component="span"
                             sx={{
                                 alignSelf: "end"
                             }}>
                     <RemoveIcon/>
                 </IconButton>
-                <IconButton onClick={() => props.onScaleChange(props.scale + 20)} color="inherit" size="large"
+                <IconButton onClick={() => setScale(clamp(scale + 20, 60, 260))} color="inherit" size="large"
                             component="span"
                             sx={{
                                 alignSelf: "end"
@@ -54,9 +58,8 @@ function MapButtonsOverlay({enabled, onPinsEnabled, ...props}) {
 }
 
 export function Map(props) {
-    const [scale, setScale] = useState(100);
-    const [pinsEnabled, setPinsEnabled] = useState(true)
-    const setScaleClamped = (scale) => setScale(clamp(scale, 60, 260))
+    const scale = useRecoilValue(scaleFamily(props.mapId));
+    const containersEnabled = useRecoilValue(containersEnabledFamily(props.mapId));
 
     return <Box className="Map" sx={{
         position: "relative",
@@ -90,7 +93,7 @@ export function Map(props) {
                     top: 0,
                     right: 0
                 }}>
-                    { pinsEnabled &&
+                    { containersEnabled &&
                         containers.map((container, i) => {
                             return (<MapPin pointScale={1} key={i} container={container}/>)
                         })
@@ -98,6 +101,6 @@ export function Map(props) {
                 </div>
             </div>
         </ScrollContainer>
-        <MapButtonsOverlay enabled={pinsEnabled} onPinsEnabled={setPinsEnabled} scale={scale} onScaleChange={setScaleClamped}/>
+        <MapButtonsOverlay mapId={props.mapId}/>
     </Box>
 }

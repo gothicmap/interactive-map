@@ -1,5 +1,5 @@
 import React from "react";
-import {MapPin} from "./MapPin";
+import {MapPin} from "./Pins/MapPin";
 import mapImage from "../archolos_map.png";
 import containers from "../containers.json";
 import ScrollContainer from "react-indiana-drag-scroll";

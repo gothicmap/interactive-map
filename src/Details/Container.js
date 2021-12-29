@@ -4,29 +4,6 @@ import {useModal} from "mui-modal-provider";
 import Outline from "../Misc/Outline";
 import {VectorInfo} from "../Misc/VectorInfo";
 
-
-const ParseContainerContent = (container) => {
-    const content = [];
-    const items = container.content.split(",");
-    items.forEach((element) => {
-        let consoleId;
-        let count;
-        [consoleId, count] = element.split(":")
-        if (consoleId === undefined || consoleId === "") {
-            return
-        }
-        if (count === undefined) {
-            count = "1"
-        }
-        content.push({
-            consoleId: consoleId.trim(),
-            count: count.trim()
-        })
-    })
-
-    return content
-}
-
 const KeyInfo = (props) => {
     return <React.Fragment>
         {props.container.locked && props.container.key && <Box sx={{
@@ -74,8 +51,6 @@ const LockCombinationInfo = (props) => {
 
 
 const ContainerContentInfo = (props) => {
-    const content = ParseContainerContent(props.container)
-
     return <React.Fragment>
         <Outline label="content">
             <Box sx={{
@@ -84,14 +59,14 @@ const ContainerContentInfo = (props) => {
                 flexWrap: "wrap",
                 gap: (theme) => theme.spacing(1),
             }}>
-                {content.map((row, idx) => (
+                {props.container.contains.map((item) => (
                     <Chip
-                        key={idx}
-                        label={row.consoleId}
+                        key={item.item}
+                        label={item.item}
                         color="primary"
                         icon={
                             <Chip color="secondary"
-                                  label={row.count}
+                                  label={item.count}
                                   sx={{
                                       height: (theme) => `calc(100% - ${theme.spacing(1)})`
                                   }}

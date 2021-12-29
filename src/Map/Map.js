@@ -8,7 +8,13 @@ import {Box, IconButton, Paper, Typography} from "@mui/material";
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import {useRecoilState, useRecoilValue} from "recoil";
-import {containersEnabledFamily, scaleFamily} from "./Atoms"
+import {
+    containerCatChestsFamily,
+    containerCatCorpsesFamily, containerCatGravesFamily,
+    containerCatOtherFamily,
+    containersEnabledFamily,
+    scaleFamily
+} from "./Atoms"
 
 const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
 
@@ -60,6 +66,10 @@ function MapButtonsOverlay({...props}) {
 export function Map(props) {
     const scale = useRecoilValue(scaleFamily(props.mapId));
     const containersEnabled = useRecoilValue(containersEnabledFamily(props.mapId));
+    const contCatCorpses = useRecoilValue(containerCatCorpsesFamily(props.mapId));
+    const contCatChests = useRecoilValue(containerCatChestsFamily(props.mapId));
+    const contCatGraves = useRecoilValue(containerCatGravesFamily(props.mapId));
+    const contCatOther = useRecoilValue(containerCatOtherFamily(props.mapId));
 
     return <Box className="Map" sx={{
         position: "relative",
@@ -95,6 +105,18 @@ export function Map(props) {
                 }}>
                     { containersEnabled &&
                         containers.map((container, i) => {
+                            if(container.category === "chest" && !contCatChests) {
+                                return null
+                            }
+                            if(container.category === "corpse" && !contCatCorpses) {
+                                return null
+                            }
+                            if(container.category === "grave" && !contCatGraves) {
+                                return null
+                            }
+                            if(container.category !== "corpse" && container.category !== "chest" && container.category !== "grave" && !contCatOther) {
+                                return null
+                            }
                             return (<MapPin pointScale={1} key={i} container={container}/>)
                         })
                     }

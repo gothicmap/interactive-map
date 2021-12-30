@@ -9,6 +9,8 @@ import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import {useRecoilState, useRecoilValue} from "recoil";
 import {scaleFamily, usePinGroupsValues} from "./MapState"
+import {PinRender} from "./Pins/PinRender";
+import {ContainerMapPin} from "./Pins/ContainerPin";
 
 const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
 
@@ -58,29 +60,31 @@ function MapButtonsOverlay({...props}) {
 }
 
 
-function RenderContainersPins({mapId}) {
-    const containerStates = usePinGroupsValues(mapId, "containers")
-    const canRender = (category) => {
-        const isOther = !(category in containerStates.categories)
-        if (isOther) {
-            return containerStates.categories._other.state
-        } else {
-            return containerStates.categories[category].state
-        }
-    }
+// function RenderContainersPins({mapId}) {
+//     const containerStates = usePinGroupsValues(mapId).containers
+//     const canRender = (category) => {
+//         const isOther = !(category in containerStates.categories)
+//         if (isOther) {
+//             return containerStates.categories._other.state
+//         } else {
+//             return containerStates.categories[category].state
+//         }
+//     }
+//
+//     return <>
+//         {containerStates.main.state &&
+//             containers.map((container, i) => {
+//                 if (canRender(container.category)) {
+//                     return (<ContainerMapPin key={i} pin={container} modal={()=>{}}/>)
+//                 } else {
+//                     return null
+//                 }
+//             })
+//         }
+//     </>
+// }
 
-    return <>
-        {containerStates.main.state &&
-            containers.map((container, i) => {
-                if (canRender(container.category)) {
-                    return (<MapPin pointScale={1} key={i} container={container}/>)
-                } else {
-                    return null
-                }
-            })
-        }
-    </>
-}
+const MemoPinRender = React.memo(PinRender);
 
 export function Map(props) {
     const scale = useRecoilValue(scaleFamily(props.mapId));
@@ -117,7 +121,7 @@ export function Map(props) {
                     top: 0,
                     right: 0
                 }}>
-                    <RenderContainersPins mapId={props.mapId}/>
+                    <MemoPinRender mapId={props.mapId}/>
                 </div>
             </div>
         </ScrollContainer>

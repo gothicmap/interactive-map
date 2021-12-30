@@ -109,6 +109,48 @@ export const groups = {
             "family": itemsEnabledFamily
         },
         "categories": {
+            "plant": {
+                display: "Plants",
+                family: atomFamily({
+                    key: 'MapItemsCatPlants',
+                    default: true
+                })
+            },
+            "ring": {
+                display: "Rings",
+                family: atomFamily({
+                    key: 'MapItemsCatRings',
+                    default: true
+                })
+            },
+            "range weapon": {
+                display: "Range weapons",
+                family: atomFamily({
+                    key: 'MapItemsCatRangeWeapons',
+                    default: true
+                })
+            },
+            "melee weapon": {
+                display: "Melee weapons",
+                family: atomFamily({
+                    key: 'MapItemsCatMeleeWeapons',
+                    default: true
+                })
+            },
+            "armor": {
+                display: "Armor",
+                family: atomFamily({
+                    key: 'MapItemsCatArmor',
+                    default: true
+                })
+            },
+            "food": {
+                display: "Food",
+                family: atomFamily({
+                    key: 'MapItemsCatFood',
+                    default: true
+                })
+            },
             "_other": {
                 "display": "Other",
                 "family": itemsCatOtherFamily
@@ -117,25 +159,31 @@ export const groups = {
     }
 }
 
-export function usePinGroupsValues(mapId, groupName) {
-    const group = groups[groupName]
-    const result = {
-        "main": {
-            "display": group.main.display,
-            "state": useRecoilValue(group.main.family(mapId))
-        },
-        "categories": {}
-    }
+export function usePinGroupsValues(mapId) {
+    const result = {}
 
-    const categories = group.categories
-
-    for (const categoryName in categories) {
-        const category = categories[categoryName];
-        result.categories[categoryName] = {
-            "display": category.display,
-            // eslint-disable-next-line react-hooks/rules-of-hooks
-            "state": useRecoilValue(category.family(mapId))
+    for (const [groupName, group] of Object.entries(groups)) {
+        const groupResult = {
+            "main": {
+                "display": group.main.display,
+                // eslint-disable-next-line react-hooks/rules-of-hooks
+                state: useRecoilValue(group.main.family(mapId))
+            },
+            "categories": {}
         }
+
+        const categories = group.categories
+
+        for (const categoryName in categories) {
+            const category = categories[categoryName];
+            groupResult.categories[categoryName] = {
+                "display": category.display,
+                // eslint-disable-next-line react-hooks/rules-of-hooks
+                state: useRecoilValue(category.family(mapId))
+            }
+        }
+
+        result[groupName] = groupResult
     }
 
     return result

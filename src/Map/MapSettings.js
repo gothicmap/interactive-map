@@ -65,7 +65,7 @@ function RenderContainerSettings({mapId}) {
 }
 
 
-export default function MapSettings({...rest}) {
+export default function MapSettings({mapId, ...rest}) {
     const [settingsOpen, setSettingsOpen] = React.useState(false);
 
     const toggleSettings = (open) => (event) => {
@@ -87,7 +87,7 @@ export default function MapSettings({...rest}) {
                 onClose={toggleSettings(false)}
             >
                 <Offset/>
-                <RenderContainerSettings mapId={rest.mapId}/>
+                <RenderContainerSettings mapId={mapId}/>
             </Drawer>
         </Paper>
     )

@@ -5,6 +5,7 @@ import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import {useRecoilState} from "recoil";
 import {scaleFamily} from "./MapState"
+import {Map} from "./Map";
 
 const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
 
@@ -60,7 +61,7 @@ export function MapContainer(props) {
         flexGrow: 1000,
         overflow: "hidden"
     }}>
-        {"// TODO render new map here"}
+        <Map/>
         <MapButtonsOverlay mapId={props.mapId}/>
     </Box>
 }

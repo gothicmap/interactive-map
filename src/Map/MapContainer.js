@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 import MapSettings from "./MapSettings";
 import {Box, IconButton, Paper, Typography} from "@mui/material";
 import AddIcon from '@mui/icons-material/Add';
@@ -61,7 +61,7 @@ export function MapContainer(props) {
         flexGrow: 1000,
         overflow: "hidden"
     }}>
-        <Map/>
+        <Map mapId={props.mapId}/>
         <MapButtonsOverlay mapId={props.mapId}/>
     </Box>
 }

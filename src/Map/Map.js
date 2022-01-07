@@ -3,6 +3,8 @@ import {useContext, useEffect, useRef, useState} from "react";
 import {createKdTree} from "kd.tree";
 import {useGesture} from "@use-gesture/react";
 import {AbsTooltip} from "./AbsTooltip";
+import {useRecoilState} from "recoil";
+import {scaleFamily} from "./MapState";
 
 const mapImage = require('../archolos_map.png')
 const containers = require('../containers.json')
@@ -57,8 +59,10 @@ const midpointShift = (canvasDim, _scale1) => {
     return [xHalf - halfOfDim, yHalf - halfOfDim]
 }
 
-export const Map = ({...props}) => {
+export const Map = ({mapId}) => {
     const kit = useContext(CanvasKitContext)
+    const [mapScale, setMapScale] = useRecoilState(scaleFamily(mapId))
+
     const [showMap, setShowMap] = useState(true)
     const reDraw = useRef(false)
     const canvasDimensions = useRef({width: 0, height: 0})
@@ -109,7 +113,14 @@ export const Map = ({...props}) => {
         stateObj.mapScale1 = scale1(newScale)
         stateObj.maxDistance = calcMaxDistance(newScale)
         reDraw.current = true
+        setMapScale(newScale)
     }
+
+    useEffect(() => {
+        updateScale(mapScale)
+    }, [mapScale])
+
+
     const increaseScale = () => {
         updateScale(stateObj.mapScale + 10)
     }

@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import {AppBar, Button, IconButton, Toolbar, Typography} from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
-import {Map} from "./Map/Map";
+import {MapContainer} from "./Map/MapContainer";
 import {Offset} from "./Misc/Offset";
 import Box from "@mui/material/Box";
 
@@ -31,7 +31,7 @@ export default class App extends React.Component {
                 </Toolbar>
             </AppBar>
             <Offset/>
-            <Map mapId="main" />
+            <MapContainer mapId="main" />
         </Box>
     );
 }

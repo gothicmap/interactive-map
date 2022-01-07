@@ -1,6 +1,5 @@
 import {atomFamily, useRecoilState, useRecoilValue} from "recoil";
 
-
 export const containersEnabledFamily = atomFamily({
     key: 'MapContainersEnabled',
     default: true

@@ -1,13 +1,14 @@
 import {CanvasKitContext, KitCanvas} from "../Misc/KitCanvas";
 import {useContext, useEffect, useRef, useState} from "react";
-import {createKdTree} from "kd.tree";
+// import {createKdTree} from "kd.tree";
 import {useGesture} from "@use-gesture/react";
 import {AbsTooltip} from "./AbsTooltip";
 import {useRecoilState} from "recoil";
-import {scaleFamily} from "./MapState";
+import {mapPinsFamily, scaleFamily} from "./MapState";
+import {useRecoilValueRef} from "../Misc/RecoilHelper";
 
 const mapImage = require('../archolos_map.png')
-const containers = require('../containers.json')
+// const containers = require('../containers.json')
 // const minx = -128070.0
 // const maxy = -39108.0
 // const maxx = 31929.0
@@ -18,29 +19,29 @@ const ydiff = 199108.0;
 const ydiv = 1600.0;
 const xdiv = 1599.99;
 
-const calcCoordinates = (x, z) => {
-    const calculatedX = (x + xdiff) / xdiv / 100
-    const calculatedY = (z + ydiff) / ydiv / 100
-    return [calculatedX, calculatedY]
-}
-
-const kdPoints = []
-
-containers.forEach((container, idx) => {
-    const [y, x] = calcCoordinates(container.position.x, container.position.z)
-    kdPoints.push({
-        x: x,
-        y: y,
-        idx: idx
-    })
-    container.idx = idx
-})
-
-const containerDistance = function (a, b) {
-    return Math.sqrt(Math.pow(a.x - b.x, 2) + Math.pow(a.y - b.y, 2))
-}
-
-const tree = createKdTree(kdPoints, containerDistance, ['x', 'y'])
+// const calcCoordinates = (x, z) => {
+//     const calculatedX = (x + xdiff) / xdiv / 100
+//     const calculatedY = (z + ydiff) / ydiv / 100
+//     return [calculatedX, calculatedY]
+// }
+//
+// const kdPoints = []
+//
+// containers.forEach((container, idx) => {
+//     const [y, x] = calcCoordinates(container.position.x, container.position.z)
+//     kdPoints.push({
+//         x: x,
+//         y: y,
+//         idx: idx
+//     })
+//     container.idx = idx
+// })
+//
+// const containerDistance = function (a, b) {
+//     return Math.sqrt(Math.pow(a.x - b.x, 2) + Math.pow(a.y - b.y, 2))
+// }
+//
+// const tree = createKdTree(kdPoints, containerDistance, ['x', 'y'])
 
 const mapDimensions = 1024.0
 
@@ -143,6 +144,8 @@ export const Map = ({mapId}) => {
         reDraw.current = true
     }
 
+    const pinsData = useRecoilValueRef(mapPinsFamily(mapId), ()=> reDraw.current = true)
+
     const draw = (map, canvas) => {
         canvas.translate(...midpointShift(canvasDimensions.current, stateRef.current.mapScale1))
         canvas.translate(stateObj.xDiff, stateObj.yDiff)
@@ -153,16 +156,16 @@ export const Map = ({mapId}) => {
         if (stateObj.showPins) {
             let lastPin = null
 
-            kdPoints.forEach((c) => {
-                if (stateObj.selectedPin === c.idx) {
+            pinsData.current.pins.forEach((c) => {
+                if (stateObj.selectedPin === c.vobObjectID) {
                     lastPin = c
                 } else {
-                    canvas.drawCircle(c.x * mapDimensions, c.y * mapDimensions, 5 / stateObj.mapScale1, stateObj.defaultPoint)
+                    canvas.drawCircle(c.normPosition.x * mapDimensions, c.normPosition.y * mapDimensions, 5 / stateObj.mapScale1, stateObj.defaultPoint)
                 }
             })
 
             if (lastPin) {
-                canvas.drawCircle(lastPin.x * mapDimensions, lastPin.y * mapDimensions, 5 / stateObj.mapScale1, stateObj.highlightPoint)
+                canvas.drawCircle(lastPin.normPosition.x * mapDimensions, lastPin.normPosition.y * mapDimensions, 5 / stateObj.mapScale1, stateObj.highlightPoint)
             }
         }
     }
@@ -187,15 +190,13 @@ export const Map = ({mapId}) => {
         const _midpointShift = midpointShift(canvasDimensions.current, stateRef.current.mapScale1)
 
         // scale mouse absolute position to [0, 1]
-        const mousePoint = {
-            x: ((xy[0] - rect.left - stateObj.xDiff - _midpointShift[0]) / (mapDimensions * stateObj.mapScale1)),
-            y: ((xy[1] - rect.top - stateObj.yDiff - _midpointShift[1]) / (mapDimensions * stateObj.mapScale1))
-        }
+        const x = ((xy[0] - rect.left - stateObj.xDiff - _midpointShift[0]) / (mapDimensions * stateObj.mapScale1))
+        const y = ((xy[1] - rect.top - stateObj.yDiff - _midpointShift[1]) / (mapDimensions * stateObj.mapScale1))
 
-        const closestPoint = tree.nearest(mousePoint, 1, stateObj.maxDistance)
+        const closestPoint = pinsData.current.nearest(x, y, stateObj.maxDistance)
 
         if (closestPoint.length === 1) {
-            const closestIdx = closestPoint[0][0].idx
+            const closestIdx = closestPoint[0][0].pin.vobObjectID
             // new point selected
             if (closestIdx !== stateObj.selectedPin) {
                 stateObj.selectedPin = closestIdx

@@ -1,4 +1,7 @@
-import {atomFamily, useRecoilState, useRecoilValue} from "recoil";
+import {atomFamily, selectorFamily, useRecoilState, useRecoilValue} from "recoil";
+import containers from "../containers.json";
+import items from "../items.json";
+import {createKdTree} from "kd.tree";
 
 export const containersEnabledFamily = atomFamily({
     key: 'MapContainersEnabled',
@@ -63,6 +66,7 @@ export const scaleFamily = atomFamily({
 
 export const groups = {
     "containers": {
+        "pins": containers,
         "main": {
             "display": "Containers",
             "family": containersEnabledFamily
@@ -103,9 +107,10 @@ export const groups = {
         }
     },
     "items": {
+        "pins": items,
         "main": {
             "display": "Items",
-            "family": itemsEnabledFamily
+            "family": itemsEnabledFamily,
         },
         "categories": {
             "plant": {
@@ -157,6 +162,48 @@ export const groups = {
         }
     }
 }
+
+const canRender = (category, group, get, mapId) => {
+    const isOther = !(category in group.categories)
+    if (isOther) {
+        return get(group.categories._other.family(mapId))
+    } else {
+        return get(group.categories[category].family(mapId))
+    }
+}
+
+export const mapPinsFamily = selectorFamily({
+    key: 'MapPinsFamily',
+    get: (mapId) => ({get}) => {
+        const result = []
+        const treePoints = []
+        for (const [, group] of Object.entries(groups)) {
+            const {pins, main} = group
+            if (get(main.family(mapId))) {
+                pins.forEach((pin) => {
+                    if (canRender(pin.category, group, get, mapId)) {
+                        result.push(pin)
+                        treePoints.push({...pin.normPosition, pin: pin})
+                    }
+                })
+            }
+        }
+
+        const containerDistance = function (a, b) {
+            return Math.sqrt(Math.pow(a.x - b.x, 2) + Math.pow(a.y - b.y, 2))
+        }
+
+        const tree = createKdTree(treePoints, containerDistance, ['x', 'y'])
+
+        return {
+            nearest: (x, y, distance) => {
+                return tree.nearest({x: x, y: y}, 1, distance)
+            },
+            pins: result
+        }
+    },
+});
+
 
 export function usePinGroupsValues(mapId) {
     const result = {}

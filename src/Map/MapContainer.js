@@ -1,10 +1,21 @@
 import React, {useRef} from "react";
 import MapSettings from "./MapSettings";
-import {Box, IconButton, Paper, Typography} from "@mui/material";
+import {
+    Box,
+    IconButton,
+    Paper,
+    Table,
+    TableBody,
+    TableCell,
+    TableContainer,
+    TableHead,
+    TableRow,
+    Typography
+} from "@mui/material";
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
-import {useRecoilState} from "recoil";
-import {scaleFamily} from "./MapState"
+import {useRecoilState, useRecoilValue} from "recoil";
+import {mapPinsFamily, scaleFamily} from "./MapState"
 import {Map} from "./Map";
 
 const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
@@ -55,12 +66,14 @@ function MapButtonsOverlay({...props}) {
 }
 
 export function MapContainer(props) {
+    // const mapPins = useRecoilValue(mapPinsFamily(props.mapId))
     return <Box className="MapContainer" sx={{
         position: "relative",
         display: "flex",
         flexGrow: 1000,
         overflow: "hidden"
     }}>
+        {/*<div>{`${mapPins.pins.length}`}</div>*/}
         <Map mapId={props.mapId}/>
         <MapButtonsOverlay mapId={props.mapId}/>
     </Box>

@@ -163,6 +163,11 @@ export const groups = {
     }
 }
 
+export const mapPinsSearch = atomFamily({
+    key: 'MapPinsSearch',
+    default: ""
+})
+
 const canRender = (category, group, get, mapId) => {
     const isOther = !(category in group.categories)
     if (isOther) {
@@ -172,15 +177,29 @@ const canRender = (category, group, get, mapId) => {
     }
 }
 
+
 export const mapPinsFamily = selectorFamily({
     key: 'MapPinsFamily',
     get: (mapId) => ({get}) => {
+        const searchTerm = get(mapPinsSearch(mapId)).toLowerCase()
+
         const result = []
         const treePoints = []
         for (const [, group] of Object.entries(groups)) {
             const {pins, main} = group
             if (get(main.family(mapId))) {
                 pins.forEach((pin) => {
+                    // filter pin by search term
+                    if(searchTerm) {
+                       if(pin.name) {
+                          if(!pin.name.toLowerCase().includes(searchTerm)) {
+                              return;
+                          }
+                       } else {
+                           return;
+                       }
+                    }
+
                     if (canRender(pin.category, group, get, mapId)) {
                         result.push(pin)
                         treePoints.push({...pin.normPosition, pin: pin})
@@ -204,36 +223,6 @@ export const mapPinsFamily = selectorFamily({
     },
 });
 
-
-export function usePinGroupsValues(mapId) {
-    const result = {}
-
-    for (const [groupName, group] of Object.entries(groups)) {
-        const groupResult = {
-            "main": {
-                "display": group.main.display,
-                // eslint-disable-next-line react-hooks/rules-of-hooks
-                state: useRecoilValue(group.main.family(mapId))
-            },
-            "categories": {}
-        }
-
-        const categories = group.categories
-
-        for (const categoryName in categories) {
-            const category = categories[categoryName];
-            groupResult.categories[categoryName] = {
-                "display": category.display,
-                // eslint-disable-next-line react-hooks/rules-of-hooks
-                state: useRecoilValue(category.family(mapId))
-            }
-        }
-
-        result[groupName] = groupResult
-    }
-
-    return result
-}
 
 export function usePinGroupsStates(mapId, setStateTransform = (useState) => useState) {
     const result = {}

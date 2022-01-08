@@ -177,6 +177,25 @@ const canRender = (category, group, get, mapId) => {
     }
 }
 
+const contains = (source, target) => {
+    if (source) {
+        return source.toLowerCase().includes(target)
+    }
+
+    return false
+}
+
+const containerContains = (probablyContainer, target) => {
+    if (probablyContainer.type === "container") {
+        for (const item of probablyContainer.contains) {
+            if (contains(item.name, target)) {
+                return true
+            }
+        }
+    } else {
+        return false
+    }
+}
 
 export const mapPinsFamily = selectorFamily({
     key: 'MapPinsFamily',
@@ -190,14 +209,10 @@ export const mapPinsFamily = selectorFamily({
             if (get(main.family(mapId))) {
                 pins.forEach((pin) => {
                     // filter pin by search term
-                    if(searchTerm) {
-                       if(pin.name) {
-                          if(!pin.name.toLowerCase().includes(searchTerm)) {
-                              return;
-                          }
-                       } else {
-                           return;
-                       }
+                    if (searchTerm) {
+                        if (!(contains(pin.name, searchTerm) || containerContains(pin, searchTerm))) {
+                            return
+                        }
                     }
 
                     if (canRender(pin.category, group, get, mapId)) {

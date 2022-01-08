@@ -62,7 +62,7 @@ const ContainerContentInfo = forwardRef((props, ref) => {
                 {props.container.contains.map((item) => (
                     <Chip
                         key={item.item}
-                        label={item.item}
+                        label={item.name}
                         color="primary"
                         icon={
                             <Chip color="secondary"

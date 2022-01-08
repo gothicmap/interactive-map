@@ -2,14 +2,14 @@ import React, {useRef} from "react";
 import MapSettings from "./MapSettings";
 import {
     Box,
-    IconButton,
+    IconButton, InputBase,
     Paper,
     Table,
     TableBody,
     TableCell,
     TableContainer,
     TableHead,
-    TableRow,
+    TableRow, TextField,
     Typography
 } from "@mui/material";
 import AddIcon from '@mui/icons-material/Add';
@@ -17,6 +17,7 @@ import RemoveIcon from '@mui/icons-material/Remove';
 import {useRecoilState, useRecoilValue} from "recoil";
 import {mapPinsFamily, scaleFamily} from "./MapState"
 import {Map} from "./Map";
+import ClearIcon from '@mui/icons-material/Clear';
 
 const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
 
@@ -31,6 +32,24 @@ function MapButtonsOverlay({...props}) {
             height: "fit-content",
             width: "fit-content",
         }}/>
+        <Paper
+            sx={{
+                position: "absolute",
+                marginRight: "auto",
+                marginLeft: "auto",
+                left: 0,
+                right: 0,
+                top: (theme) => theme.spacing(2),
+                display: "flex",
+                height: "fit-content",
+                width: "fit-content"
+            }}
+        >
+            <IconButton color="inherit" size="large">
+                <ClearIcon/>
+            </IconButton>
+            <InputBase sx={{ml: 1, flex: 1}} placeholder="search" defaultValue="Hello World"/>
+        </Paper>
         <Box className="ScaleControls" sx={{
             display: "flex",
             position: "absolute",

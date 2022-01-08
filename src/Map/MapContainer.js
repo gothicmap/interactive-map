@@ -1,21 +1,10 @@
-import React, {useRef} from "react";
-import MapSettings from "./MapSettings";
-import {
-    Box, Divider,
-    IconButton, InputBase,
-    Paper,
-    Table,
-    TableBody,
-    TableCell,
-    TableContainer,
-    TableHead,
-    TableRow, TextField,
-    Typography
-} from "@mui/material";
+import React from "react";
+import MapSettings, {RenderContainerSettings} from "./MapSettings";
+import {Box, Divider, IconButton, InputBase, Paper, Typography} from "@mui/material";
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import {useRecoilState, useRecoilValue} from "recoil";
-import {mapPinsFamily, mapPinsSearch, scaleFamily} from "./MapState"
+import {mapPinsSearch, mapSettingsFamily, scaleFamily} from "./MapState"
 import {Map} from "./Map";
 import ClearIcon from '@mui/icons-material/Clear';
 
@@ -88,15 +77,31 @@ function MapButtonsOverlay({...props}) {
 }
 
 export function MapContainer(props) {
-    // const mapPins = useRecoilValue(mapPinsFamily(props.mapId))
+    const showMapSettings = useRecoilValue(mapSettingsFamily(props.mapId))
     return <Box className="MapContainer" sx={{
         position: "relative",
         display: "flex",
         flexGrow: 1000,
+        minWidth: "500px",
         overflow: "hidden"
     }}>
-        {/*<div>{`${mapPins.pins.length}`}</div>*/}
-        <Map mapId={props.mapId}/>
-        <MapButtonsOverlay mapId={props.mapId}/>
+        {showMapSettings && <Box sx={{
+            display: "flex",
+            flexDirection: "column",
+            backgroundColor: (theme) => theme.palette.background.paper,
+            color: (theme) => theme.palette.text.primary
+        }} className={"MapSettings"}>
+            <RenderContainerSettings mapId={props.mapId}/>
+        </Box>
+        }
+        <Box sx={{
+            position: "relative",
+            display: "flex",
+            flexGrow: 1000,
+            minWidth: "500px"
+        }} className={"MapArea"}>
+            <Map mapId={props.mapId}/>
+            <MapButtonsOverlay mapId={props.mapId}/>
+        </Box>
     </Box>
 }

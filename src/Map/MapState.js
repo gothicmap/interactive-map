@@ -1,4 +1,4 @@
-import {atomFamily, selectorFamily, useRecoilState, useRecoilValue} from "recoil";
+import {atomFamily, selectorFamily, useRecoilState} from "recoil";
 import containers from "../containers.json";
 import items from "../items.json";
 import {createKdTree} from "kd.tree";
@@ -61,6 +61,11 @@ export const itemsCatOtherFamily = atomFamily({
 export const scaleFamily = atomFamily({
     key: 'MapScale',
     default: 100
+});
+
+export const mapSettingsFamily = atomFamily({
+    key: 'MapSettings',
+    default: false
 });
 
 

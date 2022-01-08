@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
-import {AppBar, Button, IconButton, Toolbar, Typography} from "@mui/material";
+import {AppBar, IconButton, ToggleButton, ToggleButtonGroup, Toolbar} from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import {MapContainer} from "./Map/MapContainer";
-import {Offset} from "./Misc/Offset";
 import Box from "@mui/material/Box";
 
 export default class App extends React.Component {
@@ -11,10 +10,11 @@ export default class App extends React.Component {
         <Box className="App" sx={{
             height: "100%",
             display: "flex",
+            minWidth: "500px",
             flexDirection: "column"
         }}>
-            <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }} className="Navbar">
-                <Toolbar>
+            <AppBar position="static" sx={{zIndex: (theme) => theme.zIndex.drawer + 1}} className="Navbar">
+                <Toolbar variant="dense" >
                     <IconButton
                         size="large"
                         edge="start"
@@ -24,14 +24,17 @@ export default class App extends React.Component {
                     >
                         <MenuIcon/>
                     </IconButton>
-                    <Typography variant="h6" component="div" sx={{flexGrow: 1}}>
-                        News
-                    </Typography>
-                    <Button color="inherit">Login</Button>
+                    <ToggleButtonGroup
+                        color="primary"
+                        value={"map"}
+                        exclusive
+                    >
+                        <ToggleButton value="map">Map</ToggleButton>
+                        <ToggleButton value="database">Database</ToggleButton>
+                    </ToggleButtonGroup>
                 </Toolbar>
             </AppBar>
-            <Offset/>
-            <MapContainer mapId="main" />
+            <MapContainer mapId="main"/>
         </Box>
     );
 }

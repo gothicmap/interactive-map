@@ -1,4 +1,5 @@
 import {CanvasKitContext, KitCanvas} from "../Misc/KitCanvas";
+import * as React from "react";
 import {useContext, useEffect, useRef, useState} from "react";
 // import {createKdTree} from "kd.tree";
 import {useGesture} from "@use-gesture/react";
@@ -243,32 +244,21 @@ export const Map = ({mapId}) => {
 
     return <div style={{
         display: "flex",
-        flexDirection: "column",
-        width: "100%",
-        height: "100%"
+        flexDirection: "row",
+        flexGrow: 1000,
+        minHeight: "1px",
+        minWidth: "1px"
     }}>
-        <div style={{
-            display: "flex",
-            flexDirection: "row",
-        }}>
-            <button onClick={flipShowPins}>pins control</button>
-            <button onClick={flipShowMap}>map control</button>
-            <button onClick={increaseScale}>+</button>
-            <button onClick={decreaseScale}>-</button>
-            <button onClick={center}>center</button>
-            {Boolean(tooltipData) && <AbsTooltip x={tooltipData.pos.x} y={tooltipData.pos.y} data={tooltipData.data}/>}
-
-        </div>
-        {showMap &&
-            <KitCanvas {...setupGestures()}
-                       reDraw={reDraw}
-                       fetchRenderData={fetchMapImage}
-                       dimensions={canvasDimensions}
-                       draw={draw} style={{
-                flexGrow: 1,
-                minHeight: "1px"
-            }}
-            />
-        }
+        {Boolean(tooltipData) && <AbsTooltip x={tooltipData.pos.x} y={tooltipData.pos.y} data={tooltipData.data}/>}
+        <KitCanvas {...setupGestures()}
+                   reDraw={reDraw}
+                   fetchRenderData={fetchMapImage}
+                   dimensions={canvasDimensions}
+                   draw={draw} style={{
+            flexGrow: 1,
+            minHeight: "1px",
+            minWidth: "1px"
+        }}
+        />
     </div>
 }

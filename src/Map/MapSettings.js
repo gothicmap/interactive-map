@@ -1,11 +1,10 @@
 import * as React from 'react';
-import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import SettingsIcon from '@mui/icons-material/Settings';
 import {Checkbox, Collapse, FormControlLabel, FormGroup, IconButton, ListItemButton, Paper} from "@mui/material";
-import {Offset} from "../Misc/Offset";
-import {usePinGroupsStates} from "./MapState";
+import {mapSettingsFamily, usePinGroupsStates} from "./MapState";
 import {ExpandLess, ExpandMore} from "@mui/icons-material";
+import {useRecoilState} from "recoil";
 
 
 const FormCheckbox = ({label, ...props}) => {
@@ -23,7 +22,7 @@ const transformToCheckBoxCallback = (useState) => {
     return handleCheckboxEvt
 }
 
-function RenderContainerSettings({mapId}) {
+export function RenderContainerSettings({mapId}) {
     const groups = usePinGroupsStates(mapId, transformToCheckBoxCallback)
 
     return <>
@@ -34,10 +33,7 @@ function RenderContainerSettings({mapId}) {
                 const handleSubOpenClick = () => {
                     setSubOpen(!subOpen);
                 };
-                return <List key={groupName}
-                             sx={{width: '100%', maxWidth: 360, bgcolor: 'background.paper'}}
-                             component="nav"
-                >
+                return <List key={groupName}>
                     <ListItemButton>
                         <FormCheckbox label={groupStates.main.display} checked={groupStates.main.state}
                                       onChange={groupStates.main.useState}/>
@@ -66,29 +62,17 @@ function RenderContainerSettings({mapId}) {
 
 
 export default function MapSettings({mapId, ...rest}) {
-    const [settingsOpen, setSettingsOpen] = React.useState(false);
+    const [showMapSettings, setShowMapSettings] = useRecoilState(mapSettingsFamily(mapId))
 
-    const toggleSettings = (open) => (event) => {
-        if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-            return;
-        }
-
-        setSettingsOpen(open);
-    };
+    const flipShowMapSettings = () => {
+        setShowMapSettings(!showMapSettings)
+    }
 
     return (
         <Paper className="MapSettings" {...rest}>
-            <IconButton onClick={toggleSettings(true)} color="inherit" size="large" component="span">
+            <IconButton onClick={flipShowMapSettings} color="inherit" size="large" component="span">
                 <SettingsIcon/>
             </IconButton>
-            <Drawer
-                anchor={"left"}
-                open={settingsOpen}
-                onClose={toggleSettings(false)}
-            >
-                <Offset/>
-                <RenderContainerSettings mapId={mapId}/>
-            </Drawer>
         </Paper>
     )
 }

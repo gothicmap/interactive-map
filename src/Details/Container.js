@@ -1,4 +1,4 @@
-import React from "react";
+import React, {forwardRef} from "react";
 import {Box, Button, Chip, Dialog, DialogActions, DialogContent, DialogTitle, TextField} from "@mui/material";
 import {useModal} from "mui-modal-provider";
 import Outline from "../Misc/Outline";
@@ -50,9 +50,9 @@ const LockCombinationInfo = (props) => {
 }
 
 
-const ContainerContentInfo = (props) => {
+const ContainerContentInfo = forwardRef((props, ref) => {
     return <React.Fragment>
-        <Outline label="content">
+        <Outline ref={ref} label="content">
             <Box sx={{
                 display: "flex",
                 flexDirection: "row",
@@ -77,9 +77,39 @@ const ContainerContentInfo = (props) => {
             </Box>
         </Outline>
     </React.Fragment>
-}
+});
 
-const ContainerModalComponent = ({container, closeModal, ...props}) => {
+
+// const ContainerContentInfo = (props) => {
+//     return <React.Fragment>
+//         <Outline label="content">
+//             <Box sx={{
+//                 display: "flex",
+//                 flexDirection: "row",
+//                 flexWrap: "wrap",
+//                 gap: (theme) => theme.spacing(1),
+//             }}>
+//                 {props.container.contains.map((item) => (
+//                     <Chip
+//                         key={item.item}
+//                         label={item.item}
+//                         color="primary"
+//                         icon={
+//                             <Chip color="secondary"
+//                                   label={item.count}
+//                                   sx={{
+//                                       height: (theme) => `calc(100% - ${theme.spacing(1)})`
+//                                   }}
+//                             />
+//                         }
+//                     />
+//                 ))}
+//             </Box>
+//         </Outline>
+//     </React.Fragment>
+// }
+
+export const ContainerModalComponent = ({container, closeModal, ...props}) => {
     return <Dialog {...props}>
         <DialogTitle>Container</DialogTitle>
         <DialogContent sx={{

@@ -1,4 +1,4 @@
-import {Box, Popper} from "@mui/material";
+import {Box, Card, Paper, Popper} from "@mui/material";
 import {Component} from "react";
 
 export class AbsTooltip extends Component {
@@ -23,9 +23,11 @@ export class AbsTooltip extends Component {
 
     render() {
         return <Popper open={true} anchorEl={this}>
-            <Box sx={{border: 1, p: 1, bgcolor: 'background.paper'}}>
-                {this.props.data}
-            </Box>
+            <Paper elevation={4} sx={{
+                padding: (theme) => theme.spacing(0.5),
+                display: "flex",
+                gap: (theme) => theme.spacing(0.5)
+            }}>{this.props.data}</Paper>
         </Popper>
     }
 }

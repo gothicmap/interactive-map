@@ -6,6 +6,8 @@ import {AbsTooltip} from "./AbsTooltip";
 import {useRecoilState} from "recoil";
 import {mapPinsFamily, scaleFamily} from "./MapState";
 import {useRecoilValueRef} from "../Misc/RecoilHelper";
+import {PinTooltip, ShowPinModal} from "./Pins/PinTooltip";
+import {useModal} from "mui-modal-provider";
 
 const mapImage = require('../archolos_map.png')
 // const containers = require('../containers.json')
@@ -68,7 +70,7 @@ export const Map = ({mapId}) => {
     const reDraw = useRef(false)
     const canvasDimensions = useRef({width: 0, height: 0})
     const stateRef = useRef({
-        selectedPin: -1,
+        highlightedPin: null,
         defaultPoint: null,
         highlightPoint: null,
         showPins: true,
@@ -144,7 +146,7 @@ export const Map = ({mapId}) => {
         reDraw.current = true
     }
 
-    const pinsData = useRecoilValueRef(mapPinsFamily(mapId), ()=> reDraw.current = true)
+    const pinsData = useRecoilValueRef(mapPinsFamily(mapId), () => reDraw.current = true)
 
     const draw = (map, canvas) => {
         canvas.translate(...midpointShift(canvasDimensions.current, stateRef.current.mapScale1))
@@ -157,7 +159,7 @@ export const Map = ({mapId}) => {
             let lastPin = null
 
             pinsData.current.pins.forEach((c) => {
-                if (stateObj.selectedPin === c.vobObjectID) {
+                if (stateObj.highlightedPin !== null && stateObj.highlightedPin.vobObjectID === c.vobObjectID) {
                     lastPin = c
                 } else {
                     canvas.drawCircle(c.normPosition.x * mapDimensions, c.normPosition.y * mapDimensions, 5 / stateObj.mapScale1, stateObj.defaultPoint)
@@ -171,9 +173,11 @@ export const Map = ({mapId}) => {
     }
 
     const handleDrag = (evt) => {
-        stateObj.xDiff = stateObj.xDiff + evt.delta[0]
-        stateObj.yDiff = stateObj.yDiff + evt.delta[1]
-        reDraw.current = true
+        if (stateObj.highlightedPin === null) {
+            stateObj.xDiff = stateObj.xDiff + evt.delta[0]
+            stateObj.yDiff = stateObj.yDiff + evt.delta[1]
+            reDraw.current = true
+        }
     }
 
     const handleWheel = ({event, delta, active}) => {
@@ -196,22 +200,23 @@ export const Map = ({mapId}) => {
         const closestPoint = pinsData.current.nearest(x, y, stateObj.maxDistance)
 
         if (closestPoint.length === 1) {
-            const closestIdx = closestPoint[0][0].pin.vobObjectID
+            const closestPin = closestPoint[0][0].pin
+            const closestIdx = closestPin.vobObjectID
             // new point selected
-            if (closestIdx !== stateObj.selectedPin) {
-                stateObj.selectedPin = closestIdx
+            if (stateObj.highlightedPin === null || closestIdx !== stateObj.highlightedPin.vobObjectID) {
+                stateObj.highlightedPin = closestPin
                 // scale point from [0, 1] to absolute mouse position
                 const closestPointMidX = rect.left + stateObj.xDiff + _midpointShift[0] + mapDimensions * stateObj.mapScale1 * closestPoint[0][0].x
                 const closestPointMidY = rect.top + stateObj.yDiff + _midpointShift[1] + mapDimensions * stateObj.mapScale1 * closestPoint[0][0].y
                 // set data for tooltip
-                setTooltipData({pos: {x: closestPointMidX, y: closestPointMidY}, data: closestIdx})
+                setTooltipData({pos: {x: closestPointMidX, y: closestPointMidY}, data: <PinTooltip pin={closestPin}/>})
                 // redraw map image
                 reDraw.current = true
             }
         } else {
             // no closest point found
-            if (stateObj.selectedPin !== -1) {
-                stateObj.selectedPin = -1
+            if (stateObj.highlightedPin !== null) {
+                stateObj.highlightedPin = null
                 if (tooltipData) {
                     setTooltipData(null)
                 }
@@ -220,11 +225,19 @@ export const Map = ({mapId}) => {
         }
     }
 
+    const {showModal} = useModal();
+
+    const handlePointerUp = (evt) => {
+        if (stateObj.highlightedPin !== null) {
+            ShowPinModal(stateObj.highlightedPin, showModal)
+        }
+    }
     const setupGestures = useGesture(
         {
             onDrag: handleDrag,
             onMove: handleMove,
-            onWheel: handleWheel
+            onWheel: handleWheel,
+            onPointerUp: handlePointerUp
         }
     )
 

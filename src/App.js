@@ -4,6 +4,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import {MapContainer} from "./Map/MapContainer";
 import Box from "@mui/material/Box";
 import {Navigate, Route, Routes, useLocation, useNavigate} from "react-router-dom";
+import {Database} from "./Database/Database";
 
 export const App = () => {
     const navigate = useNavigate()
@@ -55,7 +56,7 @@ export const App = () => {
                     element={<Navigate to="/map" />}
                 />
                 <Route path="map" element={<MapContainer mapId="main"/>}/>
-                <Route path="database" element={<div>database page</div>}/>
+                <Route path="database" element={<Database/>}/>
             </Routes>
 
         </Box>

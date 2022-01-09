@@ -12,11 +12,9 @@ export const loadCanvasKit = (onLoad) => {
 export const CanvasKitContext = createContext(null)
 export const CanvasKitProvider = CanvasKitContext.Provider
 
-export const KitCanvas = ({fetchRenderData, draw, reDraw, dimensions, ...props}) => {
+export const KitCanvas = ({fetchRenderData, draw, reDraw, dimensionsCallback, ...props}) => {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const reDrawRef = reDraw ? reDraw : useRef(true)
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    const dimensionsRef = dimensions ? dimensions : useRef({width: 0, height: 0})
     const kit = useContext(CanvasKitContext)
     const [renderData, setRenderData] = useState(null)
     const canvasRef = useRef(null)
@@ -63,8 +61,9 @@ export const KitCanvas = ({fetchRenderData, draw, reDraw, dimensions, ...props})
             surface.current = kit.MakeCanvasSurface(canvasHtmlElement)
             localCanvas = surface.current.getCanvas()
             reDrawRef.current = true
-            dimensionsRef.current.width = surface.current.width()
-            dimensionsRef.current.height = surface.current.height()
+            if(dimensionsCallback) {
+                dimensionsCallback(surface.current.width(), surface.current.height())
+            }
         }
 
         if (reDrawRef.current) {

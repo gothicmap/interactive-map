@@ -4,9 +4,8 @@ import {useContext, useEffect, useRef, useState} from "react";
 // import {createKdTree} from "kd.tree";
 import {useGesture} from "@use-gesture/react";
 import {AbsTooltip} from "./AbsTooltip";
-import {useRecoilState} from "recoil";
 import {mapPinsFamily, scaleFamily} from "./MapState";
-import {useRecoilValueRef} from "../Misc/RecoilHelper";
+import {useRecoilStateEx, useRecoilValueRef, useRefObj} from "../Misc/StateHelpers";
 import {PinTooltip, ShowPinModal} from "./Pins/PinTooltip";
 import {useModal} from "mui-modal-provider";
 
@@ -21,30 +20,6 @@ const xdiff = 128070.0;
 const ydiff = 199108.0;
 const ydiv = 1600.0;
 const xdiv = 1599.99;
-
-// const calcCoordinates = (x, z) => {
-//     const calculatedX = (x + xdiff) / xdiv / 100
-//     const calculatedY = (z + ydiff) / ydiv / 100
-//     return [calculatedX, calculatedY]
-// }
-//
-// const kdPoints = []
-//
-// containers.forEach((container, idx) => {
-//     const [y, x] = calcCoordinates(container.position.x, container.position.z)
-//     kdPoints.push({
-//         x: x,
-//         y: y,
-//         idx: idx
-//     })
-//     container.idx = idx
-// })
-//
-// const containerDistance = function (a, b) {
-//     return Math.sqrt(Math.pow(a.x - b.x, 2) + Math.pow(a.y - b.y, 2))
-// }
-//
-// const tree = createKdTree(kdPoints, containerDistance, ['x', 'y'])
 
 const mapDimensions = 1024.0
 
@@ -63,75 +38,114 @@ const midpointShift = (canvasDim, _scale1) => {
     return [xHalf - halfOfDim, yHalf - halfOfDim]
 }
 
+
+class RenderState {
+    constructor() {
+        this.highlightedPin = null
+        this.defaultPoint = null
+        this.highlightPoint = null
+        this.showPins = true
+        this.mapScale = 100
+        this.maxDistance = calcMaxDistance(100)
+        this.mapScale1 = 1.0
+        this.yDiff = 0.0
+        this.xDiff = 0.0
+        this.canvasX = 0
+        this.canvasY = 0
+        this.midPointShiftX = 0
+        this.midPointShiftY = 0
+    }
+
+    updateScale = (newScale) => {
+        this.mapScale = newScale
+        this.mapScale1 = scale1(newScale)
+        this.maxDistance = calcMaxDistance(newScale)
+        this.recalculateMidPoint()
+    }
+
+    recalculateMidPoint = () => {
+        const halfOfDim = (mapDimensions * this.mapScale1) / 2
+        const xHalf = this.canvasX / 2.0
+        const yHalf = this.canvasY / 2.0
+
+        this.midPointShiftX = xHalf - halfOfDim
+        this.midPointShiftY = yHalf - halfOfDim
+    }
+
+    updateCanvasDimensions = (x, y) => {
+        this.canvasX = x
+        this.canvasY = y
+        this.recalculateMidPoint()
+    }
+
+    pointCanvasToPoint01 = (canvasX, canvasY) => {
+        const x = ((canvasX - this.xDiff - this.midPointShiftX) / (mapDimensions * this.mapScale1))
+        const y = ((canvasY - this.yDiff - this.midPointShiftY) / (mapDimensions * this.mapScale1))
+        return [x, y]
+    }
+
+    point01ToCanvasPoint = (p01x, p01y, shiftX = 0, shiftY = 0) => {
+        const x = shiftX + this.xDiff + this.midPointShiftX + mapDimensions * this.mapScale1 * p01x
+        const y = shiftY + this.yDiff + this.midPointShiftY + mapDimensions * this.mapScale1 * p01y
+        return [x, y]
+    }
+
+    drag = (dx, dy) => {
+        this.xDiff += dx
+        this.yDiff += dy
+    }
+
+    handleHighlightPin = (closestPin, shiftX, shiftY, pointUpdatedCallback) => {
+        if (closestPin) {
+            if (this.highlightedPin === null || closestPin.vobObjectID !== this.highlightedPin.vobObjectID) {
+                // new point selected
+                this.highlightedPin = closestPin
+                // scale point from [0, 1] to absolute mouse position
+                const [px, py] = this.point01ToCanvasPoint(closestPin.normPosition.x, closestPin.normPosition.y, shiftX, shiftY)
+                pointUpdatedCallback(px, py, closestPin)
+            }
+        } else {
+            if (this.highlightedPin) {
+                this.highlightedPin = null
+                pointUpdatedCallback(undefined, undefined, undefined)
+            }
+        }
+    }
+}
+
 export const Map = ({mapId}) => {
     const kit = useContext(CanvasKitContext)
-    const [mapScale, setMapScale] = useRecoilState(scaleFamily(mapId))
 
-    const [showMap, setShowMap] = useState(true)
+    const renderState = useRefObj(() => new RenderState())
+
+    const updateScale = (newScale) => {
+        renderState.updateScale(newScale)
+        reDraw.current = true
+    }
+
+    const [, setMapScale] = useRecoilStateEx(scaleFamily(mapId), updateScale)
+
     const reDraw = useRef(false)
-    const canvasDimensions = useRef({width: 0, height: 0})
-    const stateRef = useRef({
-        highlightedPin: null,
-        defaultPoint: null,
-        highlightPoint: null,
-        showPins: true,
-        mapScale: 100,
-        maxDistance: calcMaxDistance(100),
-        mapScale1: 1.0,
-        yDiff: 0.0,
-        xDiff: 0.0
-    })
-
-    const stateObj = stateRef.current
+    // const canvasDimensions = useRef({width: 0, height: 0})
 
     useEffect(() => {
-        stateObj.defaultPoint = new kit.Paint();
-        stateObj.defaultPoint.setColor(kit.Color(0, 255, 0, 1.0));
-        stateObj.defaultPoint.setAntiAlias(true)
+        renderState.defaultPoint = new kit.Paint();
+        renderState.defaultPoint.setColor(kit.Color(0, 255, 0, 1.0));
+        renderState.defaultPoint.setAntiAlias(true)
 
-        stateObj.highlightPoint = new kit.Paint();
-        stateObj.highlightPoint.setColor(kit.Color(255, 0, 0, 1.0));
-        stateObj.highlightPoint.setAntiAlias(true)
+        renderState.highlightPoint = new kit.Paint();
+        renderState.highlightPoint.setColor(kit.Color(255, 0, 0, 1.0));
+        renderState.highlightPoint.setAntiAlias(true)
 
         return () => {
-            if (stateObj.defaultPoint) {
-                stateObj.defaultPoint.delete()
+            if (renderState.defaultPoint) {
+                renderState.defaultPoint.delete()
             }
-            if (stateObj.highlightPoint) {
-                stateObj.highlightPoint.delete()
+            if (renderState.highlightPoint) {
+                renderState.highlightPoint.delete()
             }
         }
     }, [])
-
-    const flipShowMap = () => {
-        setShowMap(!showMap)
-    }
-
-    const flipShowPins = () => {
-        stateObj.showPins = !stateObj.showPins
-        reDraw.current = true
-    }
-
-    const updateScale = (newScale) => {
-        stateObj.mapScale = newScale
-        stateObj.mapScale1 = scale1(newScale)
-        stateObj.maxDistance = calcMaxDistance(newScale)
-        reDraw.current = true
-        setMapScale(newScale)
-    }
-
-    useEffect(() => {
-        updateScale(mapScale)
-    }, [mapScale])
-
-
-    const increaseScale = () => {
-        updateScale(stateObj.mapScale + 10)
-    }
-
-    const decreaseScale = () => {
-        updateScale(stateObj.mapScale - 10)
-    }
 
     const fetchMapImage = (current, set, kit) => {
         if (current === null) {
@@ -141,49 +155,42 @@ export const Map = ({mapId}) => {
         }
     }
 
-    const center = () => {
-        stateObj.xDiff = 0.0
-        stateObj.yDiff = 0.0
-        reDraw.current = true
-    }
-
     const pinsData = useRecoilValueRef(mapPinsFamily(mapId), () => reDraw.current = true)
 
     const draw = (map, canvas) => {
-        canvas.translate(...midpointShift(canvasDimensions.current, stateRef.current.mapScale1))
-        canvas.translate(stateObj.xDiff, stateObj.yDiff)
-        canvas.scale(stateObj.mapScale1, stateObj.mapScale1)
+        canvas.translate(renderState.midPointShiftX, renderState.midPointShiftY)
+        canvas.translate(renderState.xDiff, renderState.yDiff)
+        canvas.scale(renderState.mapScale1, renderState.mapScale1)
 
         canvas.drawImageOptions(map, 0, 0, kit.FilterMode.Linear, kit.MipmapMode.Linear)
 
-        if (stateObj.showPins) {
+        if (renderState.showPins) {
             let lastPin = null
 
             pinsData.current.pins.forEach((c) => {
-                if (stateObj.highlightedPin !== null && stateObj.highlightedPin.vobObjectID === c.vobObjectID) {
+                if (renderState.highlightedPin !== null && renderState.highlightedPin.vobObjectID === c.vobObjectID) {
                     lastPin = c
                 } else {
-                    canvas.drawCircle(c.normPosition.x * mapDimensions, c.normPosition.y * mapDimensions, 5 / stateObj.mapScale1, stateObj.defaultPoint)
+                    canvas.drawCircle(c.normPosition.x * mapDimensions, c.normPosition.y * mapDimensions, 5 / renderState.mapScale1, renderState.defaultPoint)
                 }
             })
 
             if (lastPin) {
-                canvas.drawCircle(lastPin.normPosition.x * mapDimensions, lastPin.normPosition.y * mapDimensions, 5 / stateObj.mapScale1, stateObj.highlightPoint)
+                canvas.drawCircle(lastPin.normPosition.x * mapDimensions, lastPin.normPosition.y * mapDimensions, 5 / renderState.mapScale1, renderState.highlightPoint)
             }
         }
     }
 
     const handleDrag = (evt) => {
-        if (stateObj.highlightedPin === null) {
-            stateObj.xDiff = stateObj.xDiff + evt.delta[0]
-            stateObj.yDiff = stateObj.yDiff + evt.delta[1]
+        if (renderState.highlightedPin === null) {
+            renderState.drag(evt.delta[0], evt.delta[1])
             reDraw.current = true
         }
     }
 
     const handleWheel = ({event, delta, active}) => {
         if (active) {
-            updateScale(stateObj.mapScale - (delta[1] / 10))
+            setMapScale(renderState.mapScale - (delta[1] / 10))
         }
     }
 
@@ -191,46 +198,39 @@ export const Map = ({mapId}) => {
 
 
     const handleMove = ({xy, currentTarget, event, ...others}) => {
+        if (!pinsData.current) {
+            return
+        }
+
         const rect = currentTarget.getBoundingClientRect();
-        const _midpointShift = midpointShift(canvasDimensions.current, stateRef.current.mapScale1)
-
         // scale mouse absolute position to [0, 1]
-        const x = ((xy[0] - rect.left - stateObj.xDiff - _midpointShift[0]) / (mapDimensions * stateObj.mapScale1))
-        const y = ((xy[1] - rect.top - stateObj.yDiff - _midpointShift[1]) / (mapDimensions * stateObj.mapScale1))
+        const [x, y] = renderState.pointCanvasToPoint01(xy[0] - rect.left, xy[1] - rect.top)
 
-        const closestPoint = pinsData.current.nearest(x, y, stateObj.maxDistance)
+        const closestPoint = pinsData.current.nearest(x, y, renderState.maxDistance)
 
         if (closestPoint.length === 1) {
-            const closestPin = closestPoint[0][0].pin
-            const closestIdx = closestPin.vobObjectID
-            // new point selected
-            if (stateObj.highlightedPin === null || closestIdx !== stateObj.highlightedPin.vobObjectID) {
-                stateObj.highlightedPin = closestPin
-                // scale point from [0, 1] to absolute mouse position
-                const closestPointMidX = rect.left + stateObj.xDiff + _midpointShift[0] + mapDimensions * stateObj.mapScale1 * closestPoint[0][0].x
-                const closestPointMidY = rect.top + stateObj.yDiff + _midpointShift[1] + mapDimensions * stateObj.mapScale1 * closestPoint[0][0].y
-                // set data for tooltip
-                setTooltipData({pos: {x: closestPointMidX, y: closestPointMidY}, data: <PinTooltip pin={closestPin}/>})
-                // redraw map image
+            const kdNode = closestPoint[0][0]
+            const closestPin = kdNode.pin
+            renderState.handleHighlightPin(closestPin, rect.left, rect.top, (px, py, pin) => {
+                setTooltipData({pos: {x: px, y: py}, data: <PinTooltip pin={pin}/>})
                 reDraw.current = true
-            }
+            })
         } else {
             // no closest point found
-            if (stateObj.highlightedPin !== null) {
-                stateObj.highlightedPin = null
+            renderState.handleHighlightPin(null, null, null, () => {
                 if (tooltipData) {
                     setTooltipData(null)
                 }
                 reDraw.current = true
-            }
+            })
         }
     }
 
     const {showModal} = useModal();
 
     const handlePointerUp = (evt) => {
-        if (stateObj.highlightedPin !== null) {
-            ShowPinModal(stateObj.highlightedPin, showModal)
+        if (renderState.highlightedPin !== null) {
+            ShowPinModal(renderState.highlightedPin, showModal)
         }
     }
     const setupGestures = useGesture(
@@ -253,7 +253,7 @@ export const Map = ({mapId}) => {
         <KitCanvas {...setupGestures()}
                    reDraw={reDraw}
                    fetchRenderData={fetchMapImage}
-                   dimensions={canvasDimensions}
+                   dimensionsCallback={renderState.updateCanvasDimensions}
                    draw={draw} style={{
             flexGrow: 1,
             minHeight: "1px",

@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {CellMeasurer, AutoSizer, CellMeasurerCache, List as VList} from 'react-virtualized';
 import 'react-virtualized/styles.css'; // only needs to be imported once
 // List data as an array of strings
@@ -23,9 +23,43 @@ import {FormCheckbox} from "../Map/MapSettings";
 import {allCategories, databaseSearchTerm, itemsSelector, useCategories} from "./DatabaseState";
 import {useRecoilState, useRecoilValue} from "recoil";
 import ClearIcon from "@mui/icons-material/Clear";
+import useDebounce from "@rooks/use-debounce";
+
+
+export const DatabaseSearchInput = () => {
+    const [searchTerm, setSearchTerm] = useRecoilState(databaseSearchTerm)
+    const setSearchTermDebounced = useDebounce(setSearchTerm, 500)
+
+    const [internal, setInternal] = useState(searchTerm)
+
+    useEffect(() => {
+        setSearchTermDebounced(internal)
+    }, [internal])
+
+    useEffect(() => {
+        setInternal(searchTerm)
+    }, [searchTerm])
+
+    return <Paper sx={{
+        flexDirection: "row",
+        display: "flex"
+    }}>
+        <InputBase sx={{ml: 1, flex: 1}} placeholder="search"
+                   value={internal}
+                   onChange={(evt) => setInternal(evt.target.value)}
+        />
+        <Divider sx={{height: 28, m: 0.5}} orientation="vertical"/>
+        <IconButton color="inherit" size="large"
+                    onClick={() => setInternal("")}
+        >
+            <ClearIcon/>
+        </IconButton>
+    </Paper>
+}
 
 export const DatabaseVirtualized = () => {
-    const [searchTerm, setSearchTerm] = useRecoilState(databaseSearchTerm)
+
+
     const [checkCategory, setCategory] = useCategories()
     const items = useRecoilValue(itemsSelector)
     const cache = useRef(new CellMeasurerCache({
@@ -139,21 +173,7 @@ export const DatabaseVirtualized = () => {
             gap: (theme) => theme.spacing(1),
             padding: (theme) => theme.spacing(1)
         }}>
-            <Paper sx={{
-                flexDirection: "row",
-                display: "flex"
-            }}>
-                <InputBase sx={{ml: 1, flex: 1}} placeholder="search"
-                           value={searchTerm}
-                           onChange={(evt) => setSearchTerm(evt.target.value)}
-                />
-                <Divider sx={{height: 28, m: 0.5}} orientation="vertical"/>
-                <IconButton color="inherit" size="large"
-                            onClick={() => setSearchTerm("")}
-                >
-                    <ClearIcon/>
-                </IconButton>
-            </Paper>
+            <DatabaseSearchInput/>
             <Box sx={{
                 flexGrow: 1,
                 overflowY: "hidden"

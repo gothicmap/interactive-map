@@ -7,7 +7,7 @@ import {ExpandLess, ExpandMore} from "@mui/icons-material";
 import {useRecoilState} from "recoil";
 
 
-const FormCheckbox = ({label, ...props}) => {
+export const FormCheckbox = ({label, ...props}) => {
     return <FormControlLabel control={<Checkbox {...props}/>}
                              label={label}/>
 }

@@ -3,17 +3,33 @@ import {atom, selector, useRecoilState} from "recoil";
 
 export const allCategories = items.categories
 
+export const databaseSearchTerm = atom({
+    key: 'DatabaseSearchTermAtom',
+    default: "",
+})
+
 export const activeCategoriesAtom = atom({
     key: 'DatabaseActiveCategoriesAtom',
     default: items.categories,
 })
 
 export const itemsSelector = selector({
-  key: 'DatabaseItemsSelector',
-  get: ({get}) => {
-      const activeCategories = get(activeCategoriesAtom)
-      return items.items.filter((item) => activeCategories.includes(item.category))
-  },
+    key: 'DatabaseItemsSelector',
+    get: ({get}) => {
+        const searchTerm = get(databaseSearchTerm).toLowerCase()
+        const activeCategories = get(activeCategoriesAtom)
+
+        const checkItem = (item) => {
+            return (item.name && item.name.toLowerCase().includes(searchTerm))
+                || (item.description && item.description.toLowerCase().includes(searchTerm))
+        }
+
+        if (searchTerm) {
+            return items.items.filter((item) => activeCategories.includes(item.category) && checkItem(item))
+        } else {
+            return items.items.filter((item) => activeCategories.includes(item.category))
+        }
+    },
 });
 
 export const useCategories = () => {
@@ -32,7 +48,7 @@ export const useCategories = () => {
     }
 
     const set = (category, value) => {
-        if(value) {
+        if (value) {
             activate(category)
         } else {
             deactivate(category)

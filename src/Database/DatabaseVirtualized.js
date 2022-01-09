@@ -8,7 +8,7 @@ import {
     Card,
     CardContent,
     Divider,
-    FormGroup,
+    FormGroup, IconButton, InputBase,
     List,
     ListItem,
     ListItemText,
@@ -20,10 +20,12 @@ import {blue} from "@mui/material/colors";
 
 // import items from "./items.json";
 import {FormCheckbox} from "../Map/MapSettings";
-import {allCategories, itemsSelector, useCategories} from "./DatabaseState";
-import {useRecoilValue} from "recoil";
+import {allCategories, databaseSearchTerm, itemsSelector, useCategories} from "./DatabaseState";
+import {useRecoilState, useRecoilValue} from "recoil";
+import ClearIcon from "@mui/icons-material/Clear";
 
 export const DatabaseVirtualized = () => {
+    const [searchTerm, setSearchTerm] = useRecoilState(databaseSearchTerm)
     const [checkCategory, setCategory] = useCategories()
     const items = useRecoilValue(itemsSelector)
     const cache = useRef(new CellMeasurerCache({
@@ -35,7 +37,7 @@ export const DatabaseVirtualized = () => {
 
     useEffect(() => {
             cache.current.clearAll()
-            if(vListRef.current) {
+            if (vListRef.current) {
                 vListRef.current.recomputeRowHeights()
                 vListRef.current.forceUpdate()
             }
@@ -50,8 +52,6 @@ export const DatabaseVirtualized = () => {
     }
 
     const rowRenderer = ({index, key, parent, style}) => {
-        // eslint-disable-next-line react-hooks/rules-of-hooks
-        // const items = useRecoilValue(itemsSelector)
         const item = items[index]
 
         return <CellMeasurer
@@ -65,9 +65,7 @@ export const DatabaseVirtualized = () => {
                 ...style,
             }}>
                 <Card key={item.item} sx={{
-                    marginTop: (theme) => theme.spacing(1),
-                    marginLeft: (theme) => theme.spacing(1),
-                    marginRight: (theme) => theme.spacing(1)
+                    marginTop: (theme) => index === 0 ? 0 : theme.spacing(1)
                 }}>
                     <CardContent>
                         <Typography sx={{fontSize: 14, color: blue[400]}} gutterBottom>
@@ -133,23 +131,48 @@ export const DatabaseVirtualized = () => {
             </FormGroup>
         </Paper>
 
+
         <Box sx={{
-            flexGrow: 1,
-            overflowY: "hidden"
+            flexDirection: "column",
+            display: "flex",
+            flexGrow: 1000,
+            gap: (theme) => theme.spacing(1),
+            padding: (theme) => theme.spacing(1)
         }}>
-            <AutoSizer>
-                {({height, width}) => (
-                    <VList
-                        ref={vListRef}
-                        height={height}
-                        rowCount={items.length}
-                        deferredMeasurementCache={cache.current}
-                        rowHeight={cache.current.rowHeight}
-                        rowRenderer={rowRenderer}
-                        width={width}
-                    />
-                )}
-            </AutoSizer>
+            <Paper sx={{
+                flexDirection: "row",
+                display: "flex"
+            }}>
+                <InputBase sx={{ml: 1, flex: 1}} placeholder="search"
+                           value={searchTerm}
+                           onChange={(evt) => setSearchTerm(evt.target.value)}
+                />
+                <Divider sx={{height: 28, m: 0.5}} orientation="vertical"/>
+                <IconButton color="inherit" size="large"
+                            onClick={() => setSearchTerm("")}
+                >
+                    <ClearIcon/>
+                </IconButton>
+            </Paper>
+            <Box sx={{
+                flexGrow: 1,
+                overflowY: "hidden"
+            }}>
+                <AutoSizer>
+                    {({height, width}) => (
+                        <VList
+                            ref={vListRef}
+                            height={height}
+                            rowCount={items.length}
+                            deferredMeasurementCache={cache.current}
+                            rowHeight={cache.current.rowHeight}
+                            rowRenderer={rowRenderer}
+                            width={width}
+                        />
+                    )}
+                </AutoSizer>
+            </Box>
         </Box>
+
     </Box>
 }

@@ -5,8 +5,8 @@ import {App} from './App';
 import {createTheme, ThemeProvider} from "@mui/material";
 import ModalProvider from 'mui-modal-provider';
 import {RecoilRoot} from "recoil";
-import {loadCanvasKit, CanvasKitProvider} from "./Misc/KitCanvas";
-import {BrowserRouter} from "react-router-dom";
+import {CanvasKitProvider, loadCanvasKit} from "./Misc/KitCanvas";
+import {HashRouter} from "react-router-dom";
 
 const darkTheme = createTheme({
     palette: {
@@ -19,17 +19,15 @@ loadCanvasKit((CanvasKit) => {
     ReactDOM.render(
         <React.StrictMode>
             <RecoilRoot>
-                <BrowserRouter>
+                <HashRouter>
                     <CanvasKitProvider value={CanvasKit}>
-
                         <ThemeProvider theme={darkTheme}>
                             <ModalProvider>
                                 <App/>
                             </ModalProvider>
                         </ThemeProvider>
-
                     </CanvasKitProvider>
-                </BrowserRouter>
+                </HashRouter>
             </RecoilRoot>
         </React.StrictMode>,
         document.getElementById('root')

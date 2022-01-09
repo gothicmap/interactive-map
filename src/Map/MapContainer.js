@@ -85,14 +85,13 @@ export function MapContainer(props) {
         minWidth: "500px",
         overflow: "hidden"
     }}>
-        {showMapSettings && <Box sx={{
+        {showMapSettings && <Paper sx={{
             display: "flex",
             flexDirection: "column",
-            backgroundColor: (theme) => theme.palette.background.paper,
-            color: (theme) => theme.palette.text.primary
+            borderRadius: '0px',
         }} className={"MapSettings"}>
             <RenderContainerSettings mapId={props.mapId}/>
-        </Box>
+        </Paper>
         }
         <Box sx={{
             position: "relative",

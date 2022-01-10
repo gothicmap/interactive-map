@@ -1,26 +1,25 @@
 {
   "categories": [
-    "package",
-    "crafting material",
-    "amulet",
-    "scroll",
     "key",
+    "plant",
+    "crafting material",
     "rune",
-    "melee weapon",
-    "trophy",
+    "misc",
     "ring",
+    "scroll",
+    "belt",
+    "amulet",
+    "melee weapon",
     "unknown?",
     "writing",
-    "food",
-    "documents",
-    "plant",
+    "package",
     "home clutter",
-    "recipe",
-    "range weapon",
     "armor",
-    "potion",
-    "misc",
-    "belt"
+    "food",
+    "recipe",
+    "trophy",
+    "range weapon",
+    "potion"
   ],
   "items": [
     {
@@ -36969,7 +36968,7 @@
       "description": "Letter addressed to a friend\n\nThe letter that the dead merchant had on him\non the road to Wolf's Den.",
       "values": [],
       "price": 0.0,
-      "category": "documents"
+      "category": "writing"
     },
     {
       "item": "itwr_ghostsmithjournal",
@@ -37415,7 +37414,7 @@
       "description": "Abandoned\n\nI feel like I shouldn't be reading this...",
       "values": [],
       "price": 0.0,
-      "category": "documents"
+      "category": "writing"
     },
     {
       "item": "stopbeforeistoolate",
@@ -37423,7 +37422,7 @@
       "description": "Idiot\n\nI feel like I shouldn't be reading this...",
       "values": [],
       "price": 0.0,
-      "category": "documents"
+      "category": "writing"
     },
     {
       "item": "youmustgoback",
@@ -37431,7 +37430,7 @@
       "description": "Hopeless\n\nI feel like I shouldn't be reading this...",
       "values": [],
       "price": 0.0,
-      "category": "documents"
+      "category": "writing"
     },
     {
       "item": "regretistheonlythingyouwillfind",
@@ -37439,7 +37438,7 @@
       "description": "Naivety\n\nI feel like I shouldn't be reading this...",
       "values": [],
       "price": 0.0,
-      "category": "documents"
+      "category": "writing"
     },
     {
       "item": "lastwarningturnback",
@@ -37447,7 +37446,7 @@
       "description": "Determination\n\nI feel like I shouldn't be reading this...",
       "values": [],
       "price": 0.0,
-      "category": "documents"
+      "category": "writing"
     },
     {
       "item": "nobodycameforhelp",
@@ -37455,7 +37454,7 @@
       "description": "Darkness\n\nI feel like I shouldn't be reading this...",
       "values": [],
       "price": 0.0,
-      "category": "documents"
+      "category": "writing"
     },
     {
       "item": "itwr_bermarjournal",

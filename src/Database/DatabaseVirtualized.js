@@ -24,6 +24,8 @@ import {
 import {useRecoilState, useRecoilValue} from "recoil";
 import ClearIcon from "@mui/icons-material/Clear";
 import useDebounce from "@rooks/use-debounce";
+import {Strings} from "../Strings";
+import {langAtom} from "../AppState";
 
 
 export const DatabaseSearchInput = () => {
@@ -58,6 +60,7 @@ export const DatabaseSearchInput = () => {
 }
 
 export const DatabaseVirtualized = () => {
+    const lang = useRecoilValue(langAtom)
     const allCategories = useRecoilValue(categoriesSelector)
     const [checkCategory, setCategory] = useCategories()
     const items = useRecoilValue(itemsSelector)
@@ -154,7 +157,7 @@ export const DatabaseVirtualized = () => {
                     allCategories.map((category) => {
                             return <FormCheckbox
                                 key={category}
-                                label={category}
+                                label={Strings.getItemCategory(category, lang)}
                                 checked={checkCategory(category)}
                                 onChange={catChangeCallback(category)}
                             />

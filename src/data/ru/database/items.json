@@ -1,26 +1,25 @@
 {
   "categories": [
-    "melee weapon",
-    "belt",
-    "potion",
-    "trophy",
-    "package",
-    "documents",
-    "amulet",
-    "ring",
-    "misc",
-    "recipe",
-    "unknown?",
-    "key",
-    "writing",
-    "range weapon",
-    "food",
     "plant",
-    "home clutter",
-    "armor",
-    "crafting material",
     "rune",
-    "scroll"
+    "ring",
+    "unknown?",
+    "trophy",
+    "melee weapon",
+    "package",
+    "key",
+    "misc",
+    "writing",
+    "recipe",
+    "scroll",
+    "crafting material",
+    "belt",
+    "armor",
+    "food",
+    "range weapon",
+    "home clutter",
+    "potion",
+    "amulet"
   ],
   "items": [
     {
@@ -36969,7 +36968,7 @@
       "description": "Письмо другу\n\nПисьмо, которое было при себе у мертвого торговца\nпо дороге в Волчье логово.",
       "values": [],
       "price": 0.0,
-      "category": "documents"
+      "category": "writing"
     },
     {
       "item": "itwr_ghostsmithjournal",
@@ -37415,7 +37414,7 @@
       "description": "Заброшенный\n\nЯ чувствую, что мне не следует это читать ...",
       "values": [],
       "price": 0.0,
-      "category": "documents"
+      "category": "writing"
     },
     {
       "item": "stopbeforeistoolate",
@@ -37423,7 +37422,7 @@
       "description": "Идиот\n\nЯ чувствую, что мне не следует это читать ...",
       "values": [],
       "price": 0.0,
-      "category": "documents"
+      "category": "writing"
     },
     {
       "item": "youmustgoback",
@@ -37431,7 +37430,7 @@
       "description": "Безнадежный\n\nЯ чувствую, что мне не следует это читать ...",
       "values": [],
       "price": 0.0,
-      "category": "documents"
+      "category": "writing"
     },
     {
       "item": "regretistheonlythingyouwillfind",
@@ -37439,7 +37438,7 @@
       "description": "Наивность\n\nЯ чувствую, что мне не следует это читать ...",
       "values": [],
       "price": 0.0,
-      "category": "documents"
+      "category": "writing"
     },
     {
       "item": "lastwarningturnback",
@@ -37447,7 +37446,7 @@
       "description": "Определение\n\nЯ чувствую, что мне не следует это читать ...",
       "values": [],
       "price": 0.0,
-      "category": "documents"
+      "category": "writing"
     },
     {
       "item": "nobodycameforhelp",
@@ -37455,7 +37454,7 @@
       "description": "Тьма\n\nЯ чувствую, что мне не следует это читать ...",
       "values": [],
       "price": 0.0,
-      "category": "documents"
+      "category": "writing"
     },
     {
       "item": "itwr_bermarjournal",

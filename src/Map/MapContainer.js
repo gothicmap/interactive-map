@@ -7,6 +7,7 @@ import {useRecoilState, useRecoilValue} from "recoil";
 import {mapPinsSearch, mapSettingsFamily, scaleFamily} from "./MapState"
 import {Map} from "./Map";
 import ClearIcon from '@mui/icons-material/Clear';
+import darkScrollbar from "@mui/material/darkScrollbar";
 
 const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
 
@@ -89,7 +90,8 @@ export function MapContainer(props) {
             display: "flex",
             flexDirection: "column",
             borderRadius: '0px',
-            overflowY: "auto"
+            overflowY: "auto",
+            ...darkScrollbar()
         }} className={"MapSettings"}>
             <RenderContainerSettings mapId={props.mapId}/>
         </Paper>

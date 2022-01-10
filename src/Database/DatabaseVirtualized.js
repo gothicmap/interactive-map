@@ -1,12 +1,14 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {CellMeasurer, AutoSizer, CellMeasurerCache, List as VList} from 'react-virtualized';
+import {AutoSizer, CellMeasurer, CellMeasurerCache, List as VList} from 'react-virtualized';
 import 'react-virtualized/styles.css';
 import {
     Box,
     Card,
     CardContent,
     Divider,
-    FormGroup, IconButton, InputBase,
+    FormGroup,
+    IconButton,
+    InputBase,
     List,
     ListItem,
     ListItemText,
@@ -16,17 +18,18 @@ import {
 import {blue} from "@mui/material/colors";
 
 import {FormCheckbox} from "../Map/MapSettings";
-import {
-    categoriesSelector, databaseSearchTerm,
-    itemsSelector,
-    useCategories
-} from "./DatabaseState";
+import {categoriesSelector, databaseSearchTerm, itemsSelector, useCategories} from "./DatabaseState";
 import {useRecoilState, useRecoilValue} from "recoil";
 import ClearIcon from "@mui/icons-material/Clear";
 import useDebounce from "@rooks/use-debounce";
 import {Strings} from "../Strings";
 import {langAtom} from "../AppState";
+import darkScrollbar from "@mui/material/darkScrollbar";
+import {styled} from '@mui/material/styles';
 
+const StyledVirtualizedList = styled(VList)(({ theme }) => ({
+    ...darkScrollbar()
+}));
 
 export const DatabaseSearchInput = () => {
     const [searchTerm, setSearchTerm] = useRecoilState(databaseSearchTerm)
@@ -100,7 +103,8 @@ export const DatabaseVirtualized = () => {
                 ...style,
             }}>
                 <Card key={item.item} sx={{
-                    marginTop: (theme) => index === 0 ? 0 : theme.spacing(1)
+                    marginTop: (theme) => index === 0 ? 0 : theme.spacing(1),
+                    marginRight: (theme) => theme.spacing(1)
                 }}>
                     <CardContent>
                         <Typography sx={{fontSize: 14, color: blue[400]}} gutterBottom>
@@ -149,7 +153,8 @@ export const DatabaseVirtualized = () => {
             display: "flex",
             flexDirection: "column",
             borderRadius: '0px',
-            overflowY: "auto"
+            overflowY: "auto",
+            ...darkScrollbar()
         }}>
             <FormGroup sx={{pl: 4, flexDirection: "column"}}>
                 {
@@ -179,7 +184,7 @@ export const DatabaseVirtualized = () => {
             }}>
                 <AutoSizer>
                     {({height, width}) => (
-                        <VList
+                        <StyledVirtualizedList
                             ref={vListRef}
                             height={height}
                             rowCount={items.length}

@@ -89,6 +89,7 @@ export function MapContainer(props) {
             display: "flex",
             flexDirection: "column",
             borderRadius: '0px',
+            overflowY: "auto"
         }} className={"MapSettings"}>
             <RenderContainerSettings mapId={props.mapId}/>
         </Paper>

@@ -23,7 +23,6 @@ export const Strings = {
     },
 
     getItemCategory: function (cat, lang) {
-        console.log(cat)
         return this.itemsCategories[cat][lang]
     },
 
@@ -40,4 +39,21 @@ export const Strings = {
     getContainerCategory: function (cat, lang) {
         return this.containersCategories[cat][lang]
     },
+
+    getCategory: function (cat, lang) {
+        if(this.containersCategories.hasOwnProperty(cat)) {
+            return this.containersCategories[cat][lang]
+        } else {
+            return this.itemsCategories[cat][lang]
+        }
+    },
+
+    ui: {
+        "containers": {"en": "Containers", "ru": "Контейнеры"},
+        "items": {"en": "Items", "ru": "Предметы"}
+    },
+
+    getUi: function (ui, lang) {
+        return this.ui[ui][lang]
+    }
 }

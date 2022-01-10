@@ -84,7 +84,7 @@ export const App = () => {
                 path="/"
                 element={<Navigate to="/map"/>}
             />
-            <Route path="map" element={<MapContainer mapId="main"/>}/>
+            <Route path="map" element={<Suspense fallback={<Loading/>}><MapContainer mapId="main"/></Suspense>}/>
             <Route path="database" element={<Suspense fallback={<Loading/>}><DatabaseVirtualized/></Suspense>}/>
         </Routes>
 

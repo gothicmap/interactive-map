@@ -63,6 +63,11 @@ export const DatabaseVirtualized = () => {
     const lang = useRecoilValue(langAtom)
     const allCategories = useRecoilValue(categoriesSelector)
     const [checkCategory, setCategory] = useCategories()
+    const catChangeCallback = (cat) => {
+        return (evt) => {
+            setCategory(cat, evt.target.checked)
+        }
+    }
     const items = useRecoilValue(itemsSelector)
     const cache = useRef(new CellMeasurerCache({
         defaultHeight: 50,
@@ -80,12 +85,6 @@ export const DatabaseVirtualized = () => {
         },
         [items]
     )
-
-    const catChangeCallback = (cat) => {
-        return (evt) => {
-            setCategory(cat, evt.target.checked)
-        }
-    }
 
     const rowRenderer = ({index, key, parent, style}) => {
         const item = items[index]

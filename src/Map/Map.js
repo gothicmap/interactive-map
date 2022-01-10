@@ -4,7 +4,7 @@ import {useContext, useEffect, useRef, useState} from "react";
 // import {createKdTree} from "kd.tree";
 import {useGesture} from "@use-gesture/react";
 import {AbsTooltip} from "./AbsTooltip";
-import {mapPinsFamily, scaleFamily} from "./MapState";
+import {mapPinsSelector, scaleFamily} from "./MapState";
 import {useRecoilStateEx, useRecoilValueRef, useRefObj} from "../Misc/StateHelpers";
 import {PinTooltip, ShowPinModal} from "./Pins/PinTooltip";
 import {useModal} from "mui-modal-provider";
@@ -155,7 +155,7 @@ export const Map = ({mapId}) => {
         }
     }
 
-    const pinsData = useRecoilValueRef(mapPinsFamily(mapId), () => reDraw.current = true)
+    const pinsData = useRecoilValueRef(mapPinsSelector(mapId), () => reDraw.current = true)
 
     const draw = (map, canvas) => {
         canvas.translate(renderState.midPointShiftX, renderState.midPointShiftY)

@@ -48,6 +48,7 @@ module.exports = function override(config, env) {
         new CopyWebpackPlugin({
             patterns: [
                 {from: "node_modules/canvaskit-wasm/bin/canvaskit.wasm", to: "canvaskit.wasm"},
+                {from: "src/data", to: "data"}
             ],
         })
     );

@@ -1,21 +1,38 @@
-import items from "./items.json";
 import {atom, selector, useRecoilState} from "recoil";
+import {langAtom} from "../AppState";
 
-export const allCategories = items.categories
 
 export const databaseSearchTerm = atom({
     key: 'DatabaseSearchTermAtom',
     default: "",
 })
 
+const dataSelector = selector({
+    key: 'DatabaseDataSelector',
+    get: async ({get}) => {
+        const lang = get(langAtom)
+        let response = await fetch(`/data/${lang}/database/items.json`);
+        return await response.json();
+    }
+});
+
+export const categoriesSelector = selector({
+    key: 'DatabaseCategoriesSelector',
+    get: ({get}) => {
+        const data = get(dataSelector)
+        return data.categories
+    },
+});
+
 export const activeCategoriesAtom = atom({
     key: 'DatabaseActiveCategoriesAtom',
-    default: items.categories,
+    default: categoriesSelector,
 })
 
 export const itemsSelector = selector({
     key: 'DatabaseItemsSelector',
     get: ({get}) => {
+        const data = get(dataSelector)
         const searchTerm = get(databaseSearchTerm).toLowerCase()
         const activeCategories = get(activeCategoriesAtom)
 
@@ -25,9 +42,9 @@ export const itemsSelector = selector({
         }
 
         if (searchTerm) {
-            return items.items.filter((item) => activeCategories.includes(item.category) && checkItem(item))
+            return data.items.filter((item) => activeCategories.includes(item.category) && checkItem(item))
         } else {
-            return items.items.filter((item) => activeCategories.includes(item.category))
+            return data.items.filter((item) => activeCategories.includes(item.category))
         }
     },
 });

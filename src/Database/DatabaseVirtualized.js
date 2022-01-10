@@ -1,8 +1,6 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {CellMeasurer, AutoSizer, CellMeasurerCache, List as VList} from 'react-virtualized';
-import 'react-virtualized/styles.css'; // only needs to be imported once
-// List data as an array of strings
-
+import 'react-virtualized/styles.css';
 import {
     Box,
     Card,
@@ -17,10 +15,12 @@ import {
 } from "@mui/material";
 import {blue} from "@mui/material/colors";
 
-
-// import items from "./items.json";
 import {FormCheckbox} from "../Map/MapSettings";
-import {allCategories, databaseSearchTerm, itemsSelector, useCategories} from "./DatabaseState";
+import {
+    categoriesSelector, databaseSearchTerm,
+    itemsSelector,
+    useCategories
+} from "./DatabaseState";
 import {useRecoilState, useRecoilValue} from "recoil";
 import ClearIcon from "@mui/icons-material/Clear";
 import useDebounce from "@rooks/use-debounce";
@@ -58,8 +58,7 @@ export const DatabaseSearchInput = () => {
 }
 
 export const DatabaseVirtualized = () => {
-
-
+    const allCategories = useRecoilValue(categoriesSelector)
     const [checkCategory, setCategory] = useCategories()
     const items = useRecoilValue(itemsSelector)
     const cache = useRef(new CellMeasurerCache({
@@ -164,8 +163,6 @@ export const DatabaseVirtualized = () => {
                 }
             </FormGroup>
         </Paper>
-
-
         <Box sx={{
             flexDirection: "column",
             display: "flex",
@@ -193,6 +190,5 @@ export const DatabaseVirtualized = () => {
                 </AutoSizer>
             </Box>
         </Box>
-
     </Box>
 }

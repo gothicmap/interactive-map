@@ -1,7 +1,9 @@
 import {atomFamily, selector, selectorFamily, useRecoilState} from "recoil";
 import {createKdTree} from "kd.tree";
 import {langAtom} from "../AppState";
+import {recoilPersist} from "recoil-persist";
 
+const {persistAtom} = recoilPersist()
 
 const dataSelector = selector({
     key: 'MapDataSelector',
@@ -23,6 +25,7 @@ export const categoriesSelector = selector({
 export const activeCategoriesFamily = atomFamily({
     key: 'MapActiveCategoriesAtom',
     default: categoriesSelector,
+    effects_UNSTABLE: [persistAtom],
 })
 
 export const scaleFamily = atomFamily({

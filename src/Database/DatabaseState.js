@@ -1,6 +1,8 @@
 import {atom, selector, useRecoilState} from "recoil";
 import {langAtom} from "../AppState";
+import {recoilPersist} from "recoil-persist";
 
+const {persistAtom} = recoilPersist()
 
 export const databaseSearchTerm = atom({
     key: 'DatabaseSearchTermAtom',
@@ -27,6 +29,7 @@ export const categoriesSelector = selector({
 export const activeCategoriesAtom = atom({
     key: 'DatabaseActiveCategoriesAtom',
     default: categoriesSelector,
+    effects_UNSTABLE: [persistAtom],
 })
 
 export const itemsSelector = selector({

@@ -77,7 +77,7 @@ export const mapPinsSelector = selectorFamily({
         for (const pin of data.pins) {
             if (searchTerm) {
                 if (!(contains(pin.name, searchTerm) || containerContains(pin, searchTerm))) {
-                    return
+                    continue
                 }
             }
 

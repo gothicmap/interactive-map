@@ -28,6 +28,29 @@ export const activeCategoriesFamily = atomFamily({
     effects_UNSTABLE: [persistAtom],
 })
 
+export const visitedPinsAtop = atomFamily({
+    key: 'MapVisitedPinsAtom',
+    default: [],
+    effects_UNSTABLE: [persistAtom],
+})
+
+
+export const usePinVisited = (mapId, pinId) => {
+    const [visitedPins, setVisitedPins] = useRecoilState(visitedPinsAtop(mapId))
+
+
+    const set = (value) => {
+        if(value && !visitedPins.includes(pinId)) {
+            setVisitedPins([...visitedPins, pinId])
+        }
+        if(!value && visitedPins.includes(pinId)) {
+            setVisitedPins(visitedPins.filter((pin) => pin !== pinId))
+        }
+    }
+
+    return [visitedPins.includes(pinId), set]
+}
+
 export const scaleFamily = atomFamily({
     key: 'MapScale',
     default: 100

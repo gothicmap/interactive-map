@@ -1,6 +1,7 @@
 import {ChipInChip} from "../../Misc/ChipInChip";
 import React from "react";
-import {ContainerModalComponent, ShowContainerModal} from "../../Details/Container";
+import {ContainerModalComponent} from "../../Details/Container";
+import {ItemModalComponent} from "../../Details/Item";
 
 function LockedChip({container, ...props}) {
     if (container.locked) {
@@ -13,29 +14,45 @@ function LockedChip({container, ...props}) {
     return null
 }
 
-export const PinTooltip = ({pin}) => {
-    if (pin.type === "container") {
+export const PinTooltip = ({container}) => {
+    if (container.type === "container") {
         return <>
-            <ChipInChip label={pin.name} secondaryLabel="name"/>
-            <ChipInChip label={pin.type} secondaryLabel="type"/>
-            <ChipInChip label={pin.category} secondaryLabel="category"/>
-            <LockedChip container={pin}/>
+            <ChipInChip label={container.name} secondaryLabel="name"/>
+            <ChipInChip label={container.type} secondaryLabel="type"/>
+            <ChipInChip label={container.category} secondaryLabel="category"/>
+            <LockedChip container={container}/>
         </>
-    } else if (pin.type === "item") {
+    } else if (container.type === "item") {
         return <>
-            <ChipInChip label={pin.name} secondaryLabel="name"/>
+            <ChipInChip label={container.name} secondaryLabel="name"/>
         </>
     }
 
     return null
 }
 
-export const ShowPinModal = (pin, showModal) => {
+export const ShowPinModal = (mapId, pin, showModal) => {
     if (pin.type === "container") {
-        const modal = showModal(ContainerModalComponent, {
-            container: pin, closeModal: () => {
-                modal.hide();
+        const modal = showModal(
+            ContainerModalComponent,
+            {
+                pin: pin,
+                mapId: mapId,
+                closeModal: () => {
+                    modal.hide();
+                }
             }
-        })
+        )
+    } else if (pin.type === "item") {
+        const modal = showModal(
+            ItemModalComponent,
+            {
+                pin: pin,
+                mapId: mapId,
+                closeModal: () => {
+                    modal.hide();
+                }
+            }
+        )
     }
 }

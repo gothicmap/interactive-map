@@ -13,6 +13,7 @@ const Outline = forwardRef((props, ref) => {
             ref={ref}
             variant="outlined"
             label={props.label}
+            size={props.size}
             multiline
             InputLabelProps={{shrink: true}}
             InputProps={{

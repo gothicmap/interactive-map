@@ -4,7 +4,7 @@ import {useContext, useEffect, useRef, useState} from "react";
 // import {createKdTree} from "kd.tree";
 import {useGesture} from "@use-gesture/react";
 import {AbsTooltip} from "./AbsTooltip";
-import {mapPinsSelector, scaleFamily} from "./MapState";
+import {mapPinsSelector, scaleFamily, visitedPinsAtop} from "./MapState";
 import {useRecoilStateEx, useRecoilValueRef, useRefObj} from "../Misc/StateHelpers";
 import {PinTooltip, ShowPinModal} from "./Pins/PinTooltip";
 import {useModal} from "mui-modal-provider";
@@ -44,6 +44,7 @@ class RenderState {
         this.highlightedPin = null
         this.defaultPoint = null
         this.highlightPoint = null
+        this.visitedPoint = null
         this.showPins = true
         this.mapScale = 100
         this.maxDistance = calcMaxDistance(100)
@@ -137,12 +138,19 @@ export const Map = ({mapId}) => {
         renderState.highlightPoint.setColor(kit.Color(255, 0, 0, 1.0));
         renderState.highlightPoint.setAntiAlias(true)
 
+        renderState.visitedPoint = new kit.Paint();
+        renderState.visitedPoint.setColor(kit.Color(255, 255, 0, 1.0));
+        renderState.visitedPoint.setAntiAlias(true)
+
         return () => {
             if (renderState.defaultPoint) {
                 renderState.defaultPoint.delete()
             }
             if (renderState.highlightPoint) {
                 renderState.highlightPoint.delete()
+            }
+            if (renderState.visitedPoint) {
+                renderState.visitedPoint.delete()
             }
         }
     }, [])
@@ -156,6 +164,7 @@ export const Map = ({mapId}) => {
     }
 
     const pinsData = useRecoilValueRef(mapPinsSelector(mapId), () => reDraw.current = true)
+    const visitedPins = useRecoilValueRef(visitedPinsAtop(mapId), () => reDraw.current = true)
 
     const draw = (map, canvas) => {
         canvas.translate(renderState.midPointShiftX, renderState.midPointShiftY)
@@ -171,7 +180,8 @@ export const Map = ({mapId}) => {
                 if (renderState.highlightedPin !== null && renderState.highlightedPin.vobObjectID === c.vobObjectID) {
                     lastPin = c
                 } else {
-                    canvas.drawCircle(c.normPosition.x * mapDimensions, c.normPosition.y * mapDimensions, 5 / renderState.mapScale1, renderState.defaultPoint)
+                    const paint = visitedPins.current.includes(c.vobObjectID) ? renderState.visitedPoint : renderState.defaultPoint
+                    canvas.drawCircle(c.normPosition.x * mapDimensions, c.normPosition.y * mapDimensions, 5 / renderState.mapScale1, paint)
                 }
             })
 
@@ -212,7 +222,7 @@ export const Map = ({mapId}) => {
             const kdNode = closestPoint[0][0]
             const closestPin = kdNode.pin
             renderState.handleHighlightPin(closestPin, rect.left, rect.top, (px, py, pin) => {
-                setTooltipData({pos: {x: px, y: py}, data: <PinTooltip pin={pin}/>})
+                setTooltipData({pos: {x: px, y: py}, data: <PinTooltip container={pin}/>})
                 reDraw.current = true
             })
         } else {
@@ -230,7 +240,7 @@ export const Map = ({mapId}) => {
 
     const handlePointerUp = (evt) => {
         if (renderState.highlightedPin !== null) {
-            ShowPinModal(renderState.highlightedPin, showModal)
+            ShowPinModal(mapId, renderState.highlightedPin, showModal)
         }
     }
     const setupGestures = useGesture(

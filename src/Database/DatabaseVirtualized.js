@@ -1,35 +1,21 @@
-import React, {useEffect, useRef, useState} from 'react';
-import {AutoSizer, CellMeasurer, CellMeasurerCache, List as VList} from 'react-virtualized';
-import 'react-virtualized/styles.css';
-import {
-    Box,
-    Card,
-    CardContent,
-    Divider,
-    FormGroup,
-    IconButton,
-    InputBase,
-    List,
-    ListItem,
-    ListItemText,
-    Paper,
-    Typography
-} from "@mui/material";
-import {blue} from "@mui/material/colors";
-
+import React, {useEffect, useState} from 'react';
+import {Box, Divider, FormGroup, IconButton, InputBase, Paper} from "@mui/material";
+import DataTable from "react-data-table-component"
 import {FormCheckbox} from "../Map/MapSettings";
-import {categoriesSelector, databaseSearchTerm, itemsSelector, useCategories} from "./DatabaseState";
+import {
+    categoriesSelector,
+    databaseSearchTerm,
+    itemsColumnsSelector,
+    itemsSelector,
+    useCategories
+} from "./DatabaseState";
 import {useRecoilState, useRecoilValue} from "recoil";
 import ClearIcon from "@mui/icons-material/Clear";
 import useDebounce from "@rooks/use-debounce";
 import {Strings} from "../Strings";
 import {langAtom} from "../AppState";
 import darkScrollbar from "@mui/material/darkScrollbar";
-import {styled} from '@mui/material/styles';
 
-const StyledVirtualizedList = styled(VList)(({ theme }) => ({
-    ...darkScrollbar()
-}));
 
 export const DatabaseSearchInput = () => {
     const [searchTerm, setSearchTerm] = useRecoilState(databaseSearchTerm)
@@ -71,77 +57,9 @@ export const DatabaseVirtualized = () => {
             setCategory(cat, evt.target.checked)
         }
     }
-    const items = useRecoilValue(itemsSelector)
-    const cache = useRef(new CellMeasurerCache({
-        defaultHeight: 50,
-        fixedWidth: true
-    }))
 
-    const vListRef = useRef(null)
-
-    useEffect(() => {
-            cache.current.clearAll()
-            if (vListRef.current) {
-                vListRef.current.recomputeRowHeights()
-                vListRef.current.forceUpdate()
-            }
-        },
-        [items]
-    )
-
-    const rowRenderer = ({index, key, parent, style}) => {
-        const item = items[index]
-
-        return <CellMeasurer
-            cache={cache.current}
-            columnIndex={0}
-            key={key}
-            parent={parent}
-            rowIndex={index}
-        >
-            <div key={key} style={{
-                ...style,
-            }}>
-                <Card key={item.item} sx={{
-                    marginTop: (theme) => index === 0 ? 0 : theme.spacing(1),
-                    marginRight: (theme) => theme.spacing(1)
-                }}>
-                    <CardContent>
-                        <Typography sx={{fontSize: 14, color: blue[400]}} gutterBottom>
-                            {item.category}
-                        </Typography>
-                        <Typography variant="h5" component="div">
-                            {item.name}
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary" sx={{
-                            whiteSpace: "pre-wrap"
-                        }}>
-                            {item.description}
-                        </Typography>
-                        {item.values.length > 0 && <>
-                            <Divider variant="middle">properties</Divider>
-                            <List sx={{width: "100%", height: "100"}}>
-                                {
-                                    item.values.map(([valueText, value]) => {
-                                            return <>
-                                                <ListItem disablePadding>
-                                                    <ListItemText primary={valueText}/>
-                                                    <ListItemText primary={value} sx={{
-                                                        textAlign: "end",
-                                                        paddingLeft: (theme) => theme.spacing(1)
-                                                    }}/>
-                                                </ListItem>
-                                            </>
-                                        }
-                                    )
-                                }
-                            </List>
-                        </>}
-                    </CardContent>
-                </Card>
-            </div>
-        </CellMeasurer>
-    }
+    const columns = useRecoilValue(itemsColumnsSelector)
+    const rows = useRecoilValue(itemsSelector)
 
     return <Box sx={{
         flexGrow: 1000,
@@ -173,29 +91,34 @@ export const DatabaseVirtualized = () => {
         <Box sx={{
             flexDirection: "column",
             display: "flex",
-            flexGrow: 1000,
+            overflow: "hidden",
+            flexShrink: 10000,
+            flexGrow: 1,
             gap: (theme) => theme.spacing(1),
             padding: (theme) => theme.spacing(1)
         }}>
             <DatabaseSearchInput/>
-            <Box sx={{
-                flexGrow: 1,
-                overflowY: "hidden"
-            }}>
-                <AutoSizer>
-                    {({height, width}) => (
-                        <StyledVirtualizedList
-                            ref={vListRef}
-                            height={height}
-                            rowCount={items.length}
-                            deferredMeasurementCache={cache.current}
-                            rowHeight={cache.current.rowHeight}
-                            rowRenderer={rowRenderer}
-                            width={width}
-                        />
-                    )}
-                </AutoSizer>
-            </Box>
+            <Paper
+                sx={{
+                    display: "flex",
+                    overflow: "hidden",
+                    flexDirection: "column",
+                    flexGrow: 1,
+                    "& > div:first-child": {
+                        overflow: "auto",
+                        flexGrow: 1,
+                        ...darkScrollbar()
+                    }
+                }}>
+                <DataTable
+                    data={rows}
+                    columns={columns}
+                    pagination={true}
+                    responsive={true}
+                    theme={"dark"}
+                    highlightOnHover
+                />
+            </Paper>
         </Box>
     </Box>
 }

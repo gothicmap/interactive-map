@@ -52,6 +52,73 @@ export const itemsSelector = selector({
     },
 });
 
+
+const valueGetter = (valueName) => {
+    return (row) => {
+        const found = row.values.find((element) => element[0] === valueName)
+        return found && found[1]
+    }
+}
+
+
+const valueSort = (valueName) => {
+    const getter = valueGetter(valueName)
+    return (rowA, rowB) => {
+        const a = getter(rowA)
+        const b = getter(rowB)
+
+        if (a > b || (a && !b)) {
+            return 1;
+        }
+
+        if (b > a || (b && !a)) {
+            return -1
+        }
+
+        return 0
+    }
+}
+
+export const itemsColumnsSelector = selector({
+    key: 'DatabaseColumnsSelector',
+    get: ({get}) => {
+
+
+        const processed = []
+
+        const columns = [
+            {
+                name: 'Name',
+                selector: row => row.name,
+                sortable: true,
+            },
+            {
+                name: 'Console name',
+                selector: row => row.item,
+                sortable: true,
+            }
+        ]
+
+        const items = get(itemsSelector)
+
+        for (const item of items) {
+            for (const value of item.values) {
+                if (!processed.includes(value[0])) {
+                    processed.push(value[0])
+                    columns.push({
+                        name: value[0],
+                        selector: valueGetter(value[0]),
+                        sortFunction: valueSort(value[0]),
+                        sortable: true,
+                    })
+                }
+            }
+        }
+
+        return columns
+    },
+});
+
 export const useCategories = () => {
     const [activeCategories, setActiveCategories] = useRecoilState(activeCategoriesAtom)
 

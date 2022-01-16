@@ -16,6 +16,31 @@ import {Strings} from "../Strings";
 import {langAtom} from "../AppState";
 import darkScrollbar from "@mui/material/darkScrollbar";
 
+const customSort = (rows, selector, direction) => {
+    return rows.sort((rowA, rowB) => {
+        const a = selector(rowA)
+        const b = selector(rowB)
+
+        let comparison = 0
+
+        if (a > b || (a && !b)) {
+            comparison = 1
+            if(!b && direction === 'asc') {
+                comparison *= -1
+            }
+        }
+
+        if (b > a || (b && !a)) {
+            comparison = -1
+            if(!a && direction === 'asc') {
+                comparison *= -1
+            }
+        }
+
+
+        return direction === 'desc' ? comparison * -1 : comparison;
+    })
+}
 
 export const DatabaseSearchInput = () => {
     const [searchTerm, setSearchTerm] = useRecoilState(databaseSearchTerm)
@@ -116,6 +141,7 @@ export const DatabaseVirtualized = () => {
                     pagination={true}
                     responsive={true}
                     theme={"dark"}
+                    sortFunction={customSort}
                     highlightOnHover
                 />
             </Paper>

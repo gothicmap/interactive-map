@@ -1,6 +1,7 @@
 import {atom, selector, useRecoilState} from "recoil";
 import {langAtom} from "../AppState";
 import {recoilPersist} from "recoil-persist";
+import {Strings} from "../Strings";
 
 const {persistAtom} = recoilPersist()
 
@@ -82,18 +83,18 @@ const valueSort = (valueName) => {
 export const itemsColumnsSelector = selector({
     key: 'DatabaseColumnsSelector',
     get: ({get}) => {
-
+        const lang = get(langAtom)
 
         const processed = []
 
         const columns = [
             {
-                name: 'Name',
+                name: Strings.getUi("name", lang),
                 selector: row => row.name,
                 sortable: true,
             },
             {
-                name: 'Console name',
+                name: Strings.getUi("consoleId", lang),
                 selector: row => row.item,
                 sortable: true,
             }
@@ -108,7 +109,7 @@ export const itemsColumnsSelector = selector({
                     columns.push({
                         name: value[0],
                         selector: valueGetter(value[0]),
-                        sortFunction: valueSort(value[0]),
+                        // sortFunction: valueSort(value[0]),
                         sortable: true,
                     })
                 }

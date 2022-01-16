@@ -34,6 +34,12 @@ export const activeCategoriesAtom = atom({
     effects_UNSTABLE: [persistAtom],
 })
 
+export const paginationItemsPerPage = atom({
+    key: 'DatabasePaginationItemsPerPage',
+    default: 25,
+    effects_UNSTABLE: [persistAtom],
+})
+
 export const itemsSelector = selector({
     key: 'DatabaseItemsSelector',
     get: ({get}) => {
@@ -62,23 +68,14 @@ const valueGetter = (valueName) => {
     }
 }
 
-
-const valueSort = (valueName) => {
-    const getter = valueGetter(valueName)
-    return (rowA, rowB) => {
-        const a = getter(rowA)
-        const b = getter(rowB)
-
-        if (a > b || (a && !b)) {
-            return 1;
-        }
-
-        if (b > a || (b && !a)) {
-            return -1
-        }
-
-        return 0
-    }
+const HeaderName = ({title}) => {
+    return <Tooltip title={title}>
+        <Box sx={{
+            whiteSpace: "nowrap",
+            overflow: "hidden",
+            textOverflow: "ellipsis"
+        }}>{title}</Box>
+    </Tooltip>
 }
 
 export const itemsColumnsSelector = selector({
@@ -90,22 +87,23 @@ export const itemsColumnsSelector = selector({
 
         const columns = [
             {
-                name: Strings.getUi("name", lang),
+                name: <HeaderName title={Strings.getUi("name", lang)}/>,
                 selector: row => row.name,
                 sortable: true,
                 style: {
                     position: "sticky",
                     left: 0,
                     "z-index": "100",
+                    backgroundColor: "#121212"
                 }
             },
             {
-                name: Strings.getUi("consoleId", lang),
+                name: <HeaderName title={Strings.getUi("consoleId", lang)}/>,
                 selector: row => row.item,
                 sortable: true,
             },
             {
-                name: Strings.getUi("description", lang),
+                name: <HeaderName title={Strings.getUi("description", lang)}/>,
                 selector: row => row.description,
                 sortable: true,
                 cell: row => {
@@ -127,7 +125,7 @@ export const itemsColumnsSelector = selector({
                 if (!processed.includes(value[0])) {
                     processed.push(value[0])
                     columns.push({
-                        name: value[0],
+                        name: <HeaderName title={value[0]}/>,
                         selector: valueGetter(value[0]),
                         // sortFunction: valueSort(value[0]),
                         sortable: true,

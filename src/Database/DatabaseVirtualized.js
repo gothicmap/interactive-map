@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from 'react';
-import {Box, Divider, FormGroup, IconButton, InputBase, Paper} from "@mui/material";
-import DataTable from "react-data-table-component"
+import {Box, Button, Divider, FormGroup, IconButton, InputBase, Paper} from "@mui/material";
+import DataTable, {createTheme} from "react-data-table-component"
 import {FormCheckbox} from "../Map/MapSettings";
 import {
     categoriesSelector,
     databaseSearchTerm,
     itemsColumnsSelector,
-    itemsSelector,
+    itemsSelector, paginationItemsPerPage,
     useCategories
 } from "./DatabaseState";
 import {useRecoilState, useRecoilValue} from "recoil";
@@ -26,14 +26,14 @@ const customSort = (rows, selector, direction) => {
 
         if (a > b || (a && !b)) {
             comparison = 1
-            if(!b && direction === 'asc') {
+            if (!b && direction === 'asc') {
                 comparison *= -1
             }
         }
 
         if (b > a || (b && !a)) {
             comparison = -1
-            if(!a && direction === 'asc') {
+            if (!a && direction === 'asc') {
                 comparison *= -1
             }
         }
@@ -43,16 +43,12 @@ const customSort = (rows, selector, direction) => {
     })
 }
 
-const customStyles = {
-    headCells: {
-        style: {
-               position: "sticky",
-                    left: 0,
-                    "z-index": 1,
-                    backgroundColor: "inherit"
-        },
-    },
-}
+
+createTheme('mui', {
+  background: {
+    default: 'transparent',
+  },
+}, 'dark');
 
 export const DatabaseSearchInput = () => {
     const [searchTerm, setSearchTerm] = useRecoilState(databaseSearchTerm)
@@ -97,6 +93,11 @@ export const DatabaseVirtualized = () => {
 
     const columns = useRecoilValue(itemsColumnsSelector)
     const rows = useRecoilValue(itemsSelector)
+    const [defaultItemsPerPage, setDefaultItemsPerPage] = useRecoilState(paginationItemsPerPage)
+    const handleItemsPerPageChanged = (currentRowsPerPage, currentPage) => {
+        setDefaultItemsPerPage(currentRowsPerPage)
+    }
+
 
     return <Box sx={{
         flexGrow: 1000,
@@ -146,10 +147,18 @@ export const DatabaseVirtualized = () => {
                         flexGrow: 1,
                         ...darkScrollbar()
                     },
+                    "& .rdt_TableHead": {
+                        position: "sticky",
+                        left: 0,
+                        top: 0,
+                        zIndex: "101",
+                        backgroundColor: (theme) => theme.palette.background.paper
+                    },
                     "& .rdt_TableHeadRow .rdt_TableCol:first-child": {
                         position: "sticky",
                         left: 0,
-                        zIndex: "100",
+                        zIndex: "101",
+                        backgroundColor: (theme) => theme.palette.background.paper
                     }
                 }}>
                 <DataTable
@@ -157,9 +166,11 @@ export const DatabaseVirtualized = () => {
                     columns={columns}
                     pagination={true}
                     responsive={true}
-                    theme={"dark"}
+                    theme={"mui"}
                     sortFunction={customSort}
-                    sortIcon={<ArrowDownward />}
+                    sortIcon={<ArrowDownward/>}
+                    paginationPerPage={defaultItemsPerPage}
+                    onChangeRowsPerPage={handleItemsPerPageChanged}
                     highlightOnHover
                 />
             </Paper>

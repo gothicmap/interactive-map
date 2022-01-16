@@ -15,6 +15,7 @@ import useDebounce from "@rooks/use-debounce";
 import {Strings} from "../Strings";
 import {langAtom} from "../AppState";
 import darkScrollbar from "@mui/material/darkScrollbar";
+import {ArrowDownward} from "@mui/icons-material";
 
 const customSort = (rows, selector, direction) => {
     return rows.sort((rowA, rowB) => {
@@ -40,6 +41,17 @@ const customSort = (rows, selector, direction) => {
 
         return direction === 'desc' ? comparison * -1 : comparison;
     })
+}
+
+const customStyles = {
+    headCells: {
+        style: {
+               position: "sticky",
+                    left: 0,
+                    "z-index": 1,
+                    backgroundColor: "inherit"
+        },
+    },
 }
 
 export const DatabaseSearchInput = () => {
@@ -133,6 +145,11 @@ export const DatabaseVirtualized = () => {
                         overflow: "auto",
                         flexGrow: 1,
                         ...darkScrollbar()
+                    },
+                    "& .rdt_TableHeadRow .rdt_TableCol:first-child": {
+                        position: "sticky",
+                        left: 0,
+                        zIndex: "100",
                     }
                 }}>
                 <DataTable
@@ -142,6 +159,7 @@ export const DatabaseVirtualized = () => {
                     responsive={true}
                     theme={"dark"}
                     sortFunction={customSort}
+                    sortIcon={<ArrowDownward />}
                     highlightOnHover
                 />
             </Paper>

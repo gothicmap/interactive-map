@@ -2,6 +2,7 @@ import {atom, selector, useRecoilState} from "recoil";
 import {langAtom} from "../AppState";
 import {recoilPersist} from "recoil-persist";
 import {Strings} from "../Strings";
+import {Box, Tooltip} from "@mui/material";
 
 const {persistAtom} = recoilPersist()
 
@@ -92,11 +93,30 @@ export const itemsColumnsSelector = selector({
                 name: Strings.getUi("name", lang),
                 selector: row => row.name,
                 sortable: true,
+                style: {
+                    position: "sticky",
+                    left: 0,
+                    "z-index": "100",
+                }
             },
             {
                 name: Strings.getUi("consoleId", lang),
                 selector: row => row.item,
                 sortable: true,
+            },
+            {
+                name: Strings.getUi("description", lang),
+                selector: row => row.description,
+                sortable: true,
+                cell: row => {
+                    return <Tooltip title={<Box sx={{whiteSpace: "pre-wrap"}}>{row.description}</Box>}>
+                        <Box sx={{
+                            whiteSpace: "nowrap",
+                            overflow: "hidden",
+                            textOverflow: "ellipsis"
+                        }}>{row.description}</Box>
+                    </Tooltip>
+                }
             }
         ]
 

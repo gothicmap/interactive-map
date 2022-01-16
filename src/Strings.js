@@ -53,6 +53,7 @@ export const Strings = {
         "items": {"en": "Items", "ru": "Предметы"},
         "name": {"en": "Name", "ru": "Имя"},
         "consoleId": {"en": "Console ID", "ru": "Консольный ID"},
+        "description": {"en": "Description", "ru": "Описание"},
     },
 
     getUi: function (ui, lang) {

@@ -73,7 +73,24 @@ const ContainerContentInfo = forwardRef((props, ref) => {
                 {props.container.contains.map((item) => (
                     <Chip
                         key={item.item}
-                        label={item.name}
+                        label={
+                            <Box
+                                sx={{
+                                    display: "flex",
+                                    flexDirection: "row",
+                                    gap: theme => theme.spacing(1)
+                                }}
+                            >
+                                {item.name}
+                                {
+                                    item.flags.map(
+                                        flag => {
+                                            return <Chip label={flag} color="secondary" size="small"/>
+                                        }
+                                    )
+                                }
+                            </Box>
+                        }
                         color="primary"
                         icon={
                             <Chip color="secondary"

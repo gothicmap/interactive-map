@@ -2,13 +2,14 @@ import {ChipInChip} from "../../Misc/ChipInChip";
 import React from "react";
 import {ContainerModalComponent} from "../../Details/Container";
 import {ItemModalComponent} from "../../Details/Item";
+import {Chip} from "@mui/material";
 
 function LockedChip({container, ...props}) {
     if (container.locked) {
         if (container.key) {
-            return <ChipInChip label={container.key} secondaryLabel="key" color="error"/>
+            return <Chip label="key" color="error" size="small"/>
         } else if (container.pickLock) {
-            return <ChipInChip label={container.pickLock} secondaryLabel="combination" color="error"/>
+            return <Chip label="pick lock" color="error" size="small"/>
         }
     }
     return null
@@ -18,13 +19,19 @@ export const PinTooltip = ({container}) => {
     if (container.type === "container") {
         return <>
             <ChipInChip label={container.name} secondaryLabel="name"/>
-            <ChipInChip label={container.type} secondaryLabel="type"/>
-            <ChipInChip label={container.category} secondaryLabel="category"/>
+            <Chip label={container.category} color="secondary" size="small"/>
             <LockedChip container={container}/>
         </>
     } else if (container.type === "item") {
         return <>
             <ChipInChip label={container.name} secondaryLabel="name"/>
+            {
+                container.flags.map(
+                    flag => {
+                        return <Chip label={flag} color="secondary" size="small"/>
+                    }
+                )
+            }
         </>
     }
 

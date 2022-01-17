@@ -1,0 +1,8889 @@
+[
+  {
+    "recipeItem": {
+      "item": "itre_potionmana_blueplant",
+      "name": "Рецепт: Отвар синей бузины"
+    },
+    "recipeResult": {
+      "item": "itpo_mana_blueplant",
+      "name": "Отвар синей бузины",
+      "value": 20
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Мензурка",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_blueplant",
+        "name": "Синяя бузина",
+        "count": 2,
+        "value": 5,
+        "valueSum": 10
+      }
+    ],
+    "productionValue": 15,
+    "profit": 5
+  },
+  {
+    "recipeItem": {
+      "item": "itre_perm_health",
+      "name": "Рецепт: Эликсир жизни"
+    },
+    "recipeResult": {
+      "item": "itpo_perm_health",
+      "name": "Эликсир жизни",
+      "value": 1200
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Мензурка",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_perm_herb",
+        "name": "Царский щавель",
+        "count": 1,
+        "value": 500,
+        "valueSum": 500
+      },
+      {
+        "item": "itpl_health_herb_03",
+        "name": "Лечебный корень",
+        "count": 1,
+        "value": 35,
+        "valueSum": 35
+      },
+      {
+        "item": "itpl_eastviolet",
+        "name": "Восточная фиалка",
+        "count": 1,
+        "value": 30,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 570,
+    "profit": 630
+  },
+  {
+    "recipeItem": {
+      "item": "itre_perm_mana",
+      "name": "Рецепт: Эликсир духа"
+    },
+    "recipeResult": {
+      "item": "itpo_perm_mana",
+      "name": "Эликсир духа",
+      "value": 1200
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Мензурка",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_perm_herb",
+        "name": "Царский щавель",
+        "count": 1,
+        "value": 500,
+        "valueSum": 500
+      },
+      {
+        "item": "itpl_mana_herb_03",
+        "name": "Огненный корень",
+        "count": 1,
+        "value": 30,
+        "valueSum": 30
+      },
+      {
+        "item": "itpl_eastviolet",
+        "name": "Восточная фиалка",
+        "count": 1,
+        "value": 30,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 565,
+    "profit": 635
+  },
+  {
+    "recipeItem": {
+      "item": "itre_perm_str",
+      "name": "Рецепт: Эликсир силы"
+    },
+    "recipeResult": {
+      "item": "itpo_perm_str",
+      "name": "Эликсир силы",
+      "value": 1500
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Мензурка",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_perm_herb",
+        "name": "Царский щавель",
+        "count": 1,
+        "value": 500,
+        "valueSum": 500
+      },
+      {
+        "item": "itpl_strength_herb_01",
+        "name": "Драконий корень",
+        "count": 1,
+        "value": 500,
+        "valueSum": 500
+      }
+    ],
+    "productionValue": 1005,
+    "profit": 495
+  },
+  {
+    "recipeItem": {
+      "item": "itre_perm_dex",
+      "name": "Рецепт: Эликсир ловкости"
+    },
+    "recipeResult": {
+      "item": "itpo_perm_dex",
+      "name": "Эликсир ловкости",
+      "value": 1500
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Мензурка",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_perm_herb",
+        "name": "Царский щавель",
+        "count": 1,
+        "value": 500,
+        "valueSum": 500
+      },
+      {
+        "item": "itpl_dex_herb_01",
+        "name": "Ягода гоблина",
+        "count": 1,
+        "value": 500,
+        "valueSum": 500
+      }
+    ],
+    "productionValue": 1005,
+    "profit": 495
+  },
+  {
+    "recipeItem": {
+      "item": "itre_speed",
+      "name": "Рецепт: Зелье ускорения"
+    },
+    "recipeResult": {
+      "item": "itpo_speed",
+      "name": "Зелье ускорения",
+      "value": 40
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Мензурка",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Трава глорха",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itpl_river_mirt",
+        "name": "Речной мирт",
+        "count": 1,
+        "value": 15,
+        "valueSum": 15
+      }
+    ],
+    "productionValue": 40,
+    "profit": 0
+  },
+  {
+    "recipeItem": {
+      "item": "itre_speed2",
+      "name": "Рецепт: Сильное зелье скорости"
+    },
+    "recipeResult": {
+      "item": "itpo_speed2",
+      "name": "Длительное зелье ускорения",
+      "value": 90
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Мензурка",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Трава глорха",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itpl_river_mirt",
+        "name": "Речной мирт",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 75,
+    "profit": 15
+  },
+  {
+    "recipeItem": {
+      "item": "itre_timed_health",
+      "name": "Рецепт: Эликсир повышения жизни"
+    },
+    "recipeResult": {
+      "item": "itpo_timed_health",
+      "name": "Эликсир повышения жизни",
+      "value": 125
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Мензурка",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Трава глорха",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itpl_health_herb_03",
+        "name": "Лечебный корень",
+        "count": 2,
+        "value": 35,
+        "valueSum": 70
+      },
+      {
+        "item": "itpl_swampherb",
+        "name": "Болотная трава",
+        "count": 4,
+        "value": 15,
+        "valueSum": 60
+      },
+      {
+        "item": "itpl_eastviolet",
+        "name": "Восточная фиалка",
+        "count": 1,
+        "value": 30,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 185,
+    "profit": -60
+  },
+  {
+    "recipeItem": {
+      "item": "itre_timed_mana",
+      "name": "Рецепт: Эликсир повышения духа"
+    },
+    "recipeResult": {
+      "item": "itpo_timed_mana",
+      "name": "Эликсир повышения маны",
+      "value": 125
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Мензурка",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Трава глорха",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itpl_mana_herb_03",
+        "name": "Огненный корень",
+        "count": 2,
+        "value": 30,
+        "valueSum": 60
+      },
+      {
+        "item": "itpl_swampherb",
+        "name": "Болотная трава",
+        "count": 4,
+        "value": 15,
+        "valueSum": 60
+      },
+      {
+        "item": "itpl_eastviolet",
+        "name": "Восточная фиалка",
+        "count": 1,
+        "value": 30,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 175,
+    "profit": -50
+  },
+  {
+    "recipeItem": {
+      "item": "itre_timed_str",
+      "name": "Рецепт: Эликсир повышения силы"
+    },
+    "recipeResult": {
+      "item": "itpo_timed_str",
+      "name": "Эликсир повышения силы",
+      "value": 150
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Мензурка",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Трава глорха",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itpl_seaweed",
+        "name": "Иловый мирт",
+        "count": 2,
+        "value": 25,
+        "valueSum": 50
+      },
+      {
+        "item": "itpl_mushroom_02",
+        "name": "Пища рудокопа",
+        "count": 5,
+        "value": 10,
+        "valueSum": 50
+      },
+      {
+        "item": "itpl_forestberry",
+        "name": "Лесная ягода",
+        "count": 10,
+        "value": 5,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 175,
+    "profit": -25
+  },
+  {
+    "recipeItem": {
+      "item": "itre_timed_dex",
+      "name": "Рецепт: Эликсир повышения ловкости"
+    },
+    "recipeResult": {
+      "item": "itpo_timed_dex",
+      "name": "Эликсир повышения ловкости",
+      "value": 150
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Мензурка",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Трава глорха",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itpl_seaweed",
+        "name": "Иловый мирт",
+        "count": 2,
+        "value": 25,
+        "valueSum": 50
+      },
+      {
+        "item": "itpl_mushroom_01",
+        "name": "Темный гриб",
+        "count": 5,
+        "value": 5,
+        "valueSum": 25
+      },
+      {
+        "item": "itpl_planeberry",
+        "name": "Луговая ягода",
+        "count": 10,
+        "value": 5,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 150,
+    "profit": 0
+  },
+  {
+    "recipeItem": {
+      "item": "itre_timed_def",
+      "name": "Рецепт: Эликсир защиты"
+    },
+    "recipeResult": {
+      "item": "itpo_timed_def",
+      "name": "Эликсир повышения кожи",
+      "value": 150
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Мензурка",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Трава глорха",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itpl_seaweed",
+        "name": "Иловый мирт",
+        "count": 3,
+        "value": 25,
+        "valueSum": 75
+      },
+      {
+        "item": "itpl_eastviolet",
+        "name": "Восточная фиалка",
+        "count": 1,
+        "value": 30,
+        "valueSum": 30
+      },
+      {
+        "item": "itpl_beet",
+        "name": "Репа",
+        "count": 5,
+        "value": 3,
+        "valueSum": 15
+      }
+    ],
+    "productionValue": 145,
+    "profit": 5
+  },
+  {
+    "recipeItem": {
+      "item": "itre_timed_health2",
+      "name": "Рецепт: Сильный эликсир повышения жизни"
+    },
+    "recipeResult": {
+      "item": "itpo_timed_health2",
+      "name": "Длительный эликсир повышения жизни",
+      "value": 220
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Мензурка",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Трава глорха",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itpl_health_herb_03",
+        "name": "Лечебный корень",
+        "count": 3,
+        "value": 35,
+        "valueSum": 105
+      },
+      {
+        "item": "itpl_swampherb",
+        "name": "Болотная трава",
+        "count": 6,
+        "value": 15,
+        "valueSum": 90
+      },
+      {
+        "item": "itpl_eastviolet",
+        "name": "Восточная фиалка",
+        "count": 2,
+        "value": 30,
+        "valueSum": 60
+      }
+    ],
+    "productionValue": 300,
+    "profit": -80
+  },
+  {
+    "recipeItem": {
+      "item": "itre_timed_mana2",
+      "name": "Рецепт: Сильный эликсир повышения маны"
+    },
+    "recipeResult": {
+      "item": "itpo_timed_mana2",
+      "name": "Длительный эликсир повышения маны",
+      "value": 220
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Мензурка",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Трава глорха",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itpl_mana_herb_03",
+        "name": "Огненный корень",
+        "count": 3,
+        "value": 30,
+        "valueSum": 90
+      },
+      {
+        "item": "itpl_swampherb",
+        "name": "Болотная трава",
+        "count": 6,
+        "value": 15,
+        "valueSum": 90
+      },
+      {
+        "item": "itpl_eastviolet",
+        "name": "Восточная фиалка",
+        "count": 2,
+        "value": 30,
+        "valueSum": 60
+      }
+    ],
+    "productionValue": 285,
+    "profit": -65
+  },
+  {
+    "recipeItem": {
+      "item": "itre_timed_str2",
+      "name": "Рецепт: Сильный эликсир повышения силы"
+    },
+    "recipeResult": {
+      "item": "itpo_timed_str2",
+      "name": "Длительный эликсир повышения силы",
+      "value": 270
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Мензурка",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Трава глорха",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itpl_seaweed",
+        "name": "Иловый мирт",
+        "count": 3,
+        "value": 25,
+        "valueSum": 75
+      },
+      {
+        "item": "itpl_mushroom_02",
+        "name": "Пища рудокопа",
+        "count": 8,
+        "value": 10,
+        "valueSum": 80
+      },
+      {
+        "item": "itpl_forestberry",
+        "name": "Лесная ягода",
+        "count": 16,
+        "value": 5,
+        "valueSum": 80
+      }
+    ],
+    "productionValue": 280,
+    "profit": -10
+  },
+  {
+    "recipeItem": {
+      "item": "itre_timed_dex2",
+      "name": "Рецепт: Сильный эликсир повышения ловкости"
+    },
+    "recipeResult": {
+      "item": "itpo_timed_dex2",
+      "name": "Длительный эликсир повышения ловкости",
+      "value": 270
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Мензурка",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Трава глорха",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itpl_seaweed",
+        "name": "Иловый мирт",
+        "count": 3,
+        "value": 25,
+        "valueSum": 75
+      },
+      {
+        "item": "itpl_mushroom_01",
+        "name": "Темный гриб",
+        "count": 8,
+        "value": 5,
+        "valueSum": 40
+      },
+      {
+        "item": "itpl_planeberry",
+        "name": "Луговая ягода",
+        "count": 16,
+        "value": 5,
+        "valueSum": 80
+      }
+    ],
+    "productionValue": 240,
+    "profit": 30
+  },
+  {
+    "recipeItem": {
+      "item": "itre_timed_def2",
+      "name": "Рецепт: Сильный эликсир повышения защиты"
+    },
+    "recipeResult": {
+      "item": "itpo_timed_def2",
+      "name": "Длительный эликсир повышения кожи",
+      "value": 270
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Мензурка",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Трава глорха",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itpl_seaweed",
+        "name": "Иловый мирт",
+        "count": 5,
+        "value": 25,
+        "valueSum": 125
+      },
+      {
+        "item": "itpl_eastviolet",
+        "name": "Восточная фиалка",
+        "count": 2,
+        "value": 30,
+        "valueSum": 60
+      },
+      {
+        "item": "itpl_beet",
+        "name": "Репа",
+        "count": 8,
+        "value": 3,
+        "valueSum": 24
+      }
+    ],
+    "productionValue": 254,
+    "profit": 16
+  },
+  {
+    "recipeItem": {
+      "item": "itre_stoneskin",
+      "name": "Рецепт: Зелье каменной кожи"
+    },
+    "recipeResult": {
+      "item": "itpo_stoneskin",
+      "name": "Зелье каменной кожи",
+      "value": 1500
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Мензурка",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_perm_herb",
+        "name": "Царский щавель",
+        "count": 1,
+        "value": 500,
+        "valueSum": 500
+      },
+      {
+        "item": "itpl_earthaloes",
+        "name": "Земляное алоэ",
+        "count": 1,
+        "value": 500,
+        "valueSum": 500
+      },
+      {
+        "item": "itpl_eastviolet",
+        "name": "Восточная фиалка",
+        "count": 1,
+        "value": 30,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 1035,
+    "profit": 465
+  },
+  {
+    "recipeItem": {
+      "item": "itre_potionfall",
+      "name": "Рецепт: Зелье свободного падения"
+    },
+    "recipeResult": {
+      "item": "itpo_fall",
+      "name": "Зелье свободного падения",
+      "value": 35
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Мензурка",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Трава глорха",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itat_scavengeregg",
+        "name": "Яйцо падальщика",
+        "count": 2,
+        "value": 8,
+        "valueSum": 16
+      }
+    ],
+    "productionValue": 41,
+    "profit": -6
+  },
+  {
+    "recipeItem": {
+      "item": "itre_potiondive",
+      "name": "Рецепт: Зелье подводного дыхания"
+    },
+    "recipeResult": {
+      "item": "itpo_dive",
+      "name": "Зелье подводного дыхания",
+      "value": 35
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Мензурка",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_river_mirt",
+        "name": "Речной мирт",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      }
+    ],
+    "productionValue": 50,
+    "profit": -15
+  },
+  {
+    "recipeItem": {
+      "item": "itre_potionhpregen",
+      "name": "Рецепт: Зелье восстановления здоровья"
+    },
+    "recipeResult": {
+      "item": "itpo_hpregen",
+      "name": "Зелье восстановления здоровья",
+      "value": 220
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Мензурка",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_temp_herb",
+        "name": "Луговой горец",
+        "count": 4,
+        "value": 10,
+        "valueSum": 40
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Трава глорха",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itpl_health_herb_03",
+        "name": "Лечебный корень",
+        "count": 2,
+        "value": 35,
+        "valueSum": 70
+      },
+      {
+        "item": "itpl_forestberry",
+        "name": "Лесная ягода",
+        "count": 5,
+        "value": 5,
+        "valueSum": 25
+      },
+      {
+        "item": "itpl_swampherb",
+        "name": "Болотная трава",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 190,
+    "profit": 30
+  },
+  {
+    "recipeItem": {
+      "item": "itre_potionmanaregen",
+      "name": "Рецепт: Зелье восстановления маны"
+    },
+    "recipeResult": {
+      "item": "itpo_manaregen",
+      "name": "Зелье восстановления маны",
+      "value": 160
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Мензурка",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_temp_herb",
+        "name": "Луговой горец",
+        "count": 4,
+        "value": 10,
+        "valueSum": 40
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Трава глорха",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itpl_planeberry",
+        "name": "Луговая ягода",
+        "count": 5,
+        "value": 5,
+        "valueSum": 25
+      },
+      {
+        "item": "itpl_mana_herb_03",
+        "name": "Огненный корень",
+        "count": 2,
+        "value": 30,
+        "valueSum": 60
+      },
+      {
+        "item": "itpl_swampherb",
+        "name": "Болотная трава",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 180,
+    "profit": -20
+  },
+  {
+    "recipeItem": {
+      "item": "itre_potionhpregen2",
+      "name": "Рецепт: Сильное зелье восстановления здоровья"
+    },
+    "recipeResult": {
+      "item": "itpo_hpregen2",
+      "name": "Длительное зелье восстановления здоровья",
+      "value": 400
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Мензурка",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_temp_herb",
+        "name": "Луговой горец",
+        "count": 7,
+        "value": 10,
+        "valueSum": 70
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Трава глорха",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itpl_health_herb_03",
+        "name": "Лечебный корень",
+        "count": 3,
+        "value": 35,
+        "valueSum": 105
+      },
+      {
+        "item": "itpl_forestberry",
+        "name": "Лесная ягода",
+        "count": 8,
+        "value": 5,
+        "valueSum": 40
+      },
+      {
+        "item": "itpl_swampherb",
+        "name": "Болотная трава",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      }
+    ],
+    "productionValue": 305,
+    "profit": 95
+  },
+  {
+    "recipeItem": {
+      "item": "itre_potionmanaregen2",
+      "name": "Рецепт: Сильное зелье восстановления маны"
+    },
+    "recipeResult": {
+      "item": "itpo_manaregen2",
+      "name": "Длительное зелье восстановления маны",
+      "value": 300
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Мензурка",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_temp_herb",
+        "name": "Луговой горец",
+        "count": 7,
+        "value": 10,
+        "valueSum": 70
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Трава глорха",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itpl_planeberry",
+        "name": "Луговая ягода",
+        "count": 8,
+        "value": 5,
+        "valueSum": 40
+      },
+      {
+        "item": "itpl_mana_herb_03",
+        "name": "Огненный корень",
+        "count": 3,
+        "value": 30,
+        "valueSum": 90
+      },
+      {
+        "item": "itpl_swampherb",
+        "name": "Болотная трава",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      }
+    ],
+    "productionValue": 290,
+    "profit": 10
+  },
+  {
+    "recipeItem": {
+      "item": "itre_pickledbeet",
+      "name": "Рецепт: Маринованная репа"
+    },
+    "recipeResult": {
+      "item": "itfo_pickledbeet",
+      "name": "Маринованная репа",
+      "value": 18
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_beet",
+        "name": "Репа",
+        "count": 3,
+        "value": 3,
+        "valueSum": 9
+      },
+      {
+        "item": "itfo_honey",
+        "name": "Мед",
+        "count": 1,
+        "value": 8,
+        "valueSum": 8
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itcr_vinegar",
+        "name": "Уксус",
+        "count": 1,
+        "value": 40,
+        "valueSum": 40
+      }
+    ],
+    "productionValue": 107,
+    "profit": -89
+  },
+  {
+    "recipeItem": {
+      "item": "itre_beerbread",
+      "name": "Рецепт: Пивной хлеб"
+    },
+    "recipeResult": {
+      "item": "itfo_beerbread",
+      "name": "Пивной хлеб",
+      "value": 27
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_beer_02",
+        "name": "Крепкое пиво",
+        "count": 1,
+        "value": 12,
+        "valueSum": 12
+      },
+      {
+        "item": "itpl_health_herb_02",
+        "name": "Лечебное растение",
+        "count": 1,
+        "value": 25,
+        "valueSum": 25
+      },
+      {
+        "item": "itcr_wheat",
+        "name": "Мешок муки",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 137,
+    "profit": -110
+  },
+  {
+    "recipeItem": {
+      "item": "itre_pumpkincompote",
+      "name": "Рецепт: Компот из тыквы"
+    },
+    "recipeResult": {
+      "item": "itfo_pumpkincompote",
+      "name": "Компот из тыквы",
+      "value": 23
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_pumpkin",
+        "name": "Тыква",
+        "count": 2,
+        "value": 7,
+        "valueSum": 14
+      },
+      {
+        "item": "itfo_honey",
+        "name": "Мед",
+        "count": 1,
+        "value": 8,
+        "valueSum": 8
+      },
+      {
+        "item": "itcr_cinnamon",
+        "name": "Корица",
+        "count": 1,
+        "value": 75,
+        "valueSum": 75
+      }
+    ],
+    "productionValue": 97,
+    "profit": -74
+  },
+  {
+    "recipeItem": {
+      "item": "itre_honeycookies",
+      "name": "Рецепт: Медовое печенье"
+    },
+    "recipeResult": {
+      "item": "itfo_honeycookies",
+      "name": "Медовое печенье",
+      "value": 19
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_milk",
+        "name": "Молоко",
+        "count": 3,
+        "value": 3,
+        "valueSum": 9
+      },
+      {
+        "item": "itfo_honey",
+        "name": "Мед",
+        "count": 1,
+        "value": 8,
+        "valueSum": 8
+      },
+      {
+        "item": "itcr_wheat",
+        "name": "Мешок муки",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itcr_cinnamon",
+        "name": "Корица",
+        "count": 1,
+        "value": 75,
+        "valueSum": 75
+      }
+    ],
+    "productionValue": 142,
+    "profit": -123
+  },
+  {
+    "recipeItem": {
+      "item": "itre_friedfishskins",
+      "name": "Рецепт: Рыбные чипсы"
+    },
+    "recipeResult": {
+      "item": "itfo_friedfishskins",
+      "name": "Рыбные чипсы",
+      "value": 11
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_milk",
+        "name": "Молоко",
+        "count": 1,
+        "value": 3,
+        "valueSum": 3
+      },
+      {
+        "item": "itfo_fish",
+        "name": "Рыба",
+        "count": 2,
+        "value": 3,
+        "valueSum": 6
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itcr_fat",
+        "name": "Жирный оселок",
+        "count": 1,
+        "value": 25,
+        "valueSum": 25
+      }
+    ],
+    "productionValue": 84,
+    "profit": -73
+  },
+  {
+    "recipeItem": {
+      "item": "itre_scavengershashlik",
+      "name": "Рецепт: Шашлык из падальщика с тыквой"
+    },
+    "recipeResult": {
+      "item": "itfo_scavengershashlik",
+      "name": "Шашлык из падальщика с тыквой",
+      "value": 32
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itmw_1h_bau_mace",
+        "name": "Тяжелая ветка",
+        "count": 1,
+        "value": 1,
+        "valueSum": 1
+      },
+      {
+        "item": "itfo_pumpkin",
+        "name": "Тыква",
+        "count": 1,
+        "value": 7,
+        "valueSum": 7
+      },
+      {
+        "item": "itfo_scavengermeat",
+        "name": "Жареное мясо падальщика",
+        "count": 3,
+        "value": 12,
+        "valueSum": 36
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 94,
+    "profit": -62
+  },
+  {
+    "recipeItem": {
+      "item": "itre_roastedinsects",
+      "name": "Рецепт: Жареные насекомые"
+    },
+    "recipeResult": {
+      "item": "itfo_roastedinsects",
+      "name": "Жареные насекомые",
+      "value": 7
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itat_meatbugflesh",
+        "name": "Мясо жука",
+        "count": 2,
+        "value": 1,
+        "valueSum": 2
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "Мешочек перца",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 52,
+    "profit": -45
+  },
+  {
+    "recipeItem": {
+      "item": "itre_cabbagesoup",
+      "name": "Рецепт: Острый суп с капустой"
+    },
+    "recipeResult": {
+      "item": "itfo_cabbagesoup",
+      "name": "Острый суп с капустой",
+      "value": 17
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_carrot",
+        "name": "Морковь",
+        "count": 1,
+        "value": 3,
+        "valueSum": 3
+      },
+      {
+        "item": "itfo_parsley",
+        "name": "Петрушка",
+        "count": 1,
+        "value": 3,
+        "valueSum": 3
+      },
+      {
+        "item": "itfo_cabbage",
+        "name": "Капуста",
+        "count": 2,
+        "value": 5,
+        "valueSum": 10
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "Мешочек перца",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 116,
+    "profit": -99
+  },
+  {
+    "recipeItem": {
+      "item": "itre_mushroomcotlet",
+      "name": "Рецепт: Грибная котлета"
+    },
+    "recipeResult": {
+      "item": "itfo_mushroomcotlet",
+      "name": "Грибная котлета",
+      "value": 12
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_mushroom_01",
+        "name": "Темный гриб",
+        "count": 2,
+        "value": 5,
+        "valueSum": 10
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "Мешочек перца",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itcr_wheat",
+        "name": "Мешок муки",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itcr_fat",
+        "name": "Жирный оселок",
+        "count": 1,
+        "value": 25,
+        "valueSum": 25
+      }
+    ],
+    "productionValue": 135,
+    "profit": -123
+  },
+  {
+    "recipeItem": {
+      "item": "itre_dryfruitcompote",
+      "name": "Рецепт: Компот из сухофруктов"
+    },
+    "recipeResult": {
+      "item": "itfo_dryfruitcompote",
+      "name": "Компот из сухофруктов",
+      "value": 29
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_driedfruit",
+        "name": "Сухофрукты",
+        "count": 2,
+        "value": 30,
+        "valueSum": 60
+      },
+      {
+        "item": "itfo_honey",
+        "name": "Мед",
+        "count": 1,
+        "value": 8,
+        "valueSum": 8
+      },
+      {
+        "item": "itcr_cinnamon",
+        "name": "Корица",
+        "count": 1,
+        "value": 75,
+        "valueSum": 75
+      }
+    ],
+    "productionValue": 143,
+    "profit": -114
+  },
+  {
+    "recipeItem": {
+      "item": "itre_fishvinegar",
+      "name": "Рецепт: Рыба в уксусе из травы глорха"
+    },
+    "recipeResult": {
+      "item": "itfo_fishvinegar",
+      "name": "Рыба в уксусе из травы глорха",
+      "value": 30
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_fish",
+        "name": "Рыба",
+        "count": 4,
+        "value": 3,
+        "valueSum": 12
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Трава глорха",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itcr_vinegar",
+        "name": "Уксус",
+        "count": 1,
+        "value": 40,
+        "valueSum": 40
+      }
+    ],
+    "productionValue": 72,
+    "profit": -42
+  },
+  {
+    "recipeItem": {
+      "item": "itre_manapermsoup",
+      "name": "Рецепт: Суп из царского щавеля"
+    },
+    "recipeResult": {
+      "item": "itfo_manapermsoup",
+      "name": "Суп из царского щавеля",
+      "value": 1000
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_perm_herb",
+        "name": "Царский щавель",
+        "count": 2,
+        "value": 500,
+        "valueSum": 1000
+      },
+      {
+        "item": "itfo_milk",
+        "name": "Молоко",
+        "count": 12,
+        "value": 3,
+        "valueSum": 36
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 1086,
+    "profit": -86
+  },
+  {
+    "recipeItem": {
+      "item": "itre_sweetbun",
+      "name": "Рецепт: Сахарная булочка с черникой"
+    },
+    "recipeResult": {
+      "item": "itfo_sweetbun",
+      "name": "Сахарная булочка с черникой",
+      "value": 16
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_planeberry",
+        "name": "Луговая ягода",
+        "count": 3,
+        "value": 5,
+        "valueSum": 15
+      },
+      {
+        "item": "itpl_forestberry",
+        "name": "Лесная ягода",
+        "count": 3,
+        "value": 5,
+        "valueSum": 15
+      },
+      {
+        "item": "itcr_wheat",
+        "name": "Мешок муки",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 80,
+    "profit": -64
+  },
+  {
+    "recipeItem": {
+      "item": "itre_mushroomsoup",
+      "name": "Рецепт: Требуха из пищи рудокопа"
+    },
+    "recipeResult": {
+      "item": "itfo_mushroomsoup",
+      "name": "Требуха из пищи рудокопа",
+      "value": 22
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_mushroom_02",
+        "name": "Пища рудокопа",
+        "count": 3,
+        "value": 10,
+        "valueSum": 30
+      },
+      {
+        "item": "itfo_parsley",
+        "name": "Петрушка",
+        "count": 1,
+        "value": 3,
+        "valueSum": 3
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "Мешочек перца",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 133,
+    "profit": -111
+  },
+  {
+    "recipeItem": {
+      "item": "itre_rivermirtsoup",
+      "name": "Рецепт: Суп из речного мирта"
+    },
+    "recipeResult": {
+      "item": "itfo_rivermirtsoup",
+      "name": "Суп из речного мирта",
+      "value": 23
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_river_mirt",
+        "name": "Речной мирт",
+        "count": 1,
+        "value": 15,
+        "valueSum": 15
+      },
+      {
+        "item": "itgr_vegetable",
+        "name": "Любой овощ",
+        "count": 2,
+        "value": 5,
+        "valueSum": 10
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itcr_wheat",
+        "name": "Мешок муки",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 125,
+    "profit": -102
+  },
+  {
+    "recipeItem": {
+      "item": "itre_speedherboysters",
+      "name": "Рецепт: Устрицы с травой глорха"
+    },
+    "recipeResult": {
+      "item": "itfo_speedherboysters",
+      "name": "Устрицы с травой глорха",
+      "value": 35
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_addon_shellflesh",
+        "name": "Мясо моллюска",
+        "count": 1,
+        "value": 3,
+        "valueSum": 3
+      },
+      {
+        "item": "itgr_vegetable",
+        "name": "Любой овощ",
+        "count": 2,
+        "value": 5,
+        "valueSum": 10
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Трава глорха",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itcr_fat",
+        "name": "Жирный оселок",
+        "count": 1,
+        "value": 25,
+        "valueSum": 25
+      },
+      {
+        "item": "itfo_wine_01",
+        "name": "Выдержанное вино",
+        "count": 1,
+        "value": 10,
+        "valueSum": 10
+      }
+    ],
+    "productionValue": 68,
+    "profit": -33
+  },
+  {
+    "recipeItem": {
+      "item": "itre_boarstew",
+      "name": "Рецепт: Тушеный на вине кабан"
+    },
+    "recipeResult": {
+      "item": "itfo_boarstew",
+      "name": "Тушеный на вине кабан",
+      "value": 60
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_boar",
+        "name": "Жареное мясо кабана",
+        "count": 3,
+        "value": 30,
+        "valueSum": 90
+      },
+      {
+        "item": "itfo_wine_01",
+        "name": "Выдержанное вино",
+        "count": 1,
+        "value": 10,
+        "valueSum": 10
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "Мешочек перца",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 200,
+    "profit": -140
+  },
+  {
+    "recipeItem": {
+      "item": "itre_meatmishmash",
+      "name": "Рецепт: Каша из мяса"
+    },
+    "recipeResult": {
+      "item": "itfo_meatmishmash",
+      "name": "Каша из мяса",
+      "value": 13
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_wolfmeat",
+        "name": "Жареное мясо волка",
+        "count": 1,
+        "value": 9,
+        "valueSum": 9
+      },
+      {
+        "item": "itfo_moleratmeat",
+        "name": "Жареное мясо кротокрыса",
+        "count": 1,
+        "value": 10,
+        "valueSum": 10
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "Мешочек перца",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 119,
+    "profit": -106
+  },
+  {
+    "recipeItem": {
+      "item": "itre_ratstick",
+      "name": "Рецепт: Шашлык из крысы"
+    },
+    "recipeResult": {
+      "item": "itfo_ratstick",
+      "name": "Шашлык из крысы",
+      "value": 6
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itmw_1h_bau_mace",
+        "name": "Тяжелая ветка",
+        "count": 1,
+        "value": 1,
+        "valueSum": 1
+      },
+      {
+        "item": "itfo_roastedratmeat",
+        "name": "Жареное мясо крысы",
+        "count": 2,
+        "value": 5,
+        "valueSum": 10
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "Мешочек перца",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 111,
+    "profit": -105
+  },
+  {
+    "recipeItem": {
+      "item": "itre_mulledwisp",
+      "name": "Рецепт: Подогретый огняк"
+    },
+    "recipeResult": {
+      "item": "itfo_mulledwisp",
+      "name": "Подогретый огняк",
+      "value": 50
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_wisp",
+        "name": "Огняк",
+        "count": 1,
+        "value": 35,
+        "valueSum": 35
+      },
+      {
+        "item": "itfo_berry_herb",
+        "name": "Малина",
+        "count": 4,
+        "value": 4,
+        "valueSum": 16
+      },
+      {
+        "item": "itcr_cinnamon",
+        "name": "Корица",
+        "count": 1,
+        "value": 75,
+        "valueSum": 75
+      }
+    ],
+    "productionValue": 126,
+    "profit": -76
+  },
+  {
+    "recipeItem": {
+      "item": "itre_fishcotlet",
+      "name": "Рецепт: Рыбные чипсы с огненной травой"
+    },
+    "recipeResult": {
+      "item": "itfo_fishcotlet",
+      "name": "Рыбные чипсы с огненной травой",
+      "value": 32
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_fish",
+        "name": "Рыба",
+        "count": 2,
+        "value": 3,
+        "valueSum": 6
+      },
+      {
+        "item": "itpl_mana_herb_02",
+        "name": "Огненная трава",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "Мешочек перца",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itcr_wheat",
+        "name": "Мешок муки",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 126,
+    "profit": -94
+  },
+  {
+    "recipeItem": {
+      "item": "itre_fishfilletperm",
+      "name": "Рецепт: Рыбное филе с царским щавелем"
+    },
+    "recipeResult": {
+      "item": "itfo_fishfilletperm",
+      "name": "Рыбное филе с царским щавелем",
+      "value": 1000
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_fish",
+        "name": "Рыба",
+        "count": 10,
+        "value": 3,
+        "valueSum": 30
+      },
+      {
+        "item": "itpl_perm_herb",
+        "name": "Царский щавель",
+        "count": 2,
+        "value": 500,
+        "valueSum": 1000
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "Мешочек перца",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 1130,
+    "profit": -130
+  },
+  {
+    "recipeItem": {
+      "item": "itre_poorbroth",
+      "name": "Рецепт: Сытный бульон из объедков"
+    },
+    "recipeResult": {
+      "item": "itfo_poorbroth",
+      "name": "Суп из объедков",
+      "value": 20
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itgr_meat",
+        "name": "Любое мясо",
+        "count": 1,
+        "value": 22,
+        "valueSum": 22
+      },
+      {
+        "item": "itgr_vegetable",
+        "name": "Любой овощ",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_health_herb_01",
+        "name": "Лечебная трава",
+        "count": 1,
+        "value": 15,
+        "valueSum": 15
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 92,
+    "profit": -72
+  },
+  {
+    "recipeItem": {
+      "item": "itre_fishpot",
+      "name": "Рецепт: Котел рыбака"
+    },
+    "recipeResult": {
+      "item": "itfo_fishpot",
+      "name": "Котел рыбака",
+      "value": 23
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_fish",
+        "name": "Рыба",
+        "count": 1,
+        "value": 3,
+        "valueSum": 3
+      },
+      {
+        "item": "itgr_vegetable",
+        "name": "Любой овощ",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_river_mirt",
+        "name": "Речной мирт",
+        "count": 1,
+        "value": 15,
+        "valueSum": 15
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 73,
+    "profit": -50
+  },
+  {
+    "recipeItem": {
+      "item": "itre_herbstew",
+      "name": "Рецепт: Рагу из трав"
+    },
+    "recipeResult": {
+      "item": "itfo_herbstew",
+      "name": "Рагу из трав",
+      "value": 25
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itgr_meat",
+        "name": "Любое мясо",
+        "count": 1,
+        "value": 22,
+        "valueSum": 22
+      },
+      {
+        "item": "itgr_vegetable",
+        "name": "Любой овощ",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_mana_herb_01",
+        "name": "Огненная крапива",
+        "count": 1,
+        "value": 10,
+        "valueSum": 10
+      }
+    ],
+    "productionValue": 37,
+    "profit": -12
+  },
+  {
+    "recipeItem": {
+      "item": "itre_meatandcheese",
+      "name": "Рецепт: Фермерская запеканка"
+    },
+    "recipeResult": {
+      "item": "itfo_meatandcheese",
+      "name": "Фермерская запеканка",
+      "value": 26
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itgr_meat",
+        "name": "Любое мясо",
+        "count": 2,
+        "value": 22,
+        "valueSum": 44
+      },
+      {
+        "item": "itfo_cheese",
+        "name": "Сыр",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "Мешочек перца",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 149,
+    "profit": -123
+  },
+  {
+    "recipeItem": {
+      "item": "itre_meatandbread",
+      "name": "Рецепт: Хлеб с мясом"
+    },
+    "recipeResult": {
+      "item": "itfo_meatandbread",
+      "name": "Хлеб с мясом",
+      "value": 23
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_bread",
+        "name": "Хлеб",
+        "count": 1,
+        "value": 4,
+        "valueSum": 4
+      },
+      {
+        "item": "itgr_meat",
+        "name": "Любое мясо",
+        "count": 2,
+        "value": 22,
+        "valueSum": 44
+      },
+      {
+        "item": "itcr_fat",
+        "name": "Жирный оселок",
+        "count": 1,
+        "value": 25,
+        "valueSum": 25
+      }
+    ],
+    "productionValue": 73,
+    "profit": -50
+  },
+  {
+    "recipeItem": {
+      "item": "itre_mushroomstew",
+      "name": "Рецепт: Грибное рагу"
+    },
+    "recipeResult": {
+      "item": "itfo_mushroomstew",
+      "name": "Грибное рагу",
+      "value": 24
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itgr_meat",
+        "name": "Любое мясо",
+        "count": 1,
+        "value": 22,
+        "valueSum": 22
+      },
+      {
+        "item": "itpl_mushroom_01",
+        "name": "Темный гриб",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itgr_vegetable",
+        "name": "Любой овощ",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "Мешочек перца",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 82,
+    "profit": -58
+  },
+  {
+    "recipeItem": {
+      "item": "itre_poorapplepie",
+      "name": "Рецепт: Деревенский яблочный пирог"
+    },
+    "recipeResult": {
+      "item": "itfo_poorapplepie",
+      "name": "Деревенский яблочный пирог",
+      "value": 30
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itat_scavengeregg",
+        "name": "Яйцо падальщика",
+        "count": 1,
+        "value": 8,
+        "valueSum": 8
+      },
+      {
+        "item": "itcr_wheat",
+        "name": "Мешок муки",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itfo_apple",
+        "name": "Яблоко",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itcr_fat",
+        "name": "Жирный оселок",
+        "count": 1,
+        "value": 25,
+        "valueSum": 25
+      },
+      {
+        "item": "itfo_honey",
+        "name": "Мед",
+        "count": 1,
+        "value": 8,
+        "valueSum": 8
+      }
+    ],
+    "productionValue": 96,
+    "profit": -66
+  },
+  {
+    "recipeItem": {
+      "item": "itre_poorpate",
+      "name": "Рецепт: Паштет из объедков"
+    },
+    "recipeResult": {
+      "item": "itfo_poorpate",
+      "name": "Паштет из объедков",
+      "value": 21
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itat_scavengeregg",
+        "name": "Яйцо падальщика",
+        "count": 1,
+        "value": 8,
+        "valueSum": 8
+      },
+      {
+        "item": "itgr_meat",
+        "name": "Любое мясо",
+        "count": 1,
+        "value": 22,
+        "valueSum": 22
+      },
+      {
+        "item": "itgr_vegetable",
+        "name": "Любой овощ",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      }
+    ],
+    "productionValue": 35,
+    "profit": -14
+  },
+  {
+    "recipeItem": {
+      "item": "itre_pickledmushrooms",
+      "name": "Рецепт: Маринованные грибы"
+    },
+    "recipeResult": {
+      "item": "itfo_pickledmushrooms",
+      "name": "Маринованные грибы",
+      "value": 35
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_mushroom_01",
+        "name": "Темный гриб",
+        "count": 2,
+        "value": 5,
+        "valueSum": 10
+      },
+      {
+        "item": "itpl_mana_herb_02",
+        "name": "Огненная трава",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itcr_vinegar",
+        "name": "Уксус",
+        "count": 1,
+        "value": 40,
+        "valueSum": 40
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "Мешочек перца",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 120,
+    "profit": -85
+  },
+  {
+    "recipeItem": {
+      "item": "itre_breadsoup",
+      "name": "Рецепт: Суп из старого хлеба"
+    },
+    "recipeResult": {
+      "item": "itfo_breadsoup",
+      "name": "Суп из старого хлеба",
+      "value": 17
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_bread",
+        "name": "Хлеб",
+        "count": 1,
+        "value": 4,
+        "valueSum": 4
+      },
+      {
+        "item": "itgr_vegetable",
+        "name": "Любой овощ",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_temp_herb",
+        "name": "Луговой горец",
+        "count": 2,
+        "value": 10,
+        "valueSum": 20
+      },
+      {
+        "item": "itcr_fat",
+        "name": "Жирный оселок",
+        "count": 1,
+        "value": 25,
+        "valueSum": 25
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 104,
+    "profit": -87
+  },
+  {
+    "recipeItem": {
+      "item": "itre_shepardroast",
+      "name": "Рецепт: Пастушье жаркое, маринованное в вине"
+    },
+    "recipeResult": {
+      "item": "itfo_shepardroast",
+      "name": "Жаркое пастуха, маринованное в вине",
+      "value": 55
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_sheepfried",
+        "name": "Жареное мясо овцы",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itgr_vegetable",
+        "name": "Любой овощ",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itfo_wine_02",
+        "name": "Нордмарское вино",
+        "count": 1,
+        "value": 30,
+        "valueSum": 30
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 115,
+    "profit": -60
+  },
+  {
+    "recipeItem": {
+      "item": "itre_pooreggs",
+      "name": "Рецепт: Яичница по-деревенски"
+    },
+    "recipeResult": {
+      "item": "itfo_pooreggs",
+      "name": "Яичница по-деревенски",
+      "value": 19
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itat_scavengeregg",
+        "name": "Яйцо падальщика",
+        "count": 1,
+        "value": 8,
+        "valueSum": 8
+      },
+      {
+        "item": "itfo_sausage",
+        "name": "Колбаса",
+        "count": 1,
+        "value": 15,
+        "valueSum": 15
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 73,
+    "profit": -54
+  },
+  {
+    "recipeItem": {
+      "item": "itre_beerfish",
+      "name": "Рецепт: Рыба в пивном кляре"
+    },
+    "recipeResult": {
+      "item": "itfo_beerfish",
+      "name": "Рыба в пивном кляре",
+      "value": 14
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_fish",
+        "name": "Рыба",
+        "count": 1,
+        "value": 3,
+        "valueSum": 3
+      },
+      {
+        "item": "itfo_owbeer",
+        "name": "Бутылка пива",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itcr_wheat",
+        "name": "Мешок муки",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 108,
+    "profit": -94
+  },
+  {
+    "recipeItem": {
+      "item": "itre_spicypie",
+      "name": "Рецепт: Пряный мясной пирог"
+    },
+    "recipeResult": {
+      "item": "itfo_spicypie",
+      "name": "Острый мясной пирог",
+      "value": 31
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itgr_meat",
+        "name": "Любое мясо",
+        "count": 1,
+        "value": 22,
+        "valueSum": 22
+      },
+      {
+        "item": "itat_scavengeregg",
+        "name": "Яйцо падальщика",
+        "count": 2,
+        "value": 8,
+        "valueSum": 16
+      },
+      {
+        "item": "itcr_wheat",
+        "name": "Мешок муки",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itcr_hotpepper",
+        "name": "Пакет острого перца",
+        "count": 1,
+        "value": 60,
+        "valueSum": 60
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 198,
+    "profit": -167
+  },
+  {
+    "recipeItem": {
+      "item": "itre_vegepie",
+      "name": "Рецепт: Пирог с овощами и грибами"
+    },
+    "recipeResult": {
+      "item": "itfo_vegepie",
+      "name": "Пирог с овощами и грибами",
+      "value": 22
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_mushroom_02",
+        "name": "Пища рудокопа",
+        "count": 1,
+        "value": 10,
+        "valueSum": 10
+      },
+      {
+        "item": "itgr_vegetable",
+        "name": "Любой овощ",
+        "count": 3,
+        "value": 5,
+        "valueSum": 15
+      },
+      {
+        "item": "itcr_wheat",
+        "name": "Мешок муки",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 75,
+    "profit": -53
+  },
+  {
+    "recipeItem": {
+      "item": "itre_fatstew",
+      "name": "Рецепт: Жирное рагу"
+    },
+    "recipeResult": {
+      "item": "itfo_fatstew",
+      "name": "Тушеное мясо с жиром",
+      "value": 19
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_moleratmeat",
+        "name": "Жареное мясо кротокрыса",
+        "count": 2,
+        "value": 10,
+        "valueSum": 20
+      },
+      {
+        "item": "itfo_carrot",
+        "name": "Морковь",
+        "count": 1,
+        "value": 3,
+        "valueSum": 3
+      },
+      {
+        "item": "itfo_parsley",
+        "name": "Петрушка",
+        "count": 1,
+        "value": 3,
+        "valueSum": 3
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "Мешочек перца",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 126,
+    "profit": -107
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bearstew",
+      "name": "Рецепт: Целебное медвежье рагу"
+    },
+    "recipeResult": {
+      "item": "itfo_bearstew",
+      "name": "Целебное медвежье рагу",
+      "value": 100
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_bear",
+        "name": "Жареное мясо медведя",
+        "count": 1,
+        "value": 75,
+        "valueSum": 75
+      },
+      {
+        "item": "itpl_temp_herb",
+        "name": "Луговой горец",
+        "count": 3,
+        "value": 10,
+        "valueSum": 30
+      },
+      {
+        "item": "itfo_honey",
+        "name": "Мед",
+        "count": 2,
+        "value": 8,
+        "valueSum": 16
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "Мешочек перца",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 221,
+    "profit": -121
+  },
+  {
+    "recipeItem": {
+      "item": "itre_hunterspecial",
+      "name": "Рецепт: Фирменное блюдо охотника"
+    },
+    "recipeResult": {
+      "item": "itfo_hunterspecial",
+      "name": "Фирменное блюдо охотника",
+      "value": 17
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_wolfmeat",
+        "name": "Жареное мясо волка",
+        "count": 3,
+        "value": 9,
+        "valueSum": 27
+      },
+      {
+        "item": "itpl_forestberry",
+        "name": "Лесная ягода",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "Мешочек перца",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 132,
+    "profit": -115
+  },
+  {
+    "recipeItem": {
+      "item": "itre_speedstew",
+      "name": "Рецепт: Ленивое рагу"
+    },
+    "recipeResult": {
+      "item": "itfo_speedstew",
+      "name": "Ленивое рагу",
+      "value": 45
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Трава глорха",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itgr_vegetable",
+        "name": "Любой овощ",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itgr_meat",
+        "name": "Любое мясо",
+        "count": 1,
+        "value": 22,
+        "valueSum": 22
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 97,
+    "profit": -52
+  },
+  {
+    "recipeItem": {
+      "item": "itre_smokedherbfish",
+      "name": "Рецепт: Копченая рыба с травами"
+    },
+    "recipeResult": {
+      "item": "itfo_smokedherbfish",
+      "name": "Копченая рыба с травами",
+      "value": 16
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_fish",
+        "name": "Рыба",
+        "count": 2,
+        "value": 3,
+        "valueSum": 6
+      },
+      {
+        "item": "itmw_1h_bau_mace",
+        "name": "Тяжелая ветка",
+        "count": 1,
+        "value": 1,
+        "valueSum": 1
+      },
+      {
+        "item": "itpl_temp_herb",
+        "name": "Луговой горец",
+        "count": 1,
+        "value": 10,
+        "valueSum": 10
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 67,
+    "profit": -51
+  },
+  {
+    "recipeItem": {
+      "item": "itre_meatpacks",
+      "name": "Рецепт: Фрикадельки"
+    },
+    "recipeResult": {
+      "item": "itfo_meatpacks",
+      "name": "Фрикадельки",
+      "value": 21
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itgr_meat",
+        "name": "Любое мясо",
+        "count": 2,
+        "value": 22,
+        "valueSum": 44
+      },
+      {
+        "item": "itfo_cabbage",
+        "name": "Капуста",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "Мешочек перца",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 149,
+    "profit": -128
+  },
+  {
+    "recipeItem": {
+      "item": "itre_herbmushroombrewing",
+      "name": "Рецепт: Отвар из грибов и трав"
+    },
+    "recipeResult": {
+      "item": "itfo_herbmushroombrewing",
+      "name": "Отвар из грибов и трав",
+      "value": 65
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_mushroom_01",
+        "name": "Темный гриб",
+        "count": 2,
+        "value": 5,
+        "valueSum": 10
+      },
+      {
+        "item": "itpl_mushroom_02",
+        "name": "Пища рудокопа",
+        "count": 2,
+        "value": 10,
+        "valueSum": 20
+      },
+      {
+        "item": "itpl_health_herb_03",
+        "name": "Лечебный корень",
+        "count": 1,
+        "value": 35,
+        "valueSum": 35
+      },
+      {
+        "item": "itpl_mana_herb_03",
+        "name": "Огненный корень",
+        "count": 1,
+        "value": 30,
+        "valueSum": 30
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "Мешочек перца",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 195,
+    "profit": -130
+  },
+  {
+    "recipeItem": {
+      "item": "itre_berryjam",
+      "name": "Рецепт: Ягодный джем"
+    },
+    "recipeResult": {
+      "item": "itfo_berryjam",
+      "name": "Ягодный джем",
+      "value": 10
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_forestberry",
+        "name": "Лесная ягода",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_planeberry",
+        "name": "Луговая ягода",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itfo_berry_herb",
+        "name": "Малина",
+        "count": 1,
+        "value": 4,
+        "valueSum": 4
+      }
+    ],
+    "productionValue": 14,
+    "profit": -4
+  },
+  {
+    "recipeItem": {
+      "item": "itre_strengthjam",
+      "name": "Рецепт: Хлебная лепешка из драконьего корня"
+    },
+    "recipeResult": {
+      "item": "itfo_strengthjam",
+      "name": "Хлебная лепешка из драконьего корня",
+      "value": 1400
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_strength_herb_01",
+        "name": "Драконий корень",
+        "count": 2,
+        "value": 500,
+        "valueSum": 1000
+      },
+      {
+        "item": "itfo_cheese",
+        "name": "Сыр",
+        "count": 12,
+        "value": 5,
+        "valueSum": 60
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "Мешочек перца",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 1160,
+    "profit": 240
+  },
+  {
+    "recipeItem": {
+      "item": "itre_dexdumplings",
+      "name": "Рецепт: Лапша с ягодами гоблинов"
+    },
+    "recipeResult": {
+      "item": "itfo_dexdumplings",
+      "name": "Лапша с ягодами гоблинов",
+      "value": 1400
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_dex_herb_01",
+        "name": "Ягода гоблина",
+        "count": 2,
+        "value": 500,
+        "valueSum": 1000
+      },
+      {
+        "item": "itfo_honey",
+        "name": "Мед",
+        "count": 12,
+        "value": 8,
+        "valueSum": 96
+      },
+      {
+        "item": "itcr_wheat",
+        "name": "Мешок муки",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itcr_fat",
+        "name": "Жирный оселок",
+        "count": 1,
+        "value": 25,
+        "valueSum": 25
+      }
+    ],
+    "productionValue": 1171,
+    "profit": 229
+  },
+  {
+    "recipeItem": {
+      "item": "itre_simpleoysters",
+      "name": "Рецепт: Ленивые устрицы"
+    },
+    "recipeResult": {
+      "item": "itfo_simpleoysters",
+      "name": "Ленивые устрицы",
+      "value": 17
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_addon_shellflesh",
+        "name": "Мясо моллюска",
+        "count": 1,
+        "value": 3,
+        "valueSum": 3
+      },
+      {
+        "item": "itpl_river_mirt",
+        "name": "Речной мирт",
+        "count": 1,
+        "value": 15,
+        "valueSum": 15
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Соль",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 68,
+    "profit": -51
+  },
+  {
+    "recipeItem": {
+      "item": "itre_berrycompote",
+      "name": "Рецепт: Ягодный компот"
+    },
+    "recipeResult": {
+      "item": "itfo_berrycompote",
+      "name": "Ягодный компот",
+      "value": 12
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_forestberry",
+        "name": "Лесная ягода",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_planeberry",
+        "name": "Луговая ягода",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itfo_water",
+        "name": "Вода",
+        "count": 3,
+        "value": 2,
+        "valueSum": 6
+      },
+      {
+        "item": "itcr_cinnamon",
+        "name": "Корица",
+        "count": 1,
+        "value": 75,
+        "valueSum": 75
+      }
+    ],
+    "productionValue": 91,
+    "profit": -79
+  },
+  {
+    "recipeItem": {
+      "item": "itre_raspberrydrink",
+      "name": "Рецепт: Малиновый напиток"
+    },
+    "recipeResult": {
+      "item": "itfo_raspberrydrink",
+      "name": "Малиновый напиток",
+      "value": 21
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_milk",
+        "name": "Молоко",
+        "count": 2,
+        "value": 3,
+        "valueSum": 6
+      },
+      {
+        "item": "itfo_honey",
+        "name": "Мед",
+        "count": 1,
+        "value": 8,
+        "valueSum": 8
+      },
+      {
+        "item": "itfo_berry_herb",
+        "name": "Малина",
+        "count": 1,
+        "value": 4,
+        "valueSum": 4
+      }
+    ],
+    "productionValue": 18,
+    "profit": 3
+  },
+  {
+    "recipeItem": {
+      "item": "itre_grapejuice",
+      "name": "Рецепт: Виноградный сок"
+    },
+    "recipeResult": {
+      "item": "itfo_grapejuice",
+      "name": "Виноградный сок",
+      "value": 13
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_grape",
+        "name": "Виноград",
+        "count": 2,
+        "value": 4,
+        "valueSum": 8
+      },
+      {
+        "item": "itfo_water",
+        "name": "Вода",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_cinnamon",
+        "name": "Корица",
+        "count": 1,
+        "value": 75,
+        "valueSum": 75
+      }
+    ],
+    "productionValue": 85,
+    "profit": -72
+  },
+  {
+    "recipeItem": {
+      "item": "itre_raspberrytincture",
+      "name": "Рецепт: Малиновая настойка"
+    },
+    "recipeResult": {
+      "item": "itfo_raspberrytincture",
+      "name": "Малиновая настойка",
+      "value": 45
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_spirit",
+        "name": "Бутылка чистого спирта",
+        "count": 1,
+        "value": 60,
+        "valueSum": 60
+      },
+      {
+        "item": "itfo_berry_herb",
+        "name": "Малина",
+        "count": 2,
+        "value": 4,
+        "valueSum": 8
+      }
+    ],
+    "productionValue": 68,
+    "profit": -23
+  },
+  {
+    "recipeItem": {
+      "item": "itre_exoticdessert",
+      "name": "Рецепт: Экзотический десерт"
+    },
+    "recipeResult": {
+      "item": "itfo_exoticdessert",
+      "name": "Экзотический десерт",
+      "value": 65
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_southernfruit",
+        "name": "Южный фрукт",
+        "count": 1,
+        "value": 30,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_scavengeregg",
+        "name": "Яйцо падальщика",
+        "count": 1,
+        "value": 8,
+        "valueSum": 8
+      },
+      {
+        "item": "itfo_honey",
+        "name": "Мед",
+        "count": 2,
+        "value": 8,
+        "valueSum": 16
+      },
+      {
+        "item": "itcr_wheat",
+        "name": "Мешок муки",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itcr_fat",
+        "name": "Жирный оселок",
+        "count": 1,
+        "value": 25,
+        "valueSum": 25
+      }
+    ],
+    "productionValue": 129,
+    "profit": -64
+  },
+  {
+    "recipeItem": {
+      "item": "itre_applepie",
+      "name": "Рецепт: Яблоки в тесте"
+    },
+    "recipeResult": {
+      "item": "itfo_applepie",
+      "name": "Яблоки в тесте",
+      "value": 33
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_apple",
+        "name": "Яблоко",
+        "count": 5,
+        "value": 5,
+        "valueSum": 25
+      },
+      {
+        "item": "itat_scavengeregg",
+        "name": "Яйцо падальщика",
+        "count": 1,
+        "value": 8,
+        "valueSum": 8
+      },
+      {
+        "item": "itfo_milk",
+        "name": "Молоко",
+        "count": 1,
+        "value": 3,
+        "valueSum": 3
+      },
+      {
+        "item": "itcr_wheat",
+        "name": "Мешок муки",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 86,
+    "profit": -53
+  },
+  {
+    "recipeItem": {
+      "item": "itre_spicyfish",
+      "name": "Рецепт: Пряная сельдь"
+    },
+    "recipeResult": {
+      "item": "itfo_spicyfish",
+      "name": "Пряная сельдь",
+      "value": 30
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_fish",
+        "name": "Рыба",
+        "count": 2,
+        "value": 3,
+        "valueSum": 6
+      },
+      {
+        "item": "itfo_crab",
+        "name": "Жареные крабовые клешни",
+        "count": 1,
+        "value": 60,
+        "valueSum": 60
+      },
+      {
+        "item": "itcr_cinnamon",
+        "name": "Корица",
+        "count": 1,
+        "value": 75,
+        "valueSum": 75
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "Мешочек перца",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itcr_vinegar",
+        "name": "Уксус",
+        "count": 1,
+        "value": 40,
+        "valueSum": 40
+      }
+    ],
+    "productionValue": 231,
+    "profit": -201
+  },
+  {
+    "recipeItem": {
+      "item": "itre_herbfishsoup",
+      "name": "Рецепт: Рыбный суп с зеленью"
+    },
+    "recipeResult": {
+      "item": "itfo_herbfishsoup",
+      "name": "Рыбный суп с зеленью",
+      "value": 18
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_fish",
+        "name": "Рыба",
+        "count": 1,
+        "value": 3,
+        "valueSum": 3
+      },
+      {
+        "item": "itgr_vegetable",
+        "name": "Любой овощ",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_river_mirt",
+        "name": "Речной мирт",
+        "count": 1,
+        "value": 15,
+        "valueSum": 15
+      }
+    ],
+    "productionValue": 23,
+    "profit": -5
+  },
+  {
+    "recipeItem": {
+      "item": "itre_trollsoup",
+      "name": "Рецепт: Трольский травяной суп"
+    },
+    "recipeResult": {
+      "item": "itfo_trollsoup",
+      "name": "Трольский травяной суп",
+      "value": 1400
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_earthaloes",
+        "name": "Земляное алоэ",
+        "count": 2,
+        "value": 500,
+        "valueSum": 1000
+      },
+      {
+        "item": "itgr_meat",
+        "name": "Любое мясо",
+        "count": 1,
+        "value": 22,
+        "valueSum": 22
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "Мешочек перца",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 1072,
+    "profit": 328
+  },
+  {
+    "recipeItem": {
+      "item": "itre_marthastew",
+      "name": "Рецепт: Рагу Марты"
+    },
+    "recipeResult": {
+      "item": "itfo_marthsoup3",
+      "name": "Рагу Марты",
+      "value": 40
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itgr_vegetable",
+        "name": "Любой овощ",
+        "count": 2,
+        "value": 5,
+        "valueSum": 10
+      },
+      {
+        "item": "itgr_meat",
+        "name": "Любое мясо",
+        "count": 4,
+        "value": 22,
+        "valueSum": 88
+      },
+      {
+        "item": "itfo_grape",
+        "name": "Виноград",
+        "count": 1,
+        "value": 4,
+        "valueSum": 4
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "Мешочек перца",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 152,
+    "profit": -112
+  },
+  {
+    "recipeItem": {
+      "item": "itre_marthastew_str",
+      "name": "Рецепт: Сытное рагу Марты"
+    },
+    "recipeResult": {
+      "item": "itfo_marthsoup4",
+      "name": "Сытное рагу Марты",
+      "value": 300
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itgr_vegetable",
+        "name": "Любой овощ",
+        "count": 10,
+        "value": 5,
+        "valueSum": 50
+      },
+      {
+        "item": "itgr_meat",
+        "name": "Любое мясо",
+        "count": 10,
+        "value": 22,
+        "valueSum": 220
+      },
+      {
+        "item": "itfo_wine",
+        "name": "Вино",
+        "count": 5,
+        "value": 10,
+        "valueSum": 50
+      },
+      {
+        "item": "itpl_strength_herb_01",
+        "name": "Драконий корень",
+        "count": 2,
+        "value": 500,
+        "valueSum": 1000
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "Мешочек перца",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 1370,
+    "profit": -1070
+  },
+  {
+    "recipeItem": {
+      "item": "itre_kitchenknife02",
+      "name": "Чертеж: Нож для мяса"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_kitchen_knife_02",
+      "name": "Нож для мяса",
+      "value": 150
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Шкура овцы",
+        "count": 3,
+        "value": 10,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 70,
+    "profit": 80
+  },
+  {
+    "recipeItem": {
+      "item": "itre_shortsword1",
+      "name": "Чертеж: Короткий меч часового"
+    },
+    "recipeResult": {
+      "item": "itmw_shortsword1",
+      "name": "Короткий меч часового",
+      "value": 150
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_wolffur",
+        "name": "Шкура волка",
+        "count": 2,
+        "value": 10,
+        "valueSum": 20
+      }
+    ],
+    "productionValue": 60,
+    "profit": 90
+  },
+  {
+    "recipeItem": {
+      "item": "itre_shortsword4",
+      "name": "Чертеж: Волчий клык"
+    },
+    "recipeResult": {
+      "item": "itmw_shortsword4",
+      "name": "Волчий клык",
+      "value": 550
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_wolffur",
+        "name": "Шкура волка",
+        "count": 2,
+        "value": 10,
+        "valueSum": 20
+      },
+      {
+        "item": "itat_teeth",
+        "name": "Клыки",
+        "count": 6,
+        "value": 15,
+        "valueSum": 90
+      }
+    ],
+    "productionValue": 150,
+    "profit": 400
+  },
+  {
+    "recipeItem": {
+      "item": "itre_kitchenknife03",
+      "name": "Чертеж: Большой нож"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_kitchen_knife_03",
+      "name": "Большой нож",
+      "value": 230
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_ratfur",
+        "name": "Шкура крысы",
+        "count": 3,
+        "value": 8,
+        "valueSum": 24
+      }
+    ],
+    "productionValue": 64,
+    "profit": 166
+  },
+  {
+    "recipeItem": {
+      "item": "itre_shortsword5",
+      "name": "Чертеж: Изысканный короткий меч"
+    },
+    "recipeResult": {
+      "item": "itmw_shortsword5",
+      "name": "Отличный короткий меч",
+      "value": 650
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itat_lurkerskin",
+        "name": "Шкура шныга",
+        "count": 2,
+        "value": 25,
+        "valueSum": 50
+      },
+      {
+        "item": "itat_lurkerclaw",
+        "name": "Когти шныга",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 140,
+    "profit": 510
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_common_01",
+      "name": "Чертеж: Солдатский меч"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_common_01",
+      "name": "Солдатский меч",
+      "value": 300
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itat_moleratskin",
+        "name": "Шкура кротокрыса",
+        "count": 4,
+        "value": 8,
+        "valueSum": 32
+      }
+    ],
+    "productionValue": 92,
+    "profit": 208
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_vlk2_sword",
+      "name": "Чертеж: Шампур"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_vlk2_sword",
+      "name": "Шампур",
+      "value": 500
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itmi_goldnugget_addon",
+        "name": "Золотой самородок",
+        "count": 8,
+        "value": 14,
+        "valueSum": 112
+      }
+    ],
+    "productionValue": 152,
+    "profit": 348
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_mace_02",
+      "name": "Чертеж: Шип"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_mace_02",
+      "name": "Шип",
+      "value": 170
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_claw",
+        "name": "Когти",
+        "count": 10,
+        "value": 15,
+        "valueSum": 150
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 2,
+        "value": 6,
+        "valueSum": 12
+      }
+    ],
+    "productionValue": 202,
+    "profit": -32
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_mil_sword_01",
+      "name": "Чертеж: Меч стражника"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_mil_sword_01",
+      "name": "Меч стражника",
+      "value": 30
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Шкура овцы",
+        "count": 4,
+        "value": 10,
+        "valueSum": 40
+      }
+    ],
+    "productionValue": 80,
+    "profit": -50
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_dagger_02",
+      "name": "Чертеж: Золотой кинжал"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_dagger_02",
+      "name": "Золотой кинжал",
+      "value": 900
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 1,
+        "value": 15,
+        "valueSum": 15
+      },
+      {
+        "item": "itmi_goldnugget_addon",
+        "name": "Золотой самородок",
+        "count": 6,
+        "value": 14,
+        "valueSum": 84
+      }
+    ],
+    "productionValue": 119,
+    "profit": 781
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_mil_sword_02",
+      "name": "Чертеж: Отличный меч стражника"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_mil_sword_02",
+      "name": "Прекрасный меч стражника",
+      "value": 350
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Шкура овцы",
+        "count": 2,
+        "value": 10,
+        "valueSum": 20
+      },
+      {
+        "item": "itat_wolffur",
+        "name": "Шкура волка",
+        "count": 3,
+        "value": 10,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 110,
+    "profit": 240
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_sword_07",
+      "name": "Чертеж: Сизор"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_sword_07",
+      "name": "Сизор",
+      "value": 700
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itmi_quartz",
+        "name": "Кварц",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Шкура овцы",
+        "count": 1,
+        "value": 10,
+        "valueSum": 10
+      }
+    ],
+    "productionValue": 110,
+    "profit": 590
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_sword_02",
+      "name": "Чертеж: Меч южанина"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_sword_02",
+      "name": "Меч южанина",
+      "value": 450
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_sharkteeth",
+        "name": "Клыки болотной акулы",
+        "count": 2,
+        "value": 120,
+        "valueSum": 240
+      }
+    ],
+    "productionValue": 330,
+    "profit": 120
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_sword_05",
+      "name": "Чертеж: Резак"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_sword_05",
+      "name": "Резак",
+      "value": 650
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_lurkerskin",
+        "name": "Шкура шныга",
+        "count": 3,
+        "value": 25,
+        "valueSum": 75
+      }
+    ],
+    "productionValue": 165,
+    "profit": 485
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_sword_01",
+      "name": "Чертеж: Гравированный клинок"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_sword_01",
+      "name": "Гравированный клинок",
+      "value": 400
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itmi_quartz",
+        "name": "Кварц",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_claw",
+        "name": "Когти",
+        "count": 10,
+        "value": 15,
+        "valueSum": 150
+      }
+    ],
+    "productionValue": 300,
+    "profit": 100
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_mil_sword_03",
+      "name": "Чертеж: Изысканный меч стражника"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_mil_sword_03",
+      "name": "Изысканный меч стражника",
+      "value": 750
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_addon_keilerfur",
+        "name": "Шкура кабана",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      },
+      {
+        "item": "itat_teeth",
+        "name": "Клыки",
+        "count": 4,
+        "value": 15,
+        "valueSum": 60
+      }
+    ],
+    "productionValue": 195,
+    "profit": 555
+  },
+  {
+    "recipeItem": {
+      "item": "itre_spicker",
+      "name": "Чертеж: Диктатор"
+    },
+    "recipeResult": {
+      "item": "itmw_spicker",
+      "name": "Диктатор",
+      "value": 700
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_claw",
+        "name": "Когти",
+        "count": 5,
+        "value": 15,
+        "valueSum": 75
+      },
+      {
+        "item": "itat_teeth",
+        "name": "Клыки",
+        "count": 5,
+        "value": 15,
+        "valueSum": 75
+      }
+    ],
+    "productionValue": 260,
+    "profit": 440
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_axe_01",
+      "name": "Чертеж: Колун"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_axe_01",
+      "name": "Колун",
+      "value": 1300
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_sealurkerskin",
+        "name": "Шкура морского шныга",
+        "count": 2,
+        "value": 50,
+        "valueSum": 100
+      }
+    ],
+    "productionValue": 210,
+    "profit": 1090
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_sword_04",
+      "name": "Чертеж: Украшенный клинок"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_sword_04",
+      "name": "Украшенный клинок",
+      "value": 800
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_waranskin",
+        "name": "Шкура ящерицы",
+        "count": 2,
+        "value": 75,
+        "valueSum": 150
+      },
+      {
+        "item": "itat_teeth",
+        "name": "Клыки",
+        "count": 4,
+        "value": 15,
+        "valueSum": 60
+      }
+    ],
+    "productionValue": 280,
+    "profit": 520
+  },
+  {
+    "recipeItem": {
+      "item": "itre_schwert4",
+      "name": "Чертеж: Отличный длинный меч"
+    },
+    "recipeResult": {
+      "item": "itmw_schwert4",
+      "name": "Изысканный длинный меч",
+      "value": 900
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_wargfur",
+        "name": "Шкура варга",
+        "count": 2,
+        "value": 25,
+        "valueSum": 50
+      },
+      {
+        "item": "itat_snapperskin",
+        "name": "Шкура глорха",
+        "count": 2,
+        "value": 60,
+        "valueSum": 120
+      }
+    ],
+    "productionValue": 260,
+    "profit": 640
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_sword_08",
+      "name": "Чертеж: Дуэльный меч"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_sword_08",
+      "name": "Дуэльный меч",
+      "value": 1000
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 1,
+        "value": 15,
+        "valueSum": 15
+      },
+      {
+        "item": "itat_seasharkskin",
+        "name": "Шкура морской акулы",
+        "count": 2,
+        "value": 200,
+        "valueSum": 400
+      },
+      {
+        "item": "itmi_goldnugget_addon",
+        "name": "Золотой самородок",
+        "count": 4,
+        "value": 14,
+        "valueSum": 56
+      }
+    ],
+    "productionValue": 531,
+    "profit": 469
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_mace_01",
+      "name": "Чертеж: Сокрушитель"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_mace_01",
+      "name": "Сокрушитель",
+      "value": 950
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 6,
+        "value": 20,
+        "valueSum": 120
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 2,
+        "value": 6,
+        "valueSum": 12
+      },
+      {
+        "item": "itat_shadowfur",
+        "name": "Шкура мракориса",
+        "count": 1,
+        "value": 250,
+        "valueSum": 250
+      },
+      {
+        "item": "itat_wolffur",
+        "name": "Шкура волка",
+        "count": 6,
+        "value": 10,
+        "valueSum": 60
+      }
+    ],
+    "productionValue": 487,
+    "profit": 463
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bartaxt",
+      "name": "Чертеж: Великий топор"
+    },
+    "recipeResult": {
+      "item": "itmw_bartaxt",
+      "name": "Великий топор",
+      "value": 1450
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_snapperskin",
+        "name": "Шкура глорха",
+        "count": 4,
+        "value": 60,
+        "valueSum": 240
+      }
+    ],
+    "productionValue": 370,
+    "profit": 1080
+  },
+  {
+    "recipeItem": {
+      "item": "itre_none_1h_sword",
+      "name": "Чертеж: Серебряный меч"
+    },
+    "recipeResult": {
+      "item": "itmw_none_1h_sword",
+      "name": "Серебряный меч",
+      "value": 1700
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itmi_silver",
+        "name": "Большой серебряный самородок",
+        "count": 6,
+        "value": 20,
+        "valueSum": 120
+      },
+      {
+        "item": "itat_teeth",
+        "name": "Клыки",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      }
+    ],
+    "productionValue": 275,
+    "profit": 1425
+  },
+  {
+    "recipeItem": {
+      "item": "itre_morgenstern",
+      "name": "Чертеж: Моргенштерн"
+    },
+    "recipeResult": {
+      "item": "itmw_morgenstern",
+      "name": "Моргенштерн",
+      "value": 1100
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 1,
+        "value": 15,
+        "valueSum": 15
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 5,
+        "value": 6,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_teeth",
+        "name": "Клыки",
+        "count": 10,
+        "value": 15,
+        "valueSum": 150
+      }
+    ],
+    "productionValue": 275,
+    "profit": 825
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_sword_06",
+      "name": "Чертеж: Длинная сабля"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_sword_06",
+      "name": "Длинная сабля",
+      "value": 1200
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_waranskin",
+        "name": "Шкура ящерицы",
+        "count": 3,
+        "value": 75,
+        "valueSum": 225
+      },
+      {
+        "item": "itat_sharkskin",
+        "name": "Шкура болотной акулы",
+        "count": 2,
+        "value": 120,
+        "valueSum": 240
+      }
+    ],
+    "productionValue": 595,
+    "profit": 605
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_special_01",
+      "name": "Чертеж: Длинный магический меч"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_special_01",
+      "name": "Длинный магический меч",
+      "value": 2500
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Самородок руды",
+        "count": 2,
+        "value": 200,
+        "valueSum": 400
+      },
+      {
+        "item": "itat_wargfur",
+        "name": "Шкура варга",
+        "count": 2,
+        "value": 25,
+        "valueSum": 50
+      },
+      {
+        "item": "itat_shadowhorn",
+        "name": "Рог мракориса",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      }
+    ],
+    "productionValue": 850,
+    "profit": 1650
+  },
+  {
+    "recipeItem": {
+      "item": "itre_meisterdegen",
+      "name": "Чертеж: Меч мастера"
+    },
+    "recipeResult": {
+      "item": "itmw_meisterdegen",
+      "name": "Меч мастера",
+      "value": 2400
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itmi_goldnugget_addon",
+        "name": "Золотой самородок",
+        "count": 12,
+        "value": 14,
+        "valueSum": 168
+      },
+      {
+        "item": "itmi_rockcrystal",
+        "name": "Горный хрусталь",
+        "count": 4,
+        "value": 30,
+        "valueSum": 120
+      },
+      {
+        "item": "itat_waranfiretongue",
+        "name": "Язык огненной ящерицы",
+        "count": 3,
+        "value": 250,
+        "valueSum": 750
+      }
+    ],
+    "productionValue": 1168,
+    "profit": 1232
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_axe_02",
+      "name": "Чертеж: Погибель бревен"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_axe_02",
+      "name": "Погибель бревен",
+      "value": 1200
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      },
+      {
+        "item": "itat_bearfur",
+        "name": "Шкура медведя",
+        "count": 2,
+        "value": 250,
+        "valueSum": 500
+      },
+      {
+        "item": "itat_lurkerskin",
+        "name": "Шкура шныга",
+        "count": 4,
+        "value": 25,
+        "valueSum": 100
+      }
+    ],
+    "productionValue": 745,
+    "profit": 455
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_blessed_01",
+      "name": "Чертеж: Плохой магический клинок"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_blessed_01",
+      "name": "Плохой магический клинок",
+      "value": 2000
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 8,
+        "value": 20,
+        "valueSum": 160
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Самородок руды",
+        "count": 2,
+        "value": 200,
+        "valueSum": 400
+      },
+      {
+        "item": "itat_trollfur",
+        "name": "Шкура тролля",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Шкура овцы",
+        "count": 4,
+        "value": 10,
+        "valueSum": 40
+      }
+    ],
+    "productionValue": 900,
+    "profit": 1100
+  },
+  {
+    "recipeItem": {
+      "item": "itre_addon_betty",
+      "name": "Чертеж: Горлорез"
+    },
+    "recipeResult": {
+      "item": "itmw_addon_betty",
+      "name": "Дрын",
+      "value": 1300
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_waranfiretongue",
+        "name": "Язык огненной ящерицы",
+        "count": 2,
+        "value": 250,
+        "valueSum": 500
+      },
+      {
+        "item": "itmi_quartz",
+        "name": "Кварц",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itat_wargfur",
+        "name": "Шкура варга",
+        "count": 5,
+        "value": 25,
+        "valueSum": 125
+      }
+    ],
+    "productionValue": 855,
+    "profit": 445
+  },
+  {
+    "recipeItem": {
+      "item": "itre_schwert5",
+      "name": "Чертеж: Отличный полуторный меч"
+    },
+    "recipeResult": {
+      "item": "itmw_schwert5",
+      "name": "Отличный полуторный меч",
+      "value": 1100
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itmi_silver",
+        "name": "Большой серебряный самородок",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itat_blackwolffur",
+        "name": "Шкура черного волка",
+        "count": 6,
+        "value": 15,
+        "valueSum": 90
+      },
+      {
+        "item": "itat_shadowfur",
+        "name": "Шкура мракориса",
+        "count": 1,
+        "value": 250,
+        "valueSum": 250
+      }
+    ],
+    "productionValue": 550,
+    "profit": 550
+  },
+  {
+    "recipeItem": {
+      "item": "itre_none_1h_sword2",
+      "name": "Чертеж: Буря моряка"
+    },
+    "recipeResult": {
+      "item": "itmw_none_1h_sword2",
+      "name": "Буря моряка",
+      "value": 2300
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itmi_goldnugget_addon",
+        "name": "Золотой самородок",
+        "count": 6,
+        "value": 14,
+        "valueSum": 84
+      },
+      {
+        "item": "itmi_silver",
+        "name": "Большой серебряный самородок",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itmi_darkpearl",
+        "name": "Черная жемчужина",
+        "count": 1,
+        "value": 1000,
+        "valueSum": 1000
+      },
+      {
+        "item": "itmi_addon_whitepearl",
+        "name": "Жемчужина",
+        "count": 1,
+        "value": 120,
+        "valueSum": 120
+      }
+    ],
+    "productionValue": 1394,
+    "profit": 906
+  },
+  {
+    "recipeItem": {
+      "item": "itre_inquisitor",
+      "name": "Чертеж: Инквизитор"
+    },
+    "recipeResult": {
+      "item": "itmw_inquisitor",
+      "name": "Инквизитор",
+      "value": 1370
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Самородок руды",
+        "count": 1,
+        "value": 200,
+        "valueSum": 200
+      },
+      {
+        "item": "itat_swampgolemheart",
+        "name": "Сердце болотного голема",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itmi_holywater",
+        "name": "Святая вода",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_skeletonbone",
+        "name": "Кость скелета",
+        "count": 4,
+        "value": 10,
+        "valueSum": 40
+      }
+    ],
+    "productionValue": 680,
+    "profit": 690
+  },
+  {
+    "recipeItem": {
+      "item": "itre_kriegshammer2",
+      "name": "Чертеж: Тесак"
+    },
+    "recipeResult": {
+      "item": "itmw_kriegshammer2",
+      "name": "Дровокол",
+      "value": 890
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 3,
+        "value": 6,
+        "valueSum": 18
+      },
+      {
+        "item": "itat_trolltooth",
+        "name": "Клык тролля",
+        "count": 2,
+        "value": 200,
+        "valueSum": 400
+      },
+      {
+        "item": "itat_shadowhorn",
+        "name": "Рог мракориса",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      }
+    ],
+    "productionValue": 848,
+    "profit": 42
+  },
+  {
+    "recipeItem": {
+      "item": "itre_none_1h_sword3",
+      "name": "Чертеж: Погибель моряков"
+    },
+    "recipeResult": {
+      "item": "itmw_none_1h_sword3",
+      "name": "Погибель моряков",
+      "value": 2050
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itmi_goldnugget_addon",
+        "name": "Золотой самородок",
+        "count": 6,
+        "value": 14,
+        "valueSum": 84
+      },
+      {
+        "item": "itmi_darkpearl",
+        "name": "Черная жемчужина",
+        "count": 1,
+        "value": 1000,
+        "valueSum": 1000
+      },
+      {
+        "item": "itmi_addon_whitepearl",
+        "name": "Жемчужина",
+        "count": 3,
+        "value": 120,
+        "valueSum": 360
+      }
+    ],
+    "productionValue": 1574,
+    "profit": 476
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_special_03",
+      "name": "Чертеж: Покрытый рудой полуторный меч"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_special_03",
+      "name": "Магический боевой клинок",
+      "value": 2650
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 6,
+        "value": 20,
+        "valueSum": 120
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Самородок руды",
+        "count": 2,
+        "value": 200,
+        "valueSum": 400
+      },
+      {
+        "item": "itmi_silver",
+        "name": "Большой серебряный самородок",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itat_firewaranskin",
+        "name": "Шкура огненной ящерицы",
+        "count": 2,
+        "value": 150,
+        "valueSum": 300
+      },
+      {
+        "item": "itmi_aquamarine",
+        "name": "Аквамарин",
+        "count": 2,
+        "value": 100,
+        "valueSum": 200
+      }
+    ],
+    "productionValue": 1100,
+    "profit": 1550
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_special_02",
+      "name": "Чертеж: Магический клинок из чистой руды"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_special_02",
+      "name": "Магический клинок из чистой руды",
+      "value": 5000
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Самородок руды",
+        "count": 5,
+        "value": 200,
+        "valueSum": 1000
+      },
+      {
+        "item": "itat_stonegolemheart",
+        "name": "Сердце каменного голема",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itat_trollfur",
+        "name": "Шкура тролля",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itat_gargoyleheart",
+        "name": "Сердце горгульи",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      }
+    ],
+    "productionValue": 2000,
+    "profit": 3000
+  },
+  {
+    "recipeItem": {
+      "item": "itre_addon_keule_1h_01",
+      "name": "Чертеж: Слуга Ветра"
+    },
+    "recipeResult": {
+      "item": "itmw_addon_keule_1h_01",
+      "name": "Слуга Ветра",
+      "value": 25
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 4,
+        "value": 6,
+        "valueSum": 24
+      }
+    ],
+    "productionValue": 44,
+    "profit": -19
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_bau_scythe",
+      "name": "Чертеж: Коса"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_bau_scythe",
+      "name": "Коса",
+      "value": 70
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 3,
+        "value": 6,
+        "valueSum": 18
+      }
+    ],
+    "productionValue": 58,
+    "profit": 12
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_sld_sword",
+      "name": "Чертеж: Плохой двуручный меч"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_sld_sword",
+      "name": "Грубый двуручный меч",
+      "value": 60
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itat_moleratskin",
+        "name": "Шкура кротокрыса",
+        "count": 2,
+        "value": 8,
+        "valueSum": 16
+      }
+    ],
+    "productionValue": 76,
+    "profit": -16
+  },
+  {
+    "recipeItem": {
+      "item": "itre_none_2h_sword",
+      "name": "Чертеж: Двуручный меч"
+    },
+    "recipeResult": {
+      "item": "itmw_none_2h_sword",
+      "name": "Полуторный меч",
+      "value": 450
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itat_lurkerskin",
+        "name": "Шкура шныга",
+        "count": 4,
+        "value": 25,
+        "valueSum": 100
+      }
+    ],
+    "productionValue": 160,
+    "profit": 290
+  },
+  {
+    "recipeItem": {
+      "item": "itre_richtstab",
+      "name": "Чертеж: Посох судьи"
+    },
+    "recipeResult": {
+      "item": "itmw_richtstab",
+      "name": "Посох судьи",
+      "value": 400
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 2,
+        "value": 6,
+        "valueSum": 12
+      }
+    ],
+    "productionValue": 52,
+    "profit": 348
+  },
+  {
+    "recipeItem": {
+      "item": "itre_hellebarde",
+      "name": "Чертеж: Кровавый Жнец"
+    },
+    "recipeResult": {
+      "item": "itmw_hellebarde",
+      "name": "Кровавый Жнец",
+      "value": 500
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 2,
+        "value": 6,
+        "valueSum": 12
+      },
+      {
+        "item": "itat_wolffur",
+        "name": "Шкура волка",
+        "count": 3,
+        "value": 10,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 82,
+    "profit": 418
+  },
+  {
+    "recipeItem": {
+      "item": "itre_none_2h_sword3",
+      "name": "Чертеж: Кусач"
+    },
+    "recipeResult": {
+      "item": "itmw_none_2h_sword3",
+      "name": "Кусач",
+      "value": 600
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_teeth",
+        "name": "Клыки",
+        "count": 14,
+        "value": 15,
+        "valueSum": 210
+      }
+    ],
+    "productionValue": 250,
+    "profit": 350
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_mil_sword_01",
+      "name": "Чертеж: Двуручный меч стражника"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_mil_sword_01",
+      "name": "Двуручный меч стража",
+      "value": 550
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Шкура овцы",
+        "count": 3,
+        "value": 10,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 110,
+    "profit": 440
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_spear_08",
+      "name": "Чертеж: Копье"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_spear_08",
+      "name": "Копье",
+      "value": 800
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 3,
+        "value": 6,
+        "valueSum": 18
+      },
+      {
+        "item": "itat_wargfur",
+        "name": "Шкура варга",
+        "count": 2,
+        "value": 25,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 128,
+    "profit": 672
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_sword_02",
+      "name": "Чертеж: Мститель"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_sword_02",
+      "name": "Мститель",
+      "value": 690
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itat_claw",
+        "name": "Когти",
+        "count": 8,
+        "value": 15,
+        "valueSum": 120
+      },
+      {
+        "item": "itat_wolffur",
+        "name": "Шкура волка",
+        "count": 5,
+        "value": 10,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 250,
+    "profit": 440
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_mil_sword_02",
+      "name": "Чертеж: Отличный двуручный меч стражника"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_mil_sword_02",
+      "name": "Прекрасный двуручный меч стражника",
+      "value": 750
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Шкура овцы",
+        "count": 2,
+        "value": 10,
+        "valueSum": 20
+      },
+      {
+        "item": "itat_wolffur",
+        "name": "Шкура волка",
+        "count": 2,
+        "value": 10,
+        "valueSum": 20
+      }
+    ],
+    "productionValue": 185,
+    "profit": 565
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_mace_02",
+      "name": "Чертеж: Вепрь"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_mace_02",
+      "name": "Подлец",
+      "value": 1100
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 1,
+        "value": 15,
+        "valueSum": 15
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 4,
+        "value": 6,
+        "valueSum": 24
+      },
+      {
+        "item": "itat_teeth",
+        "name": "Клыки",
+        "count": 8,
+        "value": 15,
+        "valueSum": 120
+      },
+      {
+        "item": "itat_addon_keilerfur",
+        "name": "Шкура кабана",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 209,
+    "profit": 891
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_none_axe_02",
+      "name": "Чертеж: Измельчитель голов"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_none_axe_02",
+      "name": "Головорез",
+      "value": 750
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 1,
+        "value": 6,
+        "valueSum": 6
+      },
+      {
+        "item": "itat_swampratskin",
+        "name": "Шкура болотной крысы",
+        "count": 4,
+        "value": 8,
+        "valueSum": 32
+      }
+    ],
+    "productionValue": 148,
+    "profit": 602
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_sword_05",
+      "name": "Чертеж: Рыцарский клинок"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_sword_05",
+      "name": "Рыцарский клинок",
+      "value": 1300
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itmi_quartz",
+        "name": "Кварц",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itat_bearfur",
+        "name": "Шкура медведя",
+        "count": 3,
+        "value": 250,
+        "valueSum": 750
+      }
+    ],
+    "productionValue": 940,
+    "profit": 360
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_mil_sword_03",
+      "name": "Чертеж: Изысканный двуручный меч стражника"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_mil_sword_03",
+      "name": "Изысканный двуручный меч стражника",
+      "value": 1000
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_addon_keilerfur",
+        "name": "Шкура кабана",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      },
+      {
+        "item": "itat_teeth",
+        "name": "Клыки",
+        "count": 8,
+        "value": 15,
+        "valueSum": 120
+      }
+    ],
+    "productionValue": 295,
+    "profit": 705
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_mace_01",
+      "name": "Чертеж: Рабская смерть"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_mace_01",
+      "name": "Рабская смерть",
+      "value": 1250
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 1,
+        "value": 15,
+        "valueSum": 15
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 3,
+        "value": 6,
+        "valueSum": 18
+      },
+      {
+        "item": "itat_claw",
+        "name": "Когти",
+        "count": 24,
+        "value": 15,
+        "valueSum": 360
+      },
+      {
+        "item": "itat_lurkerclaw",
+        "name": "Когти шныга",
+        "count": 8,
+        "value": 15,
+        "valueSum": 120
+      }
+    ],
+    "productionValue": 573,
+    "profit": 677
+  },
+  {
+    "recipeItem": {
+      "item": "itre_stabkeule",
+      "name": "Чертеж: Моргенштерн южанина"
+    },
+    "recipeResult": {
+      "item": "itmw_stabkeule",
+      "name": "Моргенштерн южанина",
+      "value": 1450
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 4,
+        "value": 6,
+        "valueSum": 24
+      },
+      {
+        "item": "itat_sharkteeth",
+        "name": "Клыки болотной акулы",
+        "count": 4,
+        "value": 120,
+        "valueSum": 480
+      },
+      {
+        "item": "itat_waranskin",
+        "name": "Шкура ящерицы",
+        "count": 2,
+        "value": 75,
+        "valueSum": 150
+      }
+    ],
+    "productionValue": 764,
+    "profit": 686
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_special_01",
+      "name": "Чертеж: Магический двуручный меч"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_special_01",
+      "name": "Магический двуручный меч",
+      "value": 1600
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Самородок руды",
+        "count": 2,
+        "value": 200,
+        "valueSum": 400
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Шкура овцы",
+        "count": 4,
+        "value": 10,
+        "valueSum": 40
+      },
+      {
+        "item": "itmi_rockcrystal",
+        "name": "Горный хрусталь",
+        "count": 3,
+        "value": 30,
+        "valueSum": 90
+      }
+    ],
+    "productionValue": 570,
+    "profit": 1030
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_none_axe_01",
+      "name": "Чертеж: Приговор"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_none_axe_01",
+      "name": "Приговор",
+      "value": 1900
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 6,
+        "value": 20,
+        "valueSum": 120
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 2,
+        "value": 6,
+        "valueSum": 12
+      },
+      {
+        "item": "itat_shadowfur",
+        "name": "Шкура мракориса",
+        "count": 3,
+        "value": 250,
+        "valueSum": 750
+      },
+      {
+        "item": "itmi_quartz",
+        "name": "Кварц",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      }
+    ],
+    "productionValue": 987,
+    "profit": 913
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_special_02",
+      "name": "Чертеж: Тяжелый двуручный магический меч"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_special_02",
+      "name": "Тяжелый магический двуручный меч",
+      "value": 2000
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Самородок руды",
+        "count": 3,
+        "value": 200,
+        "valueSum": 600
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Шкура овцы",
+        "count": 5,
+        "value": 10,
+        "valueSum": 50
+      },
+      {
+        "item": "itmi_holywater",
+        "name": "Святая вода",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itmi_rockcrystal",
+        "name": "Горный хрусталь",
+        "count": 3,
+        "value": 30,
+        "valueSum": 90
+      }
+    ],
+    "productionValue": 820,
+    "profit": 1180
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_spear_02",
+      "name": "Чертеж: Боевое копье"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_spear_02",
+      "name": "Боевое копье",
+      "value": 1500
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 5,
+        "value": 6,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_addon_keilerfur",
+        "name": "Шкура кабана",
+        "count": 4,
+        "value": 15,
+        "valueSum": 60
+      },
+      {
+        "item": "itat_teeth",
+        "name": "Клыки",
+        "count": 8,
+        "value": 15,
+        "valueSum": 120
+      }
+    ],
+    "productionValue": 300,
+    "profit": 1200
+  },
+  {
+    "recipeItem": {
+      "item": "itre_addon_hacker_2h_02",
+      "name": "Чертеж: Мясник"
+    },
+    "recipeResult": {
+      "item": "itmw_addon_hacker_2h_02",
+      "name": "Мясник",
+      "value": 1850
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_sharkskin",
+        "name": "Шкура болотной акулы",
+        "count": 2,
+        "value": 120,
+        "valueSum": 240
+      },
+      {
+        "item": "itat_bearfat",
+        "name": "Жир медведя",
+        "count": 2,
+        "value": 50,
+        "valueSum": 100
+      },
+      {
+        "item": "itat_wargfur",
+        "name": "Шкура варга",
+        "count": 2,
+        "value": 25,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 500,
+    "profit": 1350
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_hammer_01",
+      "name": "Чертеж: Нордмарский молот"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_hammer_01",
+      "name": "Нордмарский молот",
+      "value": 2200
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 7,
+        "value": 20,
+        "valueSum": 140
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 4,
+        "value": 15,
+        "valueSum": 60
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 2,
+        "value": 6,
+        "valueSum": 12
+      },
+      {
+        "item": "itat_bearfur",
+        "name": "Шкура медведя",
+        "count": 4,
+        "value": 250,
+        "valueSum": 1000
+      },
+      {
+        "item": "itmi_silver",
+        "name": "Большой серебряный самородок",
+        "count": 7,
+        "value": 20,
+        "valueSum": 140
+      }
+    ],
+    "productionValue": 1352,
+    "profit": 848
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_hammer_03",
+      "name": "Чертеж: Гром"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_hammer_03",
+      "name": "Гром",
+      "value": 2400
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 8,
+        "value": 20,
+        "valueSum": 160
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 5,
+        "value": 15,
+        "valueSum": 75
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 2,
+        "value": 6,
+        "valueSum": 12
+      },
+      {
+        "item": "itat_trollfur",
+        "name": "Шкура тролля",
+        "count": 2,
+        "value": 300,
+        "valueSum": 600
+      },
+      {
+        "item": "itat_shadowhorn",
+        "name": "Рог мракориса",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itmi_aquamarine",
+        "name": "Аквамарин",
+        "count": 1,
+        "value": 100,
+        "valueSum": 100
+      }
+    ],
+    "productionValue": 1247,
+    "profit": 1153
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_spear_05",
+      "name": "Чертеж: Нордмарское копье"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_spear_05",
+      "name": "Нордмарское копье",
+      "value": 1750
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      },
+      {
+        "item": "itmi_silver",
+        "name": "Большой серебряный самородок",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 4,
+        "value": 6,
+        "valueSum": 24
+      },
+      {
+        "item": "itat_bearfur",
+        "name": "Шкура медведя",
+        "count": 2,
+        "value": 250,
+        "valueSum": 500
+      },
+      {
+        "item": "itat_trolltooth",
+        "name": "Клык тролля",
+        "count": 5,
+        "value": 200,
+        "valueSum": 1000
+      }
+    ],
+    "productionValue": 1769,
+    "profit": -19
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_sword_07",
+      "name": "Чертеж: Убийца королей"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_sword_07",
+      "name": "Убийца королей",
+      "value": 2300
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 5,
+        "value": 15,
+        "valueSum": 75
+      },
+      {
+        "item": "itmi_goldnugget_addon",
+        "name": "Золотой самородок",
+        "count": 8,
+        "value": 14,
+        "valueSum": 112
+      },
+      {
+        "item": "itmi_silver",
+        "name": "Большой серебряный самородок",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itat_shadowfur",
+        "name": "Шкура мракориса",
+        "count": 2,
+        "value": 250,
+        "valueSum": 500
+      }
+    ],
+    "productionValue": 807,
+    "profit": 1493
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_ws_sword_ulryk",
+      "name": "Чертеж: Волчья лапа"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_ws_sword_ulryk",
+      "name": "Волчья лапа",
+      "value": 1950
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 6,
+        "value": 20,
+        "valueSum": 120
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      },
+      {
+        "item": "itat_wargfur",
+        "name": "Шкура варга",
+        "count": 5,
+        "value": 25,
+        "valueSum": 125
+      },
+      {
+        "item": "itat_wolffur",
+        "name": "Шкура волка",
+        "count": 5,
+        "value": 10,
+        "valueSum": 50
+      },
+      {
+        "item": "itat_claw",
+        "name": "Когти",
+        "count": 20,
+        "value": 15,
+        "valueSum": 300
+      }
+    ],
+    "productionValue": 640,
+    "profit": 1310
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_hammer_05",
+      "name": "Чертеж: Правосудие Инноса"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_hammer_05",
+      "name": "Правосудие Инноса",
+      "value": 2700
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 8,
+        "value": 20,
+        "valueSum": 160
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Самородок руды",
+        "count": 3,
+        "value": 200,
+        "valueSum": 600
+      },
+      {
+        "item": "itmi_rockcrystal",
+        "name": "Горный хрусталь",
+        "count": 3,
+        "value": 30,
+        "valueSum": 90
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Шкура овцы",
+        "count": 7,
+        "value": 10,
+        "valueSum": 70
+      },
+      {
+        "item": "itmi_holywater",
+        "name": "Святая вода",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      }
+    ],
+    "productionValue": 960,
+    "profit": 1740
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_blessed_01",
+      "name": "Чертеж: Длань паладина"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_blessed_01",
+      "name": "Длань паладина",
+      "value": 3100
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Самородок руды",
+        "count": 4,
+        "value": 200,
+        "valueSum": 800
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Шкура овцы",
+        "count": 5,
+        "value": 10,
+        "valueSum": 50
+      },
+      {
+        "item": "itmi_silver",
+        "name": "Большой серебряный самородок",
+        "count": 8,
+        "value": 20,
+        "valueSum": 160
+      },
+      {
+        "item": "itmi_holywater",
+        "name": "Святая вода",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      }
+    ],
+    "productionValue": 1170,
+    "profit": 1930
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_spear_01",
+      "name": "Чертеж: Копье южанина"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_spear_01",
+      "name": "Копье южанина",
+      "value": 2000
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Уголь",
+        "count": 6,
+        "value": 15,
+        "valueSum": 90
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 5,
+        "value": 6,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_firegolemheart",
+        "name": "Сердце огненного голема",
+        "count": 2,
+        "value": 300,
+        "valueSum": 600
+      },
+      {
+        "item": "itat_waranfiretongue",
+        "name": "Язык огненной ящерицы",
+        "count": 2,
+        "value": 250,
+        "valueSum": 500
+      },
+      {
+        "item": "itat_sharkskin",
+        "name": "Шкура болотной акулы",
+        "count": 2,
+        "value": 120,
+        "valueSum": 240
+      }
+    ],
+    "productionValue": 1540,
+    "profit": 460
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_hammer_06",
+      "name": "Чертеж: Молния"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_hammer_06",
+      "name": "Молния",
+      "value": 3000
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 8,
+        "value": 20,
+        "valueSum": 160
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Самородок руды",
+        "count": 2,
+        "value": 200,
+        "valueSum": 400
+      },
+      {
+        "item": "itat_firewaranskin",
+        "name": "Шкура огненной ящерицы",
+        "count": 2,
+        "value": 150,
+        "valueSum": 300
+      },
+      {
+        "item": "itat_waranfiretongue",
+        "name": "Язык огненной ящерицы",
+        "count": 5,
+        "value": 250,
+        "valueSum": 1250
+      },
+      {
+        "item": "itmi_sulfur",
+        "name": "Сера",
+        "count": 7,
+        "value": 20,
+        "valueSum": 140
+      }
+    ],
+    "productionValue": 2250,
+    "profit": 750
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_spear_13",
+      "name": "Чертеж: Древнее копье"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_spear_13",
+      "name": "Древнее копье",
+      "value": 5000
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itat_firegolemheart",
+        "name": "Сердце огненного голема",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Самородок руды",
+        "count": 5,
+        "value": 200,
+        "valueSum": 1000
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 6,
+        "value": 6,
+        "valueSum": 36
+      },
+      {
+        "item": "itat_trollfur",
+        "name": "Шкура тролля",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itat_gargoyleheart",
+        "name": "Сердце горгульи",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itat_shadowhorn",
+        "name": "Рог мракориса",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      }
+    ],
+    "productionValue": 2236,
+    "profit": 2764
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_hammer_04",
+      "name": "Чертеж: Крушитель"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_hammer_04",
+      "name": "Крушитель",
+      "value": 5000
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 12,
+        "value": 20,
+        "valueSum": 240
+      },
+      {
+        "item": "itat_trollfur",
+        "name": "Шкура тролля",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itat_stonegolemheart",
+        "name": "Сердце каменного голема",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itat_gargoyleheart",
+        "name": "Сердце горгульи",
+        "count": 2,
+        "value": 300,
+        "valueSum": 600
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Самородок руды",
+        "count": 5,
+        "value": 200,
+        "valueSum": 1000
+      }
+    ],
+    "productionValue": 2440,
+    "profit": 2560
+  },
+  {
+    "recipeItem": {
+      "item": "itre_crossbow_l_02",
+      "name": "Чертеж: Легкий арбалет"
+    },
+    "recipeResult": {
+      "item": "itrw_crossbow_l_02",
+      "name": "Легкий арбалет",
+      "value": 270
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 2,
+        "value": 6,
+        "valueSum": 12
+      },
+      {
+        "item": "itcr_bowstring",
+        "name": "Тетива волокна",
+        "count": 1,
+        "value": 25,
+        "valueSum": 25
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Шкура овцы",
+        "count": 4,
+        "value": 10,
+        "valueSum": 40
+      }
+    ],
+    "productionValue": 77,
+    "profit": 193
+  },
+  {
+    "recipeItem": {
+      "item": "itre_crossbow_01",
+      "name": "Чертеж: Ясеневый арбалет"
+    },
+    "recipeResult": {
+      "item": "itrw_crossbow_01",
+      "name": "Ясеневый арбалет",
+      "value": 330
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 3,
+        "value": 6,
+        "valueSum": 18
+      },
+      {
+        "item": "itcr_bowstring",
+        "name": "Тетива волокна",
+        "count": 2,
+        "value": 25,
+        "valueSum": 50
+      },
+      {
+        "item": "itat_wolffur",
+        "name": "Шкура волка",
+        "count": 5,
+        "value": 10,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 118,
+    "profit": 212
+  },
+  {
+    "recipeItem": {
+      "item": "itre_crossbow_l_01",
+      "name": "Чертеж: Охотничий арбалет"
+    },
+    "recipeResult": {
+      "item": "itrw_crossbow_l_01",
+      "name": "Охотничий арбалет",
+      "value": 500
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 2,
+        "value": 6,
+        "valueSum": 12
+      },
+      {
+        "item": "itcr_bowstring",
+        "name": "Тетива волокна",
+        "count": 2,
+        "value": 25,
+        "valueSum": 50
+      },
+      {
+        "item": "itat_addon_keilerfur",
+        "name": "Шкура кабана",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      },
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      }
+    ],
+    "productionValue": 127,
+    "profit": 373
+  },
+  {
+    "recipeItem": {
+      "item": "itre_crossbow_m_02",
+      "name": "Чертеж: Деликатес древесных червей"
+    },
+    "recipeResult": {
+      "item": "itrw_crossbow_m_02",
+      "name": "Деликатес древоточцев",
+      "value": 1000
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 4,
+        "value": 6,
+        "valueSum": 24
+      },
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itcr_bowstring",
+        "name": "Тетива волокна",
+        "count": 2,
+        "value": 25,
+        "valueSum": 50
+      },
+      {
+        "item": "itat_lurkerskin",
+        "name": "Шкура шныга",
+        "count": 4,
+        "value": 25,
+        "valueSum": 100
+      },
+      {
+        "item": "itat_moleratlubric",
+        "name": "Жир кротокрыса",
+        "count": 2,
+        "value": 10,
+        "valueSum": 20
+      }
+    ],
+    "productionValue": 214,
+    "profit": 786
+  },
+  {
+    "recipeItem": {
+      "item": "itre_emma_crossbow",
+      "name": "Чертеж: Проклятие варгов"
+    },
+    "recipeResult": {
+      "item": "itrw_crossbow_10",
+      "name": "Проклятие варгов",
+      "value": 1050
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 5,
+        "value": 6,
+        "valueSum": 30
+      },
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itcr_bowstring",
+        "name": "Тетива волокна",
+        "count": 3,
+        "value": 25,
+        "valueSum": 75
+      },
+      {
+        "item": "itat_wargfur",
+        "name": "Шкура варга",
+        "count": 5,
+        "value": 25,
+        "valueSum": 125
+      },
+      {
+        "item": "itat_moleratlubric",
+        "name": "Жир кротокрыса",
+        "count": 3,
+        "value": 10,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 320,
+    "profit": 730
+  },
+  {
+    "recipeItem": {
+      "item": "itre_crossbow_05",
+      "name": "Чертеж: Украшенный арбалет"
+    },
+    "recipeResult": {
+      "item": "itrw_crossbow_05",
+      "name": "Украшенный арбалет",
+      "value": 1600
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 6,
+        "value": 6,
+        "valueSum": 36
+      },
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_warantongue",
+        "name": "Язык ящерицы",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_bearfur",
+        "name": "Шкура медведя",
+        "count": 1,
+        "value": 250,
+        "valueSum": 250
+      },
+      {
+        "item": "itat_claw",
+        "name": "Когти",
+        "count": 8,
+        "value": 15,
+        "valueSum": 120
+      }
+    ],
+    "productionValue": 486,
+    "profit": 1114
+  },
+  {
+    "recipeItem": {
+      "item": "itre_jon_crossbow",
+      "name": "Чертеж: Арбалет охотника на ползунов"
+    },
+    "recipeResult": {
+      "item": "itrw_crossbow_09",
+      "name": "Арбалет охотника на ползунов",
+      "value": 2300
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 5,
+        "value": 6,
+        "valueSum": 30
+      },
+      {
+        "item": "itmi_silver",
+        "name": "Большой серебряный самородок",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itat_crawlerplate",
+        "name": "Пластины панциря ползуна",
+        "count": 6,
+        "value": 100,
+        "valueSum": 600
+      },
+      {
+        "item": "itat_warantongue",
+        "name": "Язык ящерицы",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_bearfat",
+        "name": "Жир медведя",
+        "count": 2,
+        "value": 50,
+        "valueSum": 100
+      }
+    ],
+    "productionValue": 850,
+    "profit": 1450
+  },
+  {
+    "recipeItem": {
+      "item": "itre_crossbow_h_02",
+      "name": "Чертеж: Усиленный арбалет"
+    },
+    "recipeResult": {
+      "item": "itrw_crossbow_h_02",
+      "name": "Усиленный арбалет",
+      "value": 2000
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 8,
+        "value": 6,
+        "valueSum": 48
+      },
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itat_warantongue",
+        "name": "Язык ящерицы",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itat_teeth",
+        "name": "Клыки",
+        "count": 8,
+        "value": 15,
+        "valueSum": 120
+      },
+      {
+        "item": "itat_shadowhorn",
+        "name": "Рог мракориса",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      }
+    ],
+    "productionValue": 608,
+    "profit": 1392
+  },
+  {
+    "recipeItem": {
+      "item": "itre_crossbow_m_01",
+      "name": "Чертеж: Золотой арбалет"
+    },
+    "recipeResult": {
+      "item": "itrw_crossbow_m_01",
+      "name": "Золотой арбалет",
+      "value": 2300
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 5,
+        "value": 6,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_waranfiretongue",
+        "name": "Язык огненной ящерицы",
+        "count": 1,
+        "value": 250,
+        "valueSum": 250
+      },
+      {
+        "item": "itmi_goldnugget_addon",
+        "name": "Золотой самородок",
+        "count": 12,
+        "value": 14,
+        "valueSum": 168
+      },
+      {
+        "item": "itat_sharkskin",
+        "name": "Шкура болотной акулы",
+        "count": 3,
+        "value": 120,
+        "valueSum": 360
+      },
+      {
+        "item": "itat_bearfat",
+        "name": "Жир медведя",
+        "count": 2,
+        "value": 50,
+        "valueSum": 100
+      }
+    ],
+    "productionValue": 908,
+    "profit": 1392
+  },
+  {
+    "recipeItem": {
+      "item": "itre_crossbow_h_01",
+      "name": "Чертеж: Тяжелый арбалет"
+    },
+    "recipeResult": {
+      "item": "itrw_crossbow_h_01",
+      "name": "Разрушитель стен",
+      "value": 2200
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 4,
+        "value": 6,
+        "valueSum": 24
+      },
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itat_waranfiretongue",
+        "name": "Язык огненной ящерицы",
+        "count": 2,
+        "value": 250,
+        "valueSum": 500
+      },
+      {
+        "item": "itat_blackbearfur",
+        "name": "Шкура черного медведя",
+        "count": 1,
+        "value": 350,
+        "valueSum": 350
+      },
+      {
+        "item": "itat_shadowfur",
+        "name": "Шкура мракориса",
+        "count": 1,
+        "value": 250,
+        "valueSum": 250
+      }
+    ],
+    "productionValue": 1204,
+    "profit": 996
+  },
+  {
+    "recipeItem": {
+      "item": "itre_crossbow_03",
+      "name": "Чертеж: Баллиста"
+    },
+    "recipeResult": {
+      "item": "itrw_crossbow_03",
+      "name": "Баллиста",
+      "value": 2700
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 6,
+        "value": 6,
+        "valueSum": 36
+      },
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 6,
+        "value": 20,
+        "valueSum": 120
+      },
+      {
+        "item": "itat_waranfiretongue",
+        "name": "Язык огненной ящерицы",
+        "count": 2,
+        "value": 250,
+        "valueSum": 500
+      },
+      {
+        "item": "itat_stonegolemheart",
+        "name": "Сердце каменного голема",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itat_trollfur",
+        "name": "Шкура тролля",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      }
+    ],
+    "productionValue": 1256,
+    "profit": 1444
+  },
+  {
+    "recipeItem": {
+      "item": "itre_addon_magiccrossbow",
+      "name": "Чертеж: Арбалет из магической руды"
+    },
+    "recipeResult": {
+      "item": "itrw_addon_magiccrossbow",
+      "name": "Арбалет из магической руды",
+      "value": 5500
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Самородок руды",
+        "count": 5,
+        "value": 200,
+        "valueSum": 1000
+      },
+      {
+        "item": "itat_waranfiretongue",
+        "name": "Язык огненной ящерицы",
+        "count": 3,
+        "value": 250,
+        "valueSum": 750
+      },
+      {
+        "item": "itat_gargoyleheart",
+        "name": "Сердце горгульи",
+        "count": 2,
+        "value": 300,
+        "valueSum": 600
+      },
+      {
+        "item": "itat_icegolemheart",
+        "name": "Сердце ледяного голема",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      }
+    ],
+    "productionValue": 2730,
+    "profit": 2770
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bow_01",
+      "name": "Чертеж: Березовый лук"
+    },
+    "recipeResult": {
+      "item": "itrw_bow_01",
+      "name": "Березовый лук",
+      "value": 320
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 2,
+        "value": 6,
+        "valueSum": 12
+      },
+      {
+        "item": "itcr_bowstring",
+        "name": "Тетива волокна",
+        "count": 1,
+        "value": 25,
+        "valueSum": 25
+      },
+      {
+        "item": "itat_moleratskin",
+        "name": "Шкура кротокрыса",
+        "count": 3,
+        "value": 8,
+        "valueSum": 24
+      }
+    ],
+    "productionValue": 61,
+    "profit": 259
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bow_09",
+      "name": "Чертеж: Буковый лук"
+    },
+    "recipeResult": {
+      "item": "itrw_bow_09",
+      "name": "Буковый лук",
+      "value": 490
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 3,
+        "value": 6,
+        "valueSum": 18
+      },
+      {
+        "item": "itcr_bowstring",
+        "name": "Тетива волокна",
+        "count": 1,
+        "value": 25,
+        "valueSum": 25
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Шкура овцы",
+        "count": 4,
+        "value": 10,
+        "valueSum": 40
+      }
+    ],
+    "productionValue": 83,
+    "profit": 407
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bow_05",
+      "name": "Чертеж: Красный лук"
+    },
+    "recipeResult": {
+      "item": "itrw_bow_05",
+      "name": "Красный лук",
+      "value": 650
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 3,
+        "value": 6,
+        "valueSum": 18
+      },
+      {
+        "item": "itcr_bowstring",
+        "name": "Тетива волокна",
+        "count": 2,
+        "value": 25,
+        "valueSum": 50
+      },
+      {
+        "item": "itat_addon_keilerfur",
+        "name": "Шкура кабана",
+        "count": 4,
+        "value": 15,
+        "valueSum": 60
+      }
+    ],
+    "productionValue": 128,
+    "profit": 522
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bow_m_01",
+      "name": "Чертеж: Составной лук"
+    },
+    "recipeResult": {
+      "item": "itrw_bow_m_01",
+      "name": "Составной лук",
+      "value": 700
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 2,
+        "value": 6,
+        "valueSum": 12
+      },
+      {
+        "item": "itcr_bowstring",
+        "name": "Тетива волокна",
+        "count": 2,
+        "value": 25,
+        "valueSum": 50
+      },
+      {
+        "item": "itat_wolffur",
+        "name": "Шкура волка",
+        "count": 5,
+        "value": 10,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 112,
+    "profit": 588
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bow_04",
+      "name": "Чертеж: Усиленный березовый лук"
+    },
+    "recipeResult": {
+      "item": "itrw_bow_04",
+      "name": "Усиленный березовый лук",
+      "value": 750
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 4,
+        "value": 6,
+        "valueSum": 24
+      },
+      {
+        "item": "itcr_bowstring",
+        "name": "Тетива волокна",
+        "count": 3,
+        "value": 25,
+        "valueSum": 75
+      },
+      {
+        "item": "itat_waranskin",
+        "name": "Шкура ящерицы",
+        "count": 3,
+        "value": 75,
+        "valueSum": 225
+      },
+      {
+        "item": "itat_teeth",
+        "name": "Клыки",
+        "count": 4,
+        "value": 15,
+        "valueSum": 60
+      }
+    ],
+    "productionValue": 384,
+    "profit": 366
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bow_07",
+      "name": "Чертеж: Легкий ясеневый лук"
+    },
+    "recipeResult": {
+      "item": "itrw_bow_07",
+      "name": "Легкий ясеневый лук",
+      "value": 1100
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 4,
+        "value": 6,
+        "valueSum": 24
+      },
+      {
+        "item": "itcr_bowstring",
+        "name": "Тетива волокна",
+        "count": 3,
+        "value": 25,
+        "valueSum": 75
+      },
+      {
+        "item": "itat_lurkerskin",
+        "name": "Шкура шныга",
+        "count": 4,
+        "value": 25,
+        "valueSum": 100
+      },
+      {
+        "item": "itat_lurkerclaw",
+        "name": "Когти шныга",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 229,
+    "profit": 871
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bow_02",
+      "name": "Чертеж: Лук из красного дерева"
+    },
+    "recipeResult": {
+      "item": "itrw_bow_02",
+      "name": "Лук из красного дерева",
+      "value": 950
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 4,
+        "value": 6,
+        "valueSum": 24
+      },
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itcr_bowstring",
+        "name": "Тетива волокна",
+        "count": 3,
+        "value": 25,
+        "valueSum": 75
+      },
+      {
+        "item": "itat_addon_keilerfur",
+        "name": "Шкура кабана",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      },
+      {
+        "item": "itat_teeth",
+        "name": "Клыки",
+        "count": 7,
+        "value": 15,
+        "valueSum": 105
+      }
+    ],
+    "productionValue": 289,
+    "profit": 661
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bow_08",
+      "name": "Чертеж: Охотничий лук"
+    },
+    "recipeResult": {
+      "item": "itrw_bow_08",
+      "name": "Охотничий лук",
+      "value": 1150
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 4,
+        "value": 6,
+        "valueSum": 24
+      },
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itcr_bowstring",
+        "name": "Тетива волокна",
+        "count": 3,
+        "value": 25,
+        "valueSum": 75
+      },
+      {
+        "item": "itat_bearfur",
+        "name": "Шкура медведя",
+        "count": 1,
+        "value": 250,
+        "valueSum": 250
+      },
+      {
+        "item": "itat_claw",
+        "name": "Когти",
+        "count": 8,
+        "value": 15,
+        "valueSum": 120
+      }
+    ],
+    "productionValue": 509,
+    "profit": 641
+  },
+  {
+    "recipeItem": {
+      "item": "itre_addon_firebow",
+      "name": "Чертеж: Пустынный лук"
+    },
+    "recipeResult": {
+      "item": "itrw_addon_firebow",
+      "name": "Пустынный лук",
+      "value": 2500
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 6,
+        "value": 6,
+        "valueSum": 36
+      },
+      {
+        "item": "itat_waranfiretongue",
+        "name": "Язык огненной ящерицы",
+        "count": 1,
+        "value": 250,
+        "valueSum": 250
+      },
+      {
+        "item": "itmi_goldnugget_addon",
+        "name": "Золотой самородок",
+        "count": 10,
+        "value": 14,
+        "valueSum": 140
+      },
+      {
+        "item": "itmi_sulfur",
+        "name": "Сера",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itat_firewaranskin",
+        "name": "Шкура огненной ящерицы",
+        "count": 1,
+        "value": 150,
+        "valueSum": 150
+      }
+    ],
+    "productionValue": 656,
+    "profit": 1844
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bow_m_04",
+      "name": "Чертеж: Усиленный буковый лук"
+    },
+    "recipeResult": {
+      "item": "itrw_bow_m_04",
+      "name": "Усиленный буковый лук",
+      "value": 1400
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 6,
+        "value": 6,
+        "valueSum": 36
+      },
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_warantongue",
+        "name": "Язык ящерицы",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_sharkskin",
+        "name": "Шкура болотной акулы",
+        "count": 4,
+        "value": 120,
+        "valueSum": 480
+      }
+    ],
+    "productionValue": 596,
+    "profit": 804
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bow_06",
+      "name": "Чертеж: Соколиный глаз"
+    },
+    "recipeResult": {
+      "item": "itrw_bow_06",
+      "name": "Соколиный глаз",
+      "value": 2100
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 6,
+        "value": 6,
+        "valueSum": 36
+      },
+      {
+        "item": "itat_waranfiretongue",
+        "name": "Язык огненной ящерицы",
+        "count": 2,
+        "value": 250,
+        "valueSum": 500
+      },
+      {
+        "item": "itat_wargfur",
+        "name": "Шкура варга",
+        "count": 8,
+        "value": 25,
+        "valueSum": 200
+      },
+      {
+        "item": "itat_trolltooth",
+        "name": "Клык тролля",
+        "count": 4,
+        "value": 200,
+        "valueSum": 800
+      },
+      {
+        "item": "itmi_rockcrystal",
+        "name": "Горный хрусталь",
+        "count": 2,
+        "value": 30,
+        "valueSum": 60
+      }
+    ],
+    "productionValue": 1596,
+    "profit": 504
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bow_h_01",
+      "name": "Чертеж: Костяной лук"
+    },
+    "recipeResult": {
+      "item": "itrw_bow_h_01",
+      "name": "Костяной лук",
+      "value": 1900
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 8,
+        "value": 6,
+        "valueSum": 48
+      },
+      {
+        "item": "itat_warantongue",
+        "name": "Язык ящерицы",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_goblinbone",
+        "name": "Кость гоблина",
+        "count": 6,
+        "value": 10,
+        "valueSum": 60
+      },
+      {
+        "item": "itat_skeletonbone",
+        "name": "Кость скелета",
+        "count": 4,
+        "value": 10,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_shadowfur",
+        "name": "Шкура мракориса",
+        "count": 2,
+        "value": 250,
+        "valueSum": 500
+      }
+    ],
+    "productionValue": 688,
+    "profit": 1212
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bow_h_02",
+      "name": "Чертеж: Дубовый лук"
+    },
+    "recipeResult": {
+      "item": "itrw_bow_h_02",
+      "name": "Дубовый лук",
+      "value": 2200
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 10,
+        "value": 6,
+        "valueSum": 60
+      },
+      {
+        "item": "itat_waranfiretongue",
+        "name": "Язык огненной ящерицы",
+        "count": 3,
+        "value": 250,
+        "valueSum": 750
+      },
+      {
+        "item": "itat_trollfur",
+        "name": "Шкура тролля",
+        "count": 2,
+        "value": 300,
+        "valueSum": 600
+      },
+      {
+        "item": "itat_sharkteeth",
+        "name": "Клыки болотной акулы",
+        "count": 5,
+        "value": 120,
+        "valueSum": 600
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Шкура овцы",
+        "count": 4,
+        "value": 10,
+        "valueSum": 40
+      }
+    ],
+    "productionValue": 2050,
+    "profit": 150
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bow_h_04",
+      "name": "Чертеж: Ястреб"
+    },
+    "recipeResult": {
+      "item": "itrw_bow_h_04",
+      "name": "Ястреб",
+      "value": 2600
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Древесина для изготовления оружия",
+        "count": 10,
+        "value": 6,
+        "valueSum": 60
+      },
+      {
+        "item": "itat_waranfiretongue",
+        "name": "Язык огненной ящерицы",
+        "count": 2,
+        "value": 250,
+        "valueSum": 500
+      },
+      {
+        "item": "itat_swampgolemheart",
+        "name": "Сердце болотного голема",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itat_shadowfur",
+        "name": "Шкура мракориса",
+        "count": 1,
+        "value": 250,
+        "valueSum": 250
+      },
+      {
+        "item": "itat_shadowhorn",
+        "name": "Рог мракориса",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      }
+    ],
+    "productionValue": 1410,
+    "profit": 1190
+  },
+  {
+    "recipeItem": {
+      "item": "itre_addon_magicbow",
+      "name": "Чертеж: Синий орел"
+    },
+    "recipeResult": {
+      "item": "itrw_addon_magicbow",
+      "name": "Синий орел",
+      "value": 5500
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Железный самородок",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Самородок руды",
+        "count": 5,
+        "value": 200,
+        "valueSum": 1000
+      },
+      {
+        "item": "itat_waranfiretongue",
+        "name": "Язык огненной ящерицы",
+        "count": 3,
+        "value": 250,
+        "valueSum": 750
+      },
+      {
+        "item": "itat_stonegolemheart",
+        "name": "Сердце каменного голема",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itat_gargoyleheart",
+        "name": "Сердце горгульи",
+        "count": 2,
+        "value": 300,
+        "valueSum": 600
+      }
+    ],
+    "productionValue": 2750,
+    "profit": 2750
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_light",
+      "name": "Свет"
+    },
+    "recipeResult": {
+      "item": "itsc_light",
+      "name": "Свет",
+      "value": 10
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_light",
+        "name": "Свет",
+        "count": 1,
+        "value": 10,
+        "valueSum": 10
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Чистый магический пергамент",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Осколки магической руды",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      }
+    ],
+    "productionValue": 17,
+    "profit": -7
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_zap",
+      "name": "Малая молния"
+    },
+    "recipeResult": {
+      "item": "itsc_zap",
+      "name": "Малая молния",
+      "value": 8
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_zap",
+        "name": "Малая молния",
+        "count": 1,
+        "value": 8,
+        "valueSum": 8
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Чистый магический пергамент",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Осколки магической руды",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      }
+    ],
+    "productionValue": 15,
+    "profit": -7
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_skull",
+      "name": "Крик смерти"
+    },
+    "recipeResult": {
+      "item": "itsc_skull",
+      "name": "Крик смерти",
+      "value": 60
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_skull",
+        "name": "Крик смерти",
+        "count": 1,
+        "value": 60,
+        "valueSum": 60
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Чистый магический пергамент",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Осколки магической руды",
+        "count": 5,
+        "value": 5,
+        "valueSum": 25
+      }
+    ],
+    "productionValue": 87,
+    "profit": -27
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_lightheal",
+      "name": "Лечение легких ранений"
+    },
+    "recipeResult": {
+      "item": "itsc_lightheal",
+      "name": "Лечение легких ранений",
+      "value": 20
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_lightheal",
+        "name": "Лечение легких ранений",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Чистый магический пергамент",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Осколки магической руды",
+        "count": 2,
+        "value": 5,
+        "valueSum": 10
+      }
+    ],
+    "productionValue": 32,
+    "profit": -12
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_icebolt",
+      "name": "Ледяная стрела"
+    },
+    "recipeResult": {
+      "item": "itsc_icebolt",
+      "name": "Ледяная стрела",
+      "value": 15
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_icebolt",
+        "name": "Ледяная стрела",
+        "count": 1,
+        "value": 15,
+        "valueSum": 15
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Чистый магический пергамент",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Осколки магической руды",
+        "count": 3,
+        "value": 5,
+        "valueSum": 15
+      }
+    ],
+    "productionValue": 32,
+    "profit": -17
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_sumwolf",
+      "name": "Призыв волка"
+    },
+    "recipeResult": {
+      "item": "itsc_sumwolf",
+      "name": "Призыв волка",
+      "value": 50
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_sumwolf",
+        "name": "Призыв волка",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Чистый магический пергамент",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Осколки магической руды",
+        "count": 5,
+        "value": 5,
+        "valueSum": 25
+      }
+    ],
+    "productionValue": 77,
+    "profit": -27
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_windfist",
+      "name": "Кулак ветра"
+    },
+    "recipeResult": {
+      "item": "itsc_windfist",
+      "name": "Кулак ветра",
+      "value": 45
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_windfist",
+        "name": "Кулак ветра",
+        "count": 1,
+        "value": 45,
+        "valueSum": 45
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Чистый магический пергамент",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Осколки магической руды",
+        "count": 3,
+        "value": 5,
+        "valueSum": 15
+      }
+    ],
+    "productionValue": 62,
+    "profit": -17
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_icelance",
+      "name": "Ледяное копье"
+    },
+    "recipeResult": {
+      "item": "itsc_icelance",
+      "name": "Ледяное копье",
+      "value": 75
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_icelance",
+        "name": "Ледяное копье",
+        "count": 1,
+        "value": 75,
+        "valueSum": 75
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Чистый магический пергамент",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Осколки магической руды",
+        "count": 5,
+        "value": 5,
+        "valueSum": 25
+      }
+    ],
+    "productionValue": 102,
+    "profit": -27
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_whirlwind",
+      "name": "Смерч"
+    },
+    "recipeResult": {
+      "item": "itsc_whirlwind",
+      "name": "Смерч",
+      "value": 120
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_whirlwind",
+        "name": "Смерч",
+        "count": 1,
+        "value": 120,
+        "valueSum": 120
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Чистый магический пергамент",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Осколки магической руды",
+        "count": 4,
+        "value": 5,
+        "valueSum": 20
+      }
+    ],
+    "productionValue": 142,
+    "profit": -22
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_sumsnapper",
+      "name": "Призыв глорха"
+    },
+    "recipeResult": {
+      "item": "itsc_sumsnapper",
+      "name": "Призыв глорха",
+      "value": 100
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_sumsnapper",
+        "name": "Призыв глорха",
+        "count": 1,
+        "value": 100,
+        "valueSum": 100
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Чистый магический пергамент",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Осколки магической руды",
+        "count": 10,
+        "value": 5,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 152,
+    "profit": -52
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_mediumheal",
+      "name": "Лечение средних ранений"
+    },
+    "recipeResult": {
+      "item": "itsc_mediumheal",
+      "name": "Лечение средних ранений",
+      "value": 60
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_mediumheal",
+        "name": "Лечение средних ранений",
+        "count": 1,
+        "value": 60,
+        "valueSum": 60
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Чистый магический пергамент",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Осколки магической руды",
+        "count": 4,
+        "value": 5,
+        "valueSum": 20
+      }
+    ],
+    "productionValue": 82,
+    "profit": -22
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_icecube",
+      "name": "Ледяной блок"
+    },
+    "recipeResult": {
+      "item": "itsc_icecube",
+      "name": "Ледяной блок",
+      "value": 150
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_icecube",
+        "name": "Ледяной блок",
+        "count": 1,
+        "value": 150,
+        "valueSum": 150
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Чистый магический пергамент",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Осколки магической руды",
+        "count": 15,
+        "value": 5,
+        "valueSum": 75
+      }
+    ],
+    "productionValue": 227,
+    "profit": -77
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_thunderball",
+      "name": "Шаровая молния"
+    },
+    "recipeResult": {
+      "item": "itsc_thunderball",
+      "name": "Шаровая молния",
+      "value": 160
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_thunderball",
+        "name": "Шаровая молния",
+        "count": 1,
+        "value": 160,
+        "valueSum": 160
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Чистый магический пергамент",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Осколки магической руды",
+        "count": 6,
+        "value": 5,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 192,
+    "profit": -32
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_geyser",
+      "name": "Гейзер"
+    },
+    "recipeResult": {
+      "item": "itsc_geyser",
+      "name": "Гейзер",
+      "value": 160
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_geyser",
+        "name": "Гейзер",
+        "count": 1,
+        "value": 160,
+        "valueSum": 160
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Чистый магический пергамент",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Осколки магической руды",
+        "count": 7,
+        "value": 5,
+        "valueSum": 35
+      }
+    ],
+    "productionValue": 197,
+    "profit": -37
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_sumbear",
+      "name": "Призыв медведя"
+    },
+    "recipeResult": {
+      "item": "itsc_sumbear",
+      "name": "Призыв медведя",
+      "value": 200
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_sumbear",
+        "name": "Призыв медведя",
+        "count": 1,
+        "value": 200,
+        "valueSum": 200
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Чистый магический пергамент",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Осколки магической руды",
+        "count": 15,
+        "value": 5,
+        "valueSum": 75
+      }
+    ],
+    "productionValue": 277,
+    "profit": -77
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_lightningflash",
+      "name": "Молния"
+    },
+    "recipeResult": {
+      "item": "itsc_lightningflash",
+      "name": "Молния",
+      "value": 150
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_lightningflash",
+        "name": "Молния",
+        "count": 1,
+        "value": 150,
+        "valueSum": 150
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Чистый магический пергамент",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Осколки магической руды",
+        "count": 10,
+        "value": 5,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 202,
+    "profit": -52
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_sumgol",
+      "name": "Призыв голема"
+    },
+    "recipeResult": {
+      "item": "itsc_sumgol",
+      "name": "Призыв голема",
+      "value": 300
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_sumgol",
+        "name": "Призыв голема",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Чистый магический пергамент",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Осколки магической руды",
+        "count": 20,
+        "value": 5,
+        "valueSum": 100
+      }
+    ],
+    "productionValue": 402,
+    "profit": -102
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_waterfist",
+      "name": "Кулак воды"
+    },
+    "recipeResult": {
+      "item": "itsc_waterfist",
+      "name": "Кулак воды",
+      "value": 140
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_waterfist",
+        "name": "Кулак воды",
+        "count": 1,
+        "value": 140,
+        "valueSum": 140
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Чистый магический пергамент",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Осколки магической руды",
+        "count": 12,
+        "value": 5,
+        "valueSum": 60
+      }
+    ],
+    "productionValue": 202,
+    "profit": -62
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_fullheal",
+      "name": "Лечение тяжелых ранений"
+    },
+    "recipeResult": {
+      "item": "itsc_fullheal",
+      "name": "Лечение тяжелых ранений",
+      "value": 100
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_fullheal",
+        "name": "Лечение тяжелых ранений",
+        "count": 1,
+        "value": 100,
+        "valueSum": 100
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Чистый магический пергамент",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Осколки магической руды",
+        "count": 8,
+        "value": 5,
+        "valueSum": 40
+      }
+    ],
+    "productionValue": 142,
+    "profit": -42
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_picklock",
+      "name": "Взлом замков"
+    },
+    "recipeResult": {
+      "item": "itsc_picklock",
+      "name": "Взлом замков",
+      "value": 30
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_picklock",
+        "name": "Взлом замков",
+        "count": 1,
+        "value": 30,
+        "valueSum": 30
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Чистый магический пергамент",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Осколки магической руды",
+        "count": 3,
+        "value": 5,
+        "valueSum": 15
+      }
+    ],
+    "productionValue": 47,
+    "profit": -17
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_telekinesis",
+      "name": "Телекинез"
+    },
+    "recipeResult": {
+      "item": "itsc_telekinesis",
+      "name": "Телекинез",
+      "value": 75
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_telekinesis",
+        "name": "Телекинез",
+        "count": 1,
+        "value": 75,
+        "valueSum": 75
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Чистый магический пергамент",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Осколки магической руды",
+        "count": 15,
+        "value": 5,
+        "valueSum": 75
+      }
+    ],
+    "productionValue": 152,
+    "profit": -77
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_slowdown",
+      "name": "Замедление"
+    },
+    "recipeResult": {
+      "item": "itsc_slowdown",
+      "name": "Замедление",
+      "value": 300
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_slowdown",
+        "name": "Замедление",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Чистый магический пергамент",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Осколки магической руды",
+        "count": 30,
+        "value": 5,
+        "valueSum": 150
+      }
+    ],
+    "productionValue": 452,
+    "profit": -152
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_sleep",
+      "name": "Сон"
+    },
+    "recipeResult": {
+      "item": "itsc_sleep",
+      "name": "Сон",
+      "value": 150
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_sleep",
+        "name": "Сон",
+        "count": 1,
+        "value": 150,
+        "valueSum": 150
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Чистый магический пергамент",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Осколки магической руды",
+        "count": 20,
+        "value": 5,
+        "valueSum": 100
+      }
+    ],
+    "productionValue": 252,
+    "profit": -102
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_icewave",
+      "name": "Ледяная волна"
+    },
+    "recipeResult": {
+      "item": "itsc_icewave",
+      "name": "Ледяная волна",
+      "value": 400
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_icewave",
+        "name": "Ледяная волна",
+        "count": 1,
+        "value": 400,
+        "valueSum": 400
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Чистый магический пергамент",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Осколки магической руды",
+        "count": 50,
+        "value": 5,
+        "valueSum": 250
+      }
+    ],
+    "productionValue": 652,
+    "profit": -252
+  }
+]

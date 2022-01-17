@@ -1,0 +1,8889 @@
+[
+  {
+    "recipeItem": {
+      "item": "itre_potionmana_blueplant",
+      "name": "Recipe: Blue elder decoction"
+    },
+    "recipeResult": {
+      "item": "itpo_mana_blueplant",
+      "name": "Blue Elder Decoction",
+      "value": 20
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Lab water bottle",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_blueplant",
+        "name": "Blue Elder",
+        "count": 2,
+        "value": 5,
+        "valueSum": 10
+      }
+    ],
+    "productionValue": 15,
+    "profit": 5
+  },
+  {
+    "recipeItem": {
+      "item": "itre_perm_health",
+      "name": "Recipe: Elixir of Life"
+    },
+    "recipeResult": {
+      "item": "itpo_perm_health",
+      "name": "Elixir of Life",
+      "value": 1200
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Lab water bottle",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_perm_herb",
+        "name": "King's sorrel",
+        "count": 1,
+        "value": 500,
+        "valueSum": 500
+      },
+      {
+        "item": "itpl_health_herb_03",
+        "name": "Healing Root",
+        "count": 1,
+        "value": 35,
+        "valueSum": 35
+      },
+      {
+        "item": "itpl_eastviolet",
+        "name": "Eastern violet",
+        "count": 1,
+        "value": 30,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 570,
+    "profit": 630
+  },
+  {
+    "recipeItem": {
+      "item": "itre_perm_mana",
+      "name": "Recipe: Spirit Elixir"
+    },
+    "recipeResult": {
+      "item": "itpo_perm_mana",
+      "name": "Elixir of Spirit",
+      "value": 1200
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Lab water bottle",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_perm_herb",
+        "name": "King's sorrel",
+        "count": 1,
+        "value": 500,
+        "valueSum": 500
+      },
+      {
+        "item": "itpl_mana_herb_03",
+        "name": "Fire root",
+        "count": 1,
+        "value": 30,
+        "valueSum": 30
+      },
+      {
+        "item": "itpl_eastviolet",
+        "name": "Eastern violet",
+        "count": 1,
+        "value": 30,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 565,
+    "profit": 635
+  },
+  {
+    "recipeItem": {
+      "item": "itre_perm_str",
+      "name": "Recipe: Elixir of Strength"
+    },
+    "recipeResult": {
+      "item": "itpo_perm_str",
+      "name": "Elixir of Strength",
+      "value": 1500
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Lab water bottle",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_perm_herb",
+        "name": "King's sorrel",
+        "count": 1,
+        "value": 500,
+        "valueSum": 500
+      },
+      {
+        "item": "itpl_strength_herb_01",
+        "name": "Dragonroot",
+        "count": 1,
+        "value": 500,
+        "valueSum": 500
+      }
+    ],
+    "productionValue": 1005,
+    "profit": 495
+  },
+  {
+    "recipeItem": {
+      "item": "itre_perm_dex",
+      "name": "Recipe: Elixir of Dexterity"
+    },
+    "recipeResult": {
+      "item": "itpo_perm_dex",
+      "name": "Elixir of Dexterity",
+      "value": 1500
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Lab water bottle",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_perm_herb",
+        "name": "King's sorrel",
+        "count": 1,
+        "value": 500,
+        "valueSum": 500
+      },
+      {
+        "item": "itpl_dex_herb_01",
+        "name": "Goblin berries",
+        "count": 1,
+        "value": 500,
+        "valueSum": 500
+      }
+    ],
+    "productionValue": 1005,
+    "profit": 495
+  },
+  {
+    "recipeItem": {
+      "item": "itre_speed",
+      "name": "Recipe: Speed Potion"
+    },
+    "recipeResult": {
+      "item": "itpo_speed",
+      "name": "Speed Potion",
+      "value": 40
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Lab water bottle",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Snapperweed",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itpl_river_mirt",
+        "name": "River Myrtle",
+        "count": 1,
+        "value": 15,
+        "valueSum": 15
+      }
+    ],
+    "productionValue": 40,
+    "profit": 0
+  },
+  {
+    "recipeItem": {
+      "item": "itre_speed2",
+      "name": "Recipe: Strong Speed Potion"
+    },
+    "recipeResult": {
+      "item": "itpo_speed2",
+      "name": "Extended Speed Potion",
+      "value": 90
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Lab water bottle",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Snapperweed",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itpl_river_mirt",
+        "name": "River Myrtle",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 75,
+    "profit": 15
+  },
+  {
+    "recipeItem": {
+      "item": "itre_timed_health",
+      "name": "Recipe: Elixir of Life Enhancement"
+    },
+    "recipeResult": {
+      "item": "itpo_timed_health",
+      "name": "Elixir of Life Enhancement",
+      "value": 125
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Lab water bottle",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Snapperweed",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itpl_health_herb_03",
+        "name": "Healing Root",
+        "count": 2,
+        "value": 35,
+        "valueSum": 70
+      },
+      {
+        "item": "itpl_swampherb",
+        "name": "Swampweed",
+        "count": 4,
+        "value": 15,
+        "valueSum": 60
+      },
+      {
+        "item": "itpl_eastviolet",
+        "name": "Eastern violet",
+        "count": 1,
+        "value": 30,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 185,
+    "profit": -60
+  },
+  {
+    "recipeItem": {
+      "item": "itre_timed_mana",
+      "name": "Recipe: Elixir of Spirit Enhancement"
+    },
+    "recipeResult": {
+      "item": "itpo_timed_mana",
+      "name": "Elixir of Mana Enhancement",
+      "value": 125
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Lab water bottle",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Snapperweed",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itpl_mana_herb_03",
+        "name": "Fire root",
+        "count": 2,
+        "value": 30,
+        "valueSum": 60
+      },
+      {
+        "item": "itpl_swampherb",
+        "name": "Swampweed",
+        "count": 4,
+        "value": 15,
+        "valueSum": 60
+      },
+      {
+        "item": "itpl_eastviolet",
+        "name": "Eastern violet",
+        "count": 1,
+        "value": 30,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 175,
+    "profit": -50
+  },
+  {
+    "recipeItem": {
+      "item": "itre_timed_str",
+      "name": "Recipe: Elixir of Strength Enhancement"
+    },
+    "recipeResult": {
+      "item": "itpo_timed_str",
+      "name": "Elixir of Strength Enhancement",
+      "value": 150
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Lab water bottle",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Snapperweed",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itpl_seaweed",
+        "name": "Mule Myrtle",
+        "count": 2,
+        "value": 25,
+        "valueSum": 50
+      },
+      {
+        "item": "itpl_mushroom_02",
+        "name": "Digger Meat",
+        "count": 5,
+        "value": 10,
+        "valueSum": 50
+      },
+      {
+        "item": "itpl_forestberry",
+        "name": "Forest berry",
+        "count": 10,
+        "value": 5,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 175,
+    "profit": -25
+  },
+  {
+    "recipeItem": {
+      "item": "itre_timed_dex",
+      "name": "Recipe: Elixir of Dexterity Enhancement"
+    },
+    "recipeResult": {
+      "item": "itpo_timed_dex",
+      "name": "Elixir of Dexterity Enhancement",
+      "value": 150
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Lab water bottle",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Snapperweed",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itpl_seaweed",
+        "name": "Mule Myrtle",
+        "count": 2,
+        "value": 25,
+        "valueSum": 50
+      },
+      {
+        "item": "itpl_mushroom_01",
+        "name": "Dark mushroom",
+        "count": 5,
+        "value": 5,
+        "valueSum": 25
+      },
+      {
+        "item": "itpl_planeberry",
+        "name": "Meadow Berry",
+        "count": 10,
+        "value": 5,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 150,
+    "profit": 0
+  },
+  {
+    "recipeItem": {
+      "item": "itre_timed_def",
+      "name": "Recipe: Elixir of Skin Hardening"
+    },
+    "recipeResult": {
+      "item": "itpo_timed_def",
+      "name": "Elixir of Skin Hardening",
+      "value": 150
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Lab water bottle",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Snapperweed",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itpl_seaweed",
+        "name": "Mule Myrtle",
+        "count": 3,
+        "value": 25,
+        "valueSum": 75
+      },
+      {
+        "item": "itpl_eastviolet",
+        "name": "Eastern violet",
+        "count": 1,
+        "value": 30,
+        "valueSum": 30
+      },
+      {
+        "item": "itpl_beet",
+        "name": "Turnip",
+        "count": 5,
+        "value": 3,
+        "valueSum": 15
+      }
+    ],
+    "productionValue": 145,
+    "profit": 5
+  },
+  {
+    "recipeItem": {
+      "item": "itre_timed_health2",
+      "name": "Recipe: Extended Elixir of Life Enhancement"
+    },
+    "recipeResult": {
+      "item": "itpo_timed_health2",
+      "name": "Extended Elixir of Life Enhancement",
+      "value": 220
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Lab water bottle",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Snapperweed",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itpl_health_herb_03",
+        "name": "Healing Root",
+        "count": 3,
+        "value": 35,
+        "valueSum": 105
+      },
+      {
+        "item": "itpl_swampherb",
+        "name": "Swampweed",
+        "count": 6,
+        "value": 15,
+        "valueSum": 90
+      },
+      {
+        "item": "itpl_eastviolet",
+        "name": "Eastern violet",
+        "count": 2,
+        "value": 30,
+        "valueSum": 60
+      }
+    ],
+    "productionValue": 300,
+    "profit": -80
+  },
+  {
+    "recipeItem": {
+      "item": "itre_timed_mana2",
+      "name": "Recipe: Extended Elixir of Mana Enhancement"
+    },
+    "recipeResult": {
+      "item": "itpo_timed_mana2",
+      "name": "Extended Elixir of Mana Enhancement",
+      "value": 220
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Lab water bottle",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Snapperweed",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itpl_mana_herb_03",
+        "name": "Fire root",
+        "count": 3,
+        "value": 30,
+        "valueSum": 90
+      },
+      {
+        "item": "itpl_swampherb",
+        "name": "Swampweed",
+        "count": 6,
+        "value": 15,
+        "valueSum": 90
+      },
+      {
+        "item": "itpl_eastviolet",
+        "name": "Eastern violet",
+        "count": 2,
+        "value": 30,
+        "valueSum": 60
+      }
+    ],
+    "productionValue": 285,
+    "profit": -65
+  },
+  {
+    "recipeItem": {
+      "item": "itre_timed_str2",
+      "name": "Recipe: Extended Elixir of Strength Enhancement"
+    },
+    "recipeResult": {
+      "item": "itpo_timed_str2",
+      "name": "Extended Elixir of Strength Enhancement",
+      "value": 270
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Lab water bottle",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Snapperweed",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itpl_seaweed",
+        "name": "Mule Myrtle",
+        "count": 3,
+        "value": 25,
+        "valueSum": 75
+      },
+      {
+        "item": "itpl_mushroom_02",
+        "name": "Digger Meat",
+        "count": 8,
+        "value": 10,
+        "valueSum": 80
+      },
+      {
+        "item": "itpl_forestberry",
+        "name": "Forest berry",
+        "count": 16,
+        "value": 5,
+        "valueSum": 80
+      }
+    ],
+    "productionValue": 280,
+    "profit": -10
+  },
+  {
+    "recipeItem": {
+      "item": "itre_timed_dex2",
+      "name": "Recipe: Extended Elixir of Dexterity Enhancement"
+    },
+    "recipeResult": {
+      "item": "itpo_timed_dex2",
+      "name": "Extended Elixir of Dexterity Enhancement",
+      "value": 270
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Lab water bottle",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Snapperweed",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itpl_seaweed",
+        "name": "Mule Myrtle",
+        "count": 3,
+        "value": 25,
+        "valueSum": 75
+      },
+      {
+        "item": "itpl_mushroom_01",
+        "name": "Dark mushroom",
+        "count": 8,
+        "value": 5,
+        "valueSum": 40
+      },
+      {
+        "item": "itpl_planeberry",
+        "name": "Meadow Berry",
+        "count": 16,
+        "value": 5,
+        "valueSum": 80
+      }
+    ],
+    "productionValue": 240,
+    "profit": 30
+  },
+  {
+    "recipeItem": {
+      "item": "itre_timed_def2",
+      "name": "Recipe: Extended Elixir of Skin Hardening"
+    },
+    "recipeResult": {
+      "item": "itpo_timed_def2",
+      "name": "Extended Elixir of Skin Hardening",
+      "value": 270
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Lab water bottle",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Snapperweed",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itpl_seaweed",
+        "name": "Mule Myrtle",
+        "count": 5,
+        "value": 25,
+        "valueSum": 125
+      },
+      {
+        "item": "itpl_eastviolet",
+        "name": "Eastern violet",
+        "count": 2,
+        "value": 30,
+        "valueSum": 60
+      },
+      {
+        "item": "itpl_beet",
+        "name": "Turnip",
+        "count": 8,
+        "value": 3,
+        "valueSum": 24
+      }
+    ],
+    "productionValue": 254,
+    "profit": 16
+  },
+  {
+    "recipeItem": {
+      "item": "itre_stoneskin",
+      "name": "Recipe: Potion of Stone Skin"
+    },
+    "recipeResult": {
+      "item": "itpo_stoneskin",
+      "name": "Stone skin potion",
+      "value": 1500
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Lab water bottle",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_perm_herb",
+        "name": "King's sorrel",
+        "count": 1,
+        "value": 500,
+        "valueSum": 500
+      },
+      {
+        "item": "itpl_earthaloes",
+        "name": "Earth aloe",
+        "count": 1,
+        "value": 500,
+        "valueSum": 500
+      },
+      {
+        "item": "itpl_eastviolet",
+        "name": "Eastern violet",
+        "count": 1,
+        "value": 30,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 1035,
+    "profit": 465
+  },
+  {
+    "recipeItem": {
+      "item": "itre_potionfall",
+      "name": "Recipe: Free fall potion"
+    },
+    "recipeResult": {
+      "item": "itpo_fall",
+      "name": "Free fall potion",
+      "value": 35
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Lab water bottle",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Snapperweed",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itat_scavengeregg",
+        "name": "Scavenger egg",
+        "count": 2,
+        "value": 8,
+        "valueSum": 16
+      }
+    ],
+    "productionValue": 41,
+    "profit": -6
+  },
+  {
+    "recipeItem": {
+      "item": "itre_potiondive",
+      "name": "Recipe: Underwater Breathing Potion"
+    },
+    "recipeResult": {
+      "item": "itpo_dive",
+      "name": "Underwater Breathing Potion",
+      "value": 35
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Lab water bottle",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_river_mirt",
+        "name": "River Myrtle",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      }
+    ],
+    "productionValue": 50,
+    "profit": -15
+  },
+  {
+    "recipeItem": {
+      "item": "itre_potionhpregen",
+      "name": "Recipe: Health Regeneration Potion"
+    },
+    "recipeResult": {
+      "item": "itpo_hpregen",
+      "name": "Health Regeneration Potion",
+      "value": 220
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Lab water bottle",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_temp_herb",
+        "name": "Meadow knotweed",
+        "count": 4,
+        "value": 10,
+        "valueSum": 40
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Snapperweed",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itpl_health_herb_03",
+        "name": "Healing Root",
+        "count": 2,
+        "value": 35,
+        "valueSum": 70
+      },
+      {
+        "item": "itpl_forestberry",
+        "name": "Forest berry",
+        "count": 5,
+        "value": 5,
+        "valueSum": 25
+      },
+      {
+        "item": "itpl_swampherb",
+        "name": "Swampweed",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 190,
+    "profit": 30
+  },
+  {
+    "recipeItem": {
+      "item": "itre_potionmanaregen",
+      "name": "Recipe: Mana Regeneration Potion"
+    },
+    "recipeResult": {
+      "item": "itpo_manaregen",
+      "name": "Mana Regeneration Potion",
+      "value": 160
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Lab water bottle",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_temp_herb",
+        "name": "Meadow knotweed",
+        "count": 4,
+        "value": 10,
+        "valueSum": 40
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Snapperweed",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itpl_planeberry",
+        "name": "Meadow Berry",
+        "count": 5,
+        "value": 5,
+        "valueSum": 25
+      },
+      {
+        "item": "itpl_mana_herb_03",
+        "name": "Fire root",
+        "count": 2,
+        "value": 30,
+        "valueSum": 60
+      },
+      {
+        "item": "itpl_swampherb",
+        "name": "Swampweed",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 180,
+    "profit": -20
+  },
+  {
+    "recipeItem": {
+      "item": "itre_potionhpregen2",
+      "name": "Recipe: Extended Health Regeneration Potion"
+    },
+    "recipeResult": {
+      "item": "itpo_hpregen2",
+      "name": "Extended Health Regeneration Potion",
+      "value": 400
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Lab water bottle",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_temp_herb",
+        "name": "Meadow knotweed",
+        "count": 7,
+        "value": 10,
+        "valueSum": 70
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Snapperweed",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itpl_health_herb_03",
+        "name": "Healing Root",
+        "count": 3,
+        "value": 35,
+        "valueSum": 105
+      },
+      {
+        "item": "itpl_forestberry",
+        "name": "Forest berry",
+        "count": 8,
+        "value": 5,
+        "valueSum": 40
+      },
+      {
+        "item": "itpl_swampherb",
+        "name": "Swampweed",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      }
+    ],
+    "productionValue": 305,
+    "profit": 95
+  },
+  {
+    "recipeItem": {
+      "item": "itre_potionmanaregen2",
+      "name": "Recipe: Extended Mana Regeneration Potion"
+    },
+    "recipeResult": {
+      "item": "itpo_manaregen2",
+      "name": "Extended Mana Regeneration Potion",
+      "value": 300
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itmi_flask",
+        "name": "Lab water bottle",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_temp_herb",
+        "name": "Meadow knotweed",
+        "count": 7,
+        "value": 10,
+        "valueSum": 70
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Snapperweed",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itpl_planeberry",
+        "name": "Meadow Berry",
+        "count": 8,
+        "value": 5,
+        "valueSum": 40
+      },
+      {
+        "item": "itpl_mana_herb_03",
+        "name": "Fire root",
+        "count": 3,
+        "value": 30,
+        "valueSum": 90
+      },
+      {
+        "item": "itpl_swampherb",
+        "name": "Swampweed",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      }
+    ],
+    "productionValue": 290,
+    "profit": 10
+  },
+  {
+    "recipeItem": {
+      "item": "itre_pickledbeet",
+      "name": "Recipe: Pickled turnip"
+    },
+    "recipeResult": {
+      "item": "itfo_pickledbeet",
+      "name": "Pickled Turnip",
+      "value": 18
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_beet",
+        "name": "Turnip",
+        "count": 3,
+        "value": 3,
+        "valueSum": 9
+      },
+      {
+        "item": "itfo_honey",
+        "name": "Honey",
+        "count": 1,
+        "value": 8,
+        "valueSum": 8
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itcr_vinegar",
+        "name": "Vinegar",
+        "count": 1,
+        "value": 40,
+        "valueSum": 40
+      }
+    ],
+    "productionValue": 107,
+    "profit": -89
+  },
+  {
+    "recipeItem": {
+      "item": "itre_beerbread",
+      "name": "Recipe: Beer bread"
+    },
+    "recipeResult": {
+      "item": "itfo_beerbread",
+      "name": "Beer Bread",
+      "value": 27
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_beer_02",
+        "name": "Strong beer",
+        "count": 1,
+        "value": 12,
+        "valueSum": 12
+      },
+      {
+        "item": "itpl_health_herb_02",
+        "name": "Healing Herb",
+        "count": 1,
+        "value": 25,
+        "valueSum": 25
+      },
+      {
+        "item": "itcr_wheat",
+        "name": "Sack of flour",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 137,
+    "profit": -110
+  },
+  {
+    "recipeItem": {
+      "item": "itre_pumpkincompote",
+      "name": "Recipe: Pumpkin compote"
+    },
+    "recipeResult": {
+      "item": "itfo_pumpkincompote",
+      "name": "Pumpkin Compote",
+      "value": 23
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_pumpkin",
+        "name": "Pumpkin",
+        "count": 2,
+        "value": 7,
+        "valueSum": 14
+      },
+      {
+        "item": "itfo_honey",
+        "name": "Honey",
+        "count": 1,
+        "value": 8,
+        "valueSum": 8
+      },
+      {
+        "item": "itcr_cinnamon",
+        "name": "Cinnamon",
+        "count": 1,
+        "value": 75,
+        "valueSum": 75
+      }
+    ],
+    "productionValue": 97,
+    "profit": -74
+  },
+  {
+    "recipeItem": {
+      "item": "itre_honeycookies",
+      "name": "Recipe: Honey cookies"
+    },
+    "recipeResult": {
+      "item": "itfo_honeycookies",
+      "name": "Honey Cookies",
+      "value": 19
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_milk",
+        "name": "Milk",
+        "count": 3,
+        "value": 3,
+        "valueSum": 9
+      },
+      {
+        "item": "itfo_honey",
+        "name": "Honey",
+        "count": 1,
+        "value": 8,
+        "valueSum": 8
+      },
+      {
+        "item": "itcr_wheat",
+        "name": "Sack of flour",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itcr_cinnamon",
+        "name": "Cinnamon",
+        "count": 1,
+        "value": 75,
+        "valueSum": 75
+      }
+    ],
+    "productionValue": 142,
+    "profit": -123
+  },
+  {
+    "recipeItem": {
+      "item": "itre_friedfishskins",
+      "name": "Recipe: Fried fish skins"
+    },
+    "recipeResult": {
+      "item": "itfo_friedfishskins",
+      "name": "Fried Fish Skins",
+      "value": 11
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_milk",
+        "name": "Milk",
+        "count": 1,
+        "value": 3,
+        "valueSum": 3
+      },
+      {
+        "item": "itfo_fish",
+        "name": "Fish",
+        "count": 2,
+        "value": 3,
+        "valueSum": 6
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itcr_fat",
+        "name": "Fat Chunk",
+        "count": 1,
+        "value": 25,
+        "valueSum": 25
+      }
+    ],
+    "productionValue": 84,
+    "profit": -73
+  },
+  {
+    "recipeItem": {
+      "item": "itre_scavengershashlik",
+      "name": "Recipe: Scavenger and pumpkin shashlik"
+    },
+    "recipeResult": {
+      "item": "itfo_scavengershashlik",
+      "name": "Scavenger and pumpkin shashlik",
+      "value": 32
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itmw_1h_bau_mace",
+        "name": "Heavy Branch",
+        "count": 1,
+        "value": 1,
+        "valueSum": 1
+      },
+      {
+        "item": "itfo_pumpkin",
+        "name": "Pumpkin",
+        "count": 1,
+        "value": 7,
+        "valueSum": 7
+      },
+      {
+        "item": "itfo_scavengermeat",
+        "name": "Fried scavenger meat",
+        "count": 3,
+        "value": 12,
+        "valueSum": 36
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 94,
+    "profit": -62
+  },
+  {
+    "recipeItem": {
+      "item": "itre_roastedinsects",
+      "name": "Recipe: Roasted insects"
+    },
+    "recipeResult": {
+      "item": "itfo_roastedinsects",
+      "name": "Roasted Insects",
+      "value": 7
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itat_meatbugflesh",
+        "name": "Bug meat",
+        "count": 2,
+        "value": 1,
+        "valueSum": 2
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "A bag of pepper",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 52,
+    "profit": -45
+  },
+  {
+    "recipeItem": {
+      "item": "itre_cabbagesoup",
+      "name": "Recipe: Spicy soup with cabbage"
+    },
+    "recipeResult": {
+      "item": "itfo_cabbagesoup",
+      "name": "Spicy soup with cabbage",
+      "value": 17
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_carrot",
+        "name": "Carrot",
+        "count": 1,
+        "value": 3,
+        "valueSum": 3
+      },
+      {
+        "item": "itfo_parsley",
+        "name": "Parsley",
+        "count": 1,
+        "value": 3,
+        "valueSum": 3
+      },
+      {
+        "item": "itfo_cabbage",
+        "name": "Cabbage",
+        "count": 2,
+        "value": 5,
+        "valueSum": 10
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "A bag of pepper",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 116,
+    "profit": -99
+  },
+  {
+    "recipeItem": {
+      "item": "itre_mushroomcotlet",
+      "name": "Recipe: Mushroom cutlet"
+    },
+    "recipeResult": {
+      "item": "itfo_mushroomcotlet",
+      "name": "Mushroom cutlet",
+      "value": 12
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_mushroom_01",
+        "name": "Dark mushroom",
+        "count": 2,
+        "value": 5,
+        "valueSum": 10
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "A bag of pepper",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itcr_wheat",
+        "name": "Sack of flour",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itcr_fat",
+        "name": "Fat Chunk",
+        "count": 1,
+        "value": 25,
+        "valueSum": 25
+      }
+    ],
+    "productionValue": 135,
+    "profit": -123
+  },
+  {
+    "recipeItem": {
+      "item": "itre_dryfruitcompote",
+      "name": "Recipe: Dried fruit compote"
+    },
+    "recipeResult": {
+      "item": "itfo_dryfruitcompote",
+      "name": "Dried fruit compote",
+      "value": 29
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_driedfruit",
+        "name": "Dried Fruit",
+        "count": 2,
+        "value": 30,
+        "valueSum": 60
+      },
+      {
+        "item": "itfo_honey",
+        "name": "Honey",
+        "count": 1,
+        "value": 8,
+        "valueSum": 8
+      },
+      {
+        "item": "itcr_cinnamon",
+        "name": "Cinnamon",
+        "count": 1,
+        "value": 75,
+        "valueSum": 75
+      }
+    ],
+    "productionValue": 143,
+    "profit": -114
+  },
+  {
+    "recipeItem": {
+      "item": "itre_fishvinegar",
+      "name": "Recipe: Fish in vinegar with snapperweed"
+    },
+    "recipeResult": {
+      "item": "itfo_fishvinegar",
+      "name": "Fish in vinegar with snapperweed",
+      "value": 30
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_fish",
+        "name": "Fish",
+        "count": 4,
+        "value": 3,
+        "valueSum": 12
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Snapperweed",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itcr_vinegar",
+        "name": "Vinegar",
+        "count": 1,
+        "value": 40,
+        "valueSum": 40
+      }
+    ],
+    "productionValue": 72,
+    "profit": -42
+  },
+  {
+    "recipeItem": {
+      "item": "itre_manapermsoup",
+      "name": "Recipe: King's sorrel soup"
+    },
+    "recipeResult": {
+      "item": "itfo_manapermsoup",
+      "name": "King's sorrel soup",
+      "value": 1000
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_perm_herb",
+        "name": "King's sorrel",
+        "count": 2,
+        "value": 500,
+        "valueSum": 1000
+      },
+      {
+        "item": "itfo_milk",
+        "name": "Milk",
+        "count": 12,
+        "value": 3,
+        "valueSum": 36
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 1086,
+    "profit": -86
+  },
+  {
+    "recipeItem": {
+      "item": "itre_sweetbun",
+      "name": "Recipe: Sweet blueberry bun"
+    },
+    "recipeResult": {
+      "item": "itfo_sweetbun",
+      "name": "Sweet blueberry bun",
+      "value": 16
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_planeberry",
+        "name": "Meadow Berry",
+        "count": 3,
+        "value": 5,
+        "valueSum": 15
+      },
+      {
+        "item": "itpl_forestberry",
+        "name": "Forest berry",
+        "count": 3,
+        "value": 5,
+        "valueSum": 15
+      },
+      {
+        "item": "itcr_wheat",
+        "name": "Sack of flour",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 80,
+    "profit": -64
+  },
+  {
+    "recipeItem": {
+      "item": "itre_mushroomsoup",
+      "name": "Recipe: Digger meat tripe"
+    },
+    "recipeResult": {
+      "item": "itfo_mushroomsoup",
+      "name": "Digger Meat Tripe",
+      "value": 22
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_mushroom_02",
+        "name": "Digger Meat",
+        "count": 3,
+        "value": 10,
+        "valueSum": 30
+      },
+      {
+        "item": "itfo_parsley",
+        "name": "Parsley",
+        "count": 1,
+        "value": 3,
+        "valueSum": 3
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "A bag of pepper",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 133,
+    "profit": -111
+  },
+  {
+    "recipeItem": {
+      "item": "itre_rivermirtsoup",
+      "name": "Recipe: River mirt soup"
+    },
+    "recipeResult": {
+      "item": "itfo_rivermirtsoup",
+      "name": "River Mirt Soup",
+      "value": 23
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_river_mirt",
+        "name": "River Myrtle",
+        "count": 1,
+        "value": 15,
+        "valueSum": 15
+      },
+      {
+        "item": "itgr_vegetable",
+        "name": "Any vegetable",
+        "count": 2,
+        "value": 5,
+        "valueSum": 10
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itcr_wheat",
+        "name": "Sack of flour",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 125,
+    "profit": -102
+  },
+  {
+    "recipeItem": {
+      "item": "itre_speedherboysters",
+      "name": "Recipe: Snapperweed Oysters"
+    },
+    "recipeResult": {
+      "item": "itfo_speedherboysters",
+      "name": "Snapperweed Oysters",
+      "value": 35
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_addon_shellflesh",
+        "name": "Oyster",
+        "count": 1,
+        "value": 3,
+        "valueSum": 3
+      },
+      {
+        "item": "itgr_vegetable",
+        "name": "Any vegetable",
+        "count": 2,
+        "value": 5,
+        "valueSum": 10
+      },
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Snapperweed",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itcr_fat",
+        "name": "Fat Chunk",
+        "count": 1,
+        "value": 25,
+        "valueSum": 25
+      },
+      {
+        "item": "itfo_wine_01",
+        "name": "Perennial wine",
+        "count": 1,
+        "value": 10,
+        "valueSum": 10
+      }
+    ],
+    "productionValue": 68,
+    "profit": -33
+  },
+  {
+    "recipeItem": {
+      "item": "itre_boarstew",
+      "name": "Recipe: Boar stew on wine"
+    },
+    "recipeResult": {
+      "item": "itfo_boarstew",
+      "name": "Boar stew on wine",
+      "value": 60
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_boar",
+        "name": "Fried boar meat",
+        "count": 3,
+        "value": 30,
+        "valueSum": 90
+      },
+      {
+        "item": "itfo_wine_01",
+        "name": "Perennial wine",
+        "count": 1,
+        "value": 10,
+        "valueSum": 10
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "A bag of pepper",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 200,
+    "profit": -140
+  },
+  {
+    "recipeItem": {
+      "item": "itre_meatmishmash",
+      "name": "Recipe: Meat mishmash"
+    },
+    "recipeResult": {
+      "item": "itfo_meatmishmash",
+      "name": "Meat Mishmash",
+      "value": 13
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_wolfmeat",
+        "name": "Fried wolf meat",
+        "count": 1,
+        "value": 9,
+        "valueSum": 9
+      },
+      {
+        "item": "itfo_moleratmeat",
+        "name": "Fried molerat meat",
+        "count": 1,
+        "value": 10,
+        "valueSum": 10
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "A bag of pepper",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 119,
+    "profit": -106
+  },
+  {
+    "recipeItem": {
+      "item": "itre_ratstick",
+      "name": "Recipe: Rat on a stick"
+    },
+    "recipeResult": {
+      "item": "itfo_ratstick",
+      "name": "Rat on a stick",
+      "value": 6
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itmw_1h_bau_mace",
+        "name": "Heavy Branch",
+        "count": 1,
+        "value": 1,
+        "valueSum": 1
+      },
+      {
+        "item": "itfo_roastedratmeat",
+        "name": "Fried rat meat",
+        "count": 2,
+        "value": 5,
+        "valueSum": 10
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "A bag of pepper",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 111,
+    "profit": -105
+  },
+  {
+    "recipeItem": {
+      "item": "itre_mulledwisp",
+      "name": "Recipe: Mulled Ghost Light"
+    },
+    "recipeResult": {
+      "item": "itfo_mulledwisp",
+      "name": "Mulled Ghost Light",
+      "value": 50
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_wisp",
+        "name": "Ghost Light",
+        "count": 1,
+        "value": 35,
+        "valueSum": 35
+      },
+      {
+        "item": "itfo_berry_herb",
+        "name": "Raspberries",
+        "count": 4,
+        "value": 4,
+        "valueSum": 16
+      },
+      {
+        "item": "itcr_cinnamon",
+        "name": "Cinnamon",
+        "count": 1,
+        "value": 75,
+        "valueSum": 75
+      }
+    ],
+    "productionValue": 126,
+    "profit": -76
+  },
+  {
+    "recipeItem": {
+      "item": "itre_fishcotlet",
+      "name": "Recipe: Fish chops with fireweed"
+    },
+    "recipeResult": {
+      "item": "itfo_fishcotlet",
+      "name": "Fish chops with fireweed",
+      "value": 32
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_fish",
+        "name": "Fish",
+        "count": 2,
+        "value": 3,
+        "valueSum": 6
+      },
+      {
+        "item": "itpl_mana_herb_02",
+        "name": "Fireweed",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "A bag of pepper",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itcr_wheat",
+        "name": "Sack of flour",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 126,
+    "profit": -94
+  },
+  {
+    "recipeItem": {
+      "item": "itre_fishfilletperm",
+      "name": "Recipe: Fish fillet with king's sorrel"
+    },
+    "recipeResult": {
+      "item": "itfo_fishfilletperm",
+      "name": "Fish fillet with king's sorrel",
+      "value": 1000
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_fish",
+        "name": "Fish",
+        "count": 10,
+        "value": 3,
+        "valueSum": 30
+      },
+      {
+        "item": "itpl_perm_herb",
+        "name": "King's sorrel",
+        "count": 2,
+        "value": 500,
+        "valueSum": 1000
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "A bag of pepper",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 1130,
+    "profit": -130
+  },
+  {
+    "recipeItem": {
+      "item": "itre_poorbroth",
+      "name": "Recipe: Hearty leftovers broth"
+    },
+    "recipeResult": {
+      "item": "itfo_poorbroth",
+      "name": "Hearty leftovers broth",
+      "value": 20
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itgr_meat",
+        "name": "Any meat",
+        "count": 1,
+        "value": 22,
+        "valueSum": 22
+      },
+      {
+        "item": "itgr_vegetable",
+        "name": "Any vegetable",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_health_herb_01",
+        "name": "Healing plant",
+        "count": 1,
+        "value": 15,
+        "valueSum": 15
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 92,
+    "profit": -72
+  },
+  {
+    "recipeItem": {
+      "item": "itre_fishpot",
+      "name": "Recipe: The fisherman's cauldron"
+    },
+    "recipeResult": {
+      "item": "itfo_fishpot",
+      "name": "The fisherman's cauldron",
+      "value": 23
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_fish",
+        "name": "Fish",
+        "count": 1,
+        "value": 3,
+        "valueSum": 3
+      },
+      {
+        "item": "itgr_vegetable",
+        "name": "Any vegetable",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_river_mirt",
+        "name": "River Myrtle",
+        "count": 1,
+        "value": 15,
+        "valueSum": 15
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 73,
+    "profit": -50
+  },
+  {
+    "recipeItem": {
+      "item": "itre_herbstew",
+      "name": "Recipe: Herb stew"
+    },
+    "recipeResult": {
+      "item": "itfo_herbstew",
+      "name": "Herb Stew",
+      "value": 25
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itgr_meat",
+        "name": "Any meat",
+        "count": 1,
+        "value": 22,
+        "valueSum": 22
+      },
+      {
+        "item": "itgr_vegetable",
+        "name": "Any vegetable",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_mana_herb_01",
+        "name": "Fire nettle",
+        "count": 1,
+        "value": 10,
+        "valueSum": 10
+      }
+    ],
+    "productionValue": 37,
+    "profit": -12
+  },
+  {
+    "recipeItem": {
+      "item": "itre_meatandcheese",
+      "name": "Recipe: Farmer's casserole"
+    },
+    "recipeResult": {
+      "item": "itfo_meatandcheese",
+      "name": "Farmer's casserole",
+      "value": 26
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itgr_meat",
+        "name": "Any meat",
+        "count": 2,
+        "value": 22,
+        "valueSum": 44
+      },
+      {
+        "item": "itfo_cheese",
+        "name": "Cheese",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "A bag of pepper",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 149,
+    "profit": -123
+  },
+  {
+    "recipeItem": {
+      "item": "itre_meatandbread",
+      "name": "Recipe: Bread with meat"
+    },
+    "recipeResult": {
+      "item": "itfo_meatandbread",
+      "name": "Bread with meat",
+      "value": 23
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_bread",
+        "name": "Bread",
+        "count": 1,
+        "value": 4,
+        "valueSum": 4
+      },
+      {
+        "item": "itgr_meat",
+        "name": "Any meat",
+        "count": 2,
+        "value": 22,
+        "valueSum": 44
+      },
+      {
+        "item": "itcr_fat",
+        "name": "Fat Chunk",
+        "count": 1,
+        "value": 25,
+        "valueSum": 25
+      }
+    ],
+    "productionValue": 73,
+    "profit": -50
+  },
+  {
+    "recipeItem": {
+      "item": "itre_mushroomstew",
+      "name": "Recipe: Mushroom Stew"
+    },
+    "recipeResult": {
+      "item": "itfo_mushroomstew",
+      "name": "Mushroom Stew",
+      "value": 24
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itgr_meat",
+        "name": "Any meat",
+        "count": 1,
+        "value": 22,
+        "valueSum": 22
+      },
+      {
+        "item": "itpl_mushroom_01",
+        "name": "Dark mushroom",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itgr_vegetable",
+        "name": "Any vegetable",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "A bag of pepper",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 82,
+    "profit": -58
+  },
+  {
+    "recipeItem": {
+      "item": "itre_poorapplepie",
+      "name": "Recipe: Poor Apple Pie"
+    },
+    "recipeResult": {
+      "item": "itfo_poorapplepie",
+      "name": "Poor Apple Pie",
+      "value": 30
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itat_scavengeregg",
+        "name": "Scavenger egg",
+        "count": 1,
+        "value": 8,
+        "valueSum": 8
+      },
+      {
+        "item": "itcr_wheat",
+        "name": "Sack of flour",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itfo_apple",
+        "name": "Apple",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itcr_fat",
+        "name": "Fat Chunk",
+        "count": 1,
+        "value": 25,
+        "valueSum": 25
+      },
+      {
+        "item": "itfo_honey",
+        "name": "Honey",
+        "count": 1,
+        "value": 8,
+        "valueSum": 8
+      }
+    ],
+    "productionValue": 96,
+    "profit": -66
+  },
+  {
+    "recipeItem": {
+      "item": "itre_poorpate",
+      "name": "Recipe: Pвtй from leftovers"
+    },
+    "recipeResult": {
+      "item": "itfo_poorpate",
+      "name": "Pвtй from leftovers",
+      "value": 21
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itat_scavengeregg",
+        "name": "Scavenger egg",
+        "count": 1,
+        "value": 8,
+        "valueSum": 8
+      },
+      {
+        "item": "itgr_meat",
+        "name": "Any meat",
+        "count": 1,
+        "value": 22,
+        "valueSum": 22
+      },
+      {
+        "item": "itgr_vegetable",
+        "name": "Any vegetable",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      }
+    ],
+    "productionValue": 35,
+    "profit": -14
+  },
+  {
+    "recipeItem": {
+      "item": "itre_pickledmushrooms",
+      "name": "Recipe: Pickled mushrooms"
+    },
+    "recipeResult": {
+      "item": "itfo_pickledmushrooms",
+      "name": "Pickled Mushrooms",
+      "value": 35
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_mushroom_01",
+        "name": "Dark mushroom",
+        "count": 2,
+        "value": 5,
+        "valueSum": 10
+      },
+      {
+        "item": "itpl_mana_herb_02",
+        "name": "Fireweed",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itcr_vinegar",
+        "name": "Vinegar",
+        "count": 1,
+        "value": 40,
+        "valueSum": 40
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "A bag of pepper",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 120,
+    "profit": -85
+  },
+  {
+    "recipeItem": {
+      "item": "itre_breadsoup",
+      "name": "Recipe: Old bread soup"
+    },
+    "recipeResult": {
+      "item": "itfo_breadsoup",
+      "name": "Old Bread Soup",
+      "value": 17
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_bread",
+        "name": "Bread",
+        "count": 1,
+        "value": 4,
+        "valueSum": 4
+      },
+      {
+        "item": "itgr_vegetable",
+        "name": "Any vegetable",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_temp_herb",
+        "name": "Meadow knotweed",
+        "count": 2,
+        "value": 10,
+        "valueSum": 20
+      },
+      {
+        "item": "itcr_fat",
+        "name": "Fat Chunk",
+        "count": 1,
+        "value": 25,
+        "valueSum": 25
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 104,
+    "profit": -87
+  },
+  {
+    "recipeItem": {
+      "item": "itre_shepardroast",
+      "name": "Recipe: Shepherd's roast marinated in wine"
+    },
+    "recipeResult": {
+      "item": "itfo_shepardroast",
+      "name": "Shepherd's roast marinated in wine",
+      "value": 55
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_sheepfried",
+        "name": "Fried sheep meat",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itgr_vegetable",
+        "name": "Any vegetable",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itfo_wine_02",
+        "name": "Nordmarian wine",
+        "count": 1,
+        "value": 30,
+        "valueSum": 30
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 115,
+    "profit": -60
+  },
+  {
+    "recipeItem": {
+      "item": "itre_pooreggs",
+      "name": "Recipe: Country scrambled eggs"
+    },
+    "recipeResult": {
+      "item": "itfo_pooreggs",
+      "name": "Country scrambled eggs",
+      "value": 19
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itat_scavengeregg",
+        "name": "Scavenger egg",
+        "count": 1,
+        "value": 8,
+        "valueSum": 8
+      },
+      {
+        "item": "itfo_sausage",
+        "name": "Sausage",
+        "count": 1,
+        "value": 15,
+        "valueSum": 15
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 73,
+    "profit": -54
+  },
+  {
+    "recipeItem": {
+      "item": "itre_beerfish",
+      "name": "Recipe: Fish in beer batter"
+    },
+    "recipeResult": {
+      "item": "itfo_beerfish",
+      "name": "Fish in beer batter",
+      "value": 14
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_fish",
+        "name": "Fish",
+        "count": 1,
+        "value": 3,
+        "valueSum": 3
+      },
+      {
+        "item": "itfo_owbeer",
+        "name": "Bottled beer",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itcr_wheat",
+        "name": "Sack of flour",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 108,
+    "profit": -94
+  },
+  {
+    "recipeItem": {
+      "item": "itre_spicypie",
+      "name": "Recipe: Spicy meat pie"
+    },
+    "recipeResult": {
+      "item": "itfo_spicypie",
+      "name": "Spicy Meat Pie",
+      "value": 31
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itgr_meat",
+        "name": "Any meat",
+        "count": 1,
+        "value": 22,
+        "valueSum": 22
+      },
+      {
+        "item": "itat_scavengeregg",
+        "name": "Scavenger egg",
+        "count": 2,
+        "value": 8,
+        "valueSum": 16
+      },
+      {
+        "item": "itcr_wheat",
+        "name": "Sack of flour",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itcr_hotpepper",
+        "name": "Packet of hot peppers",
+        "count": 1,
+        "value": 60,
+        "valueSum": 60
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 198,
+    "profit": -167
+  },
+  {
+    "recipeItem": {
+      "item": "itre_vegepie",
+      "name": "Recipe: Vegetable and mushroom pie"
+    },
+    "recipeResult": {
+      "item": "itfo_vegepie",
+      "name": "Vegetable and mushroom pie",
+      "value": 22
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_mushroom_02",
+        "name": "Digger Meat",
+        "count": 1,
+        "value": 10,
+        "valueSum": 10
+      },
+      {
+        "item": "itgr_vegetable",
+        "name": "Any vegetable",
+        "count": 3,
+        "value": 5,
+        "valueSum": 15
+      },
+      {
+        "item": "itcr_wheat",
+        "name": "Sack of flour",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 75,
+    "profit": -53
+  },
+  {
+    "recipeItem": {
+      "item": "itre_fatstew",
+      "name": "Recipe: Fatty stew"
+    },
+    "recipeResult": {
+      "item": "itfo_fatstew",
+      "name": "Fatty stew",
+      "value": 19
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_moleratmeat",
+        "name": "Fried molerat meat",
+        "count": 2,
+        "value": 10,
+        "valueSum": 20
+      },
+      {
+        "item": "itfo_carrot",
+        "name": "Carrot",
+        "count": 1,
+        "value": 3,
+        "valueSum": 3
+      },
+      {
+        "item": "itfo_parsley",
+        "name": "Parsley",
+        "count": 1,
+        "value": 3,
+        "valueSum": 3
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "A bag of pepper",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 126,
+    "profit": -107
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bearstew",
+      "name": "Recipe: Lifegiving bear stew"
+    },
+    "recipeResult": {
+      "item": "itfo_bearstew",
+      "name": "Lifegiving bear stew",
+      "value": 100
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_bear",
+        "name": "Fried bear meat",
+        "count": 1,
+        "value": 75,
+        "valueSum": 75
+      },
+      {
+        "item": "itpl_temp_herb",
+        "name": "Meadow knotweed",
+        "count": 3,
+        "value": 10,
+        "valueSum": 30
+      },
+      {
+        "item": "itfo_honey",
+        "name": "Honey",
+        "count": 2,
+        "value": 8,
+        "valueSum": 16
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "A bag of pepper",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 221,
+    "profit": -121
+  },
+  {
+    "recipeItem": {
+      "item": "itre_hunterspecial",
+      "name": "Recipe: Hunter's Specialty"
+    },
+    "recipeResult": {
+      "item": "itfo_hunterspecial",
+      "name": "Hunter's specialty",
+      "value": 17
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_wolfmeat",
+        "name": "Fried wolf meat",
+        "count": 3,
+        "value": 9,
+        "valueSum": 27
+      },
+      {
+        "item": "itpl_forestberry",
+        "name": "Forest berry",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "A bag of pepper",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 132,
+    "profit": -115
+  },
+  {
+    "recipeItem": {
+      "item": "itre_speedstew",
+      "name": "Recipe: Speed stew"
+    },
+    "recipeResult": {
+      "item": "itfo_speedstew",
+      "name": "Speed Stew",
+      "value": 45
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_speed_herb_01",
+        "name": "Snapperweed",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itgr_vegetable",
+        "name": "Any vegetable",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itgr_meat",
+        "name": "Any meat",
+        "count": 1,
+        "value": 22,
+        "valueSum": 22
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 97,
+    "profit": -52
+  },
+  {
+    "recipeItem": {
+      "item": "itre_smokedherbfish",
+      "name": "Recipe: Smoked herb fish"
+    },
+    "recipeResult": {
+      "item": "itfo_smokedherbfish",
+      "name": "Smoked Herb Fish",
+      "value": 16
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_fish",
+        "name": "Fish",
+        "count": 2,
+        "value": 3,
+        "valueSum": 6
+      },
+      {
+        "item": "itmw_1h_bau_mace",
+        "name": "Heavy Branch",
+        "count": 1,
+        "value": 1,
+        "valueSum": 1
+      },
+      {
+        "item": "itpl_temp_herb",
+        "name": "Meadow knotweed",
+        "count": 1,
+        "value": 10,
+        "valueSum": 10
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 67,
+    "profit": -51
+  },
+  {
+    "recipeItem": {
+      "item": "itre_meatpacks",
+      "name": "Recipe: Meat packs"
+    },
+    "recipeResult": {
+      "item": "itfo_meatpacks",
+      "name": "Meat packs",
+      "value": 21
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itgr_meat",
+        "name": "Any meat",
+        "count": 2,
+        "value": 22,
+        "valueSum": 44
+      },
+      {
+        "item": "itfo_cabbage",
+        "name": "Cabbage",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "A bag of pepper",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 149,
+    "profit": -128
+  },
+  {
+    "recipeItem": {
+      "item": "itre_herbmushroombrewing",
+      "name": "Recipe: Mushroom and herb broth"
+    },
+    "recipeResult": {
+      "item": "itfo_herbmushroombrewing",
+      "name": "Mushroom and herb broth",
+      "value": 65
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_mushroom_01",
+        "name": "Dark mushroom",
+        "count": 2,
+        "value": 5,
+        "valueSum": 10
+      },
+      {
+        "item": "itpl_mushroom_02",
+        "name": "Digger Meat",
+        "count": 2,
+        "value": 10,
+        "valueSum": 20
+      },
+      {
+        "item": "itpl_health_herb_03",
+        "name": "Healing Root",
+        "count": 1,
+        "value": 35,
+        "valueSum": 35
+      },
+      {
+        "item": "itpl_mana_herb_03",
+        "name": "Fire root",
+        "count": 1,
+        "value": 30,
+        "valueSum": 30
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "A bag of pepper",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 195,
+    "profit": -130
+  },
+  {
+    "recipeItem": {
+      "item": "itre_berryjam",
+      "name": "Recipe: Berry jam"
+    },
+    "recipeResult": {
+      "item": "itfo_berryjam",
+      "name": "Berry Jam",
+      "value": 10
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_forestberry",
+        "name": "Forest berry",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_planeberry",
+        "name": "Meadow Berry",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itfo_berry_herb",
+        "name": "Raspberries",
+        "count": 1,
+        "value": 4,
+        "valueSum": 4
+      }
+    ],
+    "productionValue": 14,
+    "profit": -4
+  },
+  {
+    "recipeItem": {
+      "item": "itre_strengthjam",
+      "name": "Recipe: Bread spread made from dragon root"
+    },
+    "recipeResult": {
+      "item": "itfo_strengthjam",
+      "name": "Bread spread made from dragon root",
+      "value": 1400
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_strength_herb_01",
+        "name": "Dragonroot",
+        "count": 2,
+        "value": 500,
+        "valueSum": 1000
+      },
+      {
+        "item": "itfo_cheese",
+        "name": "Cheese",
+        "count": 12,
+        "value": 5,
+        "valueSum": 60
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "A bag of pepper",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 1160,
+    "profit": 240
+  },
+  {
+    "recipeItem": {
+      "item": "itre_dexdumplings",
+      "name": "Recipe: Noodles with goblin berries"
+    },
+    "recipeResult": {
+      "item": "itfo_dexdumplings",
+      "name": "Noodles with goblin berries",
+      "value": 1400
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_dex_herb_01",
+        "name": "Goblin berries",
+        "count": 2,
+        "value": 500,
+        "valueSum": 1000
+      },
+      {
+        "item": "itfo_honey",
+        "name": "Honey",
+        "count": 12,
+        "value": 8,
+        "valueSum": 96
+      },
+      {
+        "item": "itcr_wheat",
+        "name": "Sack of flour",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itcr_fat",
+        "name": "Fat Chunk",
+        "count": 1,
+        "value": 25,
+        "valueSum": 25
+      }
+    ],
+    "productionValue": 1171,
+    "profit": 229
+  },
+  {
+    "recipeItem": {
+      "item": "itre_simpleoysters",
+      "name": "Recipe: Quick oysters"
+    },
+    "recipeResult": {
+      "item": "itfo_simpleoysters",
+      "name": "Quick oysters",
+      "value": 17
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_addon_shellflesh",
+        "name": "Oyster",
+        "count": 1,
+        "value": 3,
+        "valueSum": 3
+      },
+      {
+        "item": "itpl_river_mirt",
+        "name": "River Myrtle",
+        "count": 1,
+        "value": 15,
+        "valueSum": 15
+      },
+      {
+        "item": "itmi_salt",
+        "name": "Salt",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 68,
+    "profit": -51
+  },
+  {
+    "recipeItem": {
+      "item": "itre_berrycompote",
+      "name": "Recipe: Berry compote"
+    },
+    "recipeResult": {
+      "item": "itfo_berrycompote",
+      "name": "Berry Compote",
+      "value": 12
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_forestberry",
+        "name": "Forest berry",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_planeberry",
+        "name": "Meadow Berry",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itfo_water",
+        "name": "Water",
+        "count": 3,
+        "value": 2,
+        "valueSum": 6
+      },
+      {
+        "item": "itcr_cinnamon",
+        "name": "Cinnamon",
+        "count": 1,
+        "value": 75,
+        "valueSum": 75
+      }
+    ],
+    "productionValue": 91,
+    "profit": -79
+  },
+  {
+    "recipeItem": {
+      "item": "itre_raspberrydrink",
+      "name": "Recipe: Raspberry drink"
+    },
+    "recipeResult": {
+      "item": "itfo_raspberrydrink",
+      "name": "Raspberry drink",
+      "value": 21
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_milk",
+        "name": "Milk",
+        "count": 2,
+        "value": 3,
+        "valueSum": 6
+      },
+      {
+        "item": "itfo_honey",
+        "name": "Honey",
+        "count": 1,
+        "value": 8,
+        "valueSum": 8
+      },
+      {
+        "item": "itfo_berry_herb",
+        "name": "Raspberries",
+        "count": 1,
+        "value": 4,
+        "valueSum": 4
+      }
+    ],
+    "productionValue": 18,
+    "profit": 3
+  },
+  {
+    "recipeItem": {
+      "item": "itre_grapejuice",
+      "name": "Recipe: Grape juice"
+    },
+    "recipeResult": {
+      "item": "itfo_grapejuice",
+      "name": "Grape Juice",
+      "value": 13
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_grape",
+        "name": "Grape",
+        "count": 2,
+        "value": 4,
+        "valueSum": 8
+      },
+      {
+        "item": "itfo_water",
+        "name": "Water",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_cinnamon",
+        "name": "Cinnamon",
+        "count": 1,
+        "value": 75,
+        "valueSum": 75
+      }
+    ],
+    "productionValue": 85,
+    "profit": -72
+  },
+  {
+    "recipeItem": {
+      "item": "itre_raspberrytincture",
+      "name": "Recipe: Raspberry tincture"
+    },
+    "recipeResult": {
+      "item": "itfo_raspberrytincture",
+      "name": "Raspberry Tincture",
+      "value": 45
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_spirit",
+        "name": "Bottle of pure spirit",
+        "count": 1,
+        "value": 60,
+        "valueSum": 60
+      },
+      {
+        "item": "itfo_berry_herb",
+        "name": "Raspberries",
+        "count": 2,
+        "value": 4,
+        "valueSum": 8
+      }
+    ],
+    "productionValue": 68,
+    "profit": -23
+  },
+  {
+    "recipeItem": {
+      "item": "itre_exoticdessert",
+      "name": "Recipe: Exotic dessert"
+    },
+    "recipeResult": {
+      "item": "itfo_exoticdessert",
+      "name": "Exotic Dessert",
+      "value": 65
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_southernfruit",
+        "name": "Southern Fruit",
+        "count": 1,
+        "value": 30,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_scavengeregg",
+        "name": "Scavenger egg",
+        "count": 1,
+        "value": 8,
+        "valueSum": 8
+      },
+      {
+        "item": "itfo_honey",
+        "name": "Honey",
+        "count": 2,
+        "value": 8,
+        "valueSum": 16
+      },
+      {
+        "item": "itcr_wheat",
+        "name": "Sack of flour",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itcr_fat",
+        "name": "Fat Chunk",
+        "count": 1,
+        "value": 25,
+        "valueSum": 25
+      }
+    ],
+    "productionValue": 129,
+    "profit": -64
+  },
+  {
+    "recipeItem": {
+      "item": "itre_applepie",
+      "name": "Recipe: Apples in pastry"
+    },
+    "recipeResult": {
+      "item": "itfo_applepie",
+      "name": "Apples in pastry",
+      "value": 33
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_apple",
+        "name": "Apple",
+        "count": 5,
+        "value": 5,
+        "valueSum": 25
+      },
+      {
+        "item": "itat_scavengeregg",
+        "name": "Scavenger egg",
+        "count": 1,
+        "value": 8,
+        "valueSum": 8
+      },
+      {
+        "item": "itfo_milk",
+        "name": "Milk",
+        "count": 1,
+        "value": 3,
+        "valueSum": 3
+      },
+      {
+        "item": "itcr_wheat",
+        "name": "Sack of flour",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 86,
+    "profit": -53
+  },
+  {
+    "recipeItem": {
+      "item": "itre_spicyfish",
+      "name": "Recipe: Spicy Herring"
+    },
+    "recipeResult": {
+      "item": "itfo_spicyfish",
+      "name": "Spicy herring",
+      "value": 30
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_fish",
+        "name": "Fish",
+        "count": 2,
+        "value": 3,
+        "valueSum": 6
+      },
+      {
+        "item": "itfo_crab",
+        "name": "Fried crab pincers",
+        "count": 1,
+        "value": 60,
+        "valueSum": 60
+      },
+      {
+        "item": "itcr_cinnamon",
+        "name": "Cinnamon",
+        "count": 1,
+        "value": 75,
+        "valueSum": 75
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "A bag of pepper",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itcr_vinegar",
+        "name": "Vinegar",
+        "count": 1,
+        "value": 40,
+        "valueSum": 40
+      }
+    ],
+    "productionValue": 231,
+    "profit": -201
+  },
+  {
+    "recipeItem": {
+      "item": "itre_herbfishsoup",
+      "name": "Recipe: Fish soup with herbs"
+    },
+    "recipeResult": {
+      "item": "itfo_herbfishsoup",
+      "name": "Fish soup with herbs",
+      "value": 18
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itfo_fish",
+        "name": "Fish",
+        "count": 1,
+        "value": 3,
+        "valueSum": 3
+      },
+      {
+        "item": "itgr_vegetable",
+        "name": "Any vegetable",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      },
+      {
+        "item": "itpl_river_mirt",
+        "name": "River Myrtle",
+        "count": 1,
+        "value": 15,
+        "valueSum": 15
+      }
+    ],
+    "productionValue": 23,
+    "profit": -5
+  },
+  {
+    "recipeItem": {
+      "item": "itre_trollsoup",
+      "name": "Recipe: Herbal troll soup"
+    },
+    "recipeResult": {
+      "item": "itfo_trollsoup",
+      "name": "Herbal troll soup",
+      "value": 1400
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itpl_earthaloes",
+        "name": "Earth aloe",
+        "count": 2,
+        "value": 500,
+        "valueSum": 1000
+      },
+      {
+        "item": "itgr_meat",
+        "name": "Any meat",
+        "count": 1,
+        "value": 22,
+        "valueSum": 22
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "A bag of pepper",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 1072,
+    "profit": 328
+  },
+  {
+    "recipeItem": {
+      "item": "itre_marthastew",
+      "name": "Recipe: Martha's Stew"
+    },
+    "recipeResult": {
+      "item": "itfo_marthsoup3",
+      "name": "Martha's Stew",
+      "value": 40
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itgr_vegetable",
+        "name": "Any vegetable",
+        "count": 2,
+        "value": 5,
+        "valueSum": 10
+      },
+      {
+        "item": "itgr_meat",
+        "name": "Any meat",
+        "count": 4,
+        "value": 22,
+        "valueSum": 88
+      },
+      {
+        "item": "itfo_grape",
+        "name": "Grape",
+        "count": 1,
+        "value": 4,
+        "valueSum": 4
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "A bag of pepper",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 152,
+    "profit": -112
+  },
+  {
+    "recipeItem": {
+      "item": "itre_marthastew_str",
+      "name": "Recipe: Martha's hearty stew"
+    },
+    "recipeResult": {
+      "item": "itfo_marthsoup4",
+      "name": "Martha's hearty stew",
+      "value": 300
+    },
+    "skillLevel": 0,
+    "requirements": [
+      {
+        "item": "itgr_vegetable",
+        "name": "Any vegetable",
+        "count": 10,
+        "value": 5,
+        "valueSum": 50
+      },
+      {
+        "item": "itgr_meat",
+        "name": "Any meat",
+        "count": 10,
+        "value": 22,
+        "valueSum": 220
+      },
+      {
+        "item": "itfo_wine",
+        "name": "Wine",
+        "count": 5,
+        "value": 10,
+        "valueSum": 50
+      },
+      {
+        "item": "itpl_strength_herb_01",
+        "name": "Dragonroot",
+        "count": 2,
+        "value": 500,
+        "valueSum": 1000
+      },
+      {
+        "item": "itfo_addon_pfeffer_01",
+        "name": "A bag of pepper",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 1370,
+    "profit": -1070
+  },
+  {
+    "recipeItem": {
+      "item": "itre_kitchenknife02",
+      "name": "Diagram: Meat Knife"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_kitchen_knife_02",
+      "name": "Meat Knife",
+      "value": 150
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Sheep skin",
+        "count": 3,
+        "value": 10,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 70,
+    "profit": 80
+  },
+  {
+    "recipeItem": {
+      "item": "itre_shortsword1",
+      "name": "Diagram: Short Sentry Sword"
+    },
+    "recipeResult": {
+      "item": "itmw_shortsword1",
+      "name": "Militia Short Sword",
+      "value": 150
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_wolffur",
+        "name": "Wolf skin",
+        "count": 2,
+        "value": 10,
+        "valueSum": 20
+      }
+    ],
+    "productionValue": 60,
+    "profit": 90
+  },
+  {
+    "recipeItem": {
+      "item": "itre_shortsword4",
+      "name": "Diagram: Wolf's Fang"
+    },
+    "recipeResult": {
+      "item": "itmw_shortsword4",
+      "name": "Wolf's Fang",
+      "value": 550
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_wolffur",
+        "name": "Wolf skin",
+        "count": 2,
+        "value": 10,
+        "valueSum": 20
+      },
+      {
+        "item": "itat_teeth",
+        "name": "Fangs",
+        "count": 6,
+        "value": 15,
+        "valueSum": 90
+      }
+    ],
+    "productionValue": 150,
+    "profit": 400
+  },
+  {
+    "recipeItem": {
+      "item": "itre_kitchenknife03",
+      "name": "Diagram: Large Knife"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_kitchen_knife_03",
+      "name": "Large Knife",
+      "value": 230
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_ratfur",
+        "name": "Rat skin",
+        "count": 3,
+        "value": 8,
+        "valueSum": 24
+      }
+    ],
+    "productionValue": 64,
+    "profit": 166
+  },
+  {
+    "recipeItem": {
+      "item": "itre_shortsword5",
+      "name": "Diagram: Fine Short Sword"
+    },
+    "recipeResult": {
+      "item": "itmw_shortsword5",
+      "name": "Fine Short Sword",
+      "value": 650
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itat_lurkerskin",
+        "name": "Lurker skin",
+        "count": 2,
+        "value": 25,
+        "valueSum": 50
+      },
+      {
+        "item": "itat_lurkerclaw",
+        "name": "Lurker claw",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 140,
+    "profit": 510
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_common_01",
+      "name": "Diagram: Soldier's Sword"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_common_01",
+      "name": "Soldier's sword",
+      "value": 300
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itat_moleratskin",
+        "name": "Molerat skin",
+        "count": 4,
+        "value": 8,
+        "valueSum": 32
+      }
+    ],
+    "productionValue": 92,
+    "profit": 208
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_vlk2_sword",
+      "name": "Diagram: Skewer"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_vlk2_sword",
+      "name": "Skewer",
+      "value": 500
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itmi_goldnugget_addon",
+        "name": "Gold nugget",
+        "count": 8,
+        "value": 14,
+        "valueSum": 112
+      }
+    ],
+    "productionValue": 152,
+    "profit": 348
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_mace_02",
+      "name": "Diagram: Thorn"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_mace_02",
+      "name": "Thorn",
+      "value": 170
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_claw",
+        "name": "Claws",
+        "count": 10,
+        "value": 15,
+        "valueSum": 150
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 2,
+        "value": 6,
+        "valueSum": 12
+      }
+    ],
+    "productionValue": 202,
+    "profit": -32
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_mil_sword_01",
+      "name": "Diagram: Sword of the Guard"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_mil_sword_01",
+      "name": "Sword of the Guard",
+      "value": 30
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Sheep skin",
+        "count": 4,
+        "value": 10,
+        "valueSum": 40
+      }
+    ],
+    "productionValue": 80,
+    "profit": -50
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_dagger_02",
+      "name": "Diagram: Golden Dagger"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_dagger_02",
+      "name": "Golden Dagger",
+      "value": 900
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 1,
+        "value": 15,
+        "valueSum": 15
+      },
+      {
+        "item": "itmi_goldnugget_addon",
+        "name": "Gold nugget",
+        "count": 6,
+        "value": 14,
+        "valueSum": 84
+      }
+    ],
+    "productionValue": 119,
+    "profit": 781
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_mil_sword_02",
+      "name": "Diagram: Fine Sword of the Guard"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_mil_sword_02",
+      "name": "Fine Sword of the Guard",
+      "value": 350
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Sheep skin",
+        "count": 2,
+        "value": 10,
+        "valueSum": 20
+      },
+      {
+        "item": "itat_wolffur",
+        "name": "Wolf skin",
+        "count": 3,
+        "value": 10,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 110,
+    "profit": 240
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_sword_07",
+      "name": "Diagram: The Shiv"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_sword_07",
+      "name": "The Shiv",
+      "value": 700
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itmi_quartz",
+        "name": "Quartz",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Sheep skin",
+        "count": 1,
+        "value": 10,
+        "valueSum": 10
+      }
+    ],
+    "productionValue": 110,
+    "profit": 590
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_sword_02",
+      "name": "Diagram: Southerner's Sword"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_sword_02",
+      "name": "Southerner's Sword",
+      "value": 450
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_sharkteeth",
+        "name": "Swampshark's fang",
+        "count": 2,
+        "value": 120,
+        "valueSum": 240
+      }
+    ],
+    "productionValue": 330,
+    "profit": 120
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_sword_05",
+      "name": "Diagram: Cutter"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_sword_05",
+      "name": "Cutter",
+      "value": 650
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_lurkerskin",
+        "name": "Lurker skin",
+        "count": 3,
+        "value": 25,
+        "valueSum": 75
+      }
+    ],
+    "productionValue": 165,
+    "profit": 485
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_sword_01",
+      "name": "Diagram: Engraved Blade"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_sword_01",
+      "name": "Engraved Blade",
+      "value": 400
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itmi_quartz",
+        "name": "Quartz",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_claw",
+        "name": "Claws",
+        "count": 10,
+        "value": 15,
+        "valueSum": 150
+      }
+    ],
+    "productionValue": 300,
+    "profit": 100
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_mil_sword_03",
+      "name": "Diagram: Exquisite Sword of the Guard"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_mil_sword_03",
+      "name": "Exquisite Sword of the Guard",
+      "value": 750
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_addon_keilerfur",
+        "name": "Boar skin",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      },
+      {
+        "item": "itat_teeth",
+        "name": "Fangs",
+        "count": 4,
+        "value": 15,
+        "valueSum": 60
+      }
+    ],
+    "productionValue": 195,
+    "profit": 555
+  },
+  {
+    "recipeItem": {
+      "item": "itre_spicker",
+      "name": "Diagram: Spicker"
+    },
+    "recipeResult": {
+      "item": "itmw_spicker",
+      "name": "Spicker",
+      "value": 700
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_claw",
+        "name": "Claws",
+        "count": 5,
+        "value": 15,
+        "valueSum": 75
+      },
+      {
+        "item": "itat_teeth",
+        "name": "Fangs",
+        "count": 5,
+        "value": 15,
+        "valueSum": 75
+      }
+    ],
+    "productionValue": 260,
+    "profit": 440
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_axe_01",
+      "name": "Diagram: Chopper"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_axe_01",
+      "name": "Chopper",
+      "value": 1300
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_sealurkerskin",
+        "name": "Sea lurker skin",
+        "count": 2,
+        "value": 50,
+        "valueSum": 100
+      }
+    ],
+    "productionValue": 210,
+    "profit": 1090
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_sword_04",
+      "name": "Diagram: Decorated Blade"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_sword_04",
+      "name": "Decorated Blade",
+      "value": 800
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_waranskin",
+        "name": "Lizard skin",
+        "count": 2,
+        "value": 75,
+        "valueSum": 150
+      },
+      {
+        "item": "itat_teeth",
+        "name": "Fangs",
+        "count": 4,
+        "value": 15,
+        "valueSum": 60
+      }
+    ],
+    "productionValue": 280,
+    "profit": 520
+  },
+  {
+    "recipeItem": {
+      "item": "itre_schwert4",
+      "name": "Diagram: Fine Longsword"
+    },
+    "recipeResult": {
+      "item": "itmw_schwert4",
+      "name": "Fine Longsword",
+      "value": 900
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_wargfur",
+        "name": "Warg skin",
+        "count": 2,
+        "value": 25,
+        "valueSum": 50
+      },
+      {
+        "item": "itat_snapperskin",
+        "name": "Snapper skin",
+        "count": 2,
+        "value": 60,
+        "valueSum": 120
+      }
+    ],
+    "productionValue": 260,
+    "profit": 640
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_sword_08",
+      "name": "Diagram: Dueling Sword"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_sword_08",
+      "name": "Dueling Sword",
+      "value": 1000
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 1,
+        "value": 15,
+        "valueSum": 15
+      },
+      {
+        "item": "itat_seasharkskin",
+        "name": "Seashark skin",
+        "count": 2,
+        "value": 200,
+        "valueSum": 400
+      },
+      {
+        "item": "itmi_goldnugget_addon",
+        "name": "Gold nugget",
+        "count": 4,
+        "value": 14,
+        "valueSum": 56
+      }
+    ],
+    "productionValue": 531,
+    "profit": 469
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_mace_01",
+      "name": "Diagram: Smasher"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_mace_01",
+      "name": "Breaker",
+      "value": 950
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 6,
+        "value": 20,
+        "valueSum": 120
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 2,
+        "value": 6,
+        "valueSum": 12
+      },
+      {
+        "item": "itat_shadowfur",
+        "name": "Shadowbeast skin",
+        "count": 1,
+        "value": 250,
+        "valueSum": 250
+      },
+      {
+        "item": "itat_wolffur",
+        "name": "Wolf skin",
+        "count": 6,
+        "value": 10,
+        "valueSum": 60
+      }
+    ],
+    "productionValue": 487,
+    "profit": 463
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bartaxt",
+      "name": "Diagram: Great Axe"
+    },
+    "recipeResult": {
+      "item": "itmw_bartaxt",
+      "name": "Great Axe",
+      "value": 1450
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_snapperskin",
+        "name": "Snapper skin",
+        "count": 4,
+        "value": 60,
+        "valueSum": 240
+      }
+    ],
+    "productionValue": 370,
+    "profit": 1080
+  },
+  {
+    "recipeItem": {
+      "item": "itre_none_1h_sword",
+      "name": "Diagram: Silver Sword"
+    },
+    "recipeResult": {
+      "item": "itmw_none_1h_sword",
+      "name": "Silver Sword",
+      "value": 1700
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itmi_silver",
+        "name": "Large silver nugget",
+        "count": 6,
+        "value": 20,
+        "valueSum": 120
+      },
+      {
+        "item": "itat_teeth",
+        "name": "Fangs",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      }
+    ],
+    "productionValue": 275,
+    "profit": 1425
+  },
+  {
+    "recipeItem": {
+      "item": "itre_morgenstern",
+      "name": "Diagram: Morgenstern"
+    },
+    "recipeResult": {
+      "item": "itmw_morgenstern",
+      "name": "Morgenstern",
+      "value": 1100
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 1,
+        "value": 15,
+        "valueSum": 15
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 5,
+        "value": 6,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_teeth",
+        "name": "Fangs",
+        "count": 10,
+        "value": 15,
+        "valueSum": 150
+      }
+    ],
+    "productionValue": 275,
+    "profit": 825
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_sword_06",
+      "name": "Diagram: Long Saber"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_sword_06",
+      "name": "Long Saber",
+      "value": 1200
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_waranskin",
+        "name": "Lizard skin",
+        "count": 3,
+        "value": 75,
+        "valueSum": 225
+      },
+      {
+        "item": "itat_sharkskin",
+        "name": "Swampshark skin",
+        "count": 2,
+        "value": 120,
+        "valueSum": 240
+      }
+    ],
+    "productionValue": 595,
+    "profit": 605
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_special_01",
+      "name": "Diagram: Long Magic Sword"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_special_01",
+      "name": "Long Magic Sword",
+      "value": 2500
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Ore nugget",
+        "count": 2,
+        "value": 200,
+        "valueSum": 400
+      },
+      {
+        "item": "itat_wargfur",
+        "name": "Warg skin",
+        "count": 2,
+        "value": 25,
+        "valueSum": 50
+      },
+      {
+        "item": "itat_shadowhorn",
+        "name": "Shadowbeast horn",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      }
+    ],
+    "productionValue": 850,
+    "profit": 1650
+  },
+  {
+    "recipeItem": {
+      "item": "itre_meisterdegen",
+      "name": "Diagram: Master Sword"
+    },
+    "recipeResult": {
+      "item": "itmw_meisterdegen",
+      "name": "Master Sword",
+      "value": 2400
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itmi_goldnugget_addon",
+        "name": "Gold nugget",
+        "count": 12,
+        "value": 14,
+        "valueSum": 168
+      },
+      {
+        "item": "itmi_rockcrystal",
+        "name": "Crystal rock",
+        "count": 4,
+        "value": 30,
+        "valueSum": 120
+      },
+      {
+        "item": "itat_waranfiretongue",
+        "name": "Fire Lizard tongue",
+        "count": 3,
+        "value": 250,
+        "valueSum": 750
+      }
+    ],
+    "productionValue": 1168,
+    "profit": 1232
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_axe_02",
+      "name": "Diagram: The Fear of Logs"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_axe_02",
+      "name": "The Fear of Logs",
+      "value": 1200
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      },
+      {
+        "item": "itat_bearfur",
+        "name": "Bear skin",
+        "count": 2,
+        "value": 250,
+        "valueSum": 500
+      },
+      {
+        "item": "itat_lurkerskin",
+        "name": "Lurker skin",
+        "count": 4,
+        "value": 25,
+        "valueSum": 100
+      }
+    ],
+    "productionValue": 745,
+    "profit": 455
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_blessed_01",
+      "name": "Diagram: Poor Magic Blade"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_blessed_01",
+      "name": "Poor Magic Blade",
+      "value": 2000
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 8,
+        "value": 20,
+        "valueSum": 160
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Ore nugget",
+        "count": 2,
+        "value": 200,
+        "valueSum": 400
+      },
+      {
+        "item": "itat_trollfur",
+        "name": "Troll skin",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Sheep skin",
+        "count": 4,
+        "value": 10,
+        "valueSum": 40
+      }
+    ],
+    "productionValue": 900,
+    "profit": 1100
+  },
+  {
+    "recipeItem": {
+      "item": "itre_addon_betty",
+      "name": "Diagram: Throat Slitter"
+    },
+    "recipeResult": {
+      "item": "itmw_addon_betty",
+      "name": "Stroker",
+      "value": 1300
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_waranfiretongue",
+        "name": "Fire Lizard tongue",
+        "count": 2,
+        "value": 250,
+        "valueSum": 500
+      },
+      {
+        "item": "itmi_quartz",
+        "name": "Quartz",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itat_wargfur",
+        "name": "Warg skin",
+        "count": 5,
+        "value": 25,
+        "valueSum": 125
+      }
+    ],
+    "productionValue": 855,
+    "profit": 445
+  },
+  {
+    "recipeItem": {
+      "item": "itre_schwert5",
+      "name": "Diagram: Fine Bastard Sword"
+    },
+    "recipeResult": {
+      "item": "itmw_schwert5",
+      "name": "Fine bastard sword",
+      "value": 1100
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itmi_silver",
+        "name": "Large silver nugget",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itat_blackwolffur",
+        "name": "Black wolf skin",
+        "count": 6,
+        "value": 15,
+        "valueSum": 90
+      },
+      {
+        "item": "itat_shadowfur",
+        "name": "Shadowbeast skin",
+        "count": 1,
+        "value": 250,
+        "valueSum": 250
+      }
+    ],
+    "productionValue": 550,
+    "profit": 550
+  },
+  {
+    "recipeItem": {
+      "item": "itre_none_1h_sword2",
+      "name": "Diagram: Sailor of Storms"
+    },
+    "recipeResult": {
+      "item": "itmw_none_1h_sword2",
+      "name": "Sailor of Storms",
+      "value": 2300
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itmi_goldnugget_addon",
+        "name": "Gold nugget",
+        "count": 6,
+        "value": 14,
+        "valueSum": 84
+      },
+      {
+        "item": "itmi_silver",
+        "name": "Large silver nugget",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itmi_darkpearl",
+        "name": "Black pearl",
+        "count": 1,
+        "value": 1000,
+        "valueSum": 1000
+      },
+      {
+        "item": "itmi_addon_whitepearl",
+        "name": "Pearl",
+        "count": 1,
+        "value": 120,
+        "valueSum": 120
+      }
+    ],
+    "productionValue": 1394,
+    "profit": 906
+  },
+  {
+    "recipeItem": {
+      "item": "itre_inquisitor",
+      "name": "Diagram: Inquisitor"
+    },
+    "recipeResult": {
+      "item": "itmw_inquisitor",
+      "name": "Inquisitor",
+      "value": 1370
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Ore nugget",
+        "count": 1,
+        "value": 200,
+        "valueSum": 200
+      },
+      {
+        "item": "itat_swampgolemheart",
+        "name": "The heart of the swamp golem",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itmi_holywater",
+        "name": "Holy water",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_skeletonbone",
+        "name": "Skeleton bone",
+        "count": 4,
+        "value": 10,
+        "valueSum": 40
+      }
+    ],
+    "productionValue": 680,
+    "profit": 690
+  },
+  {
+    "recipeItem": {
+      "item": "itre_kriegshammer2",
+      "name": "Diagram: Cleaver"
+    },
+    "recipeResult": {
+      "item": "itmw_kriegshammer2",
+      "name": "Cleaver",
+      "value": 890
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 3,
+        "value": 6,
+        "valueSum": 18
+      },
+      {
+        "item": "itat_trolltooth",
+        "name": "Troll's fang",
+        "count": 2,
+        "value": 200,
+        "valueSum": 400
+      },
+      {
+        "item": "itat_shadowhorn",
+        "name": "Shadowbeast horn",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      }
+    ],
+    "productionValue": 848,
+    "profit": 42
+  },
+  {
+    "recipeItem": {
+      "item": "itre_none_1h_sword3",
+      "name": "Diagram: The Fear of Sailors"
+    },
+    "recipeResult": {
+      "item": "itmw_none_1h_sword3",
+      "name": "The Fear of Sailors",
+      "value": 2050
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itmi_goldnugget_addon",
+        "name": "Gold nugget",
+        "count": 6,
+        "value": 14,
+        "valueSum": 84
+      },
+      {
+        "item": "itmi_darkpearl",
+        "name": "Black pearl",
+        "count": 1,
+        "value": 1000,
+        "valueSum": 1000
+      },
+      {
+        "item": "itmi_addon_whitepearl",
+        "name": "Pearl",
+        "count": 3,
+        "value": 120,
+        "valueSum": 360
+      }
+    ],
+    "productionValue": 1574,
+    "profit": 476
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_special_03",
+      "name": "Diagram: Ore Covered Bastard Sword"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_special_03",
+      "name": "Magic Combat Blade",
+      "value": 2650
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 6,
+        "value": 20,
+        "valueSum": 120
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Ore nugget",
+        "count": 2,
+        "value": 200,
+        "valueSum": 400
+      },
+      {
+        "item": "itmi_silver",
+        "name": "Large silver nugget",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itat_firewaranskin",
+        "name": "Fire Lizard skin",
+        "count": 2,
+        "value": 150,
+        "valueSum": 300
+      },
+      {
+        "item": "itmi_aquamarine",
+        "name": "Aquamarine",
+        "count": 2,
+        "value": 100,
+        "valueSum": 200
+      }
+    ],
+    "productionValue": 1100,
+    "profit": 1550
+  },
+  {
+    "recipeItem": {
+      "item": "itre_1h_special_02",
+      "name": "Diagram: Pure Ore Magic Blade"
+    },
+    "recipeResult": {
+      "item": "itmw_1h_special_02",
+      "name": "Pure Ore Magic Blade",
+      "value": 5000
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Ore nugget",
+        "count": 5,
+        "value": 200,
+        "valueSum": 1000
+      },
+      {
+        "item": "itat_stonegolemheart",
+        "name": "The heart of the stone golem",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itat_trollfur",
+        "name": "Troll skin",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itat_gargoyleheart",
+        "name": "The heart of a gargoyle",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      }
+    ],
+    "productionValue": 2000,
+    "profit": 3000
+  },
+  {
+    "recipeItem": {
+      "item": "itre_addon_keule_1h_01",
+      "name": "Diagram: Wind Servant"
+    },
+    "recipeResult": {
+      "item": "itmw_addon_keule_1h_01",
+      "name": "Wind Servant",
+      "value": 25
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 4,
+        "value": 6,
+        "valueSum": 24
+      }
+    ],
+    "productionValue": 44,
+    "profit": -19
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_bau_scythe",
+      "name": "Diagram: Scythe"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_bau_scythe",
+      "name": "Scythe",
+      "value": 70
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 3,
+        "value": 6,
+        "valueSum": 18
+      }
+    ],
+    "productionValue": 58,
+    "profit": 12
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_sld_sword",
+      "name": "Diagram: Poor Two-Handed Sword"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_sld_sword",
+      "name": "Poor Two-Handed Sword",
+      "value": 60
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itat_moleratskin",
+        "name": "Molerat skin",
+        "count": 2,
+        "value": 8,
+        "valueSum": 16
+      }
+    ],
+    "productionValue": 76,
+    "profit": -16
+  },
+  {
+    "recipeItem": {
+      "item": "itre_none_2h_sword",
+      "name": "Diagram: Greatsword"
+    },
+    "recipeResult": {
+      "item": "itmw_none_2h_sword",
+      "name": "Greatsword",
+      "value": 450
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itat_lurkerskin",
+        "name": "Lurker skin",
+        "count": 4,
+        "value": 25,
+        "valueSum": 100
+      }
+    ],
+    "productionValue": 160,
+    "profit": 290
+  },
+  {
+    "recipeItem": {
+      "item": "itre_richtstab",
+      "name": "Diagram: Judge's Staff"
+    },
+    "recipeResult": {
+      "item": "itmw_richtstab",
+      "name": "Judge's Staff",
+      "value": 400
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 2,
+        "value": 6,
+        "valueSum": 12
+      }
+    ],
+    "productionValue": 52,
+    "profit": 348
+  },
+  {
+    "recipeItem": {
+      "item": "itre_hellebarde",
+      "name": "Diagram: The Bloody Reaper"
+    },
+    "recipeResult": {
+      "item": "itmw_hellebarde",
+      "name": "The Bloody Reaper",
+      "value": 500
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 2,
+        "value": 6,
+        "valueSum": 12
+      },
+      {
+        "item": "itat_wolffur",
+        "name": "Wolf skin",
+        "count": 3,
+        "value": 10,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 82,
+    "profit": 418
+  },
+  {
+    "recipeItem": {
+      "item": "itre_none_2h_sword3",
+      "name": "Diagram: The Biter"
+    },
+    "recipeResult": {
+      "item": "itmw_none_2h_sword3",
+      "name": "The Biter",
+      "value": 600
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_teeth",
+        "name": "Fangs",
+        "count": 14,
+        "value": 15,
+        "valueSum": 210
+      }
+    ],
+    "productionValue": 250,
+    "profit": 350
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_mil_sword_01",
+      "name": "Diagram: Two-Handed Sword of the Guard"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_mil_sword_01",
+      "name": "Two-Handed Sword of the Guard",
+      "value": 550
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Sheep skin",
+        "count": 3,
+        "value": 10,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 110,
+    "profit": 440
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_spear_08",
+      "name": "Diagram: Javelin"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_spear_08",
+      "name": "Javelin",
+      "value": 800
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 3,
+        "value": 6,
+        "valueSum": 18
+      },
+      {
+        "item": "itat_wargfur",
+        "name": "Warg skin",
+        "count": 2,
+        "value": 25,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 128,
+    "profit": 672
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_sword_02",
+      "name": "Diagram: The Avenger"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_sword_02",
+      "name": "The Avenger",
+      "value": 690
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itat_claw",
+        "name": "Claws",
+        "count": 8,
+        "value": 15,
+        "valueSum": 120
+      },
+      {
+        "item": "itat_wolffur",
+        "name": "Wolf skin",
+        "count": 5,
+        "value": 10,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 250,
+    "profit": 440
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_mil_sword_02",
+      "name": "Diagram: Fine Two-Handed Sword of the Guard"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_mil_sword_02",
+      "name": "Fine Two-Handed Sword of the Guard",
+      "value": 750
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Sheep skin",
+        "count": 2,
+        "value": 10,
+        "valueSum": 20
+      },
+      {
+        "item": "itat_wolffur",
+        "name": "Wolf skin",
+        "count": 2,
+        "value": 10,
+        "valueSum": 20
+      }
+    ],
+    "productionValue": 185,
+    "profit": 565
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_mace_02",
+      "name": "Diagram: The Swine"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_mace_02",
+      "name": "The Swine",
+      "value": 1100
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 1,
+        "value": 15,
+        "valueSum": 15
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 4,
+        "value": 6,
+        "valueSum": 24
+      },
+      {
+        "item": "itat_teeth",
+        "name": "Fangs",
+        "count": 8,
+        "value": 15,
+        "valueSum": 120
+      },
+      {
+        "item": "itat_addon_keilerfur",
+        "name": "Boar skin",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 209,
+    "profit": 891
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_none_axe_02",
+      "name": "Diagram: Head Chopper"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_none_axe_02",
+      "name": "Head Chopper",
+      "value": 750
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 1,
+        "value": 6,
+        "valueSum": 6
+      },
+      {
+        "item": "itat_swampratskin",
+        "name": "Swamp Rat skin",
+        "count": 4,
+        "value": 8,
+        "valueSum": 32
+      }
+    ],
+    "productionValue": 148,
+    "profit": 602
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_sword_05",
+      "name": "Diagram: Knight's Blade"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_sword_05",
+      "name": "Knight's Blade",
+      "value": 1300
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itmi_quartz",
+        "name": "Quartz",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itat_bearfur",
+        "name": "Bear skin",
+        "count": 3,
+        "value": 250,
+        "valueSum": 750
+      }
+    ],
+    "productionValue": 940,
+    "profit": 360
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_mil_sword_03",
+      "name": "Diagram: Exquisite Two-handed Sword of the Guard"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_mil_sword_03",
+      "name": "Exquisite Two-Handed Sword of the Guard",
+      "value": 1000
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_addon_keilerfur",
+        "name": "Boar skin",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      },
+      {
+        "item": "itat_teeth",
+        "name": "Fangs",
+        "count": 8,
+        "value": 15,
+        "valueSum": 120
+      }
+    ],
+    "productionValue": 295,
+    "profit": 705
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_mace_01",
+      "name": "Diagram: Slave Driver"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_mace_01",
+      "name": "Slave Driver",
+      "value": 1250
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 1,
+        "value": 15,
+        "valueSum": 15
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 3,
+        "value": 6,
+        "valueSum": 18
+      },
+      {
+        "item": "itat_claw",
+        "name": "Claws",
+        "count": 24,
+        "value": 15,
+        "valueSum": 360
+      },
+      {
+        "item": "itat_lurkerclaw",
+        "name": "Lurker claw",
+        "count": 8,
+        "value": 15,
+        "valueSum": 120
+      }
+    ],
+    "productionValue": 573,
+    "profit": 677
+  },
+  {
+    "recipeItem": {
+      "item": "itre_stabkeule",
+      "name": "Diagram: Southerner's Morgenstern"
+    },
+    "recipeResult": {
+      "item": "itmw_stabkeule",
+      "name": "Southerner's Morgenstern",
+      "value": 1450
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 4,
+        "value": 6,
+        "valueSum": 24
+      },
+      {
+        "item": "itat_sharkteeth",
+        "name": "Swampshark's fang",
+        "count": 4,
+        "value": 120,
+        "valueSum": 480
+      },
+      {
+        "item": "itat_waranskin",
+        "name": "Lizard skin",
+        "count": 2,
+        "value": 75,
+        "valueSum": 150
+      }
+    ],
+    "productionValue": 764,
+    "profit": 686
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_special_01",
+      "name": "Diagram: Magic Two-Handed Sword"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_special_01",
+      "name": "Magic Two-Handed Sword",
+      "value": 1600
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Ore nugget",
+        "count": 2,
+        "value": 200,
+        "valueSum": 400
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Sheep skin",
+        "count": 4,
+        "value": 10,
+        "valueSum": 40
+      },
+      {
+        "item": "itmi_rockcrystal",
+        "name": "Crystal rock",
+        "count": 3,
+        "value": 30,
+        "valueSum": 90
+      }
+    ],
+    "productionValue": 570,
+    "profit": 1030
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_none_axe_01",
+      "name": "Diagram: The Judgment"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_none_axe_01",
+      "name": "The Judgment",
+      "value": 1900
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 6,
+        "value": 20,
+        "valueSum": 120
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 2,
+        "value": 6,
+        "valueSum": 12
+      },
+      {
+        "item": "itat_shadowfur",
+        "name": "Shadowbeast skin",
+        "count": 3,
+        "value": 250,
+        "valueSum": 750
+      },
+      {
+        "item": "itmi_quartz",
+        "name": "Quartz",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      }
+    ],
+    "productionValue": 987,
+    "profit": 913
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_special_02",
+      "name": "Diagram: Heavy Two-Handed Magic Sword"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_special_02",
+      "name": "Heavy Magic Two-Handed Sword",
+      "value": 2000
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Ore nugget",
+        "count": 3,
+        "value": 200,
+        "valueSum": 600
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Sheep skin",
+        "count": 5,
+        "value": 10,
+        "valueSum": 50
+      },
+      {
+        "item": "itmi_holywater",
+        "name": "Holy water",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itmi_rockcrystal",
+        "name": "Crystal rock",
+        "count": 3,
+        "value": 30,
+        "valueSum": 90
+      }
+    ],
+    "productionValue": 820,
+    "profit": 1180
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_spear_02",
+      "name": "Scheme: Military Spear"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_spear_02",
+      "name": "Military Spear",
+      "value": 1500
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 5,
+        "value": 6,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_addon_keilerfur",
+        "name": "Boar skin",
+        "count": 4,
+        "value": 15,
+        "valueSum": 60
+      },
+      {
+        "item": "itat_teeth",
+        "name": "Fangs",
+        "count": 8,
+        "value": 15,
+        "valueSum": 120
+      }
+    ],
+    "productionValue": 300,
+    "profit": 1200
+  },
+  {
+    "recipeItem": {
+      "item": "itre_addon_hacker_2h_02",
+      "name": "Diagram: The Butcher"
+    },
+    "recipeResult": {
+      "item": "itmw_addon_hacker_2h_02",
+      "name": "The Butcher",
+      "value": 1850
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_sharkskin",
+        "name": "Swampshark skin",
+        "count": 2,
+        "value": 120,
+        "valueSum": 240
+      },
+      {
+        "item": "itat_bearfat",
+        "name": "Bear fat",
+        "count": 2,
+        "value": 50,
+        "valueSum": 100
+      },
+      {
+        "item": "itat_wargfur",
+        "name": "Warg skin",
+        "count": 2,
+        "value": 25,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 500,
+    "profit": 1350
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_hammer_01",
+      "name": "Diagram: Nordmarian Hammer"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_hammer_01",
+      "name": "Nordmarian Hammer",
+      "value": 2200
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 7,
+        "value": 20,
+        "valueSum": 140
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 4,
+        "value": 15,
+        "valueSum": 60
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 2,
+        "value": 6,
+        "valueSum": 12
+      },
+      {
+        "item": "itat_bearfur",
+        "name": "Bear skin",
+        "count": 4,
+        "value": 250,
+        "valueSum": 1000
+      },
+      {
+        "item": "itmi_silver",
+        "name": "Large silver nugget",
+        "count": 7,
+        "value": 20,
+        "valueSum": 140
+      }
+    ],
+    "productionValue": 1352,
+    "profit": 848
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_hammer_03",
+      "name": "Diagram: Thunder"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_hammer_03",
+      "name": "Thunder",
+      "value": 2400
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 8,
+        "value": 20,
+        "valueSum": 160
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 5,
+        "value": 15,
+        "valueSum": 75
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 2,
+        "value": 6,
+        "valueSum": 12
+      },
+      {
+        "item": "itat_trollfur",
+        "name": "Troll skin",
+        "count": 2,
+        "value": 300,
+        "valueSum": 600
+      },
+      {
+        "item": "itat_shadowhorn",
+        "name": "Shadowbeast horn",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itmi_aquamarine",
+        "name": "Aquamarine",
+        "count": 1,
+        "value": 100,
+        "valueSum": 100
+      }
+    ],
+    "productionValue": 1247,
+    "profit": 1153
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_spear_05",
+      "name": "Diagram: Nordmarian Spear"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_spear_05",
+      "name": "Nordmarian Spear",
+      "value": 1750
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      },
+      {
+        "item": "itmi_silver",
+        "name": "Large silver nugget",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 4,
+        "value": 6,
+        "valueSum": 24
+      },
+      {
+        "item": "itat_bearfur",
+        "name": "Bear skin",
+        "count": 2,
+        "value": 250,
+        "valueSum": 500
+      },
+      {
+        "item": "itat_trolltooth",
+        "name": "Troll's fang",
+        "count": 5,
+        "value": 200,
+        "valueSum": 1000
+      }
+    ],
+    "productionValue": 1769,
+    "profit": -19
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_sword_07",
+      "name": "Diagram: Kingslayer"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_sword_07",
+      "name": "Kingslayer",
+      "value": 2300
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 5,
+        "value": 15,
+        "valueSum": 75
+      },
+      {
+        "item": "itmi_goldnugget_addon",
+        "name": "Gold nugget",
+        "count": 8,
+        "value": 14,
+        "valueSum": 112
+      },
+      {
+        "item": "itmi_silver",
+        "name": "Large silver nugget",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itat_shadowfur",
+        "name": "Shadowbeast skin",
+        "count": 2,
+        "value": 250,
+        "valueSum": 500
+      }
+    ],
+    "productionValue": 807,
+    "profit": 1493
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_ws_sword_ulryk",
+      "name": "Diagram: The Wolf's Paw"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_ws_sword_ulryk",
+      "name": "The Wolf's Paw",
+      "value": 1950
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 6,
+        "value": 20,
+        "valueSum": 120
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      },
+      {
+        "item": "itat_wargfur",
+        "name": "Warg skin",
+        "count": 5,
+        "value": 25,
+        "valueSum": 125
+      },
+      {
+        "item": "itat_wolffur",
+        "name": "Wolf skin",
+        "count": 5,
+        "value": 10,
+        "valueSum": 50
+      },
+      {
+        "item": "itat_claw",
+        "name": "Claws",
+        "count": 20,
+        "value": 15,
+        "valueSum": 300
+      }
+    ],
+    "productionValue": 640,
+    "profit": 1310
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_hammer_05",
+      "name": "Diagram: The Justice of Innos"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_hammer_05",
+      "name": "The Justice of Innos",
+      "value": 2700
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 8,
+        "value": 20,
+        "valueSum": 160
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Ore nugget",
+        "count": 3,
+        "value": 200,
+        "valueSum": 600
+      },
+      {
+        "item": "itmi_rockcrystal",
+        "name": "Crystal rock",
+        "count": 3,
+        "value": 30,
+        "valueSum": 90
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Sheep skin",
+        "count": 7,
+        "value": 10,
+        "valueSum": 70
+      },
+      {
+        "item": "itmi_holywater",
+        "name": "Holy water",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      }
+    ],
+    "productionValue": 960,
+    "profit": 1740
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_blessed_01",
+      "name": "Diagram: Paladin's Hand"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_blessed_01",
+      "name": "Paladin's Hand",
+      "value": 3100
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Ore nugget",
+        "count": 4,
+        "value": 200,
+        "valueSum": 800
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Sheep skin",
+        "count": 5,
+        "value": 10,
+        "valueSum": 50
+      },
+      {
+        "item": "itmi_silver",
+        "name": "Large silver nugget",
+        "count": 8,
+        "value": 20,
+        "valueSum": 160
+      },
+      {
+        "item": "itmi_holywater",
+        "name": "Holy water",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      }
+    ],
+    "productionValue": 1170,
+    "profit": 1930
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_spear_01",
+      "name": "Diagram: Southerner's Spear"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_spear_01",
+      "name": "Southerner's Spear",
+      "value": 2000
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itmi_coal",
+        "name": "Coal",
+        "count": 6,
+        "value": 15,
+        "valueSum": 90
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 5,
+        "value": 6,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_firegolemheart",
+        "name": "The heart of the fire golem",
+        "count": 2,
+        "value": 300,
+        "valueSum": 600
+      },
+      {
+        "item": "itat_waranfiretongue",
+        "name": "Fire Lizard tongue",
+        "count": 2,
+        "value": 250,
+        "valueSum": 500
+      },
+      {
+        "item": "itat_sharkskin",
+        "name": "Swampshark skin",
+        "count": 2,
+        "value": 120,
+        "valueSum": 240
+      }
+    ],
+    "productionValue": 1540,
+    "profit": 460
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_hammer_06",
+      "name": "Diagram: Thunderbolt"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_hammer_06",
+      "name": "Thunderbolt",
+      "value": 3000
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 8,
+        "value": 20,
+        "valueSum": 160
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Ore nugget",
+        "count": 2,
+        "value": 200,
+        "valueSum": 400
+      },
+      {
+        "item": "itat_firewaranskin",
+        "name": "Fire Lizard skin",
+        "count": 2,
+        "value": 150,
+        "valueSum": 300
+      },
+      {
+        "item": "itat_waranfiretongue",
+        "name": "Fire Lizard tongue",
+        "count": 5,
+        "value": 250,
+        "valueSum": 1250
+      },
+      {
+        "item": "itmi_sulfur",
+        "name": "Sulfur",
+        "count": 7,
+        "value": 20,
+        "valueSum": 140
+      }
+    ],
+    "productionValue": 2250,
+    "profit": 750
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_spear_13",
+      "name": "Diagram: Ancient Spear"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_spear_13",
+      "name": "Ancient Spear",
+      "value": 5000
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itat_firegolemheart",
+        "name": "The heart of the fire golem",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Ore nugget",
+        "count": 5,
+        "value": 200,
+        "valueSum": 1000
+      },
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 6,
+        "value": 6,
+        "valueSum": 36
+      },
+      {
+        "item": "itat_trollfur",
+        "name": "Troll skin",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itat_gargoyleheart",
+        "name": "The heart of a gargoyle",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itat_shadowhorn",
+        "name": "Shadowbeast horn",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      }
+    ],
+    "productionValue": 2236,
+    "profit": 2764
+  },
+  {
+    "recipeItem": {
+      "item": "itre_2h_hammer_04",
+      "name": "Diagram: The Crusher"
+    },
+    "recipeResult": {
+      "item": "itmw_2h_hammer_04",
+      "name": "The Crusher",
+      "value": 5000
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 12,
+        "value": 20,
+        "valueSum": 240
+      },
+      {
+        "item": "itat_trollfur",
+        "name": "Troll skin",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itat_stonegolemheart",
+        "name": "The heart of the stone golem",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itat_gargoyleheart",
+        "name": "The heart of a gargoyle",
+        "count": 2,
+        "value": 300,
+        "valueSum": 600
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Ore nugget",
+        "count": 5,
+        "value": 200,
+        "valueSum": 1000
+      }
+    ],
+    "productionValue": 2440,
+    "profit": 2560
+  },
+  {
+    "recipeItem": {
+      "item": "itre_crossbow_l_02",
+      "name": "Diagram: Light Crossbow"
+    },
+    "recipeResult": {
+      "item": "itrw_crossbow_l_02",
+      "name": "Light Crossbow",
+      "value": 270
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 2,
+        "value": 6,
+        "valueSum": 12
+      },
+      {
+        "item": "itcr_bowstring",
+        "name": "Bowstring fiber",
+        "count": 1,
+        "value": 25,
+        "valueSum": 25
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Sheep skin",
+        "count": 4,
+        "value": 10,
+        "valueSum": 40
+      }
+    ],
+    "productionValue": 77,
+    "profit": 193
+  },
+  {
+    "recipeItem": {
+      "item": "itre_crossbow_01",
+      "name": "Diagram: Ashen Crossbow"
+    },
+    "recipeResult": {
+      "item": "itrw_crossbow_01",
+      "name": "Ashen Crossbow",
+      "value": 330
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 3,
+        "value": 6,
+        "valueSum": 18
+      },
+      {
+        "item": "itcr_bowstring",
+        "name": "Bowstring fiber",
+        "count": 2,
+        "value": 25,
+        "valueSum": 50
+      },
+      {
+        "item": "itat_wolffur",
+        "name": "Wolf skin",
+        "count": 5,
+        "value": 10,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 118,
+    "profit": 212
+  },
+  {
+    "recipeItem": {
+      "item": "itre_crossbow_l_01",
+      "name": "Diagram: Hunting Crossbow"
+    },
+    "recipeResult": {
+      "item": "itrw_crossbow_l_01",
+      "name": "Hunting Crossbow",
+      "value": 500
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 2,
+        "value": 6,
+        "valueSum": 12
+      },
+      {
+        "item": "itcr_bowstring",
+        "name": "Bowstring fiber",
+        "count": 2,
+        "value": 25,
+        "valueSum": 50
+      },
+      {
+        "item": "itat_addon_keilerfur",
+        "name": "Boar skin",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      },
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      }
+    ],
+    "productionValue": 127,
+    "profit": 373
+  },
+  {
+    "recipeItem": {
+      "item": "itre_crossbow_m_02",
+      "name": "Diagram: The Woodworms' Delicacy"
+    },
+    "recipeResult": {
+      "item": "itrw_crossbow_m_02",
+      "name": "The Woodworms' Delicacy",
+      "value": 1000
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 4,
+        "value": 6,
+        "valueSum": 24
+      },
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itcr_bowstring",
+        "name": "Bowstring fiber",
+        "count": 2,
+        "value": 25,
+        "valueSum": 50
+      },
+      {
+        "item": "itat_lurkerskin",
+        "name": "Lurker skin",
+        "count": 4,
+        "value": 25,
+        "valueSum": 100
+      },
+      {
+        "item": "itat_moleratlubric",
+        "name": "Molerat tallow",
+        "count": 2,
+        "value": 10,
+        "valueSum": 20
+      }
+    ],
+    "productionValue": 214,
+    "profit": 786
+  },
+  {
+    "recipeItem": {
+      "item": "itre_emma_crossbow",
+      "name": "Diagram: Wargs Bane"
+    },
+    "recipeResult": {
+      "item": "itrw_crossbow_10",
+      "name": "Wargs Bane",
+      "value": 1050
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 5,
+        "value": 6,
+        "valueSum": 30
+      },
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itcr_bowstring",
+        "name": "Bowstring fiber",
+        "count": 3,
+        "value": 25,
+        "valueSum": 75
+      },
+      {
+        "item": "itat_wargfur",
+        "name": "Warg skin",
+        "count": 5,
+        "value": 25,
+        "valueSum": 125
+      },
+      {
+        "item": "itat_moleratlubric",
+        "name": "Molerat tallow",
+        "count": 3,
+        "value": 10,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 320,
+    "profit": 730
+  },
+  {
+    "recipeItem": {
+      "item": "itre_crossbow_05",
+      "name": "Diagram: Decorated Crossbow"
+    },
+    "recipeResult": {
+      "item": "itrw_crossbow_05",
+      "name": "Decorated Crossbow",
+      "value": 1600
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 6,
+        "value": 6,
+        "valueSum": 36
+      },
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_warantongue",
+        "name": "Lizard tongue",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_bearfur",
+        "name": "Bear skin",
+        "count": 1,
+        "value": 250,
+        "valueSum": 250
+      },
+      {
+        "item": "itat_claw",
+        "name": "Claws",
+        "count": 8,
+        "value": 15,
+        "valueSum": 120
+      }
+    ],
+    "productionValue": 486,
+    "profit": 1114
+  },
+  {
+    "recipeItem": {
+      "item": "itre_jon_crossbow",
+      "name": "Diagram: Minecrawler Hunter Crossbow"
+    },
+    "recipeResult": {
+      "item": "itrw_crossbow_09",
+      "name": "Minecrawler Hunter Crossbow",
+      "value": 2300
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 5,
+        "value": 6,
+        "valueSum": 30
+      },
+      {
+        "item": "itmi_silver",
+        "name": "Large silver nugget",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itat_crawlerplate",
+        "name": "Minecrawler armor plates",
+        "count": 6,
+        "value": 100,
+        "valueSum": 600
+      },
+      {
+        "item": "itat_warantongue",
+        "name": "Lizard tongue",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_bearfat",
+        "name": "Bear fat",
+        "count": 2,
+        "value": 50,
+        "valueSum": 100
+      }
+    ],
+    "productionValue": 850,
+    "profit": 1450
+  },
+  {
+    "recipeItem": {
+      "item": "itre_crossbow_h_02",
+      "name": "Diagram: Reinforced Crossbow"
+    },
+    "recipeResult": {
+      "item": "itrw_crossbow_h_02",
+      "name": "Reinforced Crossbow",
+      "value": 2000
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 8,
+        "value": 6,
+        "valueSum": 48
+      },
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itat_warantongue",
+        "name": "Lizard tongue",
+        "count": 3,
+        "value": 20,
+        "valueSum": 60
+      },
+      {
+        "item": "itat_teeth",
+        "name": "Fangs",
+        "count": 8,
+        "value": 15,
+        "valueSum": 120
+      },
+      {
+        "item": "itat_shadowhorn",
+        "name": "Shadowbeast horn",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      }
+    ],
+    "productionValue": 608,
+    "profit": 1392
+  },
+  {
+    "recipeItem": {
+      "item": "itre_crossbow_m_01",
+      "name": "Diagram: Golden Crossbow"
+    },
+    "recipeResult": {
+      "item": "itrw_crossbow_m_01",
+      "name": "Golden Crossbow",
+      "value": 2300
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 5,
+        "value": 6,
+        "valueSum": 30
+      },
+      {
+        "item": "itat_waranfiretongue",
+        "name": "Fire Lizard tongue",
+        "count": 1,
+        "value": 250,
+        "valueSum": 250
+      },
+      {
+        "item": "itmi_goldnugget_addon",
+        "name": "Gold nugget",
+        "count": 12,
+        "value": 14,
+        "valueSum": 168
+      },
+      {
+        "item": "itat_sharkskin",
+        "name": "Swampshark skin",
+        "count": 3,
+        "value": 120,
+        "valueSum": 360
+      },
+      {
+        "item": "itat_bearfat",
+        "name": "Bear fat",
+        "count": 2,
+        "value": 50,
+        "valueSum": 100
+      }
+    ],
+    "productionValue": 908,
+    "profit": 1392
+  },
+  {
+    "recipeItem": {
+      "item": "itre_crossbow_h_01",
+      "name": "Diagram: Heavy Crossbow"
+    },
+    "recipeResult": {
+      "item": "itrw_crossbow_h_01",
+      "name": "Wall Destroyer",
+      "value": 2200
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 4,
+        "value": 6,
+        "valueSum": 24
+      },
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itat_waranfiretongue",
+        "name": "Fire Lizard tongue",
+        "count": 2,
+        "value": 250,
+        "valueSum": 500
+      },
+      {
+        "item": "itat_blackbearfur",
+        "name": "Black Bear skin",
+        "count": 1,
+        "value": 350,
+        "valueSum": 350
+      },
+      {
+        "item": "itat_shadowfur",
+        "name": "Shadowbeast skin",
+        "count": 1,
+        "value": 250,
+        "valueSum": 250
+      }
+    ],
+    "productionValue": 1204,
+    "profit": 996
+  },
+  {
+    "recipeItem": {
+      "item": "itre_crossbow_03",
+      "name": "Diagram: Ballista"
+    },
+    "recipeResult": {
+      "item": "itrw_crossbow_03",
+      "name": "Ballista",
+      "value": 2700
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 6,
+        "value": 6,
+        "valueSum": 36
+      },
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 6,
+        "value": 20,
+        "valueSum": 120
+      },
+      {
+        "item": "itat_waranfiretongue",
+        "name": "Fire Lizard tongue",
+        "count": 2,
+        "value": 250,
+        "valueSum": 500
+      },
+      {
+        "item": "itat_stonegolemheart",
+        "name": "The heart of the stone golem",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itat_trollfur",
+        "name": "Troll skin",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      }
+    ],
+    "productionValue": 1256,
+    "profit": 1444
+  },
+  {
+    "recipeItem": {
+      "item": "itre_addon_magiccrossbow",
+      "name": "Diagram: Magic Ore Crossbow"
+    },
+    "recipeResult": {
+      "item": "itrw_addon_magiccrossbow",
+      "name": "Magic Ore Crossbow",
+      "value": 5500
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Ore nugget",
+        "count": 5,
+        "value": 200,
+        "valueSum": 1000
+      },
+      {
+        "item": "itat_waranfiretongue",
+        "name": "Fire Lizard tongue",
+        "count": 3,
+        "value": 250,
+        "valueSum": 750
+      },
+      {
+        "item": "itat_gargoyleheart",
+        "name": "The heart of a gargoyle",
+        "count": 2,
+        "value": 300,
+        "valueSum": 600
+      },
+      {
+        "item": "itat_icegolemheart",
+        "name": "The heart of the ice golem",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      }
+    ],
+    "productionValue": 2730,
+    "profit": 2770
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bow_01",
+      "name": "Diagram: Birch Bow"
+    },
+    "recipeResult": {
+      "item": "itrw_bow_01",
+      "name": "Birch Bow",
+      "value": 320
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 2,
+        "value": 6,
+        "valueSum": 12
+      },
+      {
+        "item": "itcr_bowstring",
+        "name": "Bowstring fiber",
+        "count": 1,
+        "value": 25,
+        "valueSum": 25
+      },
+      {
+        "item": "itat_moleratskin",
+        "name": "Molerat skin",
+        "count": 3,
+        "value": 8,
+        "valueSum": 24
+      }
+    ],
+    "productionValue": 61,
+    "profit": 259
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bow_09",
+      "name": "Diagram: Beechwood Bow"
+    },
+    "recipeResult": {
+      "item": "itrw_bow_09",
+      "name": "Beechwood Bow",
+      "value": 490
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 3,
+        "value": 6,
+        "valueSum": 18
+      },
+      {
+        "item": "itcr_bowstring",
+        "name": "Bowstring fiber",
+        "count": 1,
+        "value": 25,
+        "valueSum": 25
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Sheep skin",
+        "count": 4,
+        "value": 10,
+        "valueSum": 40
+      }
+    ],
+    "productionValue": 83,
+    "profit": 407
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bow_05",
+      "name": "Diagram: The Red Bow"
+    },
+    "recipeResult": {
+      "item": "itrw_bow_05",
+      "name": "Red Bow",
+      "value": 650
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 3,
+        "value": 6,
+        "valueSum": 18
+      },
+      {
+        "item": "itcr_bowstring",
+        "name": "Bowstring fiber",
+        "count": 2,
+        "value": 25,
+        "valueSum": 50
+      },
+      {
+        "item": "itat_addon_keilerfur",
+        "name": "Boar skin",
+        "count": 4,
+        "value": 15,
+        "valueSum": 60
+      }
+    ],
+    "productionValue": 128,
+    "profit": 522
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bow_m_01",
+      "name": "Diagram: Composite Bow"
+    },
+    "recipeResult": {
+      "item": "itrw_bow_m_01",
+      "name": "Composite Bow",
+      "value": 700
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 2,
+        "value": 6,
+        "valueSum": 12
+      },
+      {
+        "item": "itcr_bowstring",
+        "name": "Bowstring fiber",
+        "count": 2,
+        "value": 25,
+        "valueSum": 50
+      },
+      {
+        "item": "itat_wolffur",
+        "name": "Wolf skin",
+        "count": 5,
+        "value": 10,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 112,
+    "profit": 588
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bow_04",
+      "name": "Diagram: Reinforced Birch Bow"
+    },
+    "recipeResult": {
+      "item": "itrw_bow_04",
+      "name": "Reinforced Birchwood Bow",
+      "value": 750
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 4,
+        "value": 6,
+        "valueSum": 24
+      },
+      {
+        "item": "itcr_bowstring",
+        "name": "Bowstring fiber",
+        "count": 3,
+        "value": 25,
+        "valueSum": 75
+      },
+      {
+        "item": "itat_waranskin",
+        "name": "Lizard skin",
+        "count": 3,
+        "value": 75,
+        "valueSum": 225
+      },
+      {
+        "item": "itat_teeth",
+        "name": "Fangs",
+        "count": 4,
+        "value": 15,
+        "valueSum": 60
+      }
+    ],
+    "productionValue": 384,
+    "profit": 366
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bow_07",
+      "name": "Diagram: Light Ash Bow"
+    },
+    "recipeResult": {
+      "item": "itrw_bow_07",
+      "name": "Light Ash Bow",
+      "value": 1100
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 4,
+        "value": 6,
+        "valueSum": 24
+      },
+      {
+        "item": "itcr_bowstring",
+        "name": "Bowstring fiber",
+        "count": 3,
+        "value": 25,
+        "valueSum": 75
+      },
+      {
+        "item": "itat_lurkerskin",
+        "name": "Lurker skin",
+        "count": 4,
+        "value": 25,
+        "valueSum": 100
+      },
+      {
+        "item": "itat_lurkerclaw",
+        "name": "Lurker claw",
+        "count": 2,
+        "value": 15,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 229,
+    "profit": 871
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bow_02",
+      "name": "Diagram: Mahogany Bow"
+    },
+    "recipeResult": {
+      "item": "itrw_bow_02",
+      "name": "Mahogany Bow",
+      "value": 950
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 4,
+        "value": 6,
+        "valueSum": 24
+      },
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itcr_bowstring",
+        "name": "Bowstring fiber",
+        "count": 3,
+        "value": 25,
+        "valueSum": 75
+      },
+      {
+        "item": "itat_addon_keilerfur",
+        "name": "Boar skin",
+        "count": 3,
+        "value": 15,
+        "valueSum": 45
+      },
+      {
+        "item": "itat_teeth",
+        "name": "Fangs",
+        "count": 7,
+        "value": 15,
+        "valueSum": 105
+      }
+    ],
+    "productionValue": 289,
+    "profit": 661
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bow_08",
+      "name": "Diagram: Hunting Bow"
+    },
+    "recipeResult": {
+      "item": "itrw_bow_08",
+      "name": "Hunting Bow",
+      "value": 1150
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 4,
+        "value": 6,
+        "valueSum": 24
+      },
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itcr_bowstring",
+        "name": "Bowstring fiber",
+        "count": 3,
+        "value": 25,
+        "valueSum": 75
+      },
+      {
+        "item": "itat_bearfur",
+        "name": "Bear skin",
+        "count": 1,
+        "value": 250,
+        "valueSum": 250
+      },
+      {
+        "item": "itat_claw",
+        "name": "Claws",
+        "count": 8,
+        "value": 15,
+        "valueSum": 120
+      }
+    ],
+    "productionValue": 509,
+    "profit": 641
+  },
+  {
+    "recipeItem": {
+      "item": "itre_addon_firebow",
+      "name": "Diagram: Desert Bow"
+    },
+    "recipeResult": {
+      "item": "itrw_addon_firebow",
+      "name": "Desert Bow",
+      "value": 2500
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 6,
+        "value": 6,
+        "valueSum": 36
+      },
+      {
+        "item": "itat_waranfiretongue",
+        "name": "Fire Lizard tongue",
+        "count": 1,
+        "value": 250,
+        "valueSum": 250
+      },
+      {
+        "item": "itmi_goldnugget_addon",
+        "name": "Gold nugget",
+        "count": 10,
+        "value": 14,
+        "valueSum": 140
+      },
+      {
+        "item": "itmi_sulfur",
+        "name": "Sulfur",
+        "count": 4,
+        "value": 20,
+        "valueSum": 80
+      },
+      {
+        "item": "itat_firewaranskin",
+        "name": "Fire Lizard skin",
+        "count": 1,
+        "value": 150,
+        "valueSum": 150
+      }
+    ],
+    "productionValue": 656,
+    "profit": 1844
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bow_m_04",
+      "name": "Diagram: Reinforced Beech Bow"
+    },
+    "recipeResult": {
+      "item": "itrw_bow_m_04",
+      "name": "Reinforced Beechwood Bow",
+      "value": 1400
+    },
+    "skillLevel": 2.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 6,
+        "value": 6,
+        "valueSum": 36
+      },
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_warantongue",
+        "name": "Lizard tongue",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_sharkskin",
+        "name": "Swampshark skin",
+        "count": 4,
+        "value": 120,
+        "valueSum": 480
+      }
+    ],
+    "productionValue": 596,
+    "profit": 804
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bow_06",
+      "name": "Diagram: Hawkeye"
+    },
+    "recipeResult": {
+      "item": "itrw_bow_06",
+      "name": "Hawkeye",
+      "value": 2100
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 6,
+        "value": 6,
+        "valueSum": 36
+      },
+      {
+        "item": "itat_waranfiretongue",
+        "name": "Fire Lizard tongue",
+        "count": 2,
+        "value": 250,
+        "valueSum": 500
+      },
+      {
+        "item": "itat_wargfur",
+        "name": "Warg skin",
+        "count": 8,
+        "value": 25,
+        "valueSum": 200
+      },
+      {
+        "item": "itat_trolltooth",
+        "name": "Troll's fang",
+        "count": 4,
+        "value": 200,
+        "valueSum": 800
+      },
+      {
+        "item": "itmi_rockcrystal",
+        "name": "Crystal rock",
+        "count": 2,
+        "value": 30,
+        "valueSum": 60
+      }
+    ],
+    "productionValue": 1596,
+    "profit": 504
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bow_h_01",
+      "name": "Diagram: Bone Bow"
+    },
+    "recipeResult": {
+      "item": "itrw_bow_h_01",
+      "name": "Bone Bow",
+      "value": 1900
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 8,
+        "value": 6,
+        "valueSum": 48
+      },
+      {
+        "item": "itat_warantongue",
+        "name": "Lizard tongue",
+        "count": 2,
+        "value": 20,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_goblinbone",
+        "name": "Goblin bone",
+        "count": 6,
+        "value": 10,
+        "valueSum": 60
+      },
+      {
+        "item": "itat_skeletonbone",
+        "name": "Skeleton bone",
+        "count": 4,
+        "value": 10,
+        "valueSum": 40
+      },
+      {
+        "item": "itat_shadowfur",
+        "name": "Shadowbeast skin",
+        "count": 2,
+        "value": 250,
+        "valueSum": 500
+      }
+    ],
+    "productionValue": 688,
+    "profit": 1212
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bow_h_02",
+      "name": "Diagram: Oak Bow"
+    },
+    "recipeResult": {
+      "item": "itrw_bow_h_02",
+      "name": "Oak Bow",
+      "value": 2200
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 10,
+        "value": 6,
+        "valueSum": 60
+      },
+      {
+        "item": "itat_waranfiretongue",
+        "name": "Fire Lizard tongue",
+        "count": 3,
+        "value": 250,
+        "valueSum": 750
+      },
+      {
+        "item": "itat_trollfur",
+        "name": "Troll skin",
+        "count": 2,
+        "value": 300,
+        "valueSum": 600
+      },
+      {
+        "item": "itat_sharkteeth",
+        "name": "Swampshark's fang",
+        "count": 5,
+        "value": 120,
+        "valueSum": 600
+      },
+      {
+        "item": "itat_sheepfur",
+        "name": "Sheep skin",
+        "count": 4,
+        "value": 10,
+        "valueSum": 40
+      }
+    ],
+    "productionValue": 2050,
+    "profit": 150
+  },
+  {
+    "recipeItem": {
+      "item": "itre_bow_h_04",
+      "name": "Diagram: The Hawk"
+    },
+    "recipeResult": {
+      "item": "itrw_bow_h_04",
+      "name": "Hawk",
+      "value": 2600
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_wood",
+        "name": "Wood for weapons crafting",
+        "count": 10,
+        "value": 6,
+        "valueSum": 60
+      },
+      {
+        "item": "itat_waranfiretongue",
+        "name": "Fire Lizard tongue",
+        "count": 2,
+        "value": 250,
+        "valueSum": 500
+      },
+      {
+        "item": "itat_swampgolemheart",
+        "name": "The heart of the swamp golem",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itat_shadowfur",
+        "name": "Shadowbeast skin",
+        "count": 1,
+        "value": 250,
+        "valueSum": 250
+      },
+      {
+        "item": "itat_shadowhorn",
+        "name": "Shadowbeast horn",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      }
+    ],
+    "productionValue": 1410,
+    "profit": 1190
+  },
+  {
+    "recipeItem": {
+      "item": "itre_addon_magicbow",
+      "name": "Diagram: Blue Eagle"
+    },
+    "recipeResult": {
+      "item": "itrw_addon_magicbow",
+      "name": "Blue Eagle",
+      "value": 5500
+    },
+    "skillLevel": 3.0,
+    "requirements": [
+      {
+        "item": "itcr_iron",
+        "name": "Iron nugget",
+        "count": 5,
+        "value": 20,
+        "valueSum": 100
+      },
+      {
+        "item": "itmi_nugget",
+        "name": "Ore nugget",
+        "count": 5,
+        "value": 200,
+        "valueSum": 1000
+      },
+      {
+        "item": "itat_waranfiretongue",
+        "name": "Fire Lizard tongue",
+        "count": 3,
+        "value": 250,
+        "valueSum": 750
+      },
+      {
+        "item": "itat_stonegolemheart",
+        "name": "The heart of the stone golem",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itat_gargoyleheart",
+        "name": "The heart of a gargoyle",
+        "count": 2,
+        "value": 300,
+        "valueSum": 600
+      }
+    ],
+    "productionValue": 2750,
+    "profit": 2750
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_light",
+      "name": "Light"
+    },
+    "recipeResult": {
+      "item": "itsc_light",
+      "name": "Light",
+      "value": 10
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_light",
+        "name": "Light",
+        "count": 1,
+        "value": 10,
+        "valueSum": 10
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Blank magic parchment",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Shards of magic ore",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      }
+    ],
+    "productionValue": 17,
+    "profit": -7
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_zap",
+      "name": "Small Lightning"
+    },
+    "recipeResult": {
+      "item": "itsc_zap",
+      "name": "Small Lightning",
+      "value": 8
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_zap",
+        "name": "Small Lightning",
+        "count": 1,
+        "value": 8,
+        "valueSum": 8
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Blank magic parchment",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Shards of magic ore",
+        "count": 1,
+        "value": 5,
+        "valueSum": 5
+      }
+    ],
+    "productionValue": 15,
+    "profit": -7
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_skull",
+      "name": "Cry of the Dead"
+    },
+    "recipeResult": {
+      "item": "itsc_skull",
+      "name": "Cry of the Dead",
+      "value": 60
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_skull",
+        "name": "Cry of the Dead",
+        "count": 1,
+        "value": 60,
+        "valueSum": 60
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Blank magic parchment",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Shards of magic ore",
+        "count": 5,
+        "value": 5,
+        "valueSum": 25
+      }
+    ],
+    "productionValue": 87,
+    "profit": -27
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_lightheal",
+      "name": "Heal Light Wounds"
+    },
+    "recipeResult": {
+      "item": "itsc_lightheal",
+      "name": "Heal Light Wounds",
+      "value": 20
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_lightheal",
+        "name": "Heal Light Wounds",
+        "count": 1,
+        "value": 20,
+        "valueSum": 20
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Blank magic parchment",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Shards of magic ore",
+        "count": 2,
+        "value": 5,
+        "valueSum": 10
+      }
+    ],
+    "productionValue": 32,
+    "profit": -12
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_icebolt",
+      "name": "Ice Arrow"
+    },
+    "recipeResult": {
+      "item": "itsc_icebolt",
+      "name": "Ice Arrow",
+      "value": 15
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_icebolt",
+        "name": "Ice Arrow",
+        "count": 1,
+        "value": 15,
+        "valueSum": 15
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Blank magic parchment",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Shards of magic ore",
+        "count": 3,
+        "value": 5,
+        "valueSum": 15
+      }
+    ],
+    "productionValue": 32,
+    "profit": -17
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_sumwolf",
+      "name": "Summon Wolf"
+    },
+    "recipeResult": {
+      "item": "itsc_sumwolf",
+      "name": "Summon Wolf",
+      "value": 50
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_sumwolf",
+        "name": "Summon Wolf",
+        "count": 1,
+        "value": 50,
+        "valueSum": 50
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Blank magic parchment",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Shards of magic ore",
+        "count": 5,
+        "value": 5,
+        "valueSum": 25
+      }
+    ],
+    "productionValue": 77,
+    "profit": -27
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_windfist",
+      "name": "Wind Fist"
+    },
+    "recipeResult": {
+      "item": "itsc_windfist",
+      "name": "Wind Fist",
+      "value": 45
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_windfist",
+        "name": "Wind Fist",
+        "count": 1,
+        "value": 45,
+        "valueSum": 45
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Blank magic parchment",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Shards of magic ore",
+        "count": 3,
+        "value": 5,
+        "valueSum": 15
+      }
+    ],
+    "productionValue": 62,
+    "profit": -17
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_icelance",
+      "name": "Ice Lance"
+    },
+    "recipeResult": {
+      "item": "itsc_icelance",
+      "name": "Ice Lance",
+      "value": 75
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_icelance",
+        "name": "Ice Lance",
+        "count": 1,
+        "value": 75,
+        "valueSum": 75
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Blank magic parchment",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Shards of magic ore",
+        "count": 5,
+        "value": 5,
+        "valueSum": 25
+      }
+    ],
+    "productionValue": 102,
+    "profit": -27
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_whirlwind",
+      "name": "Dust Devil"
+    },
+    "recipeResult": {
+      "item": "itsc_whirlwind",
+      "name": "Dust Devil",
+      "value": 120
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_whirlwind",
+        "name": "Dust Devil",
+        "count": 1,
+        "value": 120,
+        "valueSum": 120
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Blank magic parchment",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Shards of magic ore",
+        "count": 4,
+        "value": 5,
+        "valueSum": 20
+      }
+    ],
+    "productionValue": 142,
+    "profit": -22
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_sumsnapper",
+      "name": "Summon Snapper"
+    },
+    "recipeResult": {
+      "item": "itsc_sumsnapper",
+      "name": "Summon Snapper",
+      "value": 100
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_sumsnapper",
+        "name": "Summon Snapper",
+        "count": 1,
+        "value": 100,
+        "valueSum": 100
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Blank magic parchment",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Shards of magic ore",
+        "count": 10,
+        "value": 5,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 152,
+    "profit": -52
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_mediumheal",
+      "name": "Heal Medium Wounds"
+    },
+    "recipeResult": {
+      "item": "itsc_mediumheal",
+      "name": "Heal Medium Wounds",
+      "value": 60
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_mediumheal",
+        "name": "Heal Medium Wounds",
+        "count": 1,
+        "value": 60,
+        "valueSum": 60
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Blank magic parchment",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Shards of magic ore",
+        "count": 4,
+        "value": 5,
+        "valueSum": 20
+      }
+    ],
+    "productionValue": 82,
+    "profit": -22
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_icecube",
+      "name": "Ice Block"
+    },
+    "recipeResult": {
+      "item": "itsc_icecube",
+      "name": "Ice Block",
+      "value": 150
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_icecube",
+        "name": "Ice Block",
+        "count": 1,
+        "value": 150,
+        "valueSum": 150
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Blank magic parchment",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Shards of magic ore",
+        "count": 15,
+        "value": 5,
+        "valueSum": 75
+      }
+    ],
+    "productionValue": 227,
+    "profit": -77
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_thunderball",
+      "name": "Ball Lightning"
+    },
+    "recipeResult": {
+      "item": "itsc_thunderball",
+      "name": "Ball Lightning",
+      "value": 160
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_thunderball",
+        "name": "Ball Lightning",
+        "count": 1,
+        "value": 160,
+        "valueSum": 160
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Blank magic parchment",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Shards of magic ore",
+        "count": 6,
+        "value": 5,
+        "valueSum": 30
+      }
+    ],
+    "productionValue": 192,
+    "profit": -32
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_geyser",
+      "name": "Geyser"
+    },
+    "recipeResult": {
+      "item": "itsc_geyser",
+      "name": "Geyser",
+      "value": 160
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_geyser",
+        "name": "Geyser",
+        "count": 1,
+        "value": 160,
+        "valueSum": 160
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Blank magic parchment",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Shards of magic ore",
+        "count": 7,
+        "value": 5,
+        "valueSum": 35
+      }
+    ],
+    "productionValue": 197,
+    "profit": -37
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_sumbear",
+      "name": "Summon Bear"
+    },
+    "recipeResult": {
+      "item": "itsc_sumbear",
+      "name": "Summon Bear",
+      "value": 200
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_sumbear",
+        "name": "Summon Bear",
+        "count": 1,
+        "value": 200,
+        "valueSum": 200
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Blank magic parchment",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Shards of magic ore",
+        "count": 15,
+        "value": 5,
+        "valueSum": 75
+      }
+    ],
+    "productionValue": 277,
+    "profit": -77
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_lightningflash",
+      "name": "Lightning"
+    },
+    "recipeResult": {
+      "item": "itsc_lightningflash",
+      "name": "Lightning",
+      "value": 150
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_lightningflash",
+        "name": "Lightning",
+        "count": 1,
+        "value": 150,
+        "valueSum": 150
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Blank magic parchment",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Shards of magic ore",
+        "count": 10,
+        "value": 5,
+        "valueSum": 50
+      }
+    ],
+    "productionValue": 202,
+    "profit": -52
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_sumgol",
+      "name": "Awaken Golem"
+    },
+    "recipeResult": {
+      "item": "itsc_sumgol",
+      "name": "Awaken Golem",
+      "value": 300
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_sumgol",
+        "name": "Awaken Golem",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Blank magic parchment",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Shards of magic ore",
+        "count": 20,
+        "value": 5,
+        "valueSum": 100
+      }
+    ],
+    "productionValue": 402,
+    "profit": -102
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_waterfist",
+      "name": "Waterfist"
+    },
+    "recipeResult": {
+      "item": "itsc_waterfist",
+      "name": "Waterfist",
+      "value": 140
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_waterfist",
+        "name": "Waterfist",
+        "count": 1,
+        "value": 140,
+        "valueSum": 140
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Blank magic parchment",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Shards of magic ore",
+        "count": 12,
+        "value": 5,
+        "valueSum": 60
+      }
+    ],
+    "productionValue": 202,
+    "profit": -62
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_fullheal",
+      "name": "Heal Heavy Wounds"
+    },
+    "recipeResult": {
+      "item": "itsc_fullheal",
+      "name": "Heal Heavy Wounds",
+      "value": 100
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_fullheal",
+        "name": "Heal Heavy Wounds",
+        "count": 1,
+        "value": 100,
+        "valueSum": 100
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Blank magic parchment",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Shards of magic ore",
+        "count": 8,
+        "value": 5,
+        "valueSum": 40
+      }
+    ],
+    "productionValue": 142,
+    "profit": -42
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_picklock",
+      "name": "Open Lock"
+    },
+    "recipeResult": {
+      "item": "itsc_picklock",
+      "name": "Open Lock",
+      "value": 30
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_picklock",
+        "name": "Open Lock",
+        "count": 1,
+        "value": 30,
+        "valueSum": 30
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Blank magic parchment",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Shards of magic ore",
+        "count": 3,
+        "value": 5,
+        "valueSum": 15
+      }
+    ],
+    "productionValue": 47,
+    "profit": -17
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_telekinesis",
+      "name": "Telekinesis"
+    },
+    "recipeResult": {
+      "item": "itsc_telekinesis",
+      "name": "Telekinesis",
+      "value": 75
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_telekinesis",
+        "name": "Telekinesis",
+        "count": 1,
+        "value": 75,
+        "valueSum": 75
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Blank magic parchment",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Shards of magic ore",
+        "count": 15,
+        "value": 5,
+        "valueSum": 75
+      }
+    ],
+    "productionValue": 152,
+    "profit": -77
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_slowdown",
+      "name": "Slowdown"
+    },
+    "recipeResult": {
+      "item": "itsc_slowdown",
+      "name": "Slowdown",
+      "value": 300
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_slowdown",
+        "name": "Slowdown",
+        "count": 1,
+        "value": 300,
+        "valueSum": 300
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Blank magic parchment",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Shards of magic ore",
+        "count": 30,
+        "value": 5,
+        "valueSum": 150
+      }
+    ],
+    "productionValue": 452,
+    "profit": -152
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_sleep",
+      "name": "Sleep"
+    },
+    "recipeResult": {
+      "item": "itsc_sleep",
+      "name": "Sleep",
+      "value": 150
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_sleep",
+        "name": "Sleep",
+        "count": 1,
+        "value": 150,
+        "valueSum": 150
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Blank magic parchment",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Shards of magic ore",
+        "count": 20,
+        "value": 5,
+        "valueSum": 100
+      }
+    ],
+    "productionValue": 252,
+    "profit": -102
+  },
+  {
+    "recipeItem": {
+      "item": "itsc_icewave",
+      "name": "Ice Wave"
+    },
+    "recipeResult": {
+      "item": "itsc_icewave",
+      "name": "Ice Wave",
+      "value": 400
+    },
+    "skillLevel": 1.0,
+    "requirements": [
+      {
+        "item": "itsc_icewave",
+        "name": "Ice Wave",
+        "count": 1,
+        "value": 400,
+        "valueSum": 400
+      },
+      {
+        "item": "itcr_scroll",
+        "name": "Blank magic parchment",
+        "count": 1,
+        "value": 2,
+        "valueSum": 2
+      },
+      {
+        "item": "itcr_magicore_powdered",
+        "name": "Shards of magic ore",
+        "count": 50,
+        "value": 5,
+        "valueSum": 250
+      }
+    ],
+    "productionValue": 652,
+    "profit": -252
+  }
+]

@@ -2,6 +2,7 @@ import {atomFamily, selector, selectorFamily, useRecoilState} from "recoil";
 import {createKdTree} from "kd.tree";
 import {langAtom} from "../AppState";
 import {recoilPersist} from "recoil-persist";
+import {parseExpression} from "../Expression/ExpressionParser";
 
 const {persistAtom} = recoilPersist()
 
@@ -87,10 +88,28 @@ const containerContains = (probablyContainer, target) => {
     }
 }
 
+const searchPredicate = selectorFamily({
+    key: 'MapSearchPredicate',
+    get: (mapId) => ({get}) => {
+        const searchTerm = get(mapPinsSearch(mapId)).toLowerCase().trim()
+        const parsedPredicate = parseExpression(searchTerm)
+        if(parsedPredicate) {
+            return parsedPredicate
+        } else {
+            return {
+                evaluate: (item) => {
+                   return contains(item.name, searchTerm) || containerContains(item, searchTerm)
+                }
+            }
+        }
+    },
+});
+
+
 export const mapPinsSelector = selectorFamily({
     key: 'MapPinsFamily',
     get: (mapId) => ({get}) => {
-        const searchTerm = get(mapPinsSearch(mapId)).toLowerCase()
+        const predicate = get(searchPredicate(mapId))
         const activeCategories = get(activeCategoriesFamily(mapId))
         const data = get(dataSelector)
 
@@ -98,10 +117,8 @@ export const mapPinsSelector = selectorFamily({
         const treePoints = []
 
         for (const pin of data.pins) {
-            if (searchTerm) {
-                if (!(contains(pin.name, searchTerm) || containerContains(pin, searchTerm))) {
-                    continue
-                }
+            if (!predicate.evaluate(pin)) {
+                continue
             }
 
             if (activeCategories.includes(pin.category)) {

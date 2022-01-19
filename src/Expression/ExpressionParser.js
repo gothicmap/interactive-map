@@ -3,6 +3,8 @@ import searchLexer from "./searchLexer";
 import searchParser from "./searchParser";
 import searchVisitor from "./searchVisitor";
 import {ConsoleErrorListener} from "antlr4/src/antlr4/error/ErrorListener";
+import searchListener from "./searchListener";
+import {DECIMAL, IDENTIFIER, OPERATOR, STRING} from "./constants";
 
 
 const identifierToGetter = (identifier) => {
@@ -10,7 +12,7 @@ const identifierToGetter = (identifier) => {
         case "name":
             return {
                 evaluate: (item) => {
-                    if(item.name) {
+                    if (item.name) {
                         return item.name.toLowerCase()
                     } else {
                         return ""
@@ -41,7 +43,7 @@ const identifierToGetter = (identifier) => {
 }
 
 const expectSingleResult = (result) => {
-    if(result instanceof Array && result.length === 1) {
+    if (result instanceof Array && result.length === 1) {
         return result[0]
     } else if (result) {
         return result
@@ -50,11 +52,12 @@ const expectSingleResult = (result) => {
     }
 
 }
+
 class StringCompExpArgsVisitor extends searchVisitor {
     visitTerminal(ctx) {
         if (ctx.symbol.type === searchLexer.STRING) {
             const stringResult = ctx.getText()
-            const finalResult = stringResult.substring(1, stringResult.length-1)
+            const finalResult = stringResult.substring(1, stringResult.length - 1)
             return {
                 evaluate: (item) => {
                     return finalResult
@@ -227,6 +230,71 @@ class exprVisitor extends searchVisitor {
     }
 }
 
+class HighlightListener extends searchListener {
+    constructor() {
+        super();
+        this.highlight = []
+    }
+
+    visitTerminal(node) {
+        switch (node.symbol.type) {
+            case searchLexer.DECIMAL:
+                this.highlight.push(
+                    {
+                        type: DECIMAL,
+                        start: node.symbol.start,
+                        stop: node.symbol.stop
+                    }
+                )
+                break;
+            case searchLexer.STRING:
+                this.highlight.push(
+                    {
+                        type: STRING,
+                        start: node.symbol.start,
+                        stop: node.symbol.stop
+                    }
+                )
+                break;
+            case searchLexer.IDENTIFIER:
+                this.highlight.push(
+                    {
+                        type: IDENTIFIER,
+                        start: node.symbol.start,
+                        stop: node.symbol.stop
+                    }
+                )
+                break;
+            case searchLexer.IN:
+            case searchLexer.AND:
+            case searchLexer.OR:
+            case searchLexer.NOT:
+            case searchLexer.TRUE:
+            case searchLexer.FALSE:
+            case searchLexer.GT:
+            case searchLexer.GE:
+            case searchLexer.LT:
+            case searchLexer.LE:
+            case searchLexer.EQ:
+            case searchLexer.NEQ:
+                this.highlight.push(
+                    {
+                        type: OPERATOR,
+                        start: node.symbol.start,
+                        stop: node.symbol.stop
+                    }
+                )
+                break;
+            default:
+                break;
+        }
+    }
+
+    visitErrorNode(node) {
+
+    }
+}
+
 export const parseExpression = (expression) => {
     const chars = new antlr4.InputStream(expression)
     const lexer = new searchLexer(chars)
@@ -236,11 +304,14 @@ export const parseExpression = (expression) => {
     lexer.removeErrorListeners()
     parser.removeErrorListeners()
 
+    const highlight = new HighlightListener()
+    parser.addParseListener(highlight)
+
     try {
         const tree = parser.parse()
         const visitor = new exprVisitor()
-        return expectSingleResult(tree.accept(visitor)[0])
+        return [highlight.highlight, expectSingleResult(tree.accept(visitor)[0])]
     } catch (e) {
-        return undefined
+        return [highlight.highlight, undefined]
     }
 }

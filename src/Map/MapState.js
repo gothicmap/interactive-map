@@ -41,10 +41,10 @@ export const usePinVisited = (mapId, pinId) => {
 
 
     const set = (value) => {
-        if(value && !visitedPins.includes(pinId)) {
+        if (value && !visitedPins.includes(pinId)) {
             setVisitedPins([...visitedPins, pinId])
         }
-        if(!value && visitedPins.includes(pinId)) {
+        if (!value && visitedPins.includes(pinId)) {
             setVisitedPins(visitedPins.filter((pin) => pin !== pinId))
         }
     }
@@ -88,17 +88,26 @@ const containerContains = (probablyContainer, target) => {
     }
 }
 
+export const searchExpressionFamily = selectorFamily({
+    key: 'MapSearchExpression',
+    get: (mapId) => ({get}) => {
+        const searchTerm = get(mapPinsSearch(mapId))
+        return parseExpression(searchTerm)
+    },
+});
+
 const searchPredicate = selectorFamily({
     key: 'MapSearchPredicate',
     get: (mapId) => ({get}) => {
         const searchTerm = get(mapPinsSearch(mapId)).toLowerCase().trim()
-        const parsedPredicate = parseExpression(searchTerm)
-        if(parsedPredicate) {
-            return parsedPredicate
+        const {expression} = get(searchExpressionFamily(mapId))
+
+        if (expression) {
+            return expression
         } else {
             return {
                 evaluate: (item) => {
-                   return contains(item.name, searchTerm) || containerContains(item, searchTerm)
+                    return contains(item.name, searchTerm) || containerContains(item, searchTerm)
                 }
             }
         }

@@ -2,9 +2,8 @@ import antlr4 from "antlr4";
 import searchLexer from "./searchLexer";
 import searchParser from "./searchParser";
 import searchVisitor from "./searchVisitor";
-import {ConsoleErrorListener} from "antlr4/src/antlr4/error/ErrorListener";
 import searchListener from "./searchListener";
-import {DECIMAL, IDENTIFIER, OPERATOR, STRING} from "./constants";
+import {DECIMAL, IDENTIFIER, NONE, OPERATOR, STRING} from "./constants";
 
 
 const identifierToGetter = (identifier) => {
@@ -295,6 +294,7 @@ class HighlightListener extends searchListener {
     }
 }
 
+
 export const parseExpression = (expression) => {
     const chars = new antlr4.InputStream(expression)
     const lexer = new searchLexer(chars)
@@ -310,8 +310,16 @@ export const parseExpression = (expression) => {
     try {
         const tree = parser.parse()
         const visitor = new exprVisitor()
-        return [highlight.highlight, expectSingleResult(tree.accept(visitor)[0])]
+        return {
+            highlight: highlight.highlight,
+            expression: expectSingleResult(tree.accept(visitor)[0]),
+            term: expression,
+        }
     } catch (e) {
-        return [highlight.highlight, undefined]
+        return {
+            highlight: highlight.highlight,
+            expression: undefined,
+            term: expression,
+        }
     }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import MapSettings, {RenderContainerSettings} from "./MapSettings";
-import {Box, Divider, IconButton, InputBase, Paper, Typography} from "@mui/material";
+import {Box, Divider, IconButton, Paper, Typography} from "@mui/material";
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import {useRecoilState, useRecoilValue} from "recoil";
@@ -8,8 +8,10 @@ import {mapPinsSearch, mapSettingsFamily, scaleFamily} from "./MapState"
 import {Map} from "./Map";
 import ClearIcon from '@mui/icons-material/Clear';
 import darkScrollbar from "@mui/material/darkScrollbar";
+import {ExpressionSearch} from "./ExpressionSearch";
 
 const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
+
 
 function MapButtonsOverlay({...props}) {
     const [scale, setScale] = useRecoilState(scaleFamily(props.mapId))
@@ -36,8 +38,15 @@ function MapButtonsOverlay({...props}) {
                 alignItems: "center"
             }}
         >
-            <InputBase sx={{ml: 1, flex: 1}} placeholder="search" value={searchTerm}
-                       onChange={(evt) => setSearchTerm(evt.target.value)}/>
+            <Box sx={{
+                flexGrow: 100
+            }}>
+                <ExpressionSearch mapId={props.mapId} sx={{
+                    minWidth: "300px"
+                }}/>
+            </Box>
+            {/*<InputBase sx={{ml: 1, flex: 1}} placeholder="search" value={searchTerm}*/}
+            {/*           onChange={(evt) => setSearchTerm(evt.target.value)}/>*/}
             <Divider sx={{height: 28, m: 0.5}} orientation="vertical"/>
             <IconButton color="inherit" size="large" onClick={() => setSearchTerm("")}>
                 <ClearIcon/>
@@ -52,10 +61,7 @@ function MapButtonsOverlay({...props}) {
             width: "fit-content"
         }}>
             <Paper elevation={3} sx={{
-                display: "flex",
-                flexDirection: "row",
-                paddingLeft: (theme) => theme.spacing(1),
-                alignItems: "center"
+                display: "flex", flexDirection: "row", paddingLeft: (theme) => theme.spacing(1), alignItems: "center"
             }}>
                 <Typography textAlign="center">{scale}%</Typography>
                 <IconButton onClick={() => setScale(clamp(scale - 20, 60, 260))} color="inherit" size="large"
@@ -80,27 +86,15 @@ function MapButtonsOverlay({...props}) {
 export function MapContainer(props) {
     const showMapSettings = useRecoilValue(mapSettingsFamily(props.mapId))
     return <Box className="MapContainer" sx={{
-        position: "relative",
-        display: "flex",
-        flexGrow: 1000,
-        minWidth: "500px",
-        overflow: "hidden"
+        position: "relative", display: "flex", flexGrow: 1000, minWidth: "500px", overflow: "hidden"
     }}>
         {showMapSettings && <Paper sx={{
-            display: "flex",
-            flexDirection: "column",
-            borderRadius: '0px',
-            overflowY: "auto",
-            ...darkScrollbar()
+            display: "flex", flexDirection: "column", borderRadius: '0px', overflowY: "auto", ...darkScrollbar()
         }} className={"MapSettings"}>
             <RenderContainerSettings mapId={props.mapId}/>
-        </Paper>
-        }
+        </Paper>}
         <Box sx={{
-            position: "relative",
-            display: "flex",
-            flexGrow: 1000,
-            minWidth: "500px"
+            position: "relative", display: "flex", flexGrow: 1000, minWidth: "500px"
         }} className={"MapArea"}>
             <Map mapId={props.mapId}/>
             <MapButtonsOverlay mapId={props.mapId}/>

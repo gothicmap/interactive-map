@@ -312,14 +312,14 @@ export const parseExpression = (expression) => {
         const visitor = new exprVisitor()
         return {
             highlight: highlight.highlight,
-            expression: expectSingleResult(tree.accept(visitor)[0]),
-            term: expression,
+            predicate: expectSingleResult(tree.accept(visitor)[0]),
         }
     } catch (e) {
         return {
             highlight: highlight.highlight,
-            expression: undefined,
-            term: expression,
+            predicate: {
+                evaluate: () => false
+            },
         }
     }
 }

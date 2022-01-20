@@ -2,7 +2,7 @@ import {atomFamily, selector, selectorFamily, useRecoilState} from "recoil";
 import {createKdTree} from "kd.tree";
 import {langAtom} from "../AppState";
 import {recoilPersist} from "recoil-persist";
-import {parseExpression} from "../Expression/ExpressionParser";
+import {searchPredicate} from "./Search/SearchState";
 
 const {persistAtom} = recoilPersist()
 
@@ -61,59 +61,6 @@ export const mapSettingsFamily = atomFamily({
     key: 'MapSettings',
     default: false
 });
-
-
-export const mapPinsSearch = atomFamily({
-    key: 'MapPinsSearch',
-    default: ""
-})
-
-const contains = (source, target) => {
-    if (source) {
-        return source.toLowerCase().includes(target)
-    }
-
-    return false
-}
-
-const containerContains = (probablyContainer, target) => {
-    if (probablyContainer.type === "container") {
-        for (const item of probablyContainer.contains) {
-            if (contains(item.name, target)) {
-                return true
-            }
-        }
-    } else {
-        return false
-    }
-}
-
-export const searchExpressionFamily = selectorFamily({
-    key: 'MapSearchExpression',
-    get: (mapId) => ({get}) => {
-        const searchTerm = get(mapPinsSearch(mapId))
-        return parseExpression(searchTerm)
-    },
-});
-
-const searchPredicate = selectorFamily({
-    key: 'MapSearchPredicate',
-    get: (mapId) => ({get}) => {
-        const searchTerm = get(mapPinsSearch(mapId)).toLowerCase().trim()
-        const {expression} = get(searchExpressionFamily(mapId))
-
-        if (expression) {
-            return expression
-        } else {
-            return {
-                evaluate: (item) => {
-                    return contains(item.name, searchTerm) || containerContains(item, searchTerm)
-                }
-            }
-        }
-    },
-});
-
 
 export const mapPinsSelector = selectorFamily({
     key: 'MapPinsFamily',

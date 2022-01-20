@@ -1,21 +1,37 @@
 import React from "react";
 import MapSettings, {RenderContainerSettings} from "./MapSettings";
-import {Box, Divider, IconButton, Paper, Typography} from "@mui/material";
+import {Box, Divider, IconButton, Paper, ToggleButton, ToggleButtonGroup, Tooltip, Typography} from "@mui/material";
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import {useRecoilState, useRecoilValue} from "recoil";
-import {mapPinsSearch, mapSettingsFamily, scaleFamily} from "./MapState"
+import {mapSettingsFamily, scaleFamily} from "./MapState"
 import {Map} from "./Map";
 import ClearIcon from '@mui/icons-material/Clear';
 import darkScrollbar from "@mui/material/darkScrollbar";
-import {ExpressionSearch} from "./ExpressionSearch";
+import {QuerySearch} from "./Search/QuerySearch";
+import {SimpleSearch} from "./Search/SimpleSearch";
+import {SearchType, searchType, useClearCurrentExpression} from "./Search/SearchState";
 
 const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
 
 
+const SearchField = ({mapId}) => {
+    const searchTypeValue = useRecoilValue(searchType(mapId))
+    switch (searchTypeValue) {
+        case SearchType.Simple:
+            return <SimpleSearch mapId={mapId}/>
+        case SearchType.Query:
+            return <QuerySearch mapId={mapId}/>
+        default:
+            throw new Error("unknown search type")
+    }
+}
+
 function MapButtonsOverlay({...props}) {
     const [scale, setScale] = useRecoilState(scaleFamily(props.mapId))
-    const [searchTerm, setSearchTerm] = useRecoilState(mapPinsSearch(props.mapId))
+    const [searchTypeValue, setSearchType] = useRecoilState(searchType(props.mapId))
+    const clearCurrentExpression = useClearCurrentExpression(props.mapId)
+
     return <>
         <MapSettings mapId={props.mapId} elevation={3} sx={{
             position: "absolute",
@@ -31,6 +47,7 @@ function MapButtonsOverlay({...props}) {
                 marginLeft: "auto",
                 left: 0,
                 right: 0,
+                maxWidth: "60%",
                 top: (theme) => theme.spacing(2),
                 display: "flex",
                 height: "fit-content",
@@ -38,17 +55,32 @@ function MapButtonsOverlay({...props}) {
                 alignItems: "center"
             }}
         >
+            <ToggleButtonGroup
+                color="primary"
+                value={searchTypeValue}
+                exclusive
+                onChange={(_, newType) => newType && setSearchType(newType)}
+            >
+                <ToggleButton value={SearchType.Simple}>
+                    <Tooltip title={"Show all items which name contains given text."}>
+                        <span>S</span>
+                    </Tooltip>
+                </ToggleButton>
+                <ToggleButton value={SearchType.Query}>
+                    <Tooltip title={"Complex search using boolean expression."}>
+                        <span>Q</span>
+                    </Tooltip>
+                </ToggleButton>
+            </ToggleButtonGroup>
             <Box sx={{
-                flexGrow: 100
+                flexGrow: 100,
+                minWidth: "200px",
+                display: "flex",
             }}>
-                <ExpressionSearch mapId={props.mapId} sx={{
-                    minWidth: "300px"
-                }}/>
+                <SearchField mapId={props.mapId}/>
             </Box>
-            {/*<InputBase sx={{ml: 1, flex: 1}} placeholder="search" value={searchTerm}*/}
-            {/*           onChange={(evt) => setSearchTerm(evt.target.value)}/>*/}
             <Divider sx={{height: 28, m: 0.5}} orientation="vertical"/>
-            <IconButton color="inherit" size="large" onClick={() => setSearchTerm("")}>
+            <IconButton color="inherit" size="large" onClick={clearCurrentExpression}>
                 <ClearIcon/>
             </IconButton>
         </Paper>

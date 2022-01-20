@@ -27,8 +27,8 @@ export const PinTooltip = ({container}) => {
             <ChipInChip label={container.name} secondaryLabel="name"/>
             {
                 container.flags.map(
-                    flag => {
-                        return <Chip label={flag} color="secondary" size="small"/>
+                    (flag, idx) => {
+                        return <Chip key={idx} label={flag} color="secondary" size="small"/>
                     }
                 )
             }

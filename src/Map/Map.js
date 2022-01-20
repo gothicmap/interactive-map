@@ -257,7 +257,8 @@ export const Map = ({mapId}) => {
         flexDirection: "row",
         flexGrow: 1000,
         minHeight: "1px",
-        minWidth: "1px"
+        minWidth: "1px",
+        caretColor: "transparent"
     }}>
         {Boolean(tooltipData) && <AbsTooltip x={tooltipData.pos.x} y={tooltipData.pos.y} data={tooltipData.data}/>}
         <KitCanvas {...setupGestures()}
@@ -267,7 +268,8 @@ export const Map = ({mapId}) => {
                    draw={draw} style={{
             flexGrow: 1,
             minHeight: "1px",
-            minWidth: "1px"
+            minWidth: "1px",
+            caretColor: "transparent"
         }}
         />
     </div>

@@ -1,12 +1,10 @@
-import {DECIMAL, IDENTIFIER, OPERATOR, STRING} from "../Expression/constants";
+import {DECIMAL, IDENTIFIER, OPERATOR, STRING} from "../../Expression/constants";
 import Modifier from "draft-js/lib/DraftModifier";
 import {EditorState, RichUtils} from "draft-js";
-import {parseExpression} from "../Expression/ExpressionParser";
-import {useRecoilState, useRecoilValue} from "recoil";
-import {mapPinsSearch, searchExpressionFamily} from "./MapState";
-import ContentState from "draft-js/lib/ContentState";
-import {useState} from "react";
-import {DraftTextField} from "../Misc/DraftTextField";
+import {parseExpression} from "../../Expression/ExpressionParser";
+import {useRecoilState} from "recoil";
+import {DraftTextField} from "../../Misc/DraftTextField";
+import {searchQueryExpression, searchQueryPredicate} from "./SearchState";
 
 const styleMap = {
     [OPERATOR]: {
@@ -74,18 +72,18 @@ const applyStyles = (editorState, styles) => {
 
 
 
-export const ExpressionSearch = ({mapId, sx}) => {
-    const [searchTerm, setSearchTerm] = useRecoilState(mapPinsSearch(mapId))
-    const [editorState, setEditorState] = useState(() => EditorState.createWithContent(ContentState.createFromText("")));
+export const QuerySearch = ({mapId}) => {
+    const [editorState, setEditorState] = useRecoilState(searchQueryExpression(mapId))
+    const [, setQueryPredicate] = useRecoilState(searchQueryPredicate(mapId))
 
     const handleOnChange = (newEditorState) => {
         const focus = newEditorState.getSelection()
         const text = newEditorState.getCurrentContent().getPlainText('\u0001')
-        setSearchTerm(text)
-        const {highlight} = parseExpression(text)
+        const {highlight, predicate} = parseExpression(text)
         const newStyle = applyStyles(cleanupStyles(newEditorState), highlight)
         setEditorState(EditorState.acceptSelection(newStyle, focus))
+        setQueryPredicate(predicate)
     };
 
-    return <DraftTextField sx={{...sx}} customStyleMap={styleMap} onChange={handleOnChange} editorState={editorState}/>
+    return <DraftTextField sx={{ml: 1}} placeholder="enter query..." customStyleMap={styleMap} onChange={handleOnChange} editorState={editorState}/>
 }

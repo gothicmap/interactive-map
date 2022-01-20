@@ -1,8 +1,8 @@
 import {forwardRef, useImperativeHandle, useRef} from "react";
-import {Box, TextField} from "@mui/material";
+import {Box, InputBase, TextField} from "@mui/material";
 import Editor from '@draft-js-plugins/editor';
 import createSingleLinePlugin from 'draft-js-single-line-plugin'
-
+import 'draft-js/dist/Draft.css';
 const singleLinePlugin = createSingleLinePlugin()
 const plugins = [singleLinePlugin]
 
@@ -57,29 +57,28 @@ const DraftInput = forwardRef(function DraftField(props, ref) {
     </Box>
 });
 
-export const DraftTextField = ({sx, editorState, onChange, customStyleMap}) => {
+export const DraftTextField = ({sx, editorState, onChange, placeholder, customStyleMap}) => {
     const editorRef = useRef(null);
 
     return (
-        <TextField
+        <InputBase
             fullWidth
             sx={{
-                ...sx
+                ...sx,
+                overflow: "hidden"
             }}
-            label="Content"
             value={editorState.getCurrentContent().getPlainText('\u0001')}
-            InputProps={{
-                inputProps: {
-                    component: Editor,
-                    editorRef,
-                    editorState,
-                    onChange: onChange,
-                    customStyleMap: customStyleMap,
-                    plugins: plugins,
-                    blockRenderMap: singleLinePlugin.blockRenderMap,
-                },
-                inputComponent: DraftInput,
+            inputProps={{
+                component: Editor,
+                editorRef,
+                editorState,
+                placeholder,
+                onChange: onChange,
+                customStyleMap: customStyleMap,
+                plugins: plugins,
+                blockRenderMap: singleLinePlugin.blockRenderMap,
             }}
+            inputComponent={DraftInput}
         />
-    );
-};
+    )
+}

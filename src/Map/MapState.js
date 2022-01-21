@@ -3,6 +3,7 @@ import {createKdTree} from "kd.tree";
 import {langAtom} from "../AppState";
 import {recoilPersist} from "recoil-persist";
 import {searchPredicate} from "./Search/SearchState";
+import {dataSelector as databaseDataSelector} from "../Database/DatabaseState"
 
 const {persistAtom} = recoilPersist()
 
@@ -10,8 +11,19 @@ const dataSelector = selector({
     key: 'MapDataSelector',
     get: async ({get}) => {
         const lang = get(langAtom)
-        let response = await fetch(`/data/${lang}/map/map.json`);
-        return await response.json();
+        const map = await (await fetch(`/data/${lang}/map/map.json`)).json();
+        const database = get(databaseDataSelector)
+        for (const pin of map.pins) {
+            if (pin.type === "item") {
+                pin.item = database.byId[pin.itemId]
+            }
+            if (pin.type === "container") {
+                for (const item of pin.contains) {
+                    item.item = database.byId[item.itemId]
+                }
+            }
+        }
+        return map;
     }
 });
 
@@ -65,6 +77,7 @@ export const mapSettingsFamily = atomFamily({
 export const mapPinsSelector = selectorFamily({
     key: 'MapPinsFamily',
     get: (mapId) => ({get}) => {
+        const lang = get(langAtom)
         const predicate = get(searchPredicate(mapId))
         const activeCategories = get(activeCategoriesFamily(mapId))
         const data = get(dataSelector)
@@ -73,11 +86,13 @@ export const mapPinsSelector = selectorFamily({
         const treePoints = []
 
         for (const pin of data.pins) {
-            if (!predicate.evaluate(pin)) {
+            if (!predicate.evaluate(pin, lang)) {
                 continue
             }
 
-            if (activeCategories.includes(pin.category)) {
+            const category = pin.type === "item" ? pin.item.category : pin.category
+
+            if (activeCategories.includes(category)) {
                 result.push(pin)
                 treePoints.push({...pin.normPosition, pin: pin})
             }

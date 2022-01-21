@@ -56,6 +56,6 @@ NEQ        : '!=' ;
 LPAREN     : '(' ;
 RPAREN     : ')' ;
 DECIMAL    : '-'? [0-9]+ ( '.' [0-9]+ )? ;
-IDENTIFIER : [a-zA-Z_] [a-zA-Z_0-9]* ;
+IDENTIFIER : [a-zA-Z_.] [a-zA-Z_0-9.]* ;
 STRING : '"' .*? '"' ;
 WS         : [ \r\t\u000C\n]+ -> channel(HIDDEN);

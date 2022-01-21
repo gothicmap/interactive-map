@@ -1,5 +1,6 @@
 import {atomFamily, selectorFamily, useRecoilState, useRecoilValue} from "recoil";
 import {EditorState} from "draft-js";
+import {langAtom} from "../../AppState";
 
 const contains = (source, target) => {
     if (source) {
@@ -9,15 +10,21 @@ const contains = (source, target) => {
     return false
 }
 
-const containerContains = (probablyContainer, target) => {
-    if (probablyContainer.type === "container") {
-        for (const item of probablyContainer.contains) {
-            if (contains(item.name, target)) {
-                return true
-            }
+const containerContains = (container, predicate, lang) => {
+    for (const item of container.contains) {
+        if (predicate.evaluate(item.item, lang)) {
+            return true
         }
+    }
+
+    return false
+}
+
+const evaluatePin = (pin, itemPredicate, lang) => {
+    if (pin.type === "container") {
+        return containerContains(pin, itemPredicate, lang)
     } else {
-        return false
+        return itemPredicate.evaluate(pin.item, lang)
     }
 }
 
@@ -41,9 +48,23 @@ export const searchSimplePredicate = selectorFamily({
     get: (mapId) => ({get, set}) => {
         const searchSimpleExpressionValue = get(searchSimpleExpression(mapId))
 
+        if (!searchSimpleExpressionValue) {
+            return {
+                evaluate: (pin, lang) => {
+                    return true
+                }
+            }
+        }
+
+        const predicate = {
+            evaluate: (item, lang) => {
+                return contains(item.name, searchSimpleExpressionValue)
+            }
+        }
+
         return {
-            evaluate: (item) => {
-                return contains(item.name, searchSimpleExpressionValue) || containerContains(item, searchSimpleExpressionValue)
+            evaluate: (pin, lang) => {
+                return evaluatePin(pin, predicate, lang)
             }
         }
     }
@@ -70,7 +91,12 @@ export const searchPredicate = selectorFamily({
             case SearchType.Simple:
                 return get(searchSimplePredicate(mapId))
             case SearchType.Query:
-                return get(searchQueryPredicate(mapId))
+                const predicate = get(searchQueryPredicate(mapId))
+                return {
+                    evaluate: (pin, lang) => {
+                        return evaluatePin(pin, predicate, lang)
+                    }
+                }
             default:
                 throw new Error("unknown search type")
         }

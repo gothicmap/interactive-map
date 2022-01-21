@@ -1,0 +1,120 @@
+{
+  "req.str": {
+    "en": [
+      "Strength required"
+    ],
+    "ru": [
+      "Необходимо силы"
+    ]
+  },
+  "req.dex": {
+    "en": [
+      "Dexterity required"
+    ],
+    "ru": [
+      "Необходимо ловкости"
+    ]
+  },
+  "prot.blunt": {
+    "en": [
+      "Blunt protection",
+      "Blunt and projectiles protection"
+    ],
+    "ru": [
+      "Защита от дробящего",
+      "Защита от дробящего и стрел"
+    ]
+  },
+  "prot.magic": {
+    "en": [
+      "Magic protection",
+      "Magic and fire protection"
+    ],
+    "ru": [
+      "Защита от магии",
+      "Защита от магии и огня"
+    ]
+  },
+  "prot.fire": {
+    "en": [
+      "Fire protection"
+    ],
+    "ru": [
+      "Защита от огня"
+    ]
+  },
+  "prot.weapon": {
+    "en": [
+      "Weapons protection"
+    ],
+    "ru": [
+      "Защита от оружия"
+    ]
+  },
+  "prot.edge": {
+    "en": [
+      "Edge protection"
+    ],
+    "ru": [
+      "Защита от режущего"
+    ]
+  },
+  "prot.arrow": {
+    "en": [
+      "Arrow protection",
+      "Blunt and projectiles protection"
+    ],
+    "ru": [
+      "Защита от стрел",
+      "Защита от дробящего и стрел"
+    ]
+  },
+  "dam.blunt": {
+    "en": [
+      "Blunt damage"
+    ],
+    "ru": [
+      "Дробящий урон"
+    ]
+  },
+  "dam.edge": {
+    "en": [
+      "Edge damage"
+    ],
+    "ru": [
+      "Режущий урон"
+    ]
+  },
+  "dam.magic": {
+    "en": [
+      "Magic Damage"
+    ],
+    "ru": [
+      "Урон магией"
+    ]
+  },
+  "dam.fire": {
+    "en": [
+      "Fire Damage"
+    ],
+    "ru": [
+      "Урон огнем"
+    ]
+  },
+  "dam.arrow": {
+    "en": [
+      "Point damage"
+    ],
+    "ru": [
+      "Урон стрелами"
+    ]
+  },
+  "dam.damage": {
+    "en": [
+      "Damage"
+    ],
+    "ru": [
+      "Урон"
+    ]
+  }
+}

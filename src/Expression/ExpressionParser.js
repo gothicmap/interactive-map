@@ -5,12 +5,13 @@ import searchVisitor from "./searchVisitor";
 import searchListener from "./searchListener";
 import {DECIMAL, IDENTIFIER, NONE, OPERATOR, STRING} from "./constants";
 
+const valueGetters = require("../data/queryValueGetters.json")
 
 const identifierToGetter = (identifier) => {
     switch (identifier) {
         case "name":
             return {
-                evaluate: (item) => {
+                evaluate: (item, lang) => {
                     if (item.name) {
                         return item.name.toLowerCase()
                     } else {
@@ -20,23 +21,41 @@ const identifierToGetter = (identifier) => {
             }
         case "description":
             return {
-                evaluate: (item) => {
+                evaluate: (item, lang) => {
                     return item.description.toLowerCase()
                 }
             }
         case "flags":
             return {
-                evaluate: (item) => {
+                evaluate: (item, lang) => {
                     return item.flags
                 }
             }
         case "id":
             return {
-                evaluate: (item) => {
+                evaluate: (item, lang) => {
                     return item.item.toLowerCase()
                 }
             }
         default:
+            if(identifier.startsWith("req.") || identifier.startsWith("prot.") || identifier.startsWith("dam.")) {
+                if(valueGetters.hasOwnProperty(identifier)) {
+                    return {
+                        evaluate: (item, lang) => {
+                            if(item.hasOwnProperty("values")) {
+                                for(const getter of valueGetters[identifier][lang]) {
+                                    for(const [valueName, value] of item.values) {
+                                        if (valueName === getter) {
+                                            return value
+                                        }
+                                    }
+                                }
+                            }
+                            return undefined
+                        }
+                    }
+                }
+            }
             throw new Error(`unknown identifier ${identifier}`)
     }
 }
@@ -58,7 +77,7 @@ class StringCompExpArgsVisitor extends searchVisitor {
             const stringResult = ctx.getText()
             const finalResult = stringResult.substring(1, stringResult.length - 1)
             return {
-                evaluate: (item) => {
+                evaluate: (item, lang) => {
                     return finalResult
                 }
             }
@@ -75,7 +94,7 @@ class DecimalCompExpArgsVisitor extends searchVisitor {
         if (ctx.symbol.type === searchLexer.DECIMAL) {
             const decimalResult = parseFloat(ctx.getText())
             return {
-                evaluate: (item) => decimalResult
+                evaluate: (item, lang) => decimalResult
             }
         } else if (ctx.symbol.type === searchLexer.IDENTIFIER) {
             return identifierToGetter(ctx.getText())
@@ -95,7 +114,7 @@ class exprVisitor extends searchVisitor {
     visitBoolExp(ctx) {
         const result = ctx.getText() === "true"
         return {
-            evaluate: (item) => {
+            evaluate: (item, lang) => {
                 return result
             }
         }
@@ -105,8 +124,8 @@ class exprVisitor extends searchVisitor {
         const left = expectSingleResult(ctx.left.accept(this.strCompExpVisitor))
         const right = expectSingleResult(ctx.right.accept(this.strCompExpVisitor))
         return {
-            evaluate: (item) => {
-                return right.evaluate(item).includes(left.evaluate(item))
+            evaluate: (item, lang) => {
+                return right.evaluate(item, lang).includes(left.evaluate(item, lang))
             }
         }
     }
@@ -118,14 +137,14 @@ class exprVisitor extends searchVisitor {
 
         if (op === searchLexer.EQ) {
             return {
-                evaluate: (item) => {
-                    return left.evaluate(item) === right.evaluate(item)
+                evaluate: (item, lang) => {
+                    return left.evaluate(item, lang) === right.evaluate(item, lang)
                 }
             }
         } else if (op === searchLexer.NEQ) {
             return {
-                evaluate: (item) => {
-                    return left.evaluate(item) !== right.evaluate(item)
+                evaluate: (item, lang) => {
+                    return left.evaluate(item, lang) !== right.evaluate(item, lang)
                 }
             }
         }
@@ -139,14 +158,14 @@ class exprVisitor extends searchVisitor {
         switch (op) {
             case searchLexer.AND:
                 return {
-                    evaluate: (item) => {
-                        return left.evaluate(item) && right.evaluate(item)
+                    evaluate: (item, lang) => {
+                        return left.evaluate(item, lang) && right.evaluate(item, lang)
                     }
                 }
             case searchLexer.OR:
                 return {
-                    evaluate: (item) => {
-                        return left.evaluate(item) || right.evaluate(item)
+                    evaluate: (item, lang) => {
+                        return left.evaluate(item, lang) || right.evaluate(item, lang)
                     }
                 }
             default:
@@ -159,21 +178,39 @@ class exprVisitor extends searchVisitor {
         const right = expectSingleResult(ctx.right.accept(this))
         const op = ctx.op.getChild(0).symbol.type
 
+        if(!(left && right)) {
+            throw new Error(`left or right operand of '${op}' is missing`)
+        }
+
         switch (op) {
             case searchLexer.EQ:
                 return {
-                    evaluate: (item) => {
-                        return left.evaluate(item) === right.evaluate(item)
+                    evaluate: (item, lang) => {
+                        return left.evaluate(item, lang) === right.evaluate(item, lang)
                     }
                 }
             case searchLexer.NEQ:
                 return {
-                    evaluate: (item) => {
-                        return left.evaluate(item) !== right.evaluate(item)
+                    evaluate: (item, lang) => {
+                        return left.evaluate(item, lang) !== right.evaluate(item, lang)
                     }
                 }
             default:
                 throw new Error(`unsupported binary comparator operation ${ctx.op.getText()}`)
+        }
+    }
+
+    visitNotExp(ctx) {
+        const right = expectSingleResult(ctx.getChild(1).accept(this))
+
+        if(!right) {
+            throw new Error("operand of 'not' is missing")
+        }
+
+        return {
+            evaluate: (item, lang) => {
+                return !right.evaluate(item, lang)
+            }
         }
     }
 
@@ -182,41 +219,45 @@ class exprVisitor extends searchVisitor {
         const right = expectSingleResult(ctx.right.accept(this.decimalCompExpVisitor))
         const op = ctx.op.getChild(0).symbol.type
 
+        if(!(left && right)) {
+            throw new Error(`left or right operand of '${op}' is missing`)
+        }
+
         switch (op) {
             case searchLexer.GT:
                 return {
-                    evaluate: (item) => {
-                        return left.evaluate(item) > right.evaluate(item)
+                    evaluate: (item, lang) => {
+                        return left.evaluate(item, lang) > right.evaluate(item, lang)
                     }
                 }
             case searchLexer.GE:
                 return {
-                    evaluate: (item) => {
-                        return left.evaluate(item) >= right.evaluate(item)
+                    evaluate: (item, lang) => {
+                        return left.evaluate(item, lang) >= right.evaluate(item, lang)
                     }
                 }
             case searchLexer.LT:
                 return {
-                    evaluate: (item) => {
-                        return left.evaluate(item) < right.evaluate(item)
+                    evaluate: (item, lang) => {
+                        return left.evaluate(item, lang) < right.evaluate(item, lang)
                     }
                 }
             case searchLexer.LE:
                 return {
-                    evaluate: (item) => {
-                        return left.evaluate(item) <= right.evaluate(item)
+                    evaluate: (item, lang) => {
+                        return left.evaluate(item, lang) <= right.evaluate(item, lang)
                     }
                 }
             case searchLexer.EQ:
                 return {
-                    evaluate: (item) => {
-                        return left.evaluate(item) === right.evaluate(item)
+                    evaluate: (item, lang) => {
+                        return left.evaluate(item, lang) === right.evaluate(item, lang)
                     }
                 }
             case searchLexer.NEQ:
                 return {
-                    evaluate: (item) => {
-                        return left.evaluate(item) !== right.evaluate(item)
+                    evaluate: (item, lang) => {
+                        return left.evaluate(item, lang) !== right.evaluate(item, lang)
                     }
                 }
             default:

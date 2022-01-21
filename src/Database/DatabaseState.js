@@ -11,12 +11,23 @@ export const databaseSearchTerm = atom({
     default: "",
 })
 
-const dataSelector = selector({
+export const dataSelector = selector({
     key: 'DatabaseDataSelector',
     get: async ({get}) => {
         const lang = get(langAtom)
-        let response = await fetch(`/data/${lang}/database/items.json`);
-        return await response.json();
+        const items = await (await fetch(`/data/${lang}/database/items.json`)).json();
+
+        const byId = {
+
+        }
+
+        for(const item of items.items) {
+            byId[item.item] = item
+        }
+
+        items.byId = byId
+
+        return items;
     }
 });
 

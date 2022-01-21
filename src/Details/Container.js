@@ -72,7 +72,7 @@ const ContainerContentInfo = forwardRef((props, ref) => {
             }}>
                 {props.container.contains.map((item) => (
                     <Chip
-                        key={item.item}
+                        key={item.itemId}
                         label={
                             <Box
                                 sx={{
@@ -81,9 +81,9 @@ const ContainerContentInfo = forwardRef((props, ref) => {
                                     gap: theme => theme.spacing(1)
                                 }}
                             >
-                                {item.name}
+                                {item.item.name}
                                 {
-                                    item.flags.map(
+                                    item.item.flags.map(
                                         flag => {
                                             return <Chip label={flag} color="secondary" size="small"/>
                                         }

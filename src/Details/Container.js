@@ -17,7 +17,7 @@ import {usePinVisited} from "../Map/MapState";
 
 const KeyInfo = (props) => {
     return <React.Fragment>
-        {props.container.locked && props.container.key && <Box sx={{
+        {props.container.data.locked && props.container.data.key && <Box sx={{
             display: "flex",
             flexDirection: "row",
             gap: (theme) => theme.spacing(1),
@@ -31,7 +31,7 @@ const KeyInfo = (props) => {
                     readOnly: true,
                 }}
                 size="small"
-                defaultValue={props.container.key}
+                defaultValue={props.container.data.key}
             />
         </Box>
         }
@@ -40,14 +40,14 @@ const KeyInfo = (props) => {
 
 const LockCombinationInfo = (props) => {
     return <React.Fragment>
-        {props.container.locked && props.container.combination && <Outline label="combination">
+        {props.container.data.locked && props.container.data.pickLock && <Outline label="combination">
             <Box sx={{
                 display: "flex",
                 flexDirection: "row",
                 flexWrap: "wrap",
                 gap: (theme) => theme.spacing(1),
             }}>
-                {props.container.combination.split("").map((direction, idx) => (
+                {props.container.data.pickLock.split("").map((direction, idx) => (
                     <Chip
                         key={idx}
                         label={direction}
@@ -70,9 +70,9 @@ const ContainerContentInfo = forwardRef((props, ref) => {
                 flexWrap: "wrap",
                 gap: (theme) => theme.spacing(1),
             }}>
-                {props.container.contains.map((item) => (
+                {props.container.data.contains.map((item) => (
                     <Chip
-                        key={item.itemId}
+                        key={item.item.item}
                         label={
                             <Box
                                 sx={{

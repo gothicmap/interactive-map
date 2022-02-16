@@ -3,35 +3,43 @@ import {createKdTree} from "kd.tree";
 import {langAtom} from "../AppState";
 import {recoilPersist} from "recoil-persist";
 import {searchPredicate} from "./Search/SearchState";
-import {dataSelector as databaseDataSelector} from "../Database/DatabaseState"
+import {mapPins as ruPins, mapContainerCategories as ruMapContainerCategories, mapItemsCategories as ruMapItemsCategories} from "../Data/database.ru"
+import {mapPins as enPins, mapContainerCategories as enMapContainerCategories, mapItemsCategories as enMapItemsCategories} from "../Data/database.en"
+import {mapPins as plPins, mapContainerCategories as plMapContainerCategories, mapItemsCategories as plMapItemsCategories} from "../Data/database.pl"
 
 const {persistAtom} = recoilPersist()
 
-const dataSelector = selector({
-    key: 'MapDataSelector',
+const pinsSelector = selector({
+    key: 'MapPinsSelector',
     get: async ({get}) => {
         const lang = get(langAtom)
-        const map = await (await fetch(`/data/${lang}/map/map.json`)).json();
-        const database = get(databaseDataSelector)
-        for (const pin of map.pins) {
-            if (pin.type === "item") {
-                pin.item = database.byId[pin.itemId]
-            }
-            if (pin.type === "container") {
-                for (const item of pin.contains) {
-                    item.item = database.byId[item.itemId]
-                }
-            }
+        switch (lang){
+            case "en":
+                return enPins;
+            case "ru":
+                return ruPins;
+            case "pl":
+                return plPins;
+            default:
+                throw Error("Unknown language")
         }
-        return map;
     }
 });
 
 export const categoriesSelector = selector({
     key: 'MapCategoriesSelector',
     get: ({get}) => {
-        const data = get(dataSelector)
-        return [...data.categories.containers, ...data.categories.items]
+        const lang = get(langAtom)
+        switch (lang){
+            case "en":
+                return [...enMapContainerCategories, ...enMapItemsCategories];
+            case "ru":
+                return [...ruMapContainerCategories, ...ruMapItemsCategories];
+            case "pl":
+                return [...plMapContainerCategories, ...plMapItemsCategories];
+            default:
+                throw Error("Unknown language")
+        }
     },
 });
 
@@ -80,19 +88,17 @@ export const mapPinsSelector = selectorFamily({
         const lang = get(langAtom)
         const predicate = get(searchPredicate(mapId))
         const activeCategories = get(activeCategoriesFamily(mapId))
-        const data = get(dataSelector)
+        const pins = get(pinsSelector)
 
         const result = []
         const treePoints = []
 
-        for (const pin of data.pins) {
+        for (const pin of pins) {
             if (!predicate.evaluate(pin, lang)) {
                 continue
             }
 
-            const category = pin.type === "item" ? pin.item.category : pin.category
-
-            if (activeCategories.includes(category)) {
+            if (activeCategories.some(value => pin.data.flags.includes(value))) {
                 result.push(pin)
                 treePoints.push({...pin.normPosition, pin: pin})
             }

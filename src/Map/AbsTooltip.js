@@ -1,4 +1,4 @@
-import {Box, Card, Paper, Popper} from "@mui/material";
+import {Paper, Popper} from "@mui/material";
 import {Component} from "react";
 
 export class AbsTooltip extends Component {

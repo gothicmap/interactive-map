@@ -1,5 +1,8 @@
-{
+export const valueGetters = {
   "req.str": {
+    "pl": [
+      "Wymagana siła"
+    ],
     "en": [
       "Strength required"
     ],
@@ -8,6 +11,9 @@
     ]
   },
   "req.dex": {
+    "pl": [
+      "Wymagana zręczność"
+    ],
     "en": [
       "Dexterity required"
     ],
@@ -16,6 +22,10 @@
     ]
   },
   "prot.blunt": {
+    "pl": [
+      "Obrona przed obuchami",
+      "Obrona przed obuchem i strzałami"
+    ],
     "en": [
       "Blunt protection",
       "Blunt and projectiles protection"
@@ -26,6 +36,10 @@
     ]
   },
   "prot.magic": {
+    "pl": [
+      "Obrona przed magią",
+      "Ochrona przed magią i ogniem"
+    ],
     "en": [
       "Magic protection",
       "Magic and fire protection"
@@ -36,6 +50,9 @@
     ]
   },
   "prot.fire": {
+    "pl": [
+      "Obrona przed ogniem"
+    ],
     "en": [
       "Fire protection"
     ],
@@ -44,6 +61,9 @@
     ]
   },
   "prot.weapon": {
+    "pl": [
+      "Obrona przed wszystkimi broniami"
+    ],
     "en": [
       "Weapons protection"
     ],
@@ -52,6 +72,9 @@
     ]
   },
   "prot.edge": {
+    "pl": [
+      "Obrona przed ostrzami"
+    ],
     "en": [
       "Edge protection"
     ],
@@ -60,6 +83,10 @@
     ]
   },
   "prot.arrow": {
+    "pl": [
+      "Obrona przed strzałami",
+      "Obrona przed obuchem i strzałami"
+    ],
     "en": [
       "Arrow protection",
       "Blunt and projectiles protection"
@@ -70,6 +97,9 @@
     ]
   },
   "dam.blunt": {
+    "pl": [
+      "Obrażenia obuchowe"
+    ],
     "en": [
       "Blunt damage"
     ],
@@ -78,6 +108,9 @@
     ]
   },
   "dam.edge": {
+    "pl": [
+      "Obrażenia sieczne"
+    ],
     "en": [
       "Edge damage"
     ],
@@ -86,6 +119,9 @@
     ]
   },
   "dam.magic": {
+    "pl": [
+      "Obrażenia magiczne"
+    ],
     "en": [
       "Magic Damage"
     ],
@@ -94,6 +130,9 @@
     ]
   },
   "dam.fire": {
+    "pl": [
+      "Obr. ogień"
+    ],
     "en": [
       "Fire Damage"
     ],
@@ -102,6 +141,9 @@
     ]
   },
   "dam.arrow": {
+    "pl": [
+      "Obrażenia pocisków"
+    ],
     "en": [
       "Point damage"
     ],
@@ -110,6 +152,9 @@
     ]
   },
   "dam.damage": {
+    "pl": [
+      "Obrażenia"
+    ],
     "en": [
       "Damage"
     ],
@@ -117,4 +162,4 @@
       "Урон"
     ]
   }
-}
+};

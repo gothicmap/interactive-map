@@ -3,9 +3,8 @@ import searchLexer from "./searchLexer";
 import searchParser from "./searchParser";
 import searchVisitor from "./searchVisitor";
 import searchListener from "./searchListener";
-import {DECIMAL, IDENTIFIER, NONE, OPERATOR, STRING} from "./constants";
-
-const valueGetters = require("../data/queryValueGetters.json")
+import {valueGetters} from "../Data/valueGetters"
+import {DECIMAL, IDENTIFIER, OPERATOR, STRING} from "./constants";
 
 const identifierToGetter = (identifier) => {
     switch (identifier) {

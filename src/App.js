@@ -76,6 +76,7 @@ export const App = () => {
                     >
                         <MenuItem value={"en"}>English</MenuItem>
                         <MenuItem value={"ru"}>Русский</MenuItem>
+                        <MenuItem value={"pl"}>Polski</MenuItem>
                     </Select>
                 </FormControl>
             </Toolbar>

@@ -1,165 +1,168 @@
 export const valueGetters = {
   "req.str": {
-    "pl": [
-      "Wymagana siła"
+    "ru": [
+      "Необходимо силы"
     ],
     "en": [
       "Strength required"
     ],
-    "ru": [
-      "Необходимо силы"
+    "pl": [
+      "Wymagana siła"
     ]
   },
   "req.dex": {
-    "pl": [
-      "Wymagana zręczność"
+    "ru": [
+      "Необходимо ловкости"
     ],
     "en": [
       "Dexterity required"
     ],
-    "ru": [
-      "Необходимо ловкости"
+    "pl": [
+      "Wymagana zręczność"
     ]
   },
   "prot.blunt": {
-    "pl": [
-      "Obrona przed obuchami",
-      "Obrona przed obuchem i strzałami"
+    "ru": [
+      "Защита от дробящего",
+      "Защита от дробящего и стрел"
     ],
     "en": [
       "Blunt protection",
       "Blunt and projectiles protection"
     ],
-    "ru": [
-      "Защита от дробящего",
-      "Защита от дробящего и стрел"
+    "pl": [
+      "Obrona przed obuchami",
+      "Obrona przed obuchem i strzałami"
     ]
   },
   "prot.magic": {
-    "pl": [
-      "Obrona przed magią",
-      "Ochrona przed magią i ogniem"
+    "ru": [
+      "Защита от магии",
+      "Защита от магии и огня"
     ],
     "en": [
       "Magic protection",
       "Magic and fire protection"
     ],
-    "ru": [
-      "Защита от магии",
-      "Защита от магии и огня"
+    "pl": [
+      "Obrona przed magią",
+      "Ochrona przed magią i ogniem"
     ]
   },
   "prot.fire": {
-    "pl": [
-      "Obrona przed ogniem"
+    "ru": [
+      "Защита от огня"
     ],
     "en": [
       "Fire protection"
     ],
-    "ru": [
-      "Защита от огня"
+    "pl": [
+      "Obrona przed ogniem"
     ]
   },
   "prot.weapon": {
-    "pl": [
-      "Obrona przed wszystkimi broniami"
+    "ru": [
+      "Защита от оружия"
     ],
     "en": [
       "Weapons protection"
     ],
-    "ru": [
-      "Защита от оружия"
+    "pl": [
+      "Obrona przed wszystkimi broniami"
     ]
   },
   "prot.edge": {
-    "pl": [
-      "Obrona przed ostrzami"
+    "ru": [
+      "Защита от режущего"
     ],
     "en": [
       "Edge protection"
     ],
-    "ru": [
-      "Защита от режущего"
+    "pl": [
+      "Obrona przed ostrzami"
     ]
   },
   "prot.arrow": {
-    "pl": [
-      "Obrona przed strzałami",
-      "Obrona przed obuchem i strzałami"
+    "ru": [
+      "Защита от стрел",
+      "Защита от дробящего и стрел"
     ],
     "en": [
       "Arrow protection",
       "Blunt and projectiles protection"
     ],
-    "ru": [
-      "Защита от стрел",
-      "Защита от дробящего и стрел"
+    "pl": [
+      "Obrona przed strzałami",
+      "Obrona przed obuchem i strzałami"
     ]
   },
   "dam.blunt": {
-    "pl": [
-      "Obrażenia obuchowe"
+    "ru": [
+      "Дробящий урон"
     ],
     "en": [
       "Blunt damage"
     ],
-    "ru": [
-      "Дробящий урон"
+    "pl": [
+      "Obrażenia obuchowe"
     ]
   },
   "dam.edge": {
-    "pl": [
-      "Obrażenia sieczne"
+    "ru": [
+      "Режущий урон"
     ],
     "en": [
       "Edge damage"
     ],
-    "ru": [
-      "Режущий урон"
+    "pl": [
+      "Obrażenia sieczne"
     ]
   },
   "dam.magic": {
-    "pl": [
-      "Obrażenia magiczne"
+    "ru": [
+      "Урон магией",
+      "Урон магией"
     ],
     "en": [
+      "Magic Damage",
       "Magic Damage"
     ],
-    "ru": [
-      "Урон магией"
+    "pl": [
+      "Obr. magia",
+      "Obrażenia magiczne"
     ]
   },
   "dam.fire": {
-    "pl": [
-      "Obr. ogień"
+    "ru": [
+      "Урон огнем"
     ],
     "en": [
       "Fire Damage"
     ],
-    "ru": [
-      "Урон огнем"
+    "pl": [
+      "Obr. ogień"
     ]
   },
   "dam.arrow": {
-    "pl": [
-      "Obrażenia pocisków"
+    "ru": [
+      "Урон стрелами"
     ],
     "en": [
       "Point damage"
     ],
-    "ru": [
-      "Урон стрелами"
+    "pl": [
+      "Obrażenia pocisków"
     ]
   },
   "dam.damage": {
-    "pl": [
-      "Obrażenia"
+    "ru": [
+      "Урон"
     ],
     "en": [
       "Damage"
     ],
-    "ru": [
-      "Урон"
+    "pl": [
+      "Obrażenia"
     ]
   }
 };

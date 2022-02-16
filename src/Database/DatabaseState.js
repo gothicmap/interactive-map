@@ -4,16 +4,13 @@ import {recoilPersist} from "recoil-persist";
 import {Strings} from "../Strings";
 import {Box, Tooltip} from "@mui/material";
 import {
-    items as ruItems,
-    itemsCategories as ruItemsCategories
+    itemsCategories as ruItemsCategories, postProcessItems as ruPostProcessItems
 } from "../Data/database.ru"
 import {
-    items as enItems,
-    itemsCategories as enItemsCategories
+    itemsCategories as enItemsCategories, postProcessItems as enPostProcessItems
 } from "../Data/database.en"
 import {
-    items as plItems,
-    itemsCategories as plItemsCategories
+    itemsCategories as plItemsCategories, postProcessItems as plPostProcessItems
 } from "../Data/database.pl"
 
 const {persistAtom} = recoilPersist()
@@ -23,17 +20,23 @@ export const databaseSearchTerm = atom({
     default: "",
 })
 
-export const dataSelector = selector({
-    key: 'DatabaseDataSelector',
+export const rawItemsSelector = selector({
+    key: 'RawItemsSelector',
     get: async ({get}) => {
         const lang = get(langAtom)
-        switch (lang) {
+        switch (lang){
             case "en":
-                return Object.entries(enItems).map(([, item]) => item);
+                let enResponse = await(await fetch(`/data/database.en.items.json`)).json();
+                enPostProcessItems(enResponse)
+                return enResponse
             case "ru":
-                return Object.entries(ruItems).map(([, item]) => item);
+                let ruResponse = await(await fetch(`/data/database.ru.items.json`)).json();
+                ruPostProcessItems(ruResponse)
+                return ruResponse
             case "pl":
-                return Object.entries(plItems).map(([, item]) => item);
+                let plResponse = await(await fetch(`/data/database.pl.items.json`)).json();
+                plPostProcessItems(plResponse)
+                return plResponse
             default:
                 throw Error("Unknown language")
         }
@@ -72,7 +75,7 @@ export const paginationItemsPerPage = atom({
 export const itemsSelector = selector({
     key: 'DatabaseItemsSelector',
     get: ({get}) => {
-        const items = get(dataSelector)
+        const items = Object.entries(get(rawItemsSelector)).map(([, item]) => item)
         const searchTerm = get(databaseSearchTerm).toLowerCase()
         const activeCategories = get(activeCategoriesAtom)
 

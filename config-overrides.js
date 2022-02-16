@@ -48,7 +48,12 @@ module.exports = function override(config, env) {
         new CopyWebpackPlugin({
             patterns: [
                 {from: "node_modules/canvaskit-wasm/bin/canvaskit.wasm", to: "canvaskit.wasm"},
-                // {from: "src/Data", to: "data"}
+                {from: "src/Data/database.en.items.json", to: "data/database.en.items.json"},
+                {from: "src/Data/database.en.pins.json", to: "data/database.en.pins.json"},
+                {from: "src/Data/database.ru.items.json", to: "data/database.ru.items.json"},
+                {from: "src/Data/database.ru.pins.json", to: "data/database.ru.pins.json"},
+                {from: "src/Data/database.pl.items.json", to: "data/database.pl.items.json"},
+                {from: "src/Data/database.pl.pins.json", to: "data/database.pl.pins.json"}
             ],
         })
     );

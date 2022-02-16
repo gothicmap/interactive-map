@@ -3,9 +3,10 @@ import {createKdTree} from "kd.tree";
 import {langAtom} from "../AppState";
 import {recoilPersist} from "recoil-persist";
 import {searchPredicate} from "./Search/SearchState";
-import {mapPins as ruPins, mapContainerCategories as ruMapContainerCategories, mapItemsCategories as ruMapItemsCategories} from "../Data/database.ru"
-import {mapPins as enPins, mapContainerCategories as enMapContainerCategories, mapItemsCategories as enMapItemsCategories} from "../Data/database.en"
-import {mapPins as plPins, mapContainerCategories as plMapContainerCategories, mapItemsCategories as plMapItemsCategories} from "../Data/database.pl"
+import {postProcessMapPins as ruPostProcessMapPins, mapContainerCategories as ruMapContainerCategories, mapItemsCategories as ruMapItemsCategories} from "../Data/database.ru"
+import {postProcessMapPins as enPostProcessMapPins, mapContainerCategories as enMapContainerCategories, mapItemsCategories as enMapItemsCategories} from "../Data/database.en"
+import {postProcessMapPins as plPostProcessMapPins, mapContainerCategories as plMapContainerCategories, mapItemsCategories as plMapItemsCategories} from "../Data/database.pl"
+import {rawItemsSelector} from "../Database/DatabaseState";
 
 const {persistAtom} = recoilPersist()
 
@@ -13,13 +14,20 @@ const pinsSelector = selector({
     key: 'MapPinsSelector',
     get: async ({get}) => {
         const lang = get(langAtom)
+        const items = get(rawItemsSelector)
         switch (lang){
             case "en":
-                return enPins;
+                let enResponse = await(await fetch(`/data/database.en.pins.json`)).json();
+                enPostProcessMapPins(enResponse, items)
+                return enResponse
             case "ru":
-                return ruPins;
+                let ruResponse = await(await fetch(`/data/database.ru.pins.json`)).json();
+                ruPostProcessMapPins(ruResponse, items)
+                return ruResponse
             case "pl":
-                return plPins;
+                let plResponse = await(await fetch(`/data/database.pl.pins.json`)).json();
+                plPostProcessMapPins(plResponse, items)
+                return plResponse
             default:
                 throw Error("Unknown language")
         }

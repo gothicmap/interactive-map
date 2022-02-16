@@ -7,7 +7,7 @@ export const ItemModalComponent = ({mapId, pin, closeModal, ...props}) => {
     const [visited, setVisited] = usePinVisited(mapId, pin.vobObjectID)
     const handleSetVisited = (evt) => setVisited(evt.target.checked)
 
-    return <Dialog {...props}>
+    return <Dialog {...props}>npm
         <DialogTitle>Item</DialogTitle>
         <DialogContent sx={{
             display: "flex",

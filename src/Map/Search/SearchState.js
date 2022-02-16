@@ -1,6 +1,5 @@
 import {atomFamily, selectorFamily, useRecoilState, useRecoilValue} from "recoil";
 import {EditorState} from "draft-js";
-import {langAtom} from "../../AppState";
 
 const contains = (source, target) => {
     if (source) {
@@ -11,7 +10,7 @@ const contains = (source, target) => {
 }
 
 const containerContains = (container, predicate, lang) => {
-    for (const item of container.contains) {
+    for (const item of container.data.contains) {
         if (predicate.evaluate(item.item, lang)) {
             return true
         }
@@ -24,7 +23,7 @@ const evaluatePin = (pin, itemPredicate, lang) => {
     if (pin.type === "container") {
         return containerContains(pin, itemPredicate, lang)
     } else {
-        return itemPredicate.evaluate(pin.item, lang)
+        return itemPredicate.evaluate(pin.data, lang)
     }
 }
 

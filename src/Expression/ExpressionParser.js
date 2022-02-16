@@ -11,6 +11,9 @@ const identifierToGetter = (identifier) => {
         case "name":
             return {
                 evaluate: (item, lang) => {
+                    if(!item) {
+                        return ""
+                    }
                     if (item.name) {
                         return item.name.toLowerCase()
                     } else {

@@ -3,6 +3,18 @@ import {langAtom} from "../AppState";
 import {recoilPersist} from "recoil-persist";
 import {Strings} from "../Strings";
 import {Box, Tooltip} from "@mui/material";
+import {
+    items as ruItems,
+    itemsCategories as ruItemsCategories
+} from "../Data/database.ru"
+import {
+    items as enItems,
+    itemsCategories as enItemsCategories
+} from "../Data/database.en"
+import {
+    items as plItems,
+    itemsCategories as plItemsCategories
+} from "../Data/database.pl"
 
 const {persistAtom} = recoilPersist()
 
@@ -15,27 +27,33 @@ export const dataSelector = selector({
     key: 'DatabaseDataSelector',
     get: async ({get}) => {
         const lang = get(langAtom)
-        const items = await (await fetch(`/data/${lang}/database/items.json`)).json();
-
-        const byId = {
-
+        switch (lang) {
+            case "en":
+                return Object.entries(enItems).map(([, item]) => item);
+            case "ru":
+                return Object.entries(ruItems).map(([, item]) => item);
+            case "pl":
+                return Object.entries(plItems).map(([, item]) => item);
+            default:
+                throw Error("Unknown language")
         }
-
-        for(const item of items.items) {
-            byId[item.item] = item
-        }
-
-        items.byId = byId
-
-        return items;
     }
 });
 
 export const categoriesSelector = selector({
     key: 'DatabaseCategoriesSelector',
     get: ({get}) => {
-        const data = get(dataSelector)
-        return data.categories
+        const lang = get(langAtom)
+        switch (lang) {
+            case "en":
+                return enItemsCategories;
+            case "ru":
+                return ruItemsCategories;
+            case "pl":
+                return plItemsCategories;
+            default:
+                throw Error("Unknown language")
+        }
     },
 });
 
@@ -54,7 +72,7 @@ export const paginationItemsPerPage = atom({
 export const itemsSelector = selector({
     key: 'DatabaseItemsSelector',
     get: ({get}) => {
-        const data = get(dataSelector)
+        const items = get(dataSelector)
         const searchTerm = get(databaseSearchTerm).toLowerCase()
         const activeCategories = get(activeCategoriesAtom)
 
@@ -64,9 +82,9 @@ export const itemsSelector = selector({
         }
 
         if (searchTerm) {
-            return data.items.filter((item) => activeCategories.includes(item.category) && checkItem(item))
+            return items.filter((item) => activeCategories.some(value => item.flags.includes(value)) && checkItem(item))
         } else {
-            return data.items.filter((item) => activeCategories.includes(item.category))
+            return items.filter((item) => activeCategories.some(value => item.flags.includes(value)))
         }
     },
 });

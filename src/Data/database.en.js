@@ -54594,10 +54594,6 @@ export const mapPins = [
       "name": "Wine shelf",
       "contains": [
         {
-          "item": "itmis_sq127_vine_ready",
-          "count": 9
-        },
-        {
           "item": "itfo_wine_01",
           "count": 2
         },
@@ -138078,11 +138074,10 @@ mapPins[82].data.contains[1].item = items.itcr_wood;
 mapPins[82].data.contains[2].item = items.itmi_saw;
 mapPins[83].data.contains[0].item = items.itcr_scroll;
 mapPins[84].data.contains[0].item = items.itcr_scroll;
-mapPins[92].data.contains[0].item = items.itmis_sq127_vine_ready;
-mapPins[92].data.contains[1].item = items.itfo_wine_01;
-mapPins[92].data.contains[2].item = items.itfo_wine_02;
-mapPins[92].data.contains[3].item = items.itfo_wine;
-mapPins[92].data.contains[4].item = items.itwr_gumbertletter;
+mapPins[92].data.contains[0].item = items.itfo_wine_01;
+mapPins[92].data.contains[1].item = items.itfo_wine_02;
+mapPins[92].data.contains[2].item = items.itfo_wine;
+mapPins[92].data.contains[3].item = items.itwr_gumbertletter;
 mapPins[93].data.contains[0].item = items.itat_trollfur;
 mapPins[93].data.contains[1].item = items.itat_shadowfur;
 mapPins[93].data.contains[2].item = items.itat_stonegolemheart;

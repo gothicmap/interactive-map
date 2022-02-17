@@ -3,10 +3,9 @@ import {createKdTree} from "kd.tree";
 import {langAtom} from "../AppState";
 import {recoilPersist} from "recoil-persist";
 import {searchPredicate} from "./Search/SearchState";
-import {postProcessMapPins as ruPostProcessMapPins, mapContainerCategories as ruMapContainerCategories, mapItemsCategories as ruMapItemsCategories} from "../Data/database.ru"
-import {postProcessMapPins as enPostProcessMapPins, mapContainerCategories as enMapContainerCategories, mapItemsCategories as enMapItemsCategories} from "../Data/database.en"
-import {postProcessMapPins as plPostProcessMapPins, mapContainerCategories as plMapContainerCategories, mapItemsCategories as plMapItemsCategories} from "../Data/database.pl"
+import {postProcessMapPins, mapPinsCategories} from "../Data/database"
 import {rawItemsSelector} from "../Database/DatabaseState";
+import {flatCategories} from "../Misc/FlatCategories";
 
 const {persistAtom} = recoilPersist()
 
@@ -15,45 +14,17 @@ const pinsSelector = selector({
     get: async ({get}) => {
         const lang = get(langAtom)
         const items = get(rawItemsSelector)
-        switch (lang){
-            case "en":
-                let enResponse = await(await fetch(`/data/database.en.pins.json`)).json();
-                enPostProcessMapPins(enResponse, items)
-                return enResponse
-            case "ru":
-                let ruResponse = await(await fetch(`/data/database.ru.pins.json`)).json();
-                ruPostProcessMapPins(ruResponse, items)
-                return ruResponse
-            case "pl":
-                let plResponse = await(await fetch(`/data/database.pl.pins.json`)).json();
-                plPostProcessMapPins(plResponse, items)
-                return plResponse
-            default:
-                throw Error("Unknown language")
-        }
+        let enResponse = await(await fetch(`/data/database.${lang}.pins.json`)).json();
+        postProcessMapPins(enResponse, items)
+        return enResponse
     }
 });
 
-export const categoriesSelector = selector({
-    key: 'MapCategoriesSelector',
-    get: ({get}) => {
-        const lang = get(langAtom)
-        switch (lang){
-            case "en":
-                return [...enMapContainerCategories, ...enMapItemsCategories];
-            case "ru":
-                return [...ruMapContainerCategories, ...ruMapItemsCategories];
-            case "pl":
-                return [...plMapContainerCategories, ...plMapItemsCategories];
-            default:
-                throw Error("Unknown language")
-        }
-    },
-});
+export const flattendCategories = flatCategories(mapPinsCategories)
 
 export const activeCategoriesFamily = atomFamily({
     key: 'MapActiveCategoriesAtom',
-    default: categoriesSelector,
+    default: flattendCategories,
     effects_UNSTABLE: [persistAtom],
 })
 
@@ -106,7 +77,7 @@ export const mapPinsSelector = selectorFamily({
                 continue
             }
 
-            if (activeCategories.some(value => pin.data.flags.includes(value))) {
+            if (activeCategories.some(value => pin.data.flags.includes(value) || pin.data.category === value)) {
                 result.push(pin)
                 treePoints.push({...pin.normPosition, pin: pin})
             }

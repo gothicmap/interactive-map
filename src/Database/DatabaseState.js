@@ -3,15 +3,8 @@ import {langAtom} from "../AppState";
 import {recoilPersist} from "recoil-persist";
 import {Strings} from "../Strings";
 import {Box, Tooltip} from "@mui/material";
-import {
-    itemsCategories as ruItemsCategories, postProcessItems as ruPostProcessItems
-} from "../Data/database.ru"
-import {
-    itemsCategories as enItemsCategories, postProcessItems as enPostProcessItems
-} from "../Data/database.en"
-import {
-    itemsCategories as plItemsCategories, postProcessItems as plPostProcessItems
-} from "../Data/database.pl"
+import {itemsCategories, postProcessItems} from "../Data/database"
+import {flatCategories} from "../Misc/FlatCategories";
 
 const {persistAtom} = recoilPersist()
 
@@ -24,45 +17,17 @@ export const rawItemsSelector = selector({
     key: 'RawItemsSelector',
     get: async ({get}) => {
         const lang = get(langAtom)
-        switch (lang){
-            case "en":
-                let enResponse = await(await fetch(`/data/database.en.items.json`)).json();
-                enPostProcessItems(enResponse)
-                return enResponse
-            case "ru":
-                let ruResponse = await(await fetch(`/data/database.ru.items.json`)).json();
-                ruPostProcessItems(ruResponse)
-                return ruResponse
-            case "pl":
-                let plResponse = await(await fetch(`/data/database.pl.items.json`)).json();
-                plPostProcessItems(plResponse)
-                return plResponse
-            default:
-                throw Error("Unknown language")
-        }
+        let response = await(await fetch(`/data/database.${lang}.items.json`)).json();
+        postProcessItems(response)
+        return response
     }
 });
 
-export const categoriesSelector = selector({
-    key: 'DatabaseCategoriesSelector',
-    get: ({get}) => {
-        const lang = get(langAtom)
-        switch (lang) {
-            case "en":
-                return enItemsCategories;
-            case "ru":
-                return ruItemsCategories;
-            case "pl":
-                return plItemsCategories;
-            default:
-                throw Error("Unknown language")
-        }
-    },
-});
+export const flattendCategories = flatCategories(itemsCategories)
 
 export const activeCategoriesAtom = atom({
     key: 'DatabaseActiveCategoriesAtom',
-    default: categoriesSelector,
+    default: flattendCategories,
     effects_UNSTABLE: [persistAtom],
 })
 
@@ -85,9 +50,9 @@ export const itemsSelector = selector({
         }
 
         if (searchTerm) {
-            return items.filter((item) => activeCategories.some(value => item.flags.includes(value)) && checkItem(item))
+            return items.filter((item) => activeCategories.some(value => item.flags.includes(value) || item.category === value) && checkItem(item))
         } else {
-            return items.filter((item) => activeCategories.some(value => item.flags.includes(value)))
+            return items.filter((item) => activeCategories.some(value => item.flags.includes(value) || item.category === value))
         }
     },
 });

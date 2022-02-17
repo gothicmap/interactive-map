@@ -23,7 +23,8 @@ export const Strings = {
     },
 
     getItemCategory: function (cat, lang) {
-        return this.itemsCategories[cat][lang]
+        return cat
+        // return this.itemsCategories[cat][lang]
     },
 
     containersCategories: {
@@ -37,15 +38,17 @@ export const Strings = {
     },
 
     getContainerCategory: function (cat, lang) {
-        return this.containersCategories[cat][lang]
+        return cat
+        // return this.containersCategories[cat][lang]
     },
 
     getCategory: function (cat, lang) {
-        if(this.containersCategories.hasOwnProperty(cat)) {
-            return this.containersCategories[cat][lang]
-        } else {
-            return this.itemsCategories[cat][lang]
-        }
+        return cat
+        // if(this.containersCategories.hasOwnProperty(cat)) {
+        //     return this.containersCategories[cat][lang]
+        // } else {
+        //     return this.itemsCategories[cat][lang]
+        // }
     },
 
     ui: {

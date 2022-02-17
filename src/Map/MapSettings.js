@@ -1,7 +1,7 @@
 import * as React from 'react';
 import SettingsIcon from '@mui/icons-material/Settings';
 import {Checkbox, FormControlLabel, FormGroup, IconButton, Paper} from "@mui/material";
-import {categoriesSelector, mapSettingsFamily, useCategories} from "./MapState";
+import {flattendCategories, mapSettingsFamily, useCategories} from "./MapState";
 import {useRecoilState, useRecoilValue} from "recoil";
 import {Strings} from "../Strings";
 import {langAtom} from "../AppState";
@@ -14,7 +14,7 @@ export const FormCheckbox = ({label, ...props}) => {
 
 export function RenderContainerSettings({mapId}) {
     const lang = useRecoilValue(langAtom)
-    const allCategories = useRecoilValue(categoriesSelector)
+    const allCategories = flattendCategories
     const [checkCategory, setCategory] = useCategories(mapId)
     const catChangeCallback = (cat) => {
         return (evt) => {

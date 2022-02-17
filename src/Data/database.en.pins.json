@@ -2,6 +2,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -46,6 +47,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -74,6 +76,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -106,6 +109,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -142,6 +146,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -182,6 +187,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -210,6 +216,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -250,6 +257,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -282,6 +290,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -326,6 +335,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -366,6 +376,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "barrel"
       ],
@@ -398,6 +409,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "barrel"
       ],
@@ -430,6 +442,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -470,6 +483,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "grave"
       ],
@@ -502,6 +516,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "grave"
       ],
@@ -538,6 +553,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -570,6 +586,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -602,6 +619,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -638,6 +656,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -674,6 +693,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -710,6 +730,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -738,6 +759,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -774,6 +796,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -810,6 +833,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -850,6 +874,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -886,6 +911,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -918,6 +944,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -950,6 +977,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -994,6 +1022,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -1026,6 +1055,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -1049,6 +1079,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -1072,6 +1103,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -1120,6 +1152,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -1156,6 +1189,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -1192,6 +1226,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -1232,6 +1267,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -1268,6 +1304,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -1304,6 +1341,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -1348,6 +1386,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -1388,6 +1427,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -1432,6 +1472,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -1468,6 +1509,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -1512,6 +1554,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -1544,6 +1587,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -1584,6 +1628,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -1624,6 +1669,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -1664,6 +1710,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -1704,6 +1751,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -1740,6 +1788,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -1784,6 +1833,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -1812,6 +1862,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -1840,6 +1891,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -1868,6 +1920,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -1896,6 +1949,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -1924,6 +1978,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -1960,6 +2015,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -1996,6 +2052,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -2032,6 +2089,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -2064,6 +2122,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -2087,6 +2146,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -2110,6 +2170,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -2138,6 +2199,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -2161,6 +2223,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -2184,6 +2247,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -2220,6 +2284,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -2260,6 +2325,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -2300,6 +2366,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -2332,6 +2399,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -2368,6 +2436,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -2400,6 +2469,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -2436,6 +2506,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -2476,6 +2547,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -2512,6 +2584,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -2548,6 +2621,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -2584,6 +2658,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -2616,6 +2691,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -2648,6 +2724,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -2676,6 +2753,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "barrel"
       ],
@@ -2712,6 +2790,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -2740,6 +2819,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -2772,6 +2852,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -2808,6 +2889,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -2848,6 +2930,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -2884,6 +2967,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -2912,6 +2996,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -2940,6 +3025,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -2963,6 +3049,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -2986,6 +3073,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -3009,6 +3097,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -3032,6 +3121,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -3055,6 +3145,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -3078,6 +3169,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -3101,6 +3193,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "vineshelf"
       ],
@@ -3141,6 +3234,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -3177,6 +3271,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -3217,6 +3312,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -3253,6 +3349,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -3293,6 +3390,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -3341,6 +3439,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -3369,6 +3468,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -3409,6 +3509,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -3457,6 +3558,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -3493,6 +3595,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -3537,6 +3640,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -3565,6 +3669,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -3597,6 +3702,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -3633,6 +3739,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -3669,6 +3776,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -3701,6 +3809,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -3733,6 +3842,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -3769,6 +3879,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -3813,6 +3924,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "barrel"
       ],
@@ -3845,6 +3957,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -3881,6 +3994,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -3913,6 +4027,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -3941,6 +4056,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -3973,6 +4089,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -4005,6 +4122,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "barrel"
       ],
@@ -4037,6 +4155,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "barrel"
       ],
@@ -4065,6 +4184,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -4097,6 +4217,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -4125,6 +4246,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -4165,6 +4287,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -4205,6 +4328,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -4249,6 +4373,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -4293,6 +4418,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -4329,6 +4455,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -4365,6 +4492,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -4405,6 +4533,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -4445,6 +4574,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -4481,6 +4611,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -4513,6 +4644,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -4545,6 +4677,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -4585,6 +4718,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -4621,6 +4755,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -4665,6 +4800,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -4705,6 +4841,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -4741,6 +4878,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -4777,6 +4915,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -4825,6 +4964,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -4853,6 +4993,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -4889,6 +5030,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -4925,6 +5067,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -4965,6 +5108,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -5001,6 +5145,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -5041,6 +5186,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -5081,6 +5227,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -5117,6 +5264,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -5153,6 +5301,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -5197,6 +5346,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -5237,6 +5387,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -5277,6 +5428,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -5313,6 +5465,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -5349,6 +5502,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -5389,6 +5543,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -5425,6 +5580,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -5461,6 +5617,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -5497,6 +5654,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -5549,6 +5707,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -5589,6 +5748,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -5629,6 +5789,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -5669,6 +5830,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -5705,6 +5867,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -5745,6 +5908,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -5773,6 +5937,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -5801,6 +5966,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -5833,6 +5999,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -5877,6 +6044,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -5909,6 +6077,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -5937,6 +6106,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -5965,6 +6135,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -6005,6 +6176,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -6049,6 +6221,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -6085,6 +6258,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -6129,6 +6303,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -6157,6 +6332,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -6185,6 +6361,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -6225,6 +6402,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -6261,6 +6439,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -6297,6 +6476,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -6333,6 +6513,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -6373,6 +6554,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -6417,6 +6599,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -6457,6 +6640,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "barrel"
       ],
@@ -6489,6 +6673,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "barrel"
       ],
@@ -6521,6 +6706,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -6561,6 +6747,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -6593,6 +6780,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -6633,6 +6821,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -6677,6 +6866,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -6717,6 +6907,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -6753,6 +6944,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "barrel"
       ],
@@ -6785,6 +6977,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -6829,6 +7022,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -6869,6 +7063,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -6897,6 +7092,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -6929,6 +7125,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -6965,6 +7162,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -7009,6 +7207,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -7049,6 +7248,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -7081,6 +7281,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -7113,6 +7314,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -7145,6 +7347,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -7177,6 +7380,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -7209,6 +7413,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -7241,6 +7446,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -7273,6 +7479,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -7301,6 +7508,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -7333,6 +7541,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -7365,6 +7574,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -7393,6 +7603,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -7425,6 +7636,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -7457,6 +7669,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -7489,6 +7702,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -7525,6 +7739,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -7569,6 +7784,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -7605,6 +7821,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -7641,6 +7858,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -7677,6 +7895,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -7709,6 +7928,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -7745,6 +7965,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -7785,6 +8006,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -7829,6 +8051,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -7873,6 +8096,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -7909,6 +8133,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -7949,6 +8174,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -7989,6 +8215,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -8033,6 +8260,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -8065,6 +8293,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -8101,6 +8330,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -8137,6 +8367,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -8173,6 +8404,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -8205,6 +8437,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -8237,6 +8470,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -8277,6 +8511,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -8337,6 +8572,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -8377,6 +8613,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -8421,6 +8658,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -8457,6 +8695,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -8493,6 +8732,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -8525,6 +8765,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -8565,6 +8806,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -8593,6 +8835,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -8637,6 +8880,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -8681,6 +8925,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -8721,6 +8966,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -8757,6 +9003,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -8801,6 +9048,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -8829,6 +9077,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -8865,6 +9114,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -8901,6 +9151,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -8937,6 +9188,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -8973,6 +9225,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -9009,6 +9262,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -9049,6 +9303,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -9093,6 +9348,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -9133,6 +9389,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -9177,6 +9434,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -9225,6 +9483,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -9265,6 +9524,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -9321,6 +9581,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -9365,6 +9626,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -9409,6 +9671,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -9449,6 +9712,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -9489,6 +9753,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -9521,6 +9786,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -9553,6 +9819,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -9585,6 +9852,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -9617,6 +9885,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -9653,6 +9922,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "grave"
       ],
@@ -9685,6 +9955,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "grave"
       ],
@@ -9721,6 +9992,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "grave"
       ],
@@ -9753,6 +10025,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -9793,6 +10066,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -9833,6 +10107,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -9873,6 +10148,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -9909,6 +10185,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -9953,6 +10230,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -9989,6 +10267,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -10029,6 +10308,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -10052,6 +10332,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -10100,6 +10381,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -10128,6 +10410,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -10156,6 +10439,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10184,6 +10468,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10212,6 +10497,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10235,6 +10521,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10263,6 +10550,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10286,6 +10574,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10309,6 +10598,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10337,6 +10627,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10365,6 +10656,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10388,6 +10680,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10416,6 +10709,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10444,6 +10738,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10467,6 +10762,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10495,6 +10791,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10518,6 +10815,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10546,6 +10844,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10574,6 +10873,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10602,6 +10902,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10625,6 +10926,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10653,6 +10955,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10681,6 +10984,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10704,6 +11008,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10732,6 +11037,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10760,6 +11066,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10783,6 +11090,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10811,6 +11119,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10839,6 +11148,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10862,6 +11172,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -10890,6 +11201,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -10934,6 +11246,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -10974,6 +11287,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -11014,6 +11328,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -11058,6 +11373,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -11094,6 +11410,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -11134,6 +11451,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -11182,6 +11500,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -11210,6 +11529,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -11238,6 +11558,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -11266,6 +11587,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -11302,6 +11624,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -11350,6 +11673,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -11390,6 +11714,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -11426,6 +11751,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -11474,6 +11800,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -11502,6 +11829,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -11530,6 +11858,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -11558,6 +11887,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -11606,6 +11936,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -11638,6 +11969,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -11674,6 +12006,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -11714,6 +12047,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -11754,6 +12088,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -11794,6 +12129,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -11830,6 +12166,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -11878,6 +12215,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -11918,6 +12256,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -11958,6 +12297,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -12010,6 +12350,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -12058,6 +12399,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -12094,6 +12436,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -12122,6 +12465,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -12158,6 +12502,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -12210,6 +12555,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -12274,6 +12620,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -12330,6 +12677,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -12382,6 +12730,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "barrel"
       ],
@@ -12410,6 +12759,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -12458,6 +12808,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -12502,6 +12853,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -12542,6 +12894,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -12586,6 +12939,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -12634,6 +12988,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -12678,6 +13033,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -12722,6 +13078,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -12766,6 +13123,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -12806,6 +13164,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -12850,6 +13209,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -12890,6 +13250,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -12934,6 +13295,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -12974,6 +13336,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -13010,6 +13373,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -13050,6 +13414,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -13090,6 +13455,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -13134,6 +13500,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -13174,6 +13541,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -13214,6 +13582,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -13262,6 +13631,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -13285,6 +13655,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -13325,6 +13696,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -13369,6 +13741,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -13409,6 +13782,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -13453,6 +13827,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -13489,6 +13864,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -13525,6 +13901,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -13557,6 +13934,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -13593,6 +13971,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -13629,6 +14008,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -13669,6 +14049,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -13713,6 +14094,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -13757,6 +14139,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -13797,6 +14180,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -13833,6 +14217,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -13869,6 +14254,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -13909,6 +14295,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -13945,6 +14332,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -13973,6 +14361,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -14017,6 +14406,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -14049,6 +14439,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -14081,6 +14472,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -14113,6 +14505,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -14153,6 +14546,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14181,6 +14575,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14209,6 +14604,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14237,6 +14633,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14265,6 +14662,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14293,6 +14691,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14321,6 +14720,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14349,6 +14749,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14377,6 +14778,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14405,6 +14807,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14433,6 +14836,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14461,6 +14865,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14489,6 +14894,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14517,6 +14923,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14545,6 +14952,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14573,6 +14981,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14601,6 +15010,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14629,6 +15039,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14657,6 +15068,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14685,6 +15097,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14713,6 +15126,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14741,6 +15155,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14769,6 +15184,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14797,6 +15213,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14825,6 +15242,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14853,6 +15271,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14881,6 +15300,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14909,6 +15329,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14937,6 +15358,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14965,6 +15387,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -14993,6 +15416,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -15021,6 +15445,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -15049,6 +15474,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -15077,6 +15503,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -15105,6 +15532,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -15133,6 +15561,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -15161,6 +15590,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -15189,6 +15619,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -15217,6 +15648,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -15253,6 +15685,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -15285,6 +15718,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -15333,6 +15767,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -15373,6 +15808,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -15405,6 +15841,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -15441,6 +15878,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -15473,6 +15911,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -15509,6 +15948,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -15545,6 +15985,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -15581,6 +16022,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -15621,6 +16063,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -15653,6 +16096,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -15689,6 +16133,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -15725,6 +16170,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -15753,6 +16199,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -15789,6 +16236,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -15825,6 +16273,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -15857,6 +16306,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -15905,6 +16355,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -15941,6 +16392,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "searchvineyard"
       ],
@@ -15969,6 +16421,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "vineshelf"
       ],
@@ -15992,6 +16445,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -16020,6 +16474,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -16056,6 +16511,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -16096,6 +16552,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -16132,6 +16589,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -16168,6 +16626,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -16200,6 +16659,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -16244,6 +16704,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -16276,6 +16737,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -16304,6 +16766,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -16340,6 +16803,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -16380,6 +16844,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -16403,6 +16868,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -16431,6 +16897,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -16454,6 +16921,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -16477,6 +16945,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -16513,6 +16982,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -16553,6 +17023,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -16589,6 +17060,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -16637,6 +17109,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -16660,6 +17133,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -16683,6 +17157,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -16706,6 +17181,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -16729,6 +17205,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -16752,6 +17229,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -16800,6 +17278,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -16836,6 +17315,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -16872,6 +17352,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -16912,6 +17393,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -16956,6 +17438,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -17000,6 +17483,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -17040,6 +17524,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -17080,6 +17565,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -17124,6 +17610,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -17164,6 +17651,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -17204,6 +17692,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -17244,6 +17733,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -17276,6 +17766,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -17308,6 +17799,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -17352,6 +17844,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -17392,6 +17885,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -17428,6 +17922,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -17464,6 +17959,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "barrel"
       ],
@@ -17496,6 +17992,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "barrel"
       ],
@@ -17532,6 +18029,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -17580,6 +18078,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "barrel"
       ],
@@ -17608,6 +18107,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -17652,6 +18152,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -17688,6 +18189,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -17724,6 +18226,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -17768,6 +18271,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -17791,6 +18295,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -17835,6 +18340,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -17871,6 +18377,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -17907,6 +18414,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "grave"
       ],
@@ -17943,6 +18451,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -17983,6 +18492,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -18027,6 +18537,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -18055,6 +18566,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -18095,6 +18607,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -18135,6 +18648,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -18163,6 +18677,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -18203,6 +18718,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -18243,6 +18759,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -18287,6 +18804,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -18327,6 +18845,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -18363,6 +18882,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -18411,6 +18931,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -18451,6 +18972,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -18495,6 +19017,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -18539,6 +19062,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -18575,6 +19099,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -18603,6 +19128,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -18643,6 +19169,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -18687,6 +19214,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -18727,6 +19255,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -18759,6 +19288,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -18803,6 +19333,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -18839,6 +19370,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -18887,6 +19419,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -18923,6 +19456,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -18963,6 +19497,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -18995,6 +19530,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -19027,6 +19563,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "grave"
       ],
@@ -19067,6 +19604,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "grave"
       ],
@@ -19111,6 +19649,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "grave"
       ],
@@ -19151,6 +19690,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -19207,6 +19747,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -19239,6 +19780,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -19275,6 +19817,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -19315,6 +19858,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "barrel"
       ],
@@ -19351,6 +19895,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -19391,6 +19936,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "barrel"
       ],
@@ -19423,6 +19969,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -19463,6 +20010,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -19486,6 +20034,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -19526,6 +20075,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -19558,6 +20108,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -19586,6 +20137,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -19614,6 +20166,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -19654,6 +20207,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "barrel"
       ],
@@ -19682,6 +20236,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "barrel"
       ],
@@ -19714,6 +20269,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -19754,6 +20310,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -19790,6 +20347,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -19813,6 +20371,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "grave"
       ],
@@ -19857,6 +20416,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "grave"
       ],
@@ -19897,6 +20457,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -19929,6 +20490,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -19957,6 +20519,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -19997,6 +20560,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -20037,6 +20601,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -20077,6 +20642,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -20109,6 +20675,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -20141,6 +20708,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "bookshelf"
       ],
@@ -20169,6 +20737,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -20205,6 +20774,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -20237,6 +20807,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -20265,6 +20836,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -20293,6 +20865,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -20325,6 +20898,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -20365,6 +20939,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -20405,6 +20980,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "barrel"
       ],
@@ -20437,6 +21013,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -20477,6 +21054,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -20521,6 +21099,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -20549,6 +21128,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -20585,6 +21165,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -20613,6 +21194,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -20657,6 +21239,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -20705,6 +21288,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -20733,6 +21317,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -20773,6 +21358,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -20821,6 +21407,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -20861,6 +21448,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -20901,6 +21489,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -20941,6 +21530,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -20981,6 +21571,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "chest"
       ],
@@ -21021,6 +21612,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],
@@ -21049,6 +21641,7 @@
   {
     "type": "container",
     "data": {
+      "category": "container",
       "flags": [
         "corpse"
       ],

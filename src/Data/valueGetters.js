@@ -1,168 +1,166 @@
 export const valueGetters = {
-  "req.str": {
-    "ru": [
-      "Необходимо силы"
-    ],
-    "en": [
-      "Strength required"
-    ],
-    "pl": [
-      "Wymagana siła"
-    ]
-  },
-  "req.dex": {
-    "ru": [
-      "Необходимо ловкости"
-    ],
-    "en": [
-      "Dexterity required"
-    ],
-    "pl": [
-      "Wymagana zręczność"
-    ]
-  },
-  "prot.blunt": {
-    "ru": [
-      "Защита от дробящего",
-      "Защита от дробящего и стрел"
-    ],
-    "en": [
-      "Blunt protection",
-      "Blunt and projectiles protection"
-    ],
-    "pl": [
-      "Obrona przed obuchami",
-      "Obrona przed obuchem i strzałami"
-    ]
-  },
-  "prot.magic": {
-    "ru": [
-      "Защита от магии",
-      "Защита от магии и огня"
-    ],
-    "en": [
-      "Magic protection",
-      "Magic and fire protection"
-    ],
-    "pl": [
-      "Obrona przed magią",
-      "Ochrona przed magią i ogniem"
-    ]
-  },
-  "prot.fire": {
-    "ru": [
-      "Защита от огня"
-    ],
-    "en": [
-      "Fire protection"
-    ],
-    "pl": [
-      "Obrona przed ogniem"
-    ]
-  },
-  "prot.weapon": {
-    "ru": [
-      "Защита от оружия"
-    ],
-    "en": [
-      "Weapons protection"
-    ],
-    "pl": [
-      "Obrona przed wszystkimi broniami"
-    ]
-  },
-  "prot.edge": {
-    "ru": [
-      "Защита от режущего"
-    ],
-    "en": [
-      "Edge protection"
-    ],
-    "pl": [
-      "Obrona przed ostrzami"
-    ]
-  },
-  "prot.arrow": {
-    "ru": [
-      "Защита от стрел",
-      "Защита от дробящего и стрел"
-    ],
-    "en": [
-      "Arrow protection",
-      "Blunt and projectiles protection"
-    ],
-    "pl": [
-      "Obrona przed strzałami",
-      "Obrona przed obuchem i strzałami"
-    ]
-  },
-  "dam.blunt": {
-    "ru": [
-      "Дробящий урон"
-    ],
-    "en": [
-      "Blunt damage"
-    ],
-    "pl": [
-      "Obrażenia obuchowe"
-    ]
-  },
   "dam.edge": {
-    "ru": [
-      "Режущий урон"
-    ],
     "en": [
       "Edge damage"
     ],
     "pl": [
       "Obrażenia sieczne"
+    ],
+    "ru": [
+      "Режущий урон"
+    ]
+  },
+  "req.str": {
+    "en": [
+      "Strength required"
+    ],
+    "pl": [
+      "Wymagana siła"
+    ],
+    "ru": [
+      "Необходимо силы"
+    ]
+  },
+  "prot.blunt": {
+    "en": [
+      "Blunt and projectiles protection",
+      "Blunt protection"
+    ],
+    "pl": [
+      "Obrona przed obuchami",
+      "Obrona przed obuchem i strzałami"
+    ],
+    "ru": [
+      "Защита от дробящего и стрел",
+      "Защита от дробящего"
+    ]
+  },
+  "prot.edge": {
+    "en": [
+      "Edge protection"
+    ],
+    "pl": [
+      "Obrona przed ostrzami"
+    ],
+    "ru": [
+      "Защита от режущего"
+    ]
+  },
+  "prot.arrow": {
+    "en": [
+      "Blunt and projectiles protection",
+      "Arrow protection"
+    ],
+    "pl": [
+      "Obrona przed obuchem i strzałami",
+      "Obrona przed strzałami"
+    ],
+    "ru": [
+      "Защита от дробящего и стрел",
+      "Защита от стрел"
+    ]
+  },
+  "prot.fire": {
+    "en": [
+      "Fire protection"
+    ],
+    "pl": [
+      "Obrona przed ogniem"
+    ],
+    "ru": [
+      "Защита от огня"
+    ]
+  },
+  "prot.magic": {
+    "en": [
+      "Magic and fire protection",
+      "Magic protection"
+    ],
+    "pl": [
+      "Ochrona przed magią i ogniem",
+      "Obrona przed magią"
+    ],
+    "ru": [
+      "Защита от магии и огня",
+      "Защита от магии"
     ]
   },
   "dam.magic": {
-    "ru": [
-      "Урон магией",
-      "Урон магией"
-    ],
     "en": [
-      "Magic Damage",
       "Magic Damage"
     ],
     "pl": [
-      "Obr. magia",
-      "Obrażenia magiczne"
-    ]
-  },
-  "dam.fire": {
+      "Obrażenia magiczne",
+      "Obr. magia"
+    ],
     "ru": [
-      "Урон огнем"
-    ],
-    "en": [
-      "Fire Damage"
-    ],
-    "pl": [
-      "Obr. ogień"
+      "Урон магией"
     ]
   },
   "dam.arrow": {
-    "ru": [
-      "Урон стрелами"
-    ],
     "en": [
       "Point damage"
     ],
     "pl": [
       "Obrażenia pocisków"
+    ],
+    "ru": [
+      "Урон стрелами"
+    ]
+  },
+  "req.dex": {
+    "en": [
+      "Dexterity required"
+    ],
+    "pl": [
+      "Wymagana zręczność"
+    ],
+    "ru": [
+      "Необходимо ловкости"
+    ]
+  },
+  "dam.blunt": {
+    "en": [
+      "Blunt damage"
+    ],
+    "pl": [
+      "Obrażenia obuchowe"
+    ],
+    "ru": [
+      "Дробящий урон"
+    ]
+  },
+  "prot.weapon": {
+    "en": [
+      "Weapons protection"
+    ],
+    "pl": [
+      "Obrona przed wszystkimi broniami"
+    ],
+    "ru": [
+      "Защита от оружия"
     ]
   },
   "dam.damage": {
-    "ru": [
-      "Урон"
-    ],
     "en": [
       "Damage"
     ],
     "pl": [
       "Obrażenia"
+    ],
+    "ru": [
+      "Урон"
+    ]
+  },
+  "dam.fire": {
+    "en": [
+      "Fire Damage"
+    ],
+    "pl": [
+      "Obr. ogień"
+    ],
+    "ru": [
+      "Урон огнем"
     ]
   }
 };

@@ -3,7 +3,7 @@ import {Box, Button, Divider, FormGroup, IconButton, InputBase, Paper} from "@mu
 import DataTable, {createTheme} from "react-data-table-component"
 import {FormCheckbox} from "../Map/MapSettings";
 import {
-    categoriesSelector,
+    flattendCategories,
     databaseSearchTerm,
     itemsColumnsSelector,
     itemsSelector, paginationItemsPerPage,
@@ -45,9 +45,9 @@ const customSort = (rows, selector, direction) => {
 
 
 createTheme('mui', {
-  background: {
-    default: 'transparent',
-  },
+    background: {
+        default: 'transparent',
+    },
 }, 'dark');
 
 export const DatabaseSearchInput = () => {
@@ -83,7 +83,7 @@ export const DatabaseSearchInput = () => {
 
 export const DatabaseVirtualized = () => {
     const lang = useRecoilValue(langAtom)
-    const allCategories = useRecoilValue(categoriesSelector)
+    const allCategories = flattendCategories
     const [checkCategory, setCategory] = useCategories()
     const catChangeCallback = (cat) => {
         return (evt) => {

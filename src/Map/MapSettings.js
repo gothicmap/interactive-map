@@ -11,10 +11,8 @@ import {
     ListItemButton,
     Paper
 } from "@mui/material";
-import {flattendCategories, mapSettingsFamily, useCategories} from "./MapState";
-import {useRecoilState, useRecoilValue} from "recoil";
-import {Strings} from "../Strings";
-import {langAtom} from "../AppState";
+import {categoryFamily, mapSettingsFamily} from "./MapState";
+import {useRecoilState} from "recoil";
 import {ExpandLess, ExpandMore} from "@mui/icons-material";
 import {mapPinsCategories} from "../Data/database";
 
@@ -24,21 +22,29 @@ export const FormCheckbox = ({label, ...props}) => {
                              label={label}/>
 }
 
-export const RenderCategory = ({category, subCategories, ...props}) => {
-    const [subOpen, setSubOpen] = React.useState(true);
+export const RenderCategory = ({mapId, category, subCategories, ...props}) => {
+    const [subOpen, setSubOpen] = useRecoilState(categoryFamily(`${mapId}-${category}-sub-open`));
+
     const handleSubOpenClick = () => {
         setSubOpen(!subOpen);
     };
+
+    const [categoryChecked, setCategoryChecked] = useRecoilState(categoryFamily(`${mapId}-${category}`))
+
+    const handleCatChange = (event) => {
+        setCategoryChecked(event.target.checked);
+    };
+
     if (subCategories.length !== 0) {
         return <>
             <ListItemButton sx={{
                 padding: 0
             }}>
                 <FormCheckbox label={category}
-                              checked={true}
-                    // onChange={groupStates.main.useState}
+                              checked={categoryChecked}
+                              onChange={handleCatChange}
                 />
-                <Box sx={{flexGrow: 1}}></Box>
+                <Box sx={{flexGrow: 1}}/>
                 {subOpen ? <ExpandLess onClick={handleSubOpenClick}/> :
                     <ExpandMore onClick={handleSubOpenClick}/>}
             </ListItemButton>
@@ -46,10 +52,15 @@ export const RenderCategory = ({category, subCategories, ...props}) => {
                 <List component="div" disablePadding>
                     <FormGroup sx={{pl: 4}}>
                         {
-                            subCategories.map((category) => {
-                                    return <FormCheckbox key={category} label={category}
-                                                         checked={true}
-                                        // onChange={category.useState}
+                            subCategories.map((subCat) => {
+                                    // eslint-disable-next-line react-hooks/rules-of-hooks
+                                    const [subCatChecked, setSubCatChecked] = useRecoilState(categoryFamily(`${mapId}-${category}-${subCat}`))
+                                    const handleSubCatChange = (event) => {
+                                        setSubCatChecked(event.target.checked);
+                                    };
+                                    return <FormCheckbox key={subCat} label={subCat}
+                                                         checked={subCatChecked}
+                                                         onChange={handleSubCatChange}
                                     />
                                 }
                             )
@@ -60,21 +71,21 @@ export const RenderCategory = ({category, subCategories, ...props}) => {
         </>
     } else {
         return <ListItemButton sx={{
-                padding: 0
-            }}>
+            padding: 0
+        }}>
             <FormCheckbox label={category}
-                          checked={true}
-                // onChange={groupStates.main.useState}
+                          checked={categoryChecked}
+                          onChange={handleCatChange}
             />
         </ListItemButton>
     }
 }
 
-export const RenderCategories = ({categories, ...props}) => {
+export const RenderCategories = ({mapId, categories, ...props}) => {
     return <>
         {
             Object.entries(categories).map(([categoryName, subCategories]) => {
-                return <RenderCategory category={categoryName} subCategories={subCategories}/>
+                return <RenderCategory mapId={mapId} category={categoryName} subCategories={subCategories}/>
             })
         }
     </>
@@ -90,7 +101,7 @@ export function RenderContainerSettings({mapId}) {
     //     }
     // }
     return <FormGroup sx={{pl: 4, flexDirection: "column", paddingLeft: (theme) => theme.spacing(1)}}>
-        <RenderCategories categories={mapPinsCategories}/>
+        <RenderCategories mapId={mapId} categories={mapPinsCategories}/>
         {/*{*/}
         {/*    allCategories.map((category) => {*/}
         {/*            return <FormCheckbox*/}

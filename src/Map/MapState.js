@@ -3,9 +3,9 @@ import {createKdTree} from "kd.tree";
 import {langAtom} from "../AppState";
 import {recoilPersist} from "recoil-persist";
 import {searchPredicate} from "./Search/SearchState";
-import {postProcessMapPins, mapPinsCategories} from "../Data/database"
+import {mapPinsCategories, postProcessMapPins} from "../Data/database"
 import {rawItemsSelector} from "../Database/DatabaseState";
-import {flatCategories} from "../Misc/FlatCategories";
+import * as React from "react";
 
 const {persistAtom} = recoilPersist()
 
@@ -14,19 +14,25 @@ const pinsSelector = selector({
     get: async ({get}) => {
         const lang = get(langAtom)
         const items = get(rawItemsSelector)
-        let enResponse = await(await fetch(`/data/database.${lang}.pins.json`)).json();
+        let enResponse = await (await fetch(`/data/database.${lang}.pins.json`)).json();
         postProcessMapPins(enResponse, items)
         return enResponse
     }
 });
 
-export const flattendCategories = flatCategories(mapPinsCategories)
-
-export const activeCategoriesFamily = atomFamily({
-    key: 'MapActiveCategoriesAtom',
-    default: flattendCategories,
+export const categoryFamily = atomFamily({
+    key: 'MapCategoryFamily',
+    default: true,
     effects_UNSTABLE: [persistAtom],
 })
+
+// export const flattendCategories = flatCategories(mapPinsCategories)
+//
+// export const activeCategoriesFamily = atomFamily({
+//     key: 'MapActiveCategoriesAtom',
+//     default: flattendCategories,
+//     effects_UNSTABLE: [persistAtom],
+// })
 
 export const visitedPinsAtop = atomFamily({
     key: 'MapVisitedPinsAtom',
@@ -66,7 +72,7 @@ export const mapPinsSelector = selectorFamily({
     get: (mapId) => ({get}) => {
         const lang = get(langAtom)
         const predicate = get(searchPredicate(mapId))
-        const activeCategories = get(activeCategoriesFamily(mapId))
+
         const pins = get(pinsSelector)
 
         const result = []
@@ -76,10 +82,13 @@ export const mapPinsSelector = selectorFamily({
             if (!predicate.evaluate(pin, lang)) {
                 continue
             }
-
-            if (activeCategories.some(value => pin.data.flags.includes(value) || pin.data.category === value)) {
-                result.push(pin)
-                treePoints.push({...pin.normPosition, pin: pin})
+            if(get(categoryFamily(`${mapId}-${pin.data.category}`))) {
+                for(const flag of pin.data.flags) {
+                    if(get(categoryFamily(`${mapId}-${pin.data.category}-${flag}`))) {
+                        result.push(pin)
+                        treePoints.push({...pin.normPosition, pin: pin})
+                    }
+                }
             }
         }
 
@@ -97,33 +106,3 @@ export const mapPinsSelector = selectorFamily({
         }
     },
 });
-
-export const useCategories = (mapId) => {
-    const [activeCategories, setActiveCategories] = useRecoilState(activeCategoriesFamily(mapId))
-
-    const activate = (category) => {
-        if (!activeCategories.includes(category)) {
-            setActiveCategories([...activeCategories, category])
-        }
-    }
-
-    const deactivate = (category) => {
-        if (activeCategories.includes(category)) {
-            setActiveCategories(activeCategories.filter((cat) => cat !== category))
-        }
-    }
-
-    const set = (category, value) => {
-        if (value) {
-            activate(category)
-        } else {
-            deactivate(category)
-        }
-    }
-
-    const check = (category) => {
-        return activeCategories.includes(category)
-    }
-
-    return [check, set]
-}

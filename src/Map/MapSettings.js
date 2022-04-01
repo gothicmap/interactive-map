@@ -15,6 +15,7 @@ import {categoryFamily, mapSettingsFamily} from "./MapState";
 import {useRecoilState} from "recoil";
 import {ExpandLess, ExpandMore} from "@mui/icons-material";
 import {mapPinsCategories} from "../Data/database";
+import {PinColors} from "./Pins/PinColors";
 
 
 export const FormCheckbox = ({label, ...props}) => {
@@ -40,6 +41,12 @@ export const RenderCategory = ({mapId, category, subCategories, ...props}) => {
             <ListItemButton sx={{
                 padding: 0
             }}>
+                <Box sx={{
+                    width: 10,
+                    height: 10,
+                    marginRight: 1,
+                    backgroundColor: PinColors[category]
+                }}/>
                 <FormCheckbox label={category}
                               checked={categoryChecked}
                               onChange={handleCatChange}
@@ -73,6 +80,12 @@ export const RenderCategory = ({mapId, category, subCategories, ...props}) => {
         return <ListItemButton sx={{
             padding: 0
         }}>
+            <Box sx={{
+                width: 10,
+                height: 10,
+                marginRight: 1,
+                backgroundColor: PinColors[category]
+            }}/>
             <FormCheckbox label={category}
                           checked={categoryChecked}
                           onChange={handleCatChange}

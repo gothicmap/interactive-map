@@ -8,6 +8,7 @@ import {mapPinsSelector, scaleFamily, visitedPinsAtop} from "./MapState";
 import {useRecoilStateEx, useRecoilValueRef, useRefObj} from "../Misc/StateHelpers";
 import {PinTooltip, ShowPinModal} from "./Pins/PinTooltip";
 import {useModal} from "mui-modal-provider";
+import {PinColors} from "./Pins/PinColors";
 
 const mapImage = require('../archolos_map.png')
 // const containers = require('../containers.json')
@@ -42,7 +43,6 @@ const midpointShift = (canvasDim, _scale1) => {
 class RenderState {
     constructor() {
         this.highlightedPin = null
-        this.defaultPoint = null
         this.highlightPoint = null
         this.visitedPoint = null
         this.showPins = true
@@ -55,6 +55,19 @@ class RenderState {
         this.canvasY = 0
         this.midPointShiftX = 0
         this.midPointShiftY = 0
+        this.paintCache = {}
+    }
+
+    getPaint = (kit, category) => {
+        if(this.paintCache.hasOwnProperty(category)){
+            return this.paintCache[category]
+        } else {
+            const paint = new kit.Paint();
+            paint.setColor(kit.parseColorString(PinColors[category]));
+            paint.setAntiAlias(true)
+            this.paintCache[category] = paint
+            return paint
+        }
     }
 
     updateScale = (newScale) => {
@@ -130,10 +143,6 @@ export const Map = ({mapId}) => {
     // const canvasDimensions = useRef({width: 0, height: 0})
 
     useEffect(() => {
-        renderState.defaultPoint = new kit.Paint();
-        renderState.defaultPoint.setColor(kit.Color(0, 255, 0, 1.0));
-        renderState.defaultPoint.setAntiAlias(true)
-
         renderState.highlightPoint = new kit.Paint();
         renderState.highlightPoint.setColor(kit.Color(255, 0, 0, 1.0));
         renderState.highlightPoint.setAntiAlias(true)
@@ -143,14 +152,14 @@ export const Map = ({mapId}) => {
         renderState.visitedPoint.setAntiAlias(true)
 
         return () => {
-            if (renderState.defaultPoint) {
-                renderState.defaultPoint.delete()
-            }
             if (renderState.highlightPoint) {
                 renderState.highlightPoint.delete()
             }
             if (renderState.visitedPoint) {
                 renderState.visitedPoint.delete()
+            }
+            for (const [key, value] of Object.entries(renderState.paintCache)) {
+                value.delete()
             }
         }
     }, [])
@@ -180,7 +189,7 @@ export const Map = ({mapId}) => {
                 if (renderState.highlightedPin !== null && renderState.highlightedPin.vobObjectID === c.vobObjectID) {
                     lastPin = c
                 } else {
-                    const paint = visitedPins.current.includes(c.vobObjectID) ? renderState.visitedPoint : renderState.defaultPoint
+                    const paint = visitedPins.current.includes(c.vobObjectID) ? renderState.visitedPoint : renderState.getPaint(kit, c.data.category)
                     canvas.drawCircle(c.normPosition.x * mapDimensions, c.normPosition.y * mapDimensions, 5 / renderState.mapScale1, paint)
                 }
             })

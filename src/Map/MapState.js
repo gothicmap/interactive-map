@@ -79,15 +79,24 @@ export const mapPinsSelector = selectorFamily({
         const treePoints = []
 
         for (const pin of pins) {
+            if (pin.data.category === "food") {
+                console.log(123)
+            }
             if (!predicate.evaluate(pin, lang)) {
                 continue
             }
-            if(get(categoryFamily(`${mapId}-${pin.data.category}`))) {
-                for(const flag of pin.data.flags) {
-                    if(get(categoryFamily(`${mapId}-${pin.data.category}-${flag}`))) {
-                        result.push(pin)
-                        treePoints.push({...pin.normPosition, pin: pin})
+            if (get(categoryFamily(`${mapId}-${pin.data.category}`))) {
+                if (pin.data.flags.length > 0) {
+                    for (const flag of pin.data.flags) {
+                        if (get(categoryFamily(`${mapId}-${pin.data.category}-${flag}`))) {
+                            result.push(pin)
+                            treePoints.push({...pin.normPosition, pin: pin})
+                            break;
+                        }
                     }
+                } else {
+                    result.push(pin)
+                    treePoints.push({...pin.normPosition, pin: pin})
                 }
             }
         }

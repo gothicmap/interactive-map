@@ -1,6 +1,6 @@
-import {CanvasKitContext, KitCanvas} from "../Misc/KitCanvas";
+import {KitCanvas} from "../Misc/KitCanvas";
 import * as React from "react";
-import {useContext, useEffect, useRef, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 // import {createKdTree} from "kd.tree";
 import {useGesture} from "@use-gesture/react";
 import {AbsTooltip} from "./AbsTooltip";
@@ -8,7 +8,8 @@ import {mapPinsSelector, scaleFamily, visitedPinsAtop} from "./MapState";
 import {useRecoilStateEx, useRecoilValueRef, useRefObj} from "../Misc/StateHelpers";
 import {PinTooltip, ShowPinModal} from "./Pins/PinTooltip";
 import {useModal} from "mui-modal-provider";
-import {PinColors} from "./Pins/PinColors";
+import {PinColorsAtom} from "./Pins/PinColors";
+import {useRecoilValue} from "recoil";
 
 const mapImage = require('../archolos_map.png')
 // const containers = require('../containers.json')
@@ -55,10 +56,6 @@ class RenderState {
         this.canvasY = 0
         this.midPointShiftX = 0
         this.midPointShiftY = 0
-    }
-
-    getPaint = (category) => {
-        return PinColors[category]
     }
 
     updateScale = (newScale) => {
@@ -129,7 +126,8 @@ export const Map = ({mapId}) => {
     const [, setMapScale] = useRecoilStateEx(scaleFamily(mapId), updateScale)
 
     const reDraw = useRef(false)
-    // const canvasDimensions = useRef({width: 0, height: 0})
+
+    const pinColors = useRecoilValueRef(PinColorsAtom, () => {reDraw.current = true})
 
     useEffect(() => {
         renderState.highlightPoint = "#FF0000";
@@ -172,7 +170,7 @@ export const Map = ({mapId}) => {
                 if (renderState.highlightedPin !== null && renderState.highlightedPin.vobObjectID === c.vobObjectID) {
                     lastPin = c
                 } else {
-                    const paint = visitedPins.current.includes(c.vobObjectID) ? renderState.visitedPoint : renderState.getPaint(c.data.category)
+                    const paint = visitedPins.current.includes(c.vobObjectID) ? renderState.visitedPoint : pinColors.current[c.data.category]
                     drawCircle(context2d, c.normPosition.x * mapDimensions, c.normPosition.y * mapDimensions, 5 / renderState.mapScale1, paint)
                 }
             })

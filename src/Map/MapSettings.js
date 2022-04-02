@@ -15,7 +15,7 @@ import {categoryFamily, mapSettingsFamily} from "./MapState";
 import {useRecoilState} from "recoil";
 import {ExpandLess, ExpandMore} from "@mui/icons-material";
 import {mapPinsCategories} from "../Data/database";
-import {PinColors} from "./Pins/PinColors";
+import {PinColors, PinColorsAtom} from "./Pins/PinColors";
 
 
 export const FormCheckbox = ({label, ...props}) => {
@@ -25,6 +25,7 @@ export const FormCheckbox = ({label, ...props}) => {
 
 export const RenderCategory = ({mapId, category, subCategories, ...props}) => {
     const [subOpen, setSubOpen] = useRecoilState(categoryFamily(`${mapId}-${category}-sub-open`));
+    const [pinColors, setPinColors] = useRecoilState(PinColorsAtom)
 
     const handleSubOpenClick = () => {
         setSubOpen(!subOpen);
@@ -36,17 +37,25 @@ export const RenderCategory = ({mapId, category, subCategories, ...props}) => {
         setCategoryChecked(event.target.checked);
     };
 
+    const handleColorChange = (evt, category) => {
+        const newColors = {...pinColors}
+        newColors[category] = evt.target.value
+        setPinColors(newColors)
+    }
+
     if (subCategories.length !== 0) {
         return <>
             <ListItemButton sx={{
                 padding: 0
             }}>
-                <Box sx={{
-                    width: 10,
-                    height: 10,
-                    marginRight: 1,
-                    backgroundColor: PinColors[category]
-                }}/>
+                <input
+                    type={"color"}
+                    value={pinColors[category]}
+                    style={{
+                        marginRight: 1,
+                    }}
+                    onChange={(evt) => handleColorChange(evt, category)}
+                />
                 <FormCheckbox label={category}
                               checked={categoryChecked}
                               onChange={handleCatChange}
@@ -80,12 +89,14 @@ export const RenderCategory = ({mapId, category, subCategories, ...props}) => {
         return <ListItemButton sx={{
             padding: 0
         }}>
-            <Box sx={{
-                width: 10,
-                height: 10,
-                marginRight: 1,
-                backgroundColor: PinColors[category]
-            }}/>
+            <input
+                type={"color"}
+                value={pinColors[category]}
+                style={{
+                    marginRight: 1,
+                }}
+                onChange={(evt) => handleColorChange(evt, category)}
+            />
             <FormCheckbox label={category}
                           checked={categoryChecked}
                           onChange={handleCatChange}

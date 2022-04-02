@@ -1,7 +1,7 @@
 import {atom} from "recoil";
 import {recoilPersist} from "recoil-persist";
 
-const persistAtom = recoilPersist()
+const {persistAtom} = recoilPersist()
 
 export const PinColors = {
     "container": "#2f4f4f",

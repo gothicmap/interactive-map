@@ -23,9 +23,42 @@ export const FormCheckbox = ({label, ...props}) => {
                              label={label}/>
 }
 
+const CategoryColorPicker = ({category, ...props}) => {
+    const [pinColors, setPinColors] = useRecoilState(PinColorsAtom)
+
+    const handleColorChange = (evt) => {
+        const newColors = {...pinColors}
+        newColors[category] = evt.target.value
+        setPinColors(newColors)
+    }
+
+    return <label style={{
+        backgroundColor: pinColors[category],
+        width: 20,
+        height: 20,
+        marginLeft: 2,
+        marginRight: 5,
+        background: pinColors[category],
+        display: "flex",
+        borderRadius: 20
+    }}>
+        <input
+            type={"color"}
+            value={pinColors[category]}
+            style={{
+                display: "block",
+                opacity: 0,
+                width: "100%",
+                height: "100%"
+            }}
+            onChange={handleColorChange}
+        />
+    </label>
+}
+
 export const RenderCategory = ({mapId, category, subCategories, ...props}) => {
     const [subOpen, setSubOpen] = useRecoilState(categoryFamily(`${mapId}-${category}-sub-open`));
-    const [pinColors, setPinColors] = useRecoilState(PinColorsAtom)
+
 
     const handleSubOpenClick = () => {
         setSubOpen(!subOpen);
@@ -37,25 +70,11 @@ export const RenderCategory = ({mapId, category, subCategories, ...props}) => {
         setCategoryChecked(event.target.checked);
     };
 
-    const handleColorChange = (evt, category) => {
-        const newColors = {...pinColors}
-        newColors[category] = evt.target.value
-        setPinColors(newColors)
-    }
-
     if (subCategories.length !== 0) {
         return <>
             <ListItemButton sx={{
                 padding: 0
             }}>
-                <input
-                    type={"color"}
-                    value={pinColors[category]}
-                    style={{
-                        marginRight: 1,
-                    }}
-                    onChange={(evt) => handleColorChange(evt, category)}
-                />
                 <FormCheckbox label={category}
                               checked={categoryChecked}
                               onChange={handleCatChange}
@@ -63,6 +82,7 @@ export const RenderCategory = ({mapId, category, subCategories, ...props}) => {
                 <Box sx={{flexGrow: 1}}/>
                 {subOpen ? <ExpandLess onClick={handleSubOpenClick}/> :
                     <ExpandMore onClick={handleSubOpenClick}/>}
+                <CategoryColorPicker category={category}/>
             </ListItemButton>
             <Collapse in={subOpen} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
@@ -89,18 +109,12 @@ export const RenderCategory = ({mapId, category, subCategories, ...props}) => {
         return <ListItemButton sx={{
             padding: 0
         }}>
-            <input
-                type={"color"}
-                value={pinColors[category]}
-                style={{
-                    marginRight: 1,
-                }}
-                onChange={(evt) => handleColorChange(evt, category)}
-            />
             <FormCheckbox label={category}
                           checked={categoryChecked}
                           onChange={handleCatChange}
             />
+            <Box sx={{flexGrow: 1}}/>
+            <CategoryColorPicker category={category}/>
         </ListItemButton>
     }
 }

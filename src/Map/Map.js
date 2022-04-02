@@ -157,7 +157,6 @@ export const Map = ({mapId}) => {
     }
 
     const draw = (map, context2d) => {
-        console.log("draw performed")
         context2d.translate(renderState.midPointShiftX, renderState.midPointShiftY)
         context2d.translate(renderState.xDiff, renderState.yDiff)
         context2d.scale(renderState.mapScale1, renderState.mapScale1)

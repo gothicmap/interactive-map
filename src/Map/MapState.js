@@ -79,9 +79,6 @@ export const mapPinsSelector = selectorFamily({
         const treePoints = []
 
         for (const pin of pins) {
-            if (pin.data.category === "food") {
-                console.log(123)
-            }
             if (!predicate.evaluate(pin, lang)) {
                 continue
             }

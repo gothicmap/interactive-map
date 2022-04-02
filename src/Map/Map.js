@@ -55,19 +55,10 @@ class RenderState {
         this.canvasY = 0
         this.midPointShiftX = 0
         this.midPointShiftY = 0
-        this.paintCache = {}
     }
 
-    getPaint = (kit, category) => {
-        if(this.paintCache.hasOwnProperty(category)){
-            return this.paintCache[category]
-        } else {
-            const paint = new kit.Paint();
-            paint.setColor(kit.parseColorString(PinColors[category]));
-            paint.setAntiAlias(true)
-            this.paintCache[category] = paint
-            return paint
-        }
+    getPaint = (category) => {
+        return PinColors[category]
     }
 
     updateScale = (newScale) => {
@@ -128,8 +119,6 @@ class RenderState {
 }
 
 export const Map = ({mapId}) => {
-    const kit = useContext(CanvasKitContext)
-
     const renderState = useRefObj(() => new RenderState())
 
     const updateScale = (newScale) => {
@@ -143,44 +132,38 @@ export const Map = ({mapId}) => {
     // const canvasDimensions = useRef({width: 0, height: 0})
 
     useEffect(() => {
-        renderState.highlightPoint = new kit.Paint();
-        renderState.highlightPoint.setColor(kit.Color(255, 0, 0, 1.0));
-        renderState.highlightPoint.setAntiAlias(true)
+        renderState.highlightPoint = "#FF0000";
 
-        renderState.visitedPoint = new kit.Paint();
-        renderState.visitedPoint.setColor(kit.Color(255, 255, 0, 1.0));
-        renderState.visitedPoint.setAntiAlias(true)
+        renderState.visitedPoint = "#FFFF00";
 
         return () => {
-            if (renderState.highlightPoint) {
-                renderState.highlightPoint.delete()
-            }
-            if (renderState.visitedPoint) {
-                renderState.visitedPoint.delete()
-            }
-            for (const [key, value] of Object.entries(renderState.paintCache)) {
-                value.delete()
-            }
         }
     }, [])
 
-    const fetchMapImage = (current, set, kit) => {
+    const fetchMapImage = (current, set) => {
         if (current === null) {
-            fetch(mapImage)
-                .then((response) => response.arrayBuffer()
-                    .then((buffer) => set(kit.MakeImageFromEncoded(buffer))));
+            const img = new Image;
+            img.src = mapImage;
+            set(img)
         }
     }
 
     const pinsData = useRecoilValueRef(mapPinsSelector(mapId), () => reDraw.current = true)
     const visitedPins = useRecoilValueRef(visitedPinsAtop(mapId), () => reDraw.current = true)
 
-    const draw = (map, canvas) => {
-        canvas.translate(renderState.midPointShiftX, renderState.midPointShiftY)
-        canvas.translate(renderState.xDiff, renderState.yDiff)
-        canvas.scale(renderState.mapScale1, renderState.mapScale1)
+    const drawCircle = (ctx, posX, posY, radius, color) => {
+        ctx.fillStyle = color;
+        ctx.beginPath();
+        ctx.arc(posX, posY, radius, 0, 2 * Math.PI);
+        ctx.fill();
+    }
 
-        canvas.drawImageOptions(map, 0, 0, kit.FilterMode.Linear, kit.MipmapMode.Linear)
+    const draw = (map, context2d) => {
+        console.log("draw performed")
+        context2d.translate(renderState.midPointShiftX, renderState.midPointShiftY)
+        context2d.translate(renderState.xDiff, renderState.yDiff)
+        context2d.scale(renderState.mapScale1, renderState.mapScale1)
+        context2d.drawImage(map, 0, 0)
 
         if (renderState.showPins) {
             let lastPin = null
@@ -189,13 +172,13 @@ export const Map = ({mapId}) => {
                 if (renderState.highlightedPin !== null && renderState.highlightedPin.vobObjectID === c.vobObjectID) {
                     lastPin = c
                 } else {
-                    const paint = visitedPins.current.includes(c.vobObjectID) ? renderState.visitedPoint : renderState.getPaint(kit, c.data.category)
-                    canvas.drawCircle(c.normPosition.x * mapDimensions, c.normPosition.y * mapDimensions, 5 / renderState.mapScale1, paint)
+                    const paint = visitedPins.current.includes(c.vobObjectID) ? renderState.visitedPoint : renderState.getPaint(c.data.category)
+                    drawCircle(context2d, c.normPosition.x * mapDimensions, c.normPosition.y * mapDimensions, 5 / renderState.mapScale1, paint)
                 }
             })
 
             if (lastPin) {
-                canvas.drawCircle(lastPin.normPosition.x * mapDimensions, lastPin.normPosition.y * mapDimensions, 5 / renderState.mapScale1, renderState.highlightPoint)
+                drawCircle(context2d, lastPin.normPosition.x * mapDimensions, lastPin.normPosition.y * mapDimensions, 5 / renderState.mapScale1, renderState.highlightPoint)
             }
         }
     }

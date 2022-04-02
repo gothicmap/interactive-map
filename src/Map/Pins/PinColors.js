@@ -24,3 +24,9 @@ export const PinColors = {
     "armor": "#98fb98",
     "important": "#ffe4c4"
 }
+
+export const PinColorsAtom = atom({
+    key: "PinColorsAtom",
+    default: PinColors,
+    effects_UNSTABLE: [persistAtom]
+})

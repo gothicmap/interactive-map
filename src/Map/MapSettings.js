@@ -15,7 +15,7 @@ import {categoryFamily, mapSettingsFamily} from "./MapState";
 import {useRecoilState} from "recoil";
 import {ExpandLess, ExpandMore} from "@mui/icons-material";
 import {mapPinsCategories} from "../Data/database";
-import {PinColors, PinColorsAtom} from "./Pins/PinColors";
+import {PinColorsAtom} from "./Pins/PinColors";
 
 
 export const FormCheckbox = ({label, ...props}) => {
@@ -123,34 +123,15 @@ export const RenderCategories = ({mapId, categories, ...props}) => {
     return <>
         {
             Object.entries(categories).map(([categoryName, subCategories]) => {
-                return <RenderCategory mapId={mapId} category={categoryName} subCategories={subCategories}/>
+                return <RenderCategory key={categoryName} mapId={mapId} category={categoryName} subCategories={subCategories}/>
             })
         }
     </>
 }
 
 export function RenderContainerSettings({mapId}) {
-    // const lang = useRecoilValue(langAtom)
-    // const allCategories = flattendCategories
-    // const [checkCategory, setCategory] = useCategories(mapId)
-    // const catChangeCallback = (cat) => {
-    //     return (evt) => {
-    //         setCategory(cat, evt.target.checked)
-    //     }
-    // }
     return <FormGroup sx={{pl: 4, flexDirection: "column", paddingLeft: (theme) => theme.spacing(1)}}>
         <RenderCategories mapId={mapId} categories={mapPinsCategories}/>
-        {/*{*/}
-        {/*    allCategories.map((category) => {*/}
-        {/*            return <FormCheckbox*/}
-        {/*                key={category}*/}
-        {/*                label={Strings.getCategory(category, lang)}*/}
-        {/*                checked={checkCategory(category)}*/}
-        {/*                onChange={catChangeCallback(category)}*/}
-        {/*            />*/}
-        {/*        }*/}
-        {/*    )*/}
-        {/*}*/}
     </FormGroup>
 }
 

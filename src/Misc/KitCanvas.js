@@ -50,5 +50,7 @@ export const KitCanvas = ({fetchRenderData, draw, reDraw, dimensionsCallback, ..
         window.requestAnimationFrame(internalDraw)
     }, [renderData])
 
-    return <canvas ref={canvasRef} {...props} />
+    return <canvas ref={canvasRef} {...props} style={{
+        touchAction: "none"
+    }}/>
 }

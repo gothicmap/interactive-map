@@ -3,7 +3,7 @@ import {createKdTree} from "kd.tree";
 import {langAtom} from "../AppState";
 import {recoilPersist} from "recoil-persist";
 import {searchPredicate} from "./Search/SearchState";
-import {mapPinsCategories, postProcessMapPins} from "../Data/database"
+import {postProcessMapPins} from "../Data/database"
 import {rawItemsSelector} from "../Database/DatabaseState";
 import * as React from "react";
 
@@ -25,14 +25,6 @@ export const categoryFamily = atomFamily({
     default: true,
     effects_UNSTABLE: [persistAtom],
 })
-
-// export const flattendCategories = flatCategories(mapPinsCategories)
-//
-// export const activeCategoriesFamily = atomFamily({
-//     key: 'MapActiveCategoriesAtom',
-//     default: flattendCategories,
-//     effects_UNSTABLE: [persistAtom],
-// })
 
 export const visitedPinsAtop = atomFamily({
     key: 'MapVisitedPinsAtom',

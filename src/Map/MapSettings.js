@@ -1,22 +1,24 @@
 import * as React from 'react';
+import {useState} from 'react';
 import SettingsIcon from '@mui/icons-material/Settings';
 import {
     Box,
     Checkbox,
     Collapse,
+    Divider,
     FormControlLabel,
     FormGroup,
     IconButton,
     List,
     ListItemButton,
+    ListItemText,
     Paper
 } from "@mui/material";
 import {categoryFamily, mapSettingsFamily} from "./MapState";
 import {useRecoilState} from "recoil";
 import {ExpandLess, ExpandMore} from "@mui/icons-material";
 import {mapPinsCategories} from "../Data/database";
-import {PinColorsAtom} from "./Pins/PinColors";
-import {useState} from "react";
+import {HighlightColorAtom, PinColorsAtom, VisitedColorAtom} from "./Pins/PinColors";
 
 
 export const FormCheckbox = ({label, ...props}) => {
@@ -24,33 +26,31 @@ export const FormCheckbox = ({label, ...props}) => {
                              label={label}/>
 }
 
-const CategoryColorPicker = ({category, ...props}) => {
-    const [pinColors, setPinColors] = useRecoilState(PinColorsAtom)
-    const [currentColor, setCurrentColor] = useState()
+
+const RoundColorPicker = ({value, onColorApply, ...props}) => {
+    const [currentColor, setCurrentColor] = useState(value)
 
     const handleColorChange = (evt) => {
         setCurrentColor(evt.target.value)
     }
 
-    const applyColor = () => {
-        const newColors = {...pinColors}
-        newColors[category] = currentColor
-        setPinColors(newColors)
+    const handleBlur = (evt) => {
+        onColorApply(currentColor)
     }
 
     return <label style={{
-        backgroundColor: pinColors[category],
+        backgroundColor: value,
         width: 20,
         height: 20,
         marginLeft: 2,
         marginRight: 5,
-        background: pinColors[category],
+        background: value,
         display: "flex",
         borderRadius: 20
     }}>
         <input
             type={"color"}
-            value={pinColors[category]}
+            value={value}
             style={{
                 display: "block",
                 opacity: 0,
@@ -58,17 +58,29 @@ const CategoryColorPicker = ({category, ...props}) => {
                 height: "100%"
             }}
             onChange={handleColorChange}
-            onBlur={applyColor}
+            onBlur={handleBlur}
         />
     </label>
 }
 
+const CategoryColorPicker = ({category, ...props}) => {
+    const [pinColors, setPinColors] = useRecoilState(PinColorsAtom)
+
+    const applyColor = (currentColor) => {
+        const newColors = {...pinColors}
+        newColors[category] = currentColor
+        setPinColors(newColors)
+    }
+
+    return <RoundColorPicker value={pinColors[category]} onColorApply={applyColor}/>
+}
+
 export const RenderCategory = ({mapId, category, subCategories, ...props}) => {
-    const [subOpen, setSubOpen] = useRecoilState(categoryFamily(`${mapId}-${category}-sub-open`));
+    const [subCollapsed, setSubCollapsed] = useRecoilState(categoryFamily(`${mapId}-${category}-sub-collapsed`));
 
 
     const handleSubOpenClick = () => {
-        setSubOpen(!subOpen);
+        setSubCollapsed(!subCollapsed);
     };
 
     const [categoryChecked, setCategoryChecked] = useRecoilState(categoryFamily(`${mapId}-${category}`))
@@ -87,11 +99,11 @@ export const RenderCategory = ({mapId, category, subCategories, ...props}) => {
                               onChange={handleCatChange}
                 />
                 <Box sx={{flexGrow: 1}}/>
-                {subOpen ? <ExpandLess onClick={handleSubOpenClick}/> :
+                {!subCollapsed ? <ExpandLess onClick={handleSubOpenClick}/> :
                     <ExpandMore onClick={handleSubOpenClick}/>}
                 <CategoryColorPicker category={category}/>
             </ListItemButton>
-            <Collapse in={subOpen} timeout="auto" unmountOnExit>
+            <Collapse in={!subCollapsed} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
                     <FormGroup sx={{pl: 4}}>
                         {
@@ -137,12 +149,33 @@ export const RenderCategories = ({mapId, categories, ...props}) => {
     </>
 }
 
+
+const ByAtomColorSetting = ({atom, label, ...props}) => {
+    const [color, setColor] = useRecoilState(atom)
+
+    const applyColor = (currentColor) => {
+        setColor(currentColor)
+    }
+
+    return <ListItemButton sx={{
+        padding: 0
+    }}>
+        <ListItemText primary={label}/>
+        <Box sx={{flexGrow: 1111}}/>
+        <RoundColorPicker value={color} onColorApply={applyColor}/>
+    </ListItemButton>
+}
+
+
 export function RenderContainerSettings({mapId}) {
     return <FormGroup sx={{
         pl: 4,
         flexDirection: "column",
         paddingLeft: (theme) => theme.spacing(1)
     }}>
+        <ByAtomColorSetting atom={HighlightColorAtom} label={"highlight"}/>
+        <ByAtomColorSetting atom={VisitedColorAtom} label={"visited"}/>
+        <Divider/>
         <RenderCategories mapId={mapId} categories={mapPinsCategories}/>
     </FormGroup>
 }

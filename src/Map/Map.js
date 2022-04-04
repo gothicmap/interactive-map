@@ -8,7 +8,7 @@ import {mapPinsSelector, scaleFamily, visitedPinsAtop} from "./MapState";
 import {useRecoilStateEx, useRecoilValueRef, useRefObj} from "../Misc/StateHelpers";
 import {PinTooltip, ShowPinModal} from "./Pins/PinTooltip";
 import {useModal} from "mui-modal-provider";
-import {PinColorsAtom} from "./Pins/PinColors";
+import {HighlightColorAtom, PinColorsAtom, VisitedColorAtom} from "./Pins/PinColors";
 import {useRecoilValue} from "recoil";
 
 const mapImage = require('../archolos_map.png')
@@ -44,8 +44,6 @@ const midpointShift = (canvasDim, _scale1) => {
 class RenderState {
     constructor() {
         this.highlightedPin = null
-        this.highlightPoint = null
-        this.visitedPoint = null
         this.showPins = true
         this.mapScale = 100
         this.maxDistance = calcMaxDistance(100)
@@ -116,6 +114,9 @@ class RenderState {
 }
 
 export const Map = ({mapId}) => {
+    const highlightColor = useRecoilValueRef(HighlightColorAtom)
+    const visitedColor = useRecoilValueRef(VisitedColorAtom)
+
     const renderState = useRefObj(() => new RenderState())
 
     const updateScale = (newScale) => {
@@ -130,15 +131,6 @@ export const Map = ({mapId}) => {
     const pinColors = useRecoilValueRef(PinColorsAtom, () => {
         reDraw.current = true
     })
-
-    useEffect(() => {
-        renderState.highlightPoint = "#FF0000";
-
-        renderState.visitedPoint = "#FFFF00";
-
-        return () => {
-        }
-    }, [])
 
     const fetchMapImage = (current, set) => {
         if (current === null) {
@@ -173,13 +165,13 @@ export const Map = ({mapId}) => {
                 if (renderState.highlightedPin !== null && renderState.highlightedPin.vobObjectID === c.vobObjectID) {
                     lastPin = c
                 } else {
-                    const paint = visitedPins.current.includes(c.vobObjectID) ? renderState.visitedPoint : pinColors.current[c.data.category]
+                    const paint = visitedPins.current.includes(c.vobObjectID) ? visitedColor.current : pinColors.current[c.data.category]
                     drawCircle(context2d, c.normPosition.x * mapDimensions, c.normPosition.y * mapDimensions, 5 / renderState.mapScale1, paint)
                 }
             })
 
             if (lastPin) {
-                drawCircle(context2d, lastPin.normPosition.x * mapDimensions, lastPin.normPosition.y * mapDimensions, 5 / renderState.mapScale1, renderState.highlightPoint)
+                drawCircle(context2d, lastPin.normPosition.x * mapDimensions, lastPin.normPosition.y * mapDimensions, 5 / renderState.mapScale1, highlightColor.current)
             }
         }
     }

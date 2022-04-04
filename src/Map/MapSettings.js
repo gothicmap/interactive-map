@@ -16,6 +16,7 @@ import {useRecoilState} from "recoil";
 import {ExpandLess, ExpandMore} from "@mui/icons-material";
 import {mapPinsCategories} from "../Data/database";
 import {PinColorsAtom} from "./Pins/PinColors";
+import {useState} from "react";
 
 
 export const FormCheckbox = ({label, ...props}) => {
@@ -25,10 +26,15 @@ export const FormCheckbox = ({label, ...props}) => {
 
 const CategoryColorPicker = ({category, ...props}) => {
     const [pinColors, setPinColors] = useRecoilState(PinColorsAtom)
+    const [currentColor, setCurrentColor] = useState()
 
     const handleColorChange = (evt) => {
+        setCurrentColor(evt.target.value)
+    }
+
+    const applyColor = () => {
         const newColors = {...pinColors}
-        newColors[category] = evt.target.value
+        newColors[category] = currentColor
         setPinColors(newColors)
     }
 
@@ -52,6 +58,7 @@ const CategoryColorPicker = ({category, ...props}) => {
                 height: "100%"
             }}
             onChange={handleColorChange}
+            onBlur={applyColor}
         />
     </label>
 }
@@ -123,7 +130,8 @@ export const RenderCategories = ({mapId, categories, ...props}) => {
     return <>
         {
             Object.entries(categories).map(([categoryName, subCategories]) => {
-                return <RenderCategory key={categoryName} mapId={mapId} category={categoryName} subCategories={subCategories}/>
+                return <RenderCategory key={categoryName} mapId={mapId} category={categoryName}
+                                       subCategories={subCategories}/>
             })
         }
     </>

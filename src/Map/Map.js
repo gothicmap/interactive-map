@@ -262,7 +262,8 @@ export const Map = ({mapId}) => {
             flexGrow: 1,
             minHeight: "1px",
             minWidth: "1px",
-            caretColor: "transparent"
+            caretColor: "transparent",
+            touchAction: "none"
         }}
         />
     </div>

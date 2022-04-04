@@ -127,7 +127,9 @@ export const Map = ({mapId}) => {
 
     const reDraw = useRef(false)
 
-    const pinColors = useRecoilValueRef(PinColorsAtom, () => {reDraw.current = true})
+    const pinColors = useRecoilValueRef(PinColorsAtom, () => {
+        reDraw.current = true
+    })
 
     useEffect(() => {
         renderState.highlightPoint = "#FF0000";
@@ -142,7 +144,9 @@ export const Map = ({mapId}) => {
         if (current === null) {
             const img = new Image;
             img.src = mapImage;
-            set(img)
+            img.onload = () => {
+                set(img)
+            }
         }
     }
 

@@ -20,9 +20,11 @@ export const KitCanvas = ({fetchRenderData, draw, reDraw, dimensionsCallback, ..
         }
 
         const canvasRect = canvasHtmlElement.getBoundingClientRect()
+        // size are not exact, we can negate 1 pixel difference for resizing
         const rectWidth = canvasRect.width | 0
         const rectHeight = canvasRect.height | 0
-        if (canvasHtmlElement.width !== rectWidth || canvasHtmlElement.height !== rectHeight) {
+        if (Math.abs(canvasHtmlElement.width - rectWidth) > 1
+            || Math.abs(canvasHtmlElement.height - rectHeight) > 1) {
             canvasHtmlElement.width = rectWidth
             canvasHtmlElement.height = rectHeight
             dimensionsCallback(rectWidth, rectHeight)

@@ -121,7 +121,7 @@ export function MapContainer(props) {
         position: "relative", display: "flex", flexGrow: 1000, minWidth: "500px", overflow: "hidden"
     }}>
         {showMapSettings && <Paper sx={{
-            display: "flex", flexDirection: "column", borderRadius: '0px', overflowY: "auto", ...darkScrollbar()
+            display: "flex", flexDirection: "column", borderRadius: '0px', overflowY: "auto", flexShrink: 0, ...darkScrollbar()
         }} className={"MapSettings"}>
             <RenderContainerSettings mapId={props.mapId}/>
         </Paper>}

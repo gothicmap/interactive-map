@@ -130,7 +130,11 @@ export const RenderCategories = ({mapId, categories, ...props}) => {
 }
 
 export function RenderContainerSettings({mapId}) {
-    return <FormGroup sx={{pl: 4, flexDirection: "column", paddingLeft: (theme) => theme.spacing(1)}}>
+    return <FormGroup sx={{
+        pl: 4,
+        flexDirection: "column",
+        paddingLeft: (theme) => theme.spacing(1)
+    }}>
         <RenderCategories mapId={mapId} categories={mapPinsCategories}/>
     </FormGroup>
 }

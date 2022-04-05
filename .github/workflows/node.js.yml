@@ -12,6 +12,7 @@ jobs:
       with:
         node-version: 16
         cache: 'npm'
+    - run: npm install --legacy-peer-deps    
     - run: npm run build
     - name: save build data
       uses: actions/upload-artifact@v3

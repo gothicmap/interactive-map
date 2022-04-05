@@ -1,4 +1,4 @@
-name: Build interactive map
+name: Build Interactive Map
 on:
   push:
     branches: [ master ]
@@ -12,11 +12,15 @@ jobs:
       with:
         node-version: 16
         cache: 'npm'
-    - run: npm install --legacy-peer-deps    
-    - run: npm run build
-    - name: save build data
+    - name: "Install Dependencies"
+      run: npm install --legacy-peer-deps   
+    - name: "Creating Build"
+      run: npm run build
+      env:
+        CI: false
+    - name: Save Build
       uses: actions/upload-artifact@v3
       with:
-        name: upload-build
+        name: map-build
         path: |
           build
